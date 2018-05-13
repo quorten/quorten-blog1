@@ -11,3 +11,8 @@ recent_posts: 5
 excerpt_link: "Read More"
 titlecase: true
 category_dir: blog/categories
+
+authors:
+  quorten:
+    name: Andrew Makousky
+    github: quorten

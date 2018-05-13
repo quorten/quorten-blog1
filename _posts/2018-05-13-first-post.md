@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Your Title
+title: First post!
 date: 2018-05-13
-author: # see _config.yml
-categories: []
+author: quorten
+categories: ["blogging"]
 ---
 
 # First post!
