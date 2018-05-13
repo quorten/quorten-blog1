@@ -4,6 +4,7 @@ title: First post!
 date: 2018-05-13
 author: quorten
 categories: [blogging]
+tags: [blogging]
 ---
 
 This is the first blog article post to my blog.  I hope this turns out 
