@@ -6,8 +6,6 @@ author: quorten
 categories: ["blogging"]
 ---
 
-# First post!
-
 This is the first blog article post to my blog.  I hope this turns out 
 correctly and is formatted nicely for blog use.  If so, I can continue 
 to bring in all the other articles I have.
