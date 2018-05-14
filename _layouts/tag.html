@@ -4,8 +4,10 @@ layout: page
 
 <h2>{{ page.title }}</h2>
 
+<ul>
 {% for post in site.tags[page.tag] %}
-    <a href="{{ post.url | absolute_url }}">
+    <li><a href="{{ post.url | absolute_url }}">
       {{ post.title }}
-    </a>
+    </a></li>
 {% endfor %}
+</ul>
