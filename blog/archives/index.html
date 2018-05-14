@@ -21,7 +21,7 @@ exclude_from_search: true
         {% for key in author_key %}
           {% assign author = site.authors[key] %}
           {% if author %}
-              <span class="byline author vcard"><a href ="/author/{{key}}">{{ author.name }}<a/></span>
+              <span class="byline author vcard"><a href ="/author/{{key}}">{{ author.github }}<a/></span>
           {% endif %}
         {% endfor %}
       </a>
