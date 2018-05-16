@@ -20,10 +20,10 @@ And, ultimately, they are still less organized than I would like, but
 that will hopefully be changing fast soon as I take some time to add in 
 more categories and tags.
 
-* The volume of these notes points to how disorganized the modern tech
-  industry is at a global level.  I never had to do this for the
-  standard C library, I would just consult the official reference
-  documentation.
+* Footnote: The volume of these notes points to how disorganized
+  the modern tech  industry is at a global level.  I never had to
+  do this for the standard C library, I would just consult the
+  official reference documentation.
 
     * But the biggest thing, the fact that so many people have become
       accustomed to working in such a sloppy software environment.
