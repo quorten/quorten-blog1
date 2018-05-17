@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Applications pertinent to networked computer access
-date: 2018-05-15
+date: 2018-05-15 18:00:00 -0500
 author: quorten
 categories: [tour-de-force]
 tags: [tour-de-force]

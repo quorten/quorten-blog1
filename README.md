@@ -9,4 +9,5 @@ blog.
 
 20180513/https://github.com/artsy/artsy.github.io
 
-Currently, commenting is not supported in this blog.
+Currently, commenting is not supported in this blog.  RSS feeds also
+are not supported/tested.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Internet of Things will not be a commercial revolution
-date: 2018-05-15
+date: 2018-05-15 20:00:00 -0500
 author: quorten
 categories: []
 tags: []

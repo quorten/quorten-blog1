@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First post!
-date: 2018-05-13
+date: 2018-05-13 18:00:00 -0500
 author: quorten
 categories: [blogging]
 tags: [blogging]

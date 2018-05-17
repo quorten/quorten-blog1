@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reflections on why my notes have grown to be so big
-date: 2018-05-15
+date: 2018-05-15 22:00:00 -0500
 author: quorten
 categories: [blogging]
 tags: [blogging]
