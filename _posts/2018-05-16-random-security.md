@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Random security notes
 author: quorten
 date: 2018-05-16 18:00:00 -0500

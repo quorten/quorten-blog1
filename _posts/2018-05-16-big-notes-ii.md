@@ -1,5 +1,7 @@
 ---
+layout: post
 title: Relections on big notes, part II
+author: quorten
 date: 2018-05-16 20:02:00 -500
 categories: [blogging]
 tags: [blogging, license]

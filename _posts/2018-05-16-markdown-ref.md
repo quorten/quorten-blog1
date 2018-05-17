@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Markdown reference
 author: quorten
 date: 2018-05-16 18:40:00 -0500

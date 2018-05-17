@@ -1,4 +1,5 @@
 ---
+layout: post
 title: GitHub Terms and Conditions
 author: quorten
 date: 2018-05-16 18:20:00 -0500
@@ -36,6 +37,6 @@ users in their agreement, even though it is totally legally possible.
   enforceable, but are written upon the assumption that people will
   avoid disputes to begin with.
 
-20180516/DuckDuckGo united states law minimum age 13 internet
-20180516/https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule
+20180516/DuckDuckGo united states law minimum age 13 internet  
+20180516/https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule  
 20180516/https://www.ecfr.gov/cgi-bin/text-idx?SID=4939e77c77a1a1a08c1cbf905fc4b409&node=16%3A1.0.1.3.36&rgn=div5
