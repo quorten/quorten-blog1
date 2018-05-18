@@ -59,5 +59,5 @@ scheme.  However, for those jurisdictions that do recognize a public
 domain, they get the advantage of the last degree of freedom.
 
 * Footnote: The good thing about blogging: It makes it very easy for
-  other people to see where you are in tech learning.  "Homework after
-  college."
+  other people to see where you are in tech learning, so that they can
+  pick up on some of the things you've learned too.
