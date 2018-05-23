@@ -231,16 +231,16 @@ So, what's in stock for this?
   "universal" one, and do not be fooled by excessively expensive
   L-plates either, as this is still just a piece of metal.
 
-20180520/DuckDuckGo tripod look directly down
-20180520/https://photo.stackexchange.com/questions/13003/how-can-i-take-horizontal-photos-where-the-object-is-lying-flat-on-the-floor
-20180520/https://photo.stackexchange.com/questions/7419/what-should-i-look-for-in-a-camera-tripod-for-photographing-microfilm-machines-a
+20180520/DuckDuckGo tripod look directly down  
+20180520/https://photo.stackexchange.com/questions/13003/how-can-i-take-horizontal-photos-where-the-object-is-lying-flat-on-the-floor  
+20180520/https://photo.stackexchange.com/questions/7419/what-should-i-look-for-in-a-camera-tripod-for-photographing-microfilm-machines-a  
 20180520/http://learnmyshot.com/photography-tips-for-shooting-overhead/
 
 This is a great resource.
 
-20180520/https://improvephotography.com/12062/tripods-ball-heads/
-20180520/DuckDuckGo tripod gear site:improvephotography.com
-20180520/https://improvephotography.com/gear/tripods/
+20180520/https://improvephotography.com/12062/tripods-ball-heads/  
+20180520/DuckDuckGo tripod gear site:improvephotography.com  
+20180520/https://improvephotography.com/gear/tripods/  
 20180520/https://improvephotography.com/42411/l-plate/
 
 ----------
