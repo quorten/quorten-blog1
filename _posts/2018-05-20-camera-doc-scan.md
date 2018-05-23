@@ -3,8 +3,8 @@ layout: post
 title: Document scanning with a DSLR camera
 author: quorten
 date: 2018-05-20
-categories: [pentax-k1-camera]
-tags: [inven-sys, pentax-k1-camera]
+categories: [pentax-k-1-camera]
+tags: [inven-sys, pentax-k-1-camera]
 ---
 
 So, using a DSLR camera, my Pentax K-1 DSLR body and 1980s 50mm SMC
