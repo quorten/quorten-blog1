@@ -23,6 +23,8 @@ not only do the number of mobile devices eclipse that of desktops and
 laptops, but also the revenue and Internet traffic eclipses that of
 desktops and laptops.
 
+<!-- more -->
+
 So, this is where the distinction has to be made.  We know the
 computers by the numbers of Internet of Things could easily exceed
 that of mobile devices, but what about the money?  Is the Internet of
