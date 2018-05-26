@@ -12,6 +12,9 @@ excerpt_link: "Read More"
 titlecase: true
 category_dir: blog/categories
 
+plugins:
+  - jekyll-paginate
+
 authors:
   quorten:
     name: Andrew Makousky

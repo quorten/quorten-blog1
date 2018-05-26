@@ -1,4 +1,4 @@
-{% if page.single == true %}
+{% if layout.single == true %}
 <div class="article-container-single {{ page.article-class }}">
 {% else %}
 <div class="article-container">
@@ -7,7 +7,7 @@
   {% unless page.no_header %}
     <div class="meta-container">
       <header>
-        {% unless page.meta == false %}
+        {% unless page.meta == true %}
           <a href="{{ site.baseurl }}{{ post.url }}">
         {% endunless %}
         {% if index %}
@@ -34,7 +34,7 @@
       <div class="entry-content">{{ content }}</div>
     {% endif %}
 
-    {% if page.single == true %}
+    {% if layout.single == true %}
       <p class="meta-author">
         {% include post/author.html %}
       </p>
