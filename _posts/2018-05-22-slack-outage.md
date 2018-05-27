@@ -28,8 +28,8 @@ anyways, and that's what the whole article is about.
   be totally automated and everything be preserved, regardless of
   intent.
 
-** Plus, historians are most interested in the largest volumes of
-   information.  Yes, that means the collective sum of all such
-   information that was never meant to be preserved.
+    * Plus, historians are most interested in the largest volumes of
+      information.  Yes, that means the collective sum of all such
+      information that was never meant to be preserved.
 
 20180522/https://en.wikipedia.org/wiki/Ephemera
