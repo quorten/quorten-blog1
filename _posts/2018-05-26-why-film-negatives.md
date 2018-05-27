@@ -14,6 +14,8 @@ Again, I reiterate, because this is important!
 
 Film negatives have the following advantages over prints:
 
+<!-- more -->
+
 * Film negatives are the original image captured from the camera.
   Therefore, they have undergone a minimum number of processing steps,
   resulting in the greatest avaiable photographic quality.

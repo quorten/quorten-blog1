@@ -5,7 +5,7 @@ author: quorten
 date: 2018-05-23 21:00 -0500
 categories: [misc]
 tags: [misc]
---
+---
 
 Ever wonder why amusement parks use height limits?  Why measure height
 if what they want to get at is age?  Well, in some cases height limits
