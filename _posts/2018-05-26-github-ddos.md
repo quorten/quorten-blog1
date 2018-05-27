@@ -8,8 +8,9 @@ tags: [security]
 ---
 
 Wow, GitHub was a victim of another DDoS, this time one of the largest
-DDoS attacks on the entire Internet.  How?  Via `memcached` servers
-exposed to the public Internet, used as traffic amplifiers.
+DDoS attacks on the entire Internet: Nearly 1.4 terabits per second
+was directed at GitHub for nearly 8 minutes.  How?  Via `memcached`
+servers exposed to the public Internet, used as traffic amplifiers.
 
 20180526/https://en.wikipedia.org/wiki/GitHub  
 20180526/https://www.wired.com/story/github-ddos-memcached
