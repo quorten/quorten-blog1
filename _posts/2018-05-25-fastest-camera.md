@@ -18,7 +18,7 @@ new standard to replace it is XQD, based off of PCI-E and with a max
 speed of 1 GB/s.
 
 So there you have it.  The fastest is only faster than standard SD max
-speed by a factor of 40, not quote the factor of 100 or 1000 that I
+speed by a factor of 40, not quite the factor of 100 or 1000 that I
 was aiming for.  That means that making an ADF more than 40 times
 faster is a wasted effort, at least until the rest of the digital
 system catches up in speed.
