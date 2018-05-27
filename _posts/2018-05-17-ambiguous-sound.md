@@ -3,8 +3,8 @@ layout: post
 title: Ambiguous sound clip
 author: quorten
 date: 2018-05-17 15:51:00 -0500
-categories: []
-tags: []
+categories: [random]
+tags: [random]
 ---
 
 Interesting YouTube video where people are arguing over the spelling
