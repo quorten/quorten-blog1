@@ -84,6 +84,10 @@ worker.
       platform such software is designed for is difficult to make
       available via a libre software implementation.
 
+        * I should also emphasize that "adoption" is the key here.
+          Popularity together with adoption of an existing symbolic
+          interface.
+
 Second category.  "Standard office suite."  Very complex software of
 these categories are required.  Also, as a consequence of the high
 complexity required and the fact that most people are very stubborn
