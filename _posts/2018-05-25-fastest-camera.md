@@ -17,6 +17,8 @@ retired from updates, so it's not getting any faster in speed.  The
 new standard to replace it is XQD, based off of PCI-E and with a max
 speed of 1 GB/s.
 
+<!-- more -->
+
 So there you have it.  The fastest is only faster than standard SD max
 speed by a factor of 40, not quite the factor of 100 or 1000 that I
 was aiming for.  That means that making an ADF more than 40 times
@@ -44,7 +46,8 @@ for a 3.5 inch hard disk drive?  Okay, so some estimates.
 
 So, as it turns out, future 3.5 inch hard disk drives will _just
 barely_ satisfy your storage density per cost growth requirements, but
-only for the next generation.  Beyond that, you'll be stuck.
+only for the next generation (i.e. 5 years and growth factor of 10).
+Beyond that, you'll be stuck.
 
 * Consumer hard drives are limited to a maximum of 5 platters.
 

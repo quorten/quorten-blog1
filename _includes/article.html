@@ -15,8 +15,19 @@
         {% else %}
           <h2 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h2>
         {% endif %}
-          <p class="meta-author">{% include post/mini-author.html %}</p>
+        {% unless page.meta == true %}
           </a>
+        {% endunless %}
+          <p class="meta-author">{% include post/mini-author.html %}</p>
+          {% if post.date %}
+            {% assign date_key = post.date %}
+          {% else %} <!-- elsif page.date -->
+            {% assign date_key = page.date %}
+          {% endif %}
+          <p>{{ date_key | date: "%Y-%m-%d" }}</p>
+          <p class="meta-categories">
+            Categories: {% include post/categories.html %}
+          </p>
       </header>
     </div>
   {% endunless %}
@@ -35,12 +46,6 @@
     {% endif %}
 
     {% if layout.single == true %}
-      <p class="meta-author">
-        {% include post/author.html %}
-      </p>
-      <p class="meta-categories">
-        Categories: {% include post/categories.html %}
-      </p>
       {% if page.series %}
        <p class="meta-series" style="padding-bottom:0;">Part of a series: <strong>{{ page.series | series_link }}</strong></p>
        <ul>
