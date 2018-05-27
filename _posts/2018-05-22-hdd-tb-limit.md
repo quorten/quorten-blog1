@@ -3,8 +3,8 @@ layout: post
 title: Hard disk drive TB limit
 author: quorten
 date: 2018-05-22 01:00 -0500
-categories: [misc]
-tags: [misc]
+categories: [pentax-k-1-camera]
+tags: [pentax-k-1-camera]
 ---
 
 Important!  According to the DNA data storage article in the May 2018
