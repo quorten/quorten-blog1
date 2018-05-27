@@ -9,8 +9,14 @@ pages blog.
 
 20180513/https://github.com/artsy/artsy.github.io
 
-Currently, commenting is not supported in this blog.  RSS feeds also
-are not supported/tested.
+Features/Limitations:
+
+* RSS feeds are supported.
+* Currently, commenting is not supported in this blog.
+    * In the future, the policy will be to allow commenting on recent
+      articles, but for older articles, the preference will be to send
+      E-mail or discuss by some other means.  Summaries of commenting
+      discussions will always be added to articles.
 
 View the live site here:
 
