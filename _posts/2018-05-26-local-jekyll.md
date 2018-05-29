@@ -19,7 +19,11 @@ these few steps.
        source "https://rubygems.org"
        gem "github-pages"
 
-3. Add any necessary plugins to your `_config.yml`.  For example:
+3. Run `bundle install`:
+
+       bundle install --path=vendor/bundle
+
+4. Add any necessary plugins to your `_config.yml`.  For example:
 
        plugins:
          - jekyll-paginate
