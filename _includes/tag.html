@@ -1,0 +1,32 @@
+<h2>{{ page.title }}</h2>
+
+{% if page.subtitle %}
+<p>{{ page.subtitle | markdownify }}</p>
+{% endif %}
+
+{% if layout.tag_key == "category" %}
+{% assign tags_array = site.categories %}
+{% assign tag_name = page.category %}
+{% elsif layout.tag_key == "tag" %}
+{% assign tags_array = site.tags %}
+{% assign tag_name = page.tag %}
+{% endif %}
+
+{% if layout.display_style == "titles" %}
+  <ul>
+  {% for post in tags_array[tag_name] %}
+      <li><a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a></li>
+  {% endfor %}
+  </ul>
+{% elsif layout.display_style == "articles" %}
+  <!-- TODO: We will need to add pagination if we take this path. -->
+  {% assign index = true %}
+  {% for post in tags_array[tag_name] %}
+      {% assign content = post.content %}
+        <article>
+          {% include article.html %}
+        </article>
+  {% endfor %}
+{% endif %}

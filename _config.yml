@@ -1,6 +1,6 @@
 theme: jekyll-theme-slate
 title: Quorten Blog 1
-subtite: First blog for all Quorten's blog-like writings
+description: First blog for all Quorten's blog-like writings
 permalink: /blog/:year/:month/:day/:title/
 #baseurl: "/quorten-blog1/" # the subpath of your site, e.g. /blog/
 
