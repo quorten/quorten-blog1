@@ -26,6 +26,6 @@ coding format, hence solving your problem of wasted space with
 thousands of tiny files.  Again, I haven't tested this yet, so time
 will tell if this works well for me or not.
 
-20180527/DuckDuckGo linux ram compressed file system
-20180527/DuckDuckGo linux compressed ramdisk
+20180527/DuckDuckGo linux ram compressed file system  
+20180527/DuckDuckGo linux compressed ramdisk  
 20180527/https://en.wikipedia.org/wiki/Zram
