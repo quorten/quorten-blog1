@@ -22,9 +22,10 @@ Other interesting articles on DDoS.
 
 Now this was really interesting.  What was the motivation behind the
 Mirai malware?  Minecraft.  Why?  Because Minecraft server operators
-earn hundreds of thousands a month.  Competition is fierce, a little
-too fierce to the extent of trying to bump competitors off the
-Internet via a DDoS on their server.
+earn hundreds of thousands a month.  (During the summer months!  That
+is, when school students have their summer vacation.)  Competition is
+fierce, a little too fierce to the extent of trying to bump
+competitors off the Internet via a DDoS on their server.
 
 Also, a reminder about how the malware spread: through remote
 administration login of unsecured routers and IP cameras with default

@@ -9,6 +9,13 @@ tags: [tour-de-force, reiterate]
 
 * UART serial communications
 * Command-line based user interface
+* Login managers
+    * An unchanging implement now on modern desktop computing.
+      Optional for single user systems, but even for kiosks, a "login
+      screen" is used to display messages such as terms of service
+      before the user may use the system.  Also, to make sure the next
+      guest user has a clean slate to start from, and confidential
+      information doesn't leak from the previous user.
 * Terminal user interface, i.e. two-dimensional smart video display
   terminal
 * Pseudo-terminals and terminal multiplexing, i.e. Emacs, GNU Screen,

@@ -7,18 +7,18 @@ categories: [blogging]
 tags: [blogging]
 ---
 
-I do have to admit that I am somewhat annoyed by our modern day tech 
-world.  Yes, it is innovating much faster than before, but it is also 
-much less organized than before, and there are no signs that the future 
-innovations will ever become very well organized like the past progress 
-has become.  The community as a whole seems to just grow more and more 
-fragmented, with specialized knowledge of their particular area but 
-ultimately a smaller slice of the whole tech knowledge pie.  Also, 
-that's the same reason why my notes are so big... I had to write them 
-because there was no such organized structure already in the world.  
-And, ultimately, they are still less organized than I would like, but 
-that will hopefully be changing fast soon as I take some time to add in 
-more categories and tags.
+I do have to admit that I am somewhat annoyed by our modern day tech
+world.  Yes, it is innovating much faster than before, but it is also
+much less organized than before, and there are no signs that the
+future innovations will ever become very well organized like the past
+progress has become.  The community as a whole seems to just grow more
+and more fragmented, with specialized knowledge of their particular
+area but ultimately a smaller slice of the whole tech knowledge pie.
+Also, that's the same reason why my notes are so big... I had to write
+them because there was no such organized structure already in the
+world.  And, ultimately, they are still less organized than I would
+like, but that will hopefully be changing fast soon as I take some
+time to add in more categories and tags.
 
 * Footnote: The volume of these notes points to how disorganized
   the modern tech  industry is at a global level.  I never had to
