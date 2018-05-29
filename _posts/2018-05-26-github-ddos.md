@@ -15,6 +15,8 @@ servers exposed to the public Internet, used as traffic amplifiers.
 20180526/https://en.wikipedia.org/wiki/GitHub  
 20180526/https://www.wired.com/story/github-ddos-memcached
 
+<!-- more -->
+
 Other interesting articles on DDoS.
 
 20180526/https://www.wired.com/2016/12/botnet-broke-internet-isnt-going-away/  

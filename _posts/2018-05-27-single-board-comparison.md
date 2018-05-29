@@ -22,6 +22,8 @@ Raspberry Pi that are technologically superior, so I should see if one
 of those will better meet my needs than a Raspberry Pi.  And indeed,
 one of them definitely does better meet my needs: Banana Pi.
 
+<!-- more -->
+
 So, how did I go about coming to that conclusion?  First I went to the
 Wikipedia article on "Comparison of single-board computers":
 

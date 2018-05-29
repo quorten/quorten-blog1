@@ -10,7 +10,7 @@ tags: [misc, blogging]
 Why doesn't LibreCMC use GitHub?  Because GitHub itself has its own
 problems of not being libre-friendly.
 
-20180527/https://librecmc.org/
+20180527/https://librecmc.org/  
 20180527/https://librecmc.org/github.html
 
 So, there is an interesting alternative to use in place of GitHub.
@@ -53,7 +53,7 @@ wants to make it proprietary.
 So where is Yoshimi on development?  Ah, development is still fairly
 active.
 
-20180528/http://yoshimi.sourceforge.net/
+20180528/http://yoshimi.sourceforge.net/  
 20180528/https://sourceforge.net/projects/yoshimi/files/
 
 Well, that's too bad that ZynAddSubFx has fallen down the path wrongly
