@@ -3,8 +3,8 @@ layout: post
 title: 3D print design hosting options
 author: quorten
 date: 2018-05-31 20:20 -0500
-categories: [3d-printing-notes]
-tags: [3d-scanning-notes, 3d-scanner-notes, 3d-printing-notes]
+categories: [3d-printing]
+tags: [3d-scanning, 3d-scanner, 3d-printing]
 ---
 
 So, you're wondering, yes there is Thingiverse, but what are all the
