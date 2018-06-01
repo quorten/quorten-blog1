@@ -1,6 +1,7 @@
 theme: jekyll-theme-slate
 title: Quorten Blog 1
 description: First blog for all Quorten's blog-like writings
+# permalink: /blog/:categories/:year/:month/:day/:title/
 permalink: /blog/:year/:month/:day/:title/
 #baseurl: "/quorten-blog1/" # the subpath of your site, e.g. /blog/
 
@@ -8,6 +9,10 @@ paginate: 10
 paginate_path: "/blog/:num/"
 
 recent_posts: 5
+# Somehow I want there to be separate excerpts for the blog index
+# versus RSS feeds... hence I refrain from defining the excerpt
+# separator here.
+# excerpt_separator: <!-- more -->
 excerpt_link: "Read More"
 titlecase: true
 category_dir: blog/categories
