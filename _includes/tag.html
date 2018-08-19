@@ -15,7 +15,7 @@
 {% if layout.display_style == "titles" %}
   <ul>
   {% for post in tags_array[tag_name] %}
-      <li><a href="{{ post.url | absolute_url }}">
+      <li><a href="{{ post.url }}">
         {{ post.title }}
       </a></li>
   {% endfor %}
