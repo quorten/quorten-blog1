@@ -21,6 +21,8 @@ enough quality to be sold for general clothing, only "forgiving" uses
 like winter wear.  That is, using the mainstay common mechanical
 reycling method.  Chemical recycling is exceedingly rare.
 
+<!-- more -->
+
 Finally, the problem with non-biodegradable materials.  Human society
 will always drop materials and let them run loose from the human
 world.  Once they go drifting out in the natural world and never

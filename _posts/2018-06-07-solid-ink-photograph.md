@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Solid ink printers for photographs
+title: Solid ink printers for photographs, and Pentax K-1 Mark II
 author: quorten
 date: 2018-06-07 18:10 -0500
 categories: [pentax-k-1-camera]
@@ -17,6 +17,8 @@ to the need to dither.
 20180607/https://en.wikipedia.org/wiki/Solid_ink  
 20180607/DuckDuckGo solid ink print for photo  
 20180607/https://www.dpreview.com/forums/thread/3952099
+
+<!-- more -->
 
 Also, what you need to know about the new Pentax K-1 Mark II.  As it
 turns out, this is a really unfortunate bummer.  Yes, earlier I've

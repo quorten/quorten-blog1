@@ -23,6 +23,8 @@ repository hosting page on GNU.org, which I've never seen before.
 Yeah, that's probably because it's not well linked up with the rest of
 the page contents.
 
+<!-- more -->
+
 But yeah, I do agree.  We've all known long in advance that
 SourceForge.net and GitHub had their own problems... it's just that
 they're so popular, and if you want to be on the same platform that

@@ -2,8 +2,8 @@
 layout: post
 title: Interesting HTTP status codes, gag orders, appropriate technology
 date: 2018-06-15 4:40 -0500
-categories: [random-software, legal, misc]
-tags: [random-software, legal, misc]
+categories: [random-software, raspberry-pi, legal, misc]
+tags: [random-software, raspberry-pi, legal, misc]
 ---
 
 About a multi-machine server.  The idea is that you have a small,
@@ -17,6 +17,8 @@ I thought HTTP had a status code for "resource temporarily
 unavailable."  Indeed, it does.  So we have that response right there,
 and we can serve a custom error page that will automatically refresh
 after a timer, and tell the user the machine is powering on.
+
+<!-- more -->
 
 503 Service Unavailable
 

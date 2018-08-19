@@ -15,6 +15,8 @@ Weird things you can do on Unix:
     * Directories: remove read permission but keep execute permission
 * Delete a file starting with a `-`
 
+<!-- more -->
+
 My list:
 
 * Unix permissions
@@ -32,6 +34,7 @@ Early system implementation bugs:
 
 Early system deliberate limitations:
 
+* Backspace doesn't work
 * File name and path length limits
 * No way for user processes to get notification events when the
   filesystem gets altered.

@@ -21,6 +21,8 @@ Multiply voltage and current to get Watts.
 20180622/https://news.energysage.com/what-is-the-power-output-of-a-solar-panel/
 20180622/https://en.wikipedia.org/wiki/Watt
 
+<!-- more -->
+
 ----------
 
 Wondering about multiple 12 volt power supplies?  What exactly do you

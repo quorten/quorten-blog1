@@ -25,6 +25,8 @@ heavy to drive across ground as regularly as a modern tractor, so
 compromises had to be made.  Most often used to power farm equipment
 that would otherwise be manual.
 
+<!-- more -->
+
 20180627/https://en.wikipedia.org/wiki/Traction_engine
 
 Operating a steam tractor engine is a long ways away from the Dukes of

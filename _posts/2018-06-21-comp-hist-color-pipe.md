@@ -23,6 +23,8 @@ we're talking _slow_ on the old equipment.  Not only is the software
 writing to the display slow, but the refresh of the display itself is
 slow.
 
+<!-- more -->
+
 20180621/https://retrocomputing.stackexchange.com/questions/6797/why-were-early-personal-computer-monitors-not-green
 
 Important!  Want to learn all about video circuitry timing on vintage

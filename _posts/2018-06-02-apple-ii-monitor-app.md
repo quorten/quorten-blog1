@@ -23,6 +23,8 @@ of GDB, it unfortunately doesn't appear to have the feature of assembling
 from user input.  So, it's like as good as the Apple II monitor, but
 not as good as MS-DOS `debug`.
 
+<!-- more -->
+
 Interestingly, this particular program says the language is "Chinese",
 but given that the source code is written in assembly language and
 there is so little natural language text in the actual program, it

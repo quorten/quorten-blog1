@@ -19,6 +19,8 @@ Oh, and the final thing.  Will this work with my old AR7WRD router?
 Indeed, it looks like it will, as this forum poster was working on
 essentially the same chipset, although not the same board.
 
+<!-- more -->
+
 So, that being said,
 
 20180604/DuckDuckGo jtag router adam2 u-boot bootloader  

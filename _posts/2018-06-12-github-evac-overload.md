@@ -28,6 +28,8 @@ handled so much growth so quickly.
 20180612/https://web.archive.org/web/20180606152455/https://github.com/upend/IF_MS_BUYS_GITHUB_IMMA_OUT/issues  
 20180612/http://www.upend.org/
 
+<!-- more -->
+
 20180612/https://github.com/bderiso/Microsoft-Github-acquisition/blob/master/migration_guide_gitlab.md  
 20180612/https://github.com/bderiso/Microsoft-Github-acquisition  
 20180612/https://github.com/bderiso/Microsoft-Github-acquisition/issues/12

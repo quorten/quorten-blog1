@@ -15,6 +15,8 @@ Like Wikipedia, E-mail is over-regulated, hence people avoid using it
 (for _writing_), but Slack is now getting over-regulated too, so soon
 we'll have to migrate yet again to the next ~big~ new thing..
 
+<!-- more -->
+
 ----------
 
 The iron law of oligarchy is as play here, in regard to who can write

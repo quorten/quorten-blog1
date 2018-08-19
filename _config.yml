@@ -2,7 +2,7 @@ theme: jekyll-theme-slate
 title: Quorten Blog 1
 description: First blog for all Quorten's blog-like writings
 # permalink: /blog/:categories/:year/:month/:day/:title/
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title
 #baseurl: "/quorten-blog1/" # the subpath of your site, e.g. /blog/
 
 paginate: 10

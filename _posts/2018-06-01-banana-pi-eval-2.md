@@ -19,6 +19,8 @@ was just a legal dispute.  However, there is a Realtek development
 board chipset that is problematic, it looks like.  However, I believe
 that is not related to the Allwinner.
 
+<!-- more -->
+
 On the other hand, the Libre Computer Board has some pretty positive
 customer reviews on Amazon.  So, as is typically the case, libre may
 be the way to go.

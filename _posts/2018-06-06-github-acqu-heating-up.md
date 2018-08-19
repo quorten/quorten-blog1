@@ -31,6 +31,8 @@ until Microsoft censored it off the list.
 So, what other controversy is surfacing in regard to Microsoft's
 acquisition of GitHub?
 
+<!-- more -->
+
 20180606/DuckDuckGo microsoft buys github
 
 Now the cryptocurrency community is fleeing fast from GitHub.  Their

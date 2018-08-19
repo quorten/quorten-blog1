@@ -27,6 +27,8 @@ exist built-world inside the computer, not the other way around.  As
 it turns out, the thought process runs in only one direction.  Sorry,
 no two-way communication going on here.
 
+<!-- more -->
+
 So, as you may have figured, the 3D scanners are out of the business
 too.  But this raises yet another important question.  What about the
 3D printed objects?  What is to become of those if the people in

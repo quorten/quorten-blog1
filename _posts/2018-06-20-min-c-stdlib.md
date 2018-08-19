@@ -16,6 +16,8 @@ Furthermore, there are two major areas of division.
 * System calls
 * Library code
 
+<!-- more -->
+
 System calls are _essential_: they are interface to the operating
 system, which is the only practical way to interface with the vast
 multitude of modern hardware.  The advent of a larger number of

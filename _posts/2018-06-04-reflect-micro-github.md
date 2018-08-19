@@ -22,6 +22,8 @@ interesting proposition.  If you look at Microsoft as a company today,
 they are quite segmented into non-cooperating markets and divisions.
 For example, here is my assertion:
 
+<!-- more -->
+
 * Consumer culture: tablets, smartphones, online web accounts
 
 * Gaming: Xbox, Minecraft
