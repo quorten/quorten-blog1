@@ -45,9 +45,9 @@ variants.
 Ah, so there's some more tools for JTAG that are being used on the
 OpenWRT side of the community.  "JTAG Tools" is the name of the tool.
 
-  bertollo, in your case works , jtag-waldeck with unbufered
-  cable(very poor man jtag xilinx)?? what is your linux version?
-  debian? slackware?
+> bertollo, in your case works , jtag-waldeck with unbufered
+> cable(very poor man jtag xilinx)?? what is your linux version?
+> debian? slackware?
 
 20180604/DuckDuckGo poor man's Xilinx cable parallel port  
 20180604/https://web.archive.org/web/20080410104038/http://forum.openwrt.org:80/viewtopic.php?id=6357&p=10
