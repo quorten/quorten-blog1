@@ -3,8 +3,8 @@ layout: post
 title: Golang versus Python in containers
 author: quorten
 date: 2018-07-06 10:46 -0500
-categories: [random-software]
-tags: [random-software]
+categories: [golang, python]
+tags: [golang, python]
 ---
 
 So, I'm wondering about a followup question to the one I've asked you

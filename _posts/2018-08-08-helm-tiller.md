@@ -3,8 +3,8 @@ layout: post
 title: Helm Tiller
 author: quorten
 date: 2018-08-08 14:21 -0500
-categories: [random-software]
-tags: [random-software]
+categories: [kubernetes]
+tags: [kubernetes]
 ---
 
 Helm sure has interesting names that it uses from old fashioned ship

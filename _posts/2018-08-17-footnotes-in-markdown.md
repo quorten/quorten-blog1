@@ -30,7 +30,7 @@ with a practical solution.  Check it out as an example here.
    readers are accustomed to seeing elsewhere on the web, especially
    Wikipedia.
 
-2. I realized that overly-simplistic name anchors would cause
-   conflicts in the pagination view.  Using a random prefix can help
-   mitigate this, but again, that means that the authorship is yet
-   more challenging without automatic generation.
+    * I realized that overly-simplistic name anchors would cause
+      conflicts in the pagination view.  Using a random prefix can
+      help mitigate this, but again, that means that the authorship is
+      yet more challenging without automatic generation.

@@ -1,0 +1,30 @@
+<h2>Posts by {{ page.author }}</h2>
+
+<div id="blog-archives">
+  {% for post in site.posts reversed %}
+  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+
+  {% if post.author == page.author %}
+    {% unless year == this_year %}
+      {% assign year = this_year %}
+      <h3>{{ year }}</h3>
+    {% endunless %}
+    <article>
+      <div class="content-container">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          <b>{{post.title}}</b> -
+          {% assign author_key = post.author %}
+          {% for key in author_key %}
+            {% assign author = site.authors[key] %}
+            {% if author %}
+                <span class="byline author vcard"><a href ="{{ site.baseurl }}/blog/author/{{key}}">{{ author.github }}<a/></span>
+            {% endif %}
+          {% endfor %}
+        </a>
+      </div>
+    </article>
+  {% endif %}
+
+  {% endfor %}
+</div>
+<div style="clear:both;"></div>

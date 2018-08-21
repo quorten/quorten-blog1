@@ -3,8 +3,8 @@ layout: post
 title: LibreSSL not working with latest Python
 author: quorten
 date: 2018-06-11 16:02 -0500
-categories: [random-software]
-tags: [random-software]
+categories: [python]
+tags: [python]
 ---
 
 LibreSSL not working with the latest version of Python?  Yes, read
