@@ -21,6 +21,10 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
 
+markdown: kramdown
+#kramdown:
+#  input: KramdownEasyLink
+
 authors:
   quorten:
     name: Andrew Makousky
