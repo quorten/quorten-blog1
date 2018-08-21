@@ -3,8 +3,8 @@ layout: post
 title: USB to parallel port adapters
 author: quorten
 date: 2018-08-20 1:04 -0500
-categories: [misc]
-tags: [misc]
+categories: [raspberry-pi]
+tags: [raspberry-pi]
 ---
 
 Short answer: They can't exist, the USB protocol makes them physically

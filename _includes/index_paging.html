@@ -1,0 +1,17 @@
+  <div class="pagination">
+    <a href="{{ site.baseurl }}/blog/archives">Blog Archives</a>
+    &nbsp;&nbsp;
+    <a href="{{ site.baseurl }}/blog/categories">Categories</a>
+    &nbsp;&nbsp;
+    <a href="{{ site.baseurl }}/blog/tags">Tags</a>
+    &nbsp;&nbsp;
+    {% if paginator.previous_page %}
+      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    {% endif %}
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">Older</a>
+    {% endif %}
+    &nbsp;&nbsp;
+    <a href="{{ site.baseurl }}/feed.xml">Subscribe to feed</a>
+  </div>
