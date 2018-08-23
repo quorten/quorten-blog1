@@ -19,11 +19,12 @@ I get from a quick writeup?
 * Device Drivers
 * Operating System Kernel
 * Machine Code Libraries
-* Machine Code Kernel/Daemon/System Processes
-* Machine Code User Processes
-* Interpreted/JIT Language User Processes
-* Interpreted/JIT Language Libraries
+* Machine Code Kernel Processes
 * Networked Data
+* Machine Code User Processes
+* Compiler/Interpreter/JIT Language Engine
+* Compiler/Interpreter/JIT Language Libraries
+* Compiler/Interpreter/JIT Language User Processes
 * Front-End Software/Data
 
 <!-- more -->
@@ -68,10 +69,11 @@ The rest of the higher level stack is almost exactly the same:
 * Device Drivers
 * Operating System Kernel
 * Machine Code Libraries
-* Machine Code Kernel/Daemon/System Processes
+* Machine Code Kernel Processes
 * Machine Code User Processes
-* Interpreted/JIT Language User Processes
-* Interpreted/JIT Language Libraries
+* Compiler/Interpreter/JIT Language Engine
+* Compiler/Interpreter/JIT Language Libraries
+* Compiler/Interpreter/JIT Language User Processes
 * Front-End Software/Data
 
 In practice, a more rigorous locally installed operating system has
