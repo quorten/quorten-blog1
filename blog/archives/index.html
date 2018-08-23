@@ -5,6 +5,8 @@ footer: false
 exclude_from_search: true
 ---
 
+<p><a href="{{ site.baseurl }}/">Back to home</a></p>
+
 <div id="blog-archives">
   {% for post in site.posts reversed %}
   {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
