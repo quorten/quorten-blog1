@@ -4,8 +4,8 @@ title: "The new Windows, why I hate it, and reflections on
         single-board computers and home servers"
 author: quorten
 date: 2018-08-22 14:52 -0500
-categories: [random-software, raspberry-pi, reiterate]
-tags: [random-software, raspberry-pi, reiterate]
+categories: [random-software, raspberry-pi, tour-de-force, reiterate]
+tags: [random-software, raspberry-pi, tour-de-force, reiterate]
 ---
 
 First of all, finding out how to control the Windows Update settings
