@@ -3,8 +3,8 @@ layout: post
 title: Architect marketing -- Architects are facing a silent war?
 author: quorten
 date: 2018-08-21 21:30 -0500
-categories: [random]
-tags: [random]
+categories: [random, home-network]
+tags: [random, home-network]
 ---
 
 Failed search.
@@ -33,3 +33,22 @@ Ha, tricky method to generate a mass market.  And nowadays, people
 hardly even question that the association of diamonds with love and
 engagement are all merely but an artificial one, courtesy of an ads
 marketing agency.
+
+20180821/https://archmarketing.org/architect-marketing-diamond-strategy/
+
+<!-- more -->
+
+----------
+
+Now, that gives me an idea.  What were you saying about the average
+homeowner not caring about having a smart home?  Let's take a
+different spin off of that idea.  Sure, you're not going to be able to
+impose such an idea on the average homeowner, that's out of the
+picture.  Let's target the non-average home owner that is specifically
+looking for investments in home-building that lead to a home that can
+be better turned into a smart home.  Now you're talking a different
+story.  Now you're talking a story of architects that have a listed
+specialty in smart home design and construction.  Sure, it's not ideal
+for the fact that you can't bring the lowest level standards up to
+that level, but it's still better than the alternatives of writing off
+the idea as impossible and giving up.

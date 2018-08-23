@@ -116,7 +116,7 @@ tags: [home-network]
   during initial construction?  Be clear to the construction crew that
   you also want a _survey crew_ of a sort throughout the process, and
   document the components that you want surveyed.  See my [More house
-  systems](/blog/2018/08/15/more-house-systems) blog post for more
+  systems]({{ site.baseurl }}/blog/2018/08/15/more-house-systems) blog post for more
   details.
 
 * Initial construction: A sturdy foundation below both the house and
