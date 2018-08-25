@@ -13,7 +13,7 @@ an associated quality metric.
 
 <!-- more -->
 
-Core structure (maps):
+Core structure (maps, data sheets):
 
 1. Ground
 
@@ -27,29 +27,52 @@ Core structure (maps):
 
 6. Roof rafter
 
-7. Outside wall panel
+7. Outside wall panel/sheathing/sheeting
 
-8. Roof panel
+8. Roof panel/sheathing/sheeting
 
 9. Insulation
 
-10. Indoor ventilation.  Note that this is also a "utility line" but
-    its proper construction is very in tandem with the core building
-    construction.
+Core structure that is also a utility line or appliance (maps, data
+sheets):
 
-11. Chimneys and other ventilation between indoor and outdoor.  Note
-    that this is also a "utility line" for the same reason as indoor
-    ventilation.
+1. Indoor ventilation.
 
-12. Windows
+    * Air vent
 
-13. Window screens
+    * Air return vent
+
+2. Ventilation between indoor and outdoor.
+
+    * Fireplace chimneys
+
+    * Furnace exhaust vents
+
+    * HVAC air intake vents
+
+    * Laundry dryer air vent
+
+    * Bathroom exhaust vents
+
+    * Kitchen exhaust vents
+
+    * Attic air vents
+
+3. Doors
+
+4. Windows
+
+5. Window screens
 
 Outside finishing (maps):
+
+* Home wrap
 
 * Outer siding
 
 * Roof shingles
+
+* Roof flashing
 
 * Gutters and water drainage
 
@@ -59,31 +82,69 @@ Inside finishing (maps):
 
 * Drywall
 
-* Wall finishing (painting)
+* Wall finishing
+
+    * Wall painting
+
+    * Wall trim (bases, crowns)
 
 * Ceiling finishing
 
+    * Ceiling bump texture
+
+    * Ceiling painting
+
 * Floor finishing
+
+    * Carpet
+
+        * Carpet underpad
+
+        * Carpet mounting spikes
+
+        * Carpet
+
+    * Hardwood floor
+
+        * Hardwood floor boards
+
+        * Hardwood floor finish
+
+    * Tile floor
+
+        * Rubber/metal mounting pad
+
+        * Floor tiles
+
+        * Grout
 
 * Window shades
 
 * Attic finishing
 
-Utility lines (maps, data sheets):
+Non-core structure, utility lines (maps, data sheets):
 
 * Electrical wiring
 
-* Plumbing (water, sewage)
+* Water plumbing
+
+* Sewage plumbing
 
 * Gas pipes
+
+* Air conditioning heat exchanger
+
+* Fire sprinkler system
 
 * Fire alarm system (and other emergency or safety-critical signals)
 
 * Telecommunications (all non-safety critical signals)
 
-Simple built-in appliances (maps, data sheets):
+Non-core structure, simple built-in appliances (maps, data sheets):
 
 * Doors
+
+* Windows
 
 * Cabinets
 
@@ -99,10 +160,29 @@ Simple built-in appliances (maps, data sheets):
 
 Complex built-in appliances (maps, data sheets, manuals):
 
-* Bathroom fixtures: Toilet, Sink, Faucet, Bathtub, Shower
+* Bathroom fixtures
 
-* Kitchen fixtures: Stove, Oven, Kitchen sink, Kitchen Faucet,
-  Dishwasher
+    * Toilet
+
+    * Sink
+
+    * Faucet
+
+    * Bathtub
+
+    * Shower
+
+* Kitchen fixtures
+
+    * Stove
+
+    * Oven
+
+    * Kitchen sink
+
+    * Kitchen faucet
+
+    * Dishwasher
 
 * Furnace
 
@@ -112,7 +192,13 @@ Complex built-in appliances (maps, data sheets, manuals):
 
 * Garage door
 
-* Gardening fixtures: Backyard faucet, Garage faucet, Garden hose
+* Gardening fixtures
+
+    * Backyard faucet
+
+    * Garage faucet
+
+    * Garden hose
 
 So now you're wondering, how does this integrate with the plans?
 Well, of course each such mentioned item can be modeled as a separate
