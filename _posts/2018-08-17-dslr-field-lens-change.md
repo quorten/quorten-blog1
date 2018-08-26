@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Changing lenses on a DSLR camera in the field?
+title: "Changing lenses on a DSLR camera in the field?  Also notes on
+        sensor cleaning."
 author: quorten
 date: 2018-08-17 21:15 -0500
 categories: [pentax-k-1-camera, reiterate]

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Multi-licensing on GitHub, and how to increase the polling rate
-        of your mouse"
+        of your mouse, and TiVo"
 author: quorten
 date: 2018-08-24 21:51 -0500
-categories: [license, random-software]
-tags: [license, random-software]
+categories: [license, random-software, home-network]
+tags: [license, random-software, home-network]
 ---
 
 Multi-licensing you ask?  What is the most elegant way to do this?
