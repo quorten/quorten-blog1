@@ -17,6 +17,8 @@ Ansible?  Look around here for the solution.
 20180824/DuckDuckGo jinja2 join filter  
 20180824/https://stackoverflow.com/questions/24041885/conditionally-join-a-list-of-strings-in-jinja#24042287
 
+<!-- more -->
+
 ----------
 
 Yet more useful links on the subject, even information if you want to

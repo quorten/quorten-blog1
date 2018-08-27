@@ -30,6 +30,8 @@ case with HDHomeRun.
 
 Oh, and apparently TiVo was in fact the first DVR.
 
+<!-- more -->
+
 Okay, so let me summarize modern TV viewer habits, terminology, and
 technology in a nutshell.
 

@@ -24,6 +24,8 @@ that allowed the compile to continue smoothly without issue.  What
 didn't work: upgrading Golang.  Nope, this is not actually a problem
 that is magically fixed in the newer versions.
 
+<!-- more -->
+
 Read more about Golang cross-compiling here:
 
 20180824/DuckDuckGo go install permission denied  

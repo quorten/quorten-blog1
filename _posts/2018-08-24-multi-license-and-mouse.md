@@ -28,6 +28,8 @@ just the corresponding dedication + fallback licenses.
 20180824/https://spdx.org/licenses/  
 20180824/https://www.gnu.org/licenses/identify-licenses-clearly.html
 
+<!-- more -->
+
 Any updates on Linus Torvald's position on GPLv3?  It doesn't look
 like it, most of the references are old here.
 
