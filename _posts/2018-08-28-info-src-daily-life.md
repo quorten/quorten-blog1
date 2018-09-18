@@ -3,9 +3,9 @@ layout: post
 title: Sources of information in your daily life
 author: quorten
 date: 2018-08-28 13:40 -0500
-categories: [3d-scanning, 3d-scanner,
+categories: [inven-sys, 3d-scanning, 3d-scanner,
              pentax-k-1-camera, home-network, blogging]
-tags: [3d-scanning, 3d-scanner,
+tags: [inven-sys, 3d-scanning, 3d-scanner,
        pentax-k-1-camera, home-network, blogging]
 ---
 

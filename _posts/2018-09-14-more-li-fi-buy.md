@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Still looking to buy a Li-Fi transceiver
+title: Still looking to buy a Li-Fi transceiver, and reflections on Li-Fi
 author: quorten
 date: 2018-09-14 12:00 -0500
 categories: [home-network, reiterate]
