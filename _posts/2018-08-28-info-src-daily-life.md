@@ -55,8 +55,8 @@ Now, that being said, what does Wikipedia have to say about junk mail?
 Oh, interesting, the article title is advertising mail.  Also
 interesting is the database marketing article.
 
-20180828/https://en.wikipedia.org/wiki/Junk_mail
-20180828/https://en.wikipedia.org/wiki/Advertising_mail
-20180828/https://en.wikipedia.org/wiki/File:Mailbox.jpg
-20180828/https://en.wikipedia.org/wiki/Database_marketing
+20180828/https://en.wikipedia.org/wiki/Junk_mail  
+20180828/https://en.wikipedia.org/wiki/Advertising_mail  
+20180828/https://en.wikipedia.org/wiki/File:Mailbox.jpg  
+20180828/https://en.wikipedia.org/wiki/Database_marketing  
 20180828/https://en.wikipedia.org/wiki/Real-time_business_intelligence

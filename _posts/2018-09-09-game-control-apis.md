@@ -42,8 +42,10 @@ air supply, the API, needed for more advanced controllers.  Basically,
 Microsoft has unplugged themself from supporting the advanced PC
 gaming controllers market.
 
+<!-- more -->
+
 20180909/https://en.wikipedia.org/wiki/DirectInput  
-20190909/https://steamcommunity.com/sharedfiles/filedetails/?id=760956259
+20190909/https://steamcommunity.com/sharedfiles/filedetails/?id=760956259  
 20190909/https://answers.microsoft.com/en-us/windows/forum/windows_7-hardware/how-can-i-run-gameport/47c08363-d2e3-4e33-a77d-9fee01e9a12a
 
 Bummer, that's a real bummer.  The big problem here is also that given
@@ -127,7 +129,7 @@ look all that convincing, but the Quora on the subject looks pretty
 good.  Pretty well written reference source on where to go next, that
 seems to include everything I've found from my search results.
 
-20180909/DuckDuckGo self driving car simulator open source
+20180909/DuckDuckGo self driving car simulator open source  
 20180909/http://opensourceforu.com/2017/01/openai-transforms-gta-v-self-driving-car-simulator/  
 20180909/https://www.quora.com/What-are-the-most-active-and-complete-self-driving-car-open-source-hardware-and-software-projects
 

@@ -39,6 +39,8 @@ teacher might get highly motivated over a student who proves to be a
 fast learner, then disappointed when that student quits because they
 were never motivated to being with, or they lost motivation over time.
 
+<!-- more -->
+
 Now you might be interested in adding a chart for human teachers, but
 there's not really a point in doing that.  If there is a problem with
 a bad human teacher but a student is highly motivated, they will

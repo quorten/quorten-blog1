@@ -14,10 +14,10 @@ directed to chemical articles or similar.  So then I try
 through a disambiguation page.  Indeed, one of Wikipedia's biases are
 showing clearly here.
 
-20180827/https://en.wikipedia.org/wiki/Concentrate
-20180827/https://en.wikipedia.org/wiki/Concentrate_(disambiguation)
-20180827/https://en.wikipedia.org/wiki/Concentration
-20180827/https://en.wikipedia.org/wiki/Concentration_(disambiguation)
+20180827/https://en.wikipedia.org/wiki/Concentrate  
+20180827/https://en.wikipedia.org/wiki/Concentrate_(disambiguation)  
+20180827/https://en.wikipedia.org/wiki/Concentration  
+20180827/https://en.wikipedia.org/wiki/Concentration_(disambiguation)  
 20180827/https://en.wikipedia.org/wiki/Attentional_control
 
 So, some of the most key interesting points learned here:

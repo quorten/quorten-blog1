@@ -27,6 +27,8 @@ Failed search.
 
 20180829/DuckDuckGo how do modern ultra-compact power supplies work
 
+<!-- more -->
+
 On the other hand, I found some pretty interesting information on how
 to convert a PC power supply into a "desktop workbench" power supply.
 So, about not opening those boxes.  Where are the warnings in this
@@ -47,7 +49,7 @@ But, I am still convinced to try to find more information on this.
 
 Failed search.
 
-20180829/DuckDuckGo how do smartphone chargers work
+20180829/DuckDuckGo how do smartphone chargers work  
 20180829/https://www.digitaltrends.com/mobile/how-does-fast-charging-work/
 
 On the other hand, I found an interesting article on so-called "Turing

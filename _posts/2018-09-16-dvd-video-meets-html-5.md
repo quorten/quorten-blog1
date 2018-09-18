@@ -27,6 +27,8 @@ What happened before the times of the year 2010?  Before the year
 To be honest, there were no clear standards that emerged that were
 suitable for all uses of video recording.
 
+<!-- more -->
+
 * Professional movie studios mastered digital video discs in either
   DVD or Blu-ray format.  In the past, they also mastered in Video CD
   format.  For computer files and Internet distribution, MPEG-2 was
@@ -311,7 +313,7 @@ editing.
   "file-level concatenation" where the video stream indicates it has
   multiple separate files concatenated together.
 
-20180916/DuckDuckGo ffmpeg lossless merge video clips
+20180916/DuckDuckGo ffmpeg lossless merge video clips  
 20180916/https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg
 
 Final challenge.  You have input video in H.264 AVC but wrapped in a

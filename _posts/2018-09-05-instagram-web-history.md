@@ -29,6 +29,8 @@ of 2018.
 
 20180905/https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Facebook
 
+<!-- more -->
+
 Wow, this is it.  These are the websites on the planet, period.  You
 can't get any bigger than this in terms of users.  All other ideas
 that are not related to social networking can only garner smaller
@@ -46,7 +48,7 @@ the most significant change was "commercialization" of the Internet,
 but other than that the technical and political operational
 characteristics are much the same.
 
-20180905/https://en.wikipedia.org/wiki/List_of_virtual_communities_with_more_than_100_million_active_users
+20180905/https://en.wikipedia.org/wiki/List_of_virtual_communities_with_more_than_100_million_active_users  
 20180905/https://en.wikipedia.org/wiki/List_of_virtual_communities_with_more_than_1_million_users
 
 Wow, I just realized that perhaps not many Instagram users are fully

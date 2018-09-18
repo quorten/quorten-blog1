@@ -29,6 +29,8 @@ my approach and just direct the reader to go read that article in
 full, with a hearty encouragement like this one.  Yes, it's really
 that great.
 
+<!-- more -->
+
 In spite of that, let's try to summarize some of the most important
 key points presented here.
 
@@ -108,9 +110,9 @@ key points presented here.
 
 Here are some other interesting articles that were linked.
 
-20180905/https://jezebel.com/5742413/this-is-what-really-hides-in-taco-bells-beef
-20180905/https://lifehacker.com/5713806/enforce-a-mandatory-holding-pattern-to-curb-your-spending
-20180905/https://lifehacker.com/5511726/hone-your-eye-for-fake-online-reviews
+20180905/https://jezebel.com/5742413/this-is-what-really-hides-in-taco-bells-beef  
+20180905/https://lifehacker.com/5713806/enforce-a-mandatory-holding-pattern-to-curb-your-spending  
+20180905/https://lifehacker.com/5511726/hone-your-eye-for-fake-online-reviews  
 20180905/https://www.psychologytoday.com/us/blog/sold-language/201107/can-nostalgic-advertising-re-write-your-childhood-memories
 
 ----------

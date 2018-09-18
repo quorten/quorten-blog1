@@ -20,9 +20,9 @@ a lot more bandwidth per-se, it is much more heavily regulated than
 So it turns out that the usable bandwidth on 5 GHz is not as great as
 you would think on first thought.
 
-20180829/DuckDuckGo 802.11ac libre 5 ghz
-20180829/http://lifeinide.com/post/2017-05-08-linux-5ghz-wifi-with-no-drivers-problem/
-20180829/https://www.smallnetbuilder.com/wireless/wireless-features/31694-why-80211ac-will-kill-the-5-ghz-wi-fi-band
+20180829/DuckDuckGo 802.11ac libre 5 ghz  
+20180829/http://lifeinide.com/post/2017-05-08-linux-5ghz-wifi-with-no-drivers-problem/  
+20180829/https://www.smallnetbuilder.com/wireless/wireless-features/31694-why-80211ac-will-kill-the-5-ghz-wi-fi-band  
 20180829/https://en.wikipedia.org/wiki/IEEE_802.11ac
 
 Multi-user MIMO is another nice feature that 802.11ac provides.

@@ -26,6 +26,8 @@ proof-of-concept if you need to put the light through a paper tube.
 
 20180914/https://www.instructables.com/id/DIY-Li-Fi-Using-Arduino-Uno/
 
+<!-- more -->
+
 But, now this is it.  I found a real commercial product that gives you
 acceptable bandwidth, around 54 Mbps both upstream and downstream.
 And this is a full duplex device.

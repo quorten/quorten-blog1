@@ -26,6 +26,8 @@ charge control circuitry, and can't overcharge.
 20180912/DuckDuckGo 12 volt uninterruptible power supply lead acid battery  
 20180912/https://www.amazon.com/ExpertPower-EXP1270-Rechargeable-Lead-Battery/dp/B003S1RQ2S
 
+<!-- more -->
+
 This is a helpful article on building an uninterruptable power supply,
 for HAM radio.
 

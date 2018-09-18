@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Curve TV doesn't live up to the hype
+title: Curved TV doesn't live up to the hype
 author: quorten
 date: 2018-09-10 12:00 -0500
 categories: [random]
@@ -21,6 +21,6 @@ high quality flat screen rather than a lower quality curved screen.
 Curved screens have a striking and novel appearance, but other than
 that they don't really add any value.
 
-20180910/DuckDuckGo consumer backlash curved televisions
-20180910/https://www.consumerreports.org/cro/news/2014/07/are-curved-tvs-any-better-than-flat-screen-tvs/index.htm
+20180910/DuckDuckGo consumer backlash curved televisions  
+20180910/https://www.consumerreports.org/cro/news/2014/07/are-curved-tvs-any-better-than-flat-screen-tvs/index.htm  
 20180910/https://www.consumerreports.org/tvs/is-a-curved-tv-better-than-a-flat-screen-tv/

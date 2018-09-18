@@ -31,6 +31,8 @@ remounted my disk, none of my files but the first directory showed up,
 and the disk capacity still showed as nearly full.  Ut
 oh... filesystem corruption.  How to fix this?
 
+<!-- more -->
+
 A cursory examination led me to believe that the Linux ExFAT FUSE
 utilities weren't too great at fixing filesystems.  Luckily, I had a
 Windows 7 operating system on hand that I believed would have a better

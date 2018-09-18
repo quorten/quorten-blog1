@@ -30,6 +30,8 @@ lack of good hardware.
 
 20180829/https://www.businessinsider.com/amazon-fireos-fire-phone-google-android-eu-margrethe-vestager-2018-7
 
+<!-- more -->
+
 Indeed, Amazon and Google are direct competitors, in many many ways.
 
 Wow, now this article has some pretty good insights.

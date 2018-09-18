@@ -24,13 +24,15 @@ focusing mainly on the computer aspects of single point of failure.
 
 20180906/https://en.wikipedia.org/wiki/Single_point_of_failure
 
+<!-- more -->
+
 But, interestingly, it also made reference to aspects of single point
 of failure in other professions, such as "intelligence," in the
 government military sense.  Edward Snowden called himself "a single
 point of failure" for lots of information.  That is, the knowledge in
 question was possessed only by him.
 
-20180906/https://en.wikipedia.org/wiki/Edward_Snowden
+20180906/https://en.wikipedia.org/wiki/Edward_Snowden  
 20180906/https://en.wikipedia.org/wiki/Edward_Snowden#Public_opinion_polls
 
 Interestingly, there's an entire Wikipedia article on "global

@@ -19,7 +19,7 @@ of how we got to "whiteboarding."
 Now, this is a really interesting GitHub project that aims to list
 companies that interview without whiteboarding.
 
-20180829/https://github.com/poteto/hiring-without-whiteboards
+20180829/https://github.com/poteto/hiring-without-whiteboards  
 20180829/http://they.whiteboarded.me
 
 Now, we know that whiteboarding interviews are bad, but what about
@@ -33,5 +33,5 @@ But now, reading about behavioral interviews, the whiteboarding was
 done because interviewers thought they could outdue the shortcomings
 of the behavioral interview.
 
-20180829/https://en.wikipedia.org/wiki/Job_interview#Behavioral_questions
+20180829/https://en.wikipedia.org/wiki/Job_interview#Behavioral_questions  
 20180829/https://www.forbes.com/sites/lizryan/2014/03/04/why-i-hate-behavioral-interviewing/

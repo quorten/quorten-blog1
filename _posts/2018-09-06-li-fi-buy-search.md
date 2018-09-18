@@ -26,6 +26,8 @@ you need bright illuminators on both sides of the connection.
 
 20180906/https://blog.beaconstac.com/2016/01/li-fi-vs-ibeacon-ble-technology/
 
+<!-- more -->
+
 Apparently Li-Fi was not good enough for use in BMW's industrial car
 manufacturing plant, but looking at the numbers stated, like latency
 of 20ms versus 5ms, that is still plenty good enough for
@@ -49,6 +51,6 @@ Failed search.
 
 Failed search.
 
-20180906/DuckDuckGo FSO IR wireless
-20180906/https://en.wikipedia.org/wiki/Free-space_optical_communication
+20180906/DuckDuckGo FSO IR wireless  
+20180906/https://en.wikipedia.org/wiki/Free-space_optical_communication  
 20180906/https://en.wikipedia.org/wiki/Optical_wireless_communications

@@ -23,6 +23,8 @@ port that you connect a USB storage device to.
 20180912/https://www.cnet.com/news/top-five-wi-fi-routers-with-built-in-network-storage/  
 20180912/https://www.netgear.com/home/products/networking/wifi-routers/WNDR4720.aspx
 
+<!-- more -->
+
 My impressions at my search results so far is that such highly
 integrated devices don't sell very well, mainly because they are
 simply more expensive than the garden variety of routers and your

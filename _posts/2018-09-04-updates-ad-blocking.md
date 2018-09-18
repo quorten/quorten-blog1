@@ -11,7 +11,7 @@ Again, I reiterate, because this is important!  Ad blocking?  Yeah I
 already looked at this before, but what does Wikipedia have to say
 about this now?
 
-20180904/https://en.wikipedia.org/wiki/Ad_blocking
+20180904/https://en.wikipedia.org/wiki/Ad_blocking  
 20180904/https://en.wikipedia.org/wiki/File:Adblocking_growth_according_to_pagefair.svg
 
 Oh, now this is interesting.
@@ -27,6 +27,8 @@ Oh, now this is interesting.
 Reference source article is this one.
 
 20180904/https://www.engadget.com/2016/01/08/you-say-advertising-i-say-block-that-malware/
+
+<!-- more -->
 
 But now, this is a really interesting quote from that article.
 

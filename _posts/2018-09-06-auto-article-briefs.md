@@ -15,18 +15,20 @@ much traction, so it seems.
 
 Failed search.
 
-20180831/DuckDuckGo html page summary social media
-20180831/DuckDuckGo html page abstract social media
-20180831/DuckDuckGo html page abstract
+20180831/DuckDuckGo html page summary social media  
+20180831/DuckDuckGo html page abstract social media  
+20180831/DuckDuckGo html page abstract  
 20180831/DuckDuckGo html page abstract slack
 
 Okay, let me look at my own blog for the special meta tags, and we'll
 be more specific by searching for the technical jargon this time.
 Success!
 
-20180831/DuckDuckGo html meta og:
-20180831/DuckDuckGo https://stackoverflow.com/questions/6535405/what-is-the-attribute-property-ogtitle-inside-meta-tag#6535427
+20180831/DuckDuckGo html meta og:  
+20180831/DuckDuckGo https://stackoverflow.com/questions/6535405/what-is-the-attribute-property-ogtitle-inside-meta-tag#6535427  
 20180831/DuckDuckGo https://en.wikipedia.org/wiki/Facebook_Platform#Open_Graph_protocol
+
+<!-- more -->
 
 Now, let's see.  This Brightcove video host has trouble with having an
 embedded player when posting in Slack.  How about the other Wistia
@@ -35,9 +37,9 @@ embedding to work?
 
 Failed search.
 
-20180831/https://wistia.com/
-20180831/https://wistia.com/learn
-20180831/https://wistia.com/learn/culture/how-we-redesigned-soapbox
+20180831/https://wistia.com/  
+20180831/https://wistia.com/learn  
+20180831/https://wistia.com/learn/culture/how-we-redesigned-soapbox  
 20180831/https://wistia.com/learn/production/how-to-look-good-on-a-webcam
 
 On the other hand, I found an interesting article about how to look

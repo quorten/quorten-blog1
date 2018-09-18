@@ -10,12 +10,14 @@ tags: [random]
 Lots of interesting bike gadgets mentioned here, except for one.  Not
 appropriate for Americans, though Europeans might think differently.
 
-20180911/DuckDuckGo bicycle lights mirrors bell horn signals gears basket
-20180911/DuckDuckGo bike with all accessories
-20180911/Google bicycle lights mirrors bell horn signals gears basket
+20180911/DuckDuckGo bicycle lights mirrors bell horn signals gears basket  
+20180911/DuckDuckGo bike with all accessories  
+20180911/Google bicycle lights mirrors bell horn signals gears basket  
 20180911/https://www.peacebicycles.com/advice/cool-bike-accessories-commuter
 
 So, what's the lowdown on a summary of these gadgets?
+
+<!-- more -->
 
 * Lights, lights, lots of lights.  Standard LED headlight and
   tail-light, laser icon projector lights, laser lane marker lights,

@@ -19,5 +19,5 @@ operating.  Also, solid-state drives tend to have the same failure
 rates based off of _age_, more so than the intensity of use.  The
 article on longevity is from the year 2015.
 
-20180828/https://en.wikipedia.org/wiki/Solid-state_drive
+20180828/https://en.wikipedia.org/wiki/Solid-state_drive  
 20180828/https://www.anandtech.com/show/9248/the-truth-about-ssd-data-retention

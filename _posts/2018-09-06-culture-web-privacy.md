@@ -19,7 +19,7 @@ Europe) is there a large population that uses social networking sites
 that does _not_ have a technical IT education or career.
 
 20180906/DuckDuckGo how much do non western computer users value
-  anonymity
+  anonymity  
 20180906/DuckDuckGo how much do non western computer users value
-  privacy
+  privacy  
 20180906/http://www.cs.cmu.edu/~yangwan1/papers/TRUST2011-%C2%AD-AuthorCopy.pdf

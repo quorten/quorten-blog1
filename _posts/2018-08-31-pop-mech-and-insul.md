@@ -24,6 +24,8 @@ particular.  I only skimmed this list, but I've found one reference of
 Beyond the bias, there are a few clearly agreeable important skills in
 there:
 
+<!-- more -->
+
 * escaping from a car on water,
 * building a fire,
 * split firewood,

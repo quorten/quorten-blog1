@@ -27,7 +27,7 @@ router that worked well?
 
 * Fast ARM CPU
 
-* >= 1 GB RAM
+* \>= 1 GB RAM
 
 * MicroSD card slot for gigabytes of local storage
 
