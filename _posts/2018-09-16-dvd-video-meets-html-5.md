@@ -407,16 +407,72 @@ file.  I have to explore this further, however, as setting bitrate
 with experimental AAC (old version of FFMPEG) results in no sound.
 Maybe just an upgrade is needed?
 
-For transcoding to only a specific target resolution, i.e. NTSC
+For transcoding to only a specific target resolution, i.e. "YouTube"
 standard definition, augment the command line as follows:
 
     ffmpeg -i video.mpg \
-      -vcodec libx264 -acodec aac -s 704x480 \
+      -vcodec libx264 -acodec aac -s 640x480 \
       video.mp4
 
-If you're using 16:9 widescreen, make sure you transcode to 720x480 of
-course:
+If you're using 16:9 widescreen, make sure you transcode to 848x480 or
+854x480 (YouTube prefers the non-mod-16 version):
 
     ffmpeg -i video.mpg \
-      -vcodec libx264 -acodec aac -s 720x480 \
+      -vcodec libx264 -acodec aac -s 854x480 \
       video.mp4
+
+Finally, now for some YouTube recommendations.
+
+20180918/https://support.google.com/youtube/answer/1722171?hl=en  
+20180918/https://support.google.com/youtube/answer/4603579?hl=en  
+20180918/https://www.winxdvd.com/resource/best-youtube-size-for-uploading.htm  
+20180918/https://en.wikipedia.org/wiki/480p
+
+Only the key recommendations pertinent to me will be highlighted here,
+see the YouTube page for full information.
+
+* YouTube recommends using progressive scan video only, so if you have
+  interlaced video content, you should deinterlace it.
+
+* Also, YouTube only uses 16:9 widescreen aspect ratio video players,
+  so you should record all your video in 16:9 resolution if you are
+  producing new video.
+
+* YouTube requires a minimum of 1920x1080 resolution, 16:9 widescreen
+  for paid content.
+
+* So, now for info on pixel resolutions.  Keeping in mind the
+  requirements for progressive scan and 16:9 widescreen, the
+  supported/recommended resolutions are as follows: 2160p, 1440p,
+  1080p, 720p, 480p, 360p.  I've practically never heard of 360p
+  before, so you probably want to avoid it.
+
+4K video?  Oh, you have a curve ball here!  At this point we drop out
+of the H.264 monopoly and enter the new world of VP9, contained by
+WebM.  H.265 HEVC has not been adopted by the web at large, thus
+pointing to the end of the MPEG LA monopoly.  However, despite
+Google's enthusiasm for promoting a long-awaited open video format,
+hardware support for decoding VP9 is still lacking, though definitely
+growing in newer devices.  Not to mention, smartphone users really
+only care for standard definition video, so requiring 4K uploads to be
+in VP9 will have very little practical market impact.
+
+Even so, Google isn't going to transcode their whole library of H.264
+videos to WebM VP9 any time soon.  Not until transcoding your personal
+library of videos at home becomes so fast and so easy will Google
+YouTube embark on such an effort.
+
+20180918/https://en.wikipedia.org/wiki/VP9  
+20180918/https://en.wikipedia.org/wiki/HTML5_video#Browser_support
+
+Relating to H.264 patents.  The H.264 standard, as far as modern HTML
+5 video is concerned, was completed in 2003.  Assuming all claimed
+patents were issued at earlier dates, this means that no H.264 patents
+will last past the year 2023.  That's 5 years away from today, 2018.
+Yeah, still a long ways away, but significantly less than a "lifetime"
+(20 years).
+
+Note that there are some H.264 extensions that were defined later, but
+none of them are used in mass market Internet video streaming.
+
+20180918/https://en.wikipedia.org/wiki/H.264/MPEG-4_AVC
