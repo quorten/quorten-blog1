@@ -17,6 +17,7 @@ my $post_start = 1;
 my $in_preamble = 0;
 my $codename = "";
 my $date = "";
+my $article_error = 0;
 
 while (<>) {
     if ($_ eq $POST_DIVIDER) {
@@ -24,31 +25,44 @@ while (<>) {
         $post_start = 1;
         $codename = "";
         $date = "";
-        # Flush the line buffer, except for a trailing blank line.
-        pop @linebuf if ($linebuf[$#linebuf] eq "\n");
-        while (@linebuf) {
-            print $out shift(@linebuf);
-        }
-        close $out or die "$out: $!";
-        $out = undef;
-    } elsif ($post_start and $_ eq "---\n") {
+	$article_error = 0;
+	if ($out) {
+	    # Flush the line buffer, except for a trailing blank line.
+	    pop @linebuf if ($linebuf[$#linebuf] eq "\n");
+	    while (@linebuf) {
+		print $out shift(@linebuf);
+	    }
+	    close $out or die "$out: $!";
+	    $out = undef;
+	}
+    } elsif ($post_start and !$article_error and $_ eq "---\n") {
         # Preamble start/end matched.
         if ($in_preamble) {
             if ($date eq "" or $codename eq "") {
-                die "$linenum: Missing filename fields.";
-            }
-            my $filename = "$date-$codename.md";
-            open($out, ">", $filename) or die "$filename: $!";
-            # Flush the line buffer, except for a leading blank line.
-            my $leading = shift(@linebuf);
-            print $out $leading if ($leading ne "\n");
-            while (@linebuf) {
-                print $out shift(@linebuf);
-            }
-            $post_start = 0;
+                warn "$linenum: Missing filename fields.";
+		# Clear line buffer leave `post_start' set, set
+		# `article_error', and let `in_preamble' reset to
+		# zero.  This will simply ignore all lines with
+		# minimal processing until we reach the next article
+		# divider.
+		@linebuf = ();
+		$article_error = 1;
+            } else {
+		my $filename = "$date-$codename.md";
+		open($out, ">", $filename) or die "$filename: $!";
+		# Flush the line buffer, except for a leading blank line.
+		my $leading = shift(@linebuf);
+		print $out $leading if ($leading ne "\n");
+		while (@linebuf) {
+		    print $out shift(@linebuf);
+		}
+		$post_start = 0;
+	    }
         }
         $in_preamble = !$in_preamble;
-        push(@linebuf, $_);
+	if (!$article_error) {
+	    push(@linebuf, $_);
+	}
     } elsif ($in_preamble) {
         if ($_ =~ /^codename: ([^\n]+)\n$/) {
             $codename = $1;
