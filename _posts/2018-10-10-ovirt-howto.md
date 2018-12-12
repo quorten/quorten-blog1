@@ -1163,7 +1163,7 @@ versions of Windows, your next best option to get a similar experience
 is to install OpenSSH, but this comes with the requirement that
 networking must be up for the console to be accessible, unfortunately.
 See my other blog post on the subject for more details: [Set up
-Windows for SSH-style access]({{ site.baseurl }}/blog/2018/10/25/windows-ssh-style).
+Windows for SSH-style access]({{ site.baseurl }}/blog/2018/10/26/windows-ssh-style).
 
 XP/2003:
 

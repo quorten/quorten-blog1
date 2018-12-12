@@ -5,6 +5,10 @@ description: First blog for all Quorten's blog-like writings
 permalink: /blog/:year/:month/:day/:title
 #baseurl: "/quorten-blog1/" # the subpath of your site, e.g. /blog/
 
+# It's necessary to set the timezone explicitly to get consistent
+# dates in the permalinks regardless of the local system's time zone.
+timezone: GMT
+
 paginate: 10
 paginate_path: "/blog/:num/"
 

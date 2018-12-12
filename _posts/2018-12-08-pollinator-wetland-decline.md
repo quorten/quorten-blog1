@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pollinator decline, prairies, wetlands, bobcat, golden tode
+title: Pollinator decline, prairies, wetlands, bobcat, golden toad
 author: quorten
 date: 2018-12-08 22:48 -0600
 categories: [random]

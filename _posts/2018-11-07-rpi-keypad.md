@@ -57,12 +57,18 @@ you can add in the diode isolation, which conversely simplifies the
 controller as it does not need to check for key jamming.
 
 <object type="image/svg+xml"
-        data="{{ site.baseurl }}/blog/images/2018-11-07-ghost_key.svg">
+        data="{{ site.baseurl }}/blog/images/2018-11-07-ghost_key.svg"
+        width="250" height="250">
   Ghost key diagram...  Sorry, you need SVG support to see this.
-  <!-- <img src="{{ site.baseurl }}/blog/images/2018-11-23-rpi_gpio.png"
-       alt="GPIO wiring diagram"
-       width="500" height="300" /> -->
+  <!-- <img src="{{ site.baseurl }}/blog/images/2018-11-07-ghost_key.png"
+       alt="Ghost key diagram"
+       width="250" height="250" /> -->
 </object>
+
+The blue arrows in the diagram indicate the travel of electric current
+from the GPIO output connected on the columns to the GPIO input
+connected on the rows.  The green circles indicate the pressed keys.
+The red circle indicates the ghost key.
 
 20181107/https://en.wikipedia.org/wiki/Rollover_(key)#Ghosting  
 20181107/https://en.wikipedia.org/wiki/Keyboard_matrix_circuit

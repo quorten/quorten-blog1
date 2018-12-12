@@ -148,7 +148,7 @@ little endian at compile-time of your compiler toolchain.  You can
 simply pass an option to GCC to instruct it which endian it should
 compile with.  Use the `-EL` option for little endian and the `-EB`
 option for big endian.  For additional details, see [my next article
-on the subject]({{ site.baseurl }}/blog/2018/06/17/more-arm-mips-syscall).
+on the subject]({{ site.baseurl }}/blog/2018/06/18/more-arm-mips-syscall).
 
 ----------
 

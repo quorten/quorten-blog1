@@ -360,7 +360,8 @@ soldering.  Here I went through two revisions in order to optimize the
 pin selection for ease of use and convenience.
 
 <object type="image/svg+xml"
-        data="{{ site.baseurl }}/blog/images/2018-11-23-rpi_gpio.svg">
+        data="{{ site.baseurl }}/blog/images/2018-11-23-rpi_gpio.svg"
+        width="500" height="300">
   GPIO wiring diagram...  Sorry, you need SVG support to see this.
   <!-- <img src="{{ site.baseurl }}/blog/images/2018-11-23-rpi_gpio.png"
        alt="GPIO wiring diagram"

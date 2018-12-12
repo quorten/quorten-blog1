@@ -4,8 +4,8 @@ title: "Everything I need to know about DVD video encoding and HTML 5
         video migration"
 author: quorten
 date: 2018-09-16 14:22 -0500
-categories: [misc]
-tags: [misc]
+categories: [media-prog]
+tags: [media-prog]
 ---
 
 What you... okay, what I need to know about DVD video encoding.  First

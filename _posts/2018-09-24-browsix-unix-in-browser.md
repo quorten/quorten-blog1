@@ -3,8 +3,8 @@ layout: post
 title: Browsix, for Unix-like operating systems in-browser
 author: quorten
 date: 2018-09-24 16:46 -0500
-categories: [random-software]
-tags: [random-software]
+categories: [random-software, twitter]
+tags: [random-software, twitter]
 ---
 
 Important!  What were you writing about earlier on running a full
