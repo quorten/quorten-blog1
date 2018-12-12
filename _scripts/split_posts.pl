@@ -68,7 +68,7 @@ while (<>) {
             $codename = $1;
             # Note that we do not propagate the "codename" field into
             # the separated blog post file.
-        } elsif ($_ =~ /^date: ([^ ]+)/) {
+        } elsif ($_ =~ /^date: ([^\s]+)/) {
             $date = $1;
             push(@linebuf, $_);
         } else {
