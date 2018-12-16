@@ -32,6 +32,8 @@ you are trying to replicate an aluminum measuring tape.  Also, of
 course, laser tape measures have a distance limit, and very long tape
 measures compromise on precision.
 
+<!-- more -->
+
 So, what are your options?  Around the years 2011 - 2014, some people
 tried to hack low-cost laser tape measures.  Some companies such as
 Leica specialize in survey products and have higher-end equipment that

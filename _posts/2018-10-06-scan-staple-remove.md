@@ -37,6 +37,8 @@ removers.
 
 20181005/https://www.amazon.com/gp/product/B001E641R2/
 
+<!-- more -->
+
 A review from a secretary of a busy administrative office.  Good
 staple removers are hard to come by.  Some of the best staple removers
 are no longer on the market.  Partially quoted:
@@ -52,8 +54,6 @@ Looks promising, but lots of reviews unfortunately say it doesn't work
 well.
 
 20181004/https://www.amazon.com/gp/product/B01ED51CCC/
-
-<!-- more -->
 
 Now, this is it.  Pretty close to the design that I want, and the
 mechanism isn't too much different than my tried-and-true, gentle

@@ -36,6 +36,8 @@ projection TV for only $18?  How, you could make a pretty spiffy
 digital video projector with that!  If only you could figure out the
 signaling on that cable, that is.
 
+<!-- more -->
+
 20181019/https://www.surplusshed.com/pages/item/L14553.html  
 20181019/https://www.surplusshed.com/pages/item/L14552.html
 
@@ -47,8 +49,6 @@ clear that I am looking for a _crimp connector_.
 20181019/DuckDuckGo internal small electronic connector types  
 20181019/https://learn.sparkfun.com/tutorials/connector-basics/all  
 20181019/https://www.sparkfun.com/news/2328
-
-<!-- more -->
 
 Now, pin headers or no pin headers?  Well, it turns out many hobbyist
 buyers are preferring pin headers.

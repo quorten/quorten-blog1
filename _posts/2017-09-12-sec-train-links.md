@@ -29,6 +29,8 @@ publicly available sources, except for the internal company policies.
 20170912/https://aws.amazon.com/security/  
 20170912/https://www.owasp.org/index.php/Category:OWASP_Cloud_‐_10_Project
 
+<!-- more -->
+
 20170912/https://www.w3.org/standards/techs/provenance#w3c_all  
 20170912/http://siis.cse.psu.edu/provenance.html  
 20170912/http://collaborate.nist.gov/twiki-cloud-computing/pub/CloudComputing/CloudSecurity/NIST_Security_Reference_Architecture_2013.05.15_v1.0.pdf?bcsi_scan_9a791a242b5d10ef=0&bcsi_scan_filename=NIST_Security_Reference_Architecture_2013.05.15_v1.0.pdf  

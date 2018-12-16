@@ -29,6 +29,8 @@ on Linux:
 
     cat /proc/$PID/maps
 
+<!-- more -->
+
 20180615/DuckDuckGo linux kernel sbrk  
 20180615/https://elinux.org/images/b/b5/Elc2013_Kobayashi.pdf
 

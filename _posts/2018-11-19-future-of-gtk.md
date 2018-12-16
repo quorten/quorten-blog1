@@ -26,6 +26,8 @@ displays, Cairo is a must, and no longer will you be able to talk
 about pixel-pushing in the realm of user interfaces.  In high-res,
 pixel-pushing is a relic only of image processing and the like.
 
+<!-- more -->
+
 Yes, also FOX is still around and under active development.  There was
 a fork of FOX called TnFOX, but it is no longer being developed or
 maintained.  By far and large, this is due to the original author's

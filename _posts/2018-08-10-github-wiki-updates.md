@@ -37,6 +37,8 @@ Basically, the facts are as follows:
 * Projects with a code of conduct were far more likely to have women
   and minority contributors.
 
+<!-- more -->
+
 * Witnessing bad behavior can also keep prospective contributors
   disinvolved.
 

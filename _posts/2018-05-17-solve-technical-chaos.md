@@ -37,6 +37,8 @@ I will provide my personal judgement here.
   derived technology is essentially the same, the problem of
   duplication is going to be one of the worse ones.
 
+<!-- more -->
+
 * When the base technologies are very different, and the derived
   technology is essentially the same, the duplication is going to be a
   more veritable goal.  Especially, when the derived technology uses a

@@ -36,6 +36,8 @@ Bingo, I found a laser module for purchase!
 
 20181105/https://www.acuitylaser.com/products/item/ar1000-laser-distance-sensor
 
+<!-- more -->
+
 Now, this find brings up some interesting questions to answer.  30
 meters to 3mm?  Is that a distance that you'd reasonably want?  Indeed
 it is, looking at the 3D model of the house.  RS-232 interface, rugged
@@ -45,8 +47,6 @@ application.
 
 But, now we know the search terms to use.  _Laser Distance Sensor_.
 And indeed, that brings up many more relevant results!
-
-<!-- more -->
 
 20181105/DuckDuckGo laser distance sensor
 

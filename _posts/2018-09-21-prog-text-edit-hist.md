@@ -42,6 +42,8 @@ Evolution of text editors for programmers.
   interactively on the computer.  (Why?  Surely it would have been
   cost motivated, given the high fees of early timesharing.)
 
+<!-- more -->
+
 * 1970s: Timesharing systems mature with the introduction and rapid
   rise in popularity of Unix.  Smarter video display terminals become
   available.  The more advanced ones have local text load and save
@@ -52,8 +54,6 @@ Evolution of text editors for programmers.
   microcomputers presents a compelling new opportunity in text
   editing.  The prices of the lowest terminals that can edit save text
   locally have just gotten lower.
-
-<!-- more -->
 
 * 1981: Improved floppy disk drive technology for low-cost home
   microcomputers ups their game in competitiveness with the larger,

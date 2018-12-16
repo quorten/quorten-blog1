@@ -29,6 +29,8 @@ for optical discs that they provide is for _data_ optical discs.  The
 primary and most common example of such data discs that are used is
 exclusively for booting an operating system installation CD.
 
+<!-- more -->
+
 Now, if you want to run Audio CDs under virtualization, basically your
 only option is ATAPI CD drive pass-through.  This is a feature that
 was long either sketchy or unsupported under many solutions until
@@ -41,8 +43,6 @@ software "USB gadget" that plugs into the USB bus of your "host"
 virtual machine and exposes itself as a "USB CD drive."  Under this
 premise, the USB CD drive can therefore respond to ATAPI commands and
 send the digital audio data upon request to the target application.
-
-<!-- more -->
 
 Still, the question of the file format for storing the data is still
 at hand.  Well, the best answer I have to that is this.  Since you'll

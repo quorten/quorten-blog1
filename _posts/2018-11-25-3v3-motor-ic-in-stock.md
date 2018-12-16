@@ -31,6 +31,8 @@ it is cheaper and more straight to the point.
 20181130/https://www.pololu.com/product/2992  
 20181130/https://www.pololu.com/category/94/pololu-simple-motor-controllers
 
+<!-- more -->
+
 Almost, but not quite.  This one requires 5 V logic too.
 
 20181125/http://ww1.microchip.com/downloads/en/DeviceDoc/21421E.pdf

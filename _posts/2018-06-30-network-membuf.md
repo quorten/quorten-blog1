@@ -35,6 +35,8 @@ guarantee, a segment must be locked before the consistency check can
 be executed.  More advanced, you could do a consistency check on
 multiple segments.
 
+<!-- more -->
+
 The next thing you can do: you can _dynamically_ define segments as
 regions.  In practice, you need to do a consistency check on the outer
 context so that you know you can parse out the dynamic region.  This
@@ -48,8 +50,6 @@ Important!  Segments, especially dynamic ones, need to have space that
 can be provisioned for _parser state_, higher-level information
 obtained from a parse that may be required in order to quickly and
 efficiently execute a consistency check on that segment.
-
-<!-- more -->
 
 Now, on second thought, it may not be necessary to lock the entire
 buffer and perform consistency checks before locking regions: our

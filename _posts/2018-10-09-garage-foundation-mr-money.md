@@ -34,6 +34,8 @@ of the floor.
 
 20181009/https://www.mrmoneymustache.com/2017/01/24/diy-studio-building/
 
+<!-- more -->
+
 Now for some random articles.
 
 20181010/https://www.mrmoneymustache.com/2013/03/16/reader-case-study-this-guy-doesnt-need-my-help/  

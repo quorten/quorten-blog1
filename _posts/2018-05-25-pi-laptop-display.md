@@ -34,6 +34,8 @@ specifics of the LVDS data format, etc.
 20180525/https://g3nius.org/lcd-controller/  
 20180525/https://www.cnx-software.com/2016/02/05/re-using-your-old-laptop-screen-with-raspberry-pi-or-your-computer/
 
+<!-- more -->
+
 Ah, interesting.  Motorola LapDock.  Unfortunately that is rather
 expensive, although it has been used by many to reuse a laptop
 keyboard and display for a Raspberry Pi.

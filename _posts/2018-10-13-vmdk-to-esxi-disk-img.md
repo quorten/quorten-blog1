@@ -23,6 +23,8 @@ So, here's how I was able to successfully do it.
    the Linux one working because it was only 32-bit and I didn't have
    a multiarch machine on hand, otherwise I'd prefer to use that one.
 
+<!-- more -->
+
 2. Run the utility as follows:
 
        vmware-vdiskmanager.exe -r my-virtualbox-disk.vmdk \
@@ -36,8 +38,6 @@ So, here's how I was able to successfully do it.
    If you choose a thick provision type, absolutely make sure you have
    enough disk space to store the destination image on the machine you
    are running the conversion on.
-
-<!-- more -->
 
 3. Now upload these files using the vCenter file manager.  Create a
    temporary folder to store them in.  They will show up in the file

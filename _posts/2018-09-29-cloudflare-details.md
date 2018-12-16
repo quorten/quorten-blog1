@@ -25,6 +25,8 @@ So, Amazon also provides a CDN.  They call it _Cloudfront_.
 20180929/DuckDuckGo amazon cdn  
 20180929/https://aws.amazon.com/cloudfront/
 
+<!-- more -->
+
 Oh, so I see that there is now HTTP/2 out and about.  Indeed, this is
 closely based off of the earlier SPDY protocol that is now termed to
 have only been "experimental" by Google.  The binary protocol of

@@ -35,6 +35,8 @@ Yeah, I do have 68k CPU equipment, it's just that it's all too
 lightweight to run Linux.  Not enough RAM, hence it's out of the
 picture.
 
+<!-- more -->
+
 Here is other notable hardware left off the list, but I am not at all
 concerned about omitting it.
 
@@ -44,8 +46,6 @@ concerned about omitting it.
 * PA-RISC
 * POWER (RS/6000)
 * VAX
-
-<!-- more -->
 
 "Honorable mentions," things that I must include in the "not
 concerned" list due to lack of hardware, but I would like to include

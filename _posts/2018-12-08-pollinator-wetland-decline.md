@@ -47,6 +47,8 @@ provide very little nectar that is essential to bumble bees.
 
 20181208/https://en.wikipedia.org/wiki/Pollinator_decline
 
+<!-- more -->
+
 Praries are also a great source of wild flowers and other habitat
 characteristics that are helpful to pollinators.  Alas, much prarie
 land has been eliminated, and praries are now the subject of

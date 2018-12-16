@@ -34,7 +34,7 @@ stack in the callee.  Here's how.
     4. Write it to the second byte fo the jump instruction's address.
     5. Execute the jump instruction.
 
-<!-- more  -->
+<!-- more -->
 
 3. (optional) If your program needs full support for threads, you will
    need a second helper subroutine to determine the correct thunk

@@ -40,6 +40,8 @@ the law of diminishing returns applies here: it is not "useful work"
 in the purest sense of the term, but it still does help for smaller
 improvements that require much more work input.
 
+<!-- more -->
+
 But, at the end of the day.  What's to become of that older software
 that is essentially rework of already existing work?  So, I've thought
 this through carefully, and it seems one thing is clear.  People will

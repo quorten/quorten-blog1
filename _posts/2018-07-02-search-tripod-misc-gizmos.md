@@ -35,6 +35,8 @@ However, this might also have horizontal center column abilities.
 20180702/https://www.natcam.com/products/manfrotto-3021s-short/  
 20180702/https://www.dpreview.com/forums/post/430439
 
+<!-- more -->
+
 Unfortunately National Camera Exchange's current site state does not
 provide very much information on used products, so I have to searh
 around elsewhere on the Internet to get this information.

@@ -37,6 +37,8 @@ convenient on GitHub pages.
 20180528/DuckDuckGo kramdown auto links url  
 20180528/https://github.com/shoyan/kramdown_easy_link
 
+<!-- more -->
+
 ----------
 
 Now, the updated state-of-the-art situation of math on the web.

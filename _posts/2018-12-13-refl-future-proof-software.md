@@ -36,6 +36,8 @@ up.  Finally, the developers of the old project just quit and tell
 anyone in their existing user base to switch to the new project that
 has since replaced them.
 
+<!-- more -->
+
 When you think even deeper about these predicaments that have been
 observed in the software world, _indeed, it is really curious_.  Why
 is it that we haven't really observed likewise in the hardware world?

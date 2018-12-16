@@ -26,6 +26,8 @@ abundant low-cost computers in 2018.
 
 20180924/https://hackaday.com/2018/08/03/computer-programming-unplugged-for-kids/
 
+<!-- more -->
+
 Interesting command line to synthesize music that's been around for
 quite some time.
 
@@ -42,8 +44,6 @@ Spectre and Meltdown security mitigations causes Google Chrome to
 consume 10% more RAM.
 
 20180924/https://www.howtogeek.com/fyi/google-chrome-will-start-using-10-more-ram-now-thanks-to-spectre/
-
-<!-- more -->
 
 This article tries to convince the reader that the increased RAM
 consumption of web browsers a good thing that they want.  Yeah, yeah,

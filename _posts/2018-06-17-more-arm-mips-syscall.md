@@ -27,6 +27,8 @@ router.  Yeah, this is why having the ultra-minimalistic `libc` is
 really handy: it makes recompiling a breeze, especially when you're
 trying to test some very simple cross-compiled software.
 
+<!-- more -->
+
 20180617/https://busybox.net/downloads/BusyBox.html  
 20180617/DuckDuckGo elf32-tradlittlemips  
 20180617/DuckDuckGo elf32-tradlittlemips elf32-tradbigmips  
@@ -40,8 +42,6 @@ i386 ABI is by far the best developed ABI for Linux.
 
 20180617/https://www.linux-mips.org/wiki/ELF  
 20180617/https://www.linux-mips.org/wiki/MIPS_ABI_History  
-
-<!-- more -->
 
 Now I'm checking to see if there is a really easy way to take an
 existing GCC and recompile it with.  Well, looking in my own

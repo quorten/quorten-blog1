@@ -34,6 +34,8 @@ asked before the ink dries.  Well, before the tatoo is applied.
 
 20180823/https://www.legalzoom.com/articles/before-the-ink-dries-copyright-law-tattoos
 
+<!-- more -->
+
 Oh, so is this the right trademark of that band?
 
 20180823/DuckDuckGo metallica band trademark registration history  

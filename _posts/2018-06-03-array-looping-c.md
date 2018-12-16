@@ -33,6 +33,8 @@ Now, compare that with the optimized variant.
             return i;
     }
 
+<!-- more -->
+
 The original intent was mainly to optimize searching for recently
 created files added to the tail of the file list in a directory
 structure.  However, upon a closer examination, there is another
@@ -54,8 +56,6 @@ by needing another register/memory operation to maintain the loop.  By
 contrast, a null-terminated string obviates this extra variable during
 string processing loops, hence freeing up a processor register or
 memory cycles for other uses.
-
-<!-- more -->
 
 As we now know today, however, the main disadvantage of not keeping
 track of the string length variable is that computing a string's

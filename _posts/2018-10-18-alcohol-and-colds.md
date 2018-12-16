@@ -21,6 +21,8 @@ immune system and is also causes dehydration.  Not to mention it also
 has the typical observed mental effect of making people a little bit
 "tipsy" or "drunk."
 
+<!-- more -->
+
 Also, some cold medications have alcohol in them.  The main purpose of
 this ingredient is indeed as a sedative, a means to help people wish
 their pain away, but it doesn't help cure the illness.  It's very

@@ -33,6 +33,8 @@ If you have a 14-pin JTAG header, nearly half of those pins just wire
 up to ground.  So don't worry, 14 pins aren't actually needed for a
 JTAG connector.
 
+<!-- more -->
+
 Determining the actual pin assignment is a tough one.  Generally, the
 advice is to look at the circuit board traces to see which pins
 connect to the JTAG pins on your processor.  The JTAG processor pins
@@ -48,8 +50,6 @@ and the hard reset also erases all firmware.  Sometimes they use
 permanent blow-out fuses to disable JTAG.  Sometimes they use password
 lock-down, deliberate delays between failed password attempts, or
 single-try logic for passwords that require a cold boot on failure.
-
-<!-- more -->
 
 Background info already existing in my notes.
 

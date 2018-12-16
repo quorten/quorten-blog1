@@ -34,6 +34,8 @@ Basic text editors for any user:
 
 * Graphical widgets for rich text editing
 
+<!-- more -->
+
 Text editors for programmers:
 
 * Includes all features listed above, **except** the following:

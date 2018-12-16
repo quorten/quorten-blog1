@@ -33,6 +33,8 @@ found out.
 
 * PWM input can be used to modulate the motor speed.
 
+<!-- more -->
+
 * The L293D won't work well with 3 V motors, unfortunately.  Yes, you
   _can_ use it to control 3 V motors, but it won't work very well.
   Okay, that's it.  Some of the most important motors I have to
@@ -51,8 +53,6 @@ found out.
 20181119/DuckDuckGo L293D  
 20181119/https://www.digikey.com/product-detail/en/stmicroelectronics/L293D/497-2936-5-ND/634700  
 20181119/https://www.adafruit.com/product/807
-
-<!-- more -->
 
 ----------
 

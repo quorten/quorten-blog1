@@ -30,6 +30,8 @@ are multilayer composite materials and thus more difficult to recycle.
 20180714/https://livegreen.recyclebank.com/because-you-asked-can-i-recycle-toothpaste-tubes  
 20180714/https://livegreen.recyclebank.com/what-to-do-with-an-empty-toothpaste-tube
 
+<!-- more -->
+
 Other interesting notes on recycling.  Don't recycle napkins, paper
 towels, and tissues, even if they are not soiled, as the shorter fiber
 lengths makes them less likely to recyclers and can still result in

@@ -34,6 +34,8 @@ once you enable it, you cannot disable it.
 
 20180814/https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/net_tutorial.md
 
+<!-- more -->
+
 So the ODROID-C2, is it obsolete?  Well, looks like it.  Raspberry Pi
 Model 3B+ has faster Gigabit Ethernet than ODROID-C2, though the CPU
 is still slower.  Also, Raspberry Pi Model 3B+ looks like it might

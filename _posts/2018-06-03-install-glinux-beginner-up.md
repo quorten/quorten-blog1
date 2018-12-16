@@ -30,6 +30,8 @@ updates.
    for having multiple computers if you do in fact have a single
    computer with enough memory to do the run-through.
 
+<!-- more -->
+
 5. Configure the package manager on your new computer to not delete
    cached packages.  This way you can save the local packages for
    quickly setting up a second and third computer.

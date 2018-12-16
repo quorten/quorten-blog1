@@ -35,6 +35,8 @@ Well, let's see.
 
 * 4-pin connector for the flash chip control signals
 
+<!-- more -->
+
 Suppose instead of one 32-pin connector, you want four 4-pin
 connectors.  No worries, you can just connect a special splitter
 connector to break those apart.  Same if you want to break apart a
@@ -44,8 +46,6 @@ But, I'm getting ahead of myself.  To answer my earlier question, do
 we have enough GPIO pins?  In the case of the Raspberry Pi Zero, no.
 Remember, we only have a 40-pin header, and some of those are
 power-only and ground-only pins.  44 pins > 40 pins.
-
-<!-- more -->
 
 Okay, so that's too much.  Let's step back, then, and consider a less
 demanding but still useful case.  The BCM2835 that the Raspberry Pi
@@ -362,10 +362,9 @@ pin selection for ease of use and convenience.
 <object type="image/svg+xml"
         data="{{ site.baseurl }}/blog/images/2018-11-23-rpi_gpio.svg"
         width="500" height="300">
-  GPIO wiring diagram...  Sorry, you need SVG support to see this.
-  <!-- <img src="{{ site.baseurl }}/blog/images/2018-11-23-rpi_gpio.png"
+  <img src="{{ site.baseurl }}/blog/images/2018-11-23-rpi_gpio.png"
        alt="GPIO wiring diagram"
-       width="500" height="300" /> -->
+       width="500" height="300" />
 </object>
 
 ----------

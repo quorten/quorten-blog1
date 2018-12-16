@@ -32,6 +32,8 @@ doing this?  This is my recommendation.
 Also note that `nano` is available for Windows too, if that is your
 preference over `vim`.
 
+<!-- more -->
+
 20181025/https://chocolatey.org/install  
 20181025/DuckDuckGo windows console text editor  
 20181025/https://stackoverflow.com/questions/11045077/edit-a-text-file-on-the-console-in-64-bit-windows#19314955  

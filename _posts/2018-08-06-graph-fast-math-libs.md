@@ -31,6 +31,8 @@ And as it turns out, there is a nice fixed-point graphics library
 written against Libfixmath, FGL.  Also, don't forget!  The Allegro
 library also has fixed-point arithmetic routines.
 
+<!-- more -->
+
 Popular numeric libraries in increasing order of complexity:
 
 1. Integer arithmetic
@@ -51,8 +53,6 @@ floating-point routines are well covered by existing code.  Given the
 previous discussion, the main thing I would want to add is
 quotient-remainder functions.  Especially, step-increments involving a
 quotient-remainder.
-
-<!-- more -->
 
 Note that rather than multiplying two rational numbers together for
 step-wise functions, you can instead step on each rational number

@@ -40,6 +40,8 @@ time to add in more categories and tags.
   sense of inertia when it comes down to the decision of restoring
   compatibility versus building off of their own systems.
 
+<!-- more -->
+
 Also, search engines aren't really helping with the problem either, as 
 they visibly display the same knowledge issues that are evident in the 
 humans involved in the tech community: old knowledge can be found great, 

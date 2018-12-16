@@ -31,6 +31,8 @@ course, this is pretty expensive though, at $250 - $550.
 
 20180805/https://www.dpreview.com/reviews/review-palette-modular-editing-controls
 
+<!-- more -->
+
 Now looking for wide angle Pentax lenses.  Are there good choices?
 There are, each with its own strengths and weaknesses.  The main
 tradeoffs: you can have a smaller aperture lens that is physically
@@ -44,8 +46,6 @@ this manufacturing line.)  The other problem is that at such wide
 angles, it is very difficult for the autofocus system to pinpoint the
 focus right on the dot, but otherwise a careful manual focus
 adjustment could bring things to perfection.
-
-<!-- more -->
 
 Finally, last remarks on sharpness.  Some people are commenting that
 the sharpness of these ultra-wide angle lenses will not impress by

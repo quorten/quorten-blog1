@@ -22,6 +22,8 @@ that kind of defeats the purpose of being able to reuse.
 
 20181107/https://www.alibaba.com/showroom/calculator-keypads.html
 
+<!-- more -->
+
 Here's an Arduino project on building a calculator using a calculator
 keypad, an LCD screen, and an Arduino.
 
@@ -35,8 +37,6 @@ The datasheet for the keypad.  Indeed, it is a simply matrix key scan
 system.
 
 20181107/https://media.digikey.com/pdf/Data%20Sheets/Grayhill%20PDFs/96%20Series.pdf
-
-<!-- more -->
 
 Now, I'm trying to understand key ghosting.  Why is diode isolation
 required to prevent key ghosting?  It can be explained like this.
@@ -59,10 +59,9 @@ controller as it does not need to check for key jamming.
 <object type="image/svg+xml"
         data="{{ site.baseurl }}/blog/images/2018-11-07-ghost_key.svg"
         width="250" height="250">
-  Ghost key diagram...  Sorry, you need SVG support to see this.
-  <!-- <img src="{{ site.baseurl }}/blog/images/2018-11-07-ghost_key.png"
+  <img src="{{ site.baseurl }}/blog/images/2018-11-07-ghost_key.png"
        alt="Ghost key diagram"
-       width="250" height="250" /> -->
+       width="250" height="250" />
 </object>
 
 The blue arrows in the diagram indicate the travel of electric current

@@ -33,6 +33,8 @@ older, historic objects.
 
 * Utility patents: 20 year limit
 
+<!-- more --?
+
 * Trademark: Renewable indefinitely.  However, its use is permissible
   under fair use in "photographic" style uses, where the primary use
   is to convey the look of the object, not to sell it.

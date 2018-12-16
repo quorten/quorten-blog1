@@ -36,6 +36,8 @@ worth noting, and differences with my design?
 * The use of stepper motors requires more complicated motor control
   driver ICs than is required for plain DC motors.
 
+<!-- more -->
+
 * The design of the FabScan calls for more motors, of course.
 
 * The FabScan still uses an Arduino-compatible microcontroller to
@@ -51,8 +53,6 @@ worth noting, and differences with my design?
 
 * The motors run off of 12 volts.  Therefore, the FabScan Pi HAT is
   designed to have a 12 V DC.
-
-<!-- more -->
 
 ----------
 

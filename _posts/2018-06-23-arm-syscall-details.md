@@ -30,6 +30,8 @@ Old way:
     swi #(0x900000 + __NR_write)
     /* Return value in r0 */
 
+<!-- more -->
+
 New way, 32-bit operands:
 
     /* mov dest, src */
@@ -52,8 +54,6 @@ New way, 64-bit operands:
 
 Don't use the "old old way" on architectures new enough to matter or
 else you will get "illegal instruction."
-
-<!-- more -->
 
 Note that 64-bit operands must have their first word placed within a
 even numbered register.  If it would otherwise go in an odd numbered

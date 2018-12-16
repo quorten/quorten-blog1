@@ -22,6 +22,8 @@ Home improvements, mainly around new addition.
   over the shower.  Shower mist condensing on the mirror surface can
   cause harm to it.
 
+<!-- more -->
+
 More home improvements:
 
 * Temperature and humidity monitoring and sensors for every single

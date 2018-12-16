@@ -35,6 +35,8 @@ with mix more evenly throughout the liquid for a short time.  But, if
 then left to unstirred for a long time, the powder will settle back to
 the bottom of the liquid.
 
+<!-- more -->
+
 Now, you can explain the settling of dust by analogy of the settling
 of powders you might want to mix into your drink.  More forceful air
 motions, like blowing on a surface with compressed air, swept these
@@ -49,8 +51,6 @@ more dust would come in.  It would also mean that humans wouldn't be
 able to breathe in such a room, which is why every indoor room
 designed for humans has positive air flow and therefore the potential
 to cause dust accumulation.
-
-<!-- more -->
 
 ----------
 

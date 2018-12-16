@@ -33,6 +33,8 @@ Barcode reader:
 8. Laser line illuminator
 9. Optical line sensor, 1D image sensor... where to get these?
 
+<!-- more -->
+
 Robot:
 
 10. Motor control IC
@@ -45,8 +47,6 @@ Camera:
 14. NoIR camera
 15. IR cut switch
 16. Visible and infrared illumination LEDs
-
-<!-- more -->
 
 Mobile device:
 

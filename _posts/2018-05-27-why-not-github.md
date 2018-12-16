@@ -40,6 +40,8 @@ workstation.  Sure some of the user interfaces are going to look dated
 or obscure, but that is just the way things are expected to be by the
 target users.
 
+<!-- more -->
+
 Now, this effort to turn the code proprietary for this modernization
 move, for sure I think most community members will agree that is a
 totally unwanted move, not to mention that the whole intent of the

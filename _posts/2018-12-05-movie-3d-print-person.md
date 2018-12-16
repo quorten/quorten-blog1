@@ -36,6 +36,8 @@ they do.  It has a schedule...
 
 ...but alas, they only allow you to see the future schedule.
 
+<!-- more -->
+
 Okay, now that wasn't much help because it didn't allow you
 to view the schedule in the past.  So, here about I go to searching
 on the greater Internet.

@@ -29,6 +29,8 @@ Sources of information in your daily life:
 
     * What you sell, donate, etc.
 
+<!-- more -->
+
 * Marketing: What other people want you to...
 
     * See, hear, learn

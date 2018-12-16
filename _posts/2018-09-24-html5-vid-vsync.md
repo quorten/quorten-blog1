@@ -35,6 +35,8 @@ mainline Firefox.
 
 20180924/https://hacks.mozilla.org/2015/01/project-silk/
 
+<!-- more -->
+
 Another HTML 5 animation/video testing site.
 
 20180924/http://jankfree.org/

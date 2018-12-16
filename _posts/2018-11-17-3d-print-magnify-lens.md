@@ -36,6 +36,8 @@ well.
 So, there you go.  Now you can 3D print with polycarbonate on a FDM 3D
 printer too.
 
+<!-- more -->
+
 Also note that these other plastic materials can be used in a
 transparent manner too: polyethylene terephthalate, polystyrene, high
 density polyethylene, polypropyline.  Basically, all of those
@@ -47,8 +49,6 @@ magnifying glass, you therefore have a lot of options for building
 your own cheap optical camera viewfinder for Raspberry Pi projects.
 You just need to apply some original thinking, get the right
 materials, and, well, do a lot of experimenting.
-
-<!-- more -->
 
 20181117/DuckDuckGo 3d print magnifying glass
 20181117/http://www.instructables.com:80/id/3D-Printed-Magnifying-Glass/  

@@ -33,12 +33,12 @@ their surprise, they looked at their available earnings, and realized
 they didn't _need_ to keep working as they were to pay for their
 future life expenses.  So that's how they got started, simply put.
 
+<!-- more -->
+
 20181008/https://en.wikipedia.org/wiki/FIRE_movement  
 20181008/https://en.wikipedia.org/wiki/Financial_independence  
 20181008/https://www.mrmoneymustache.com/2013/02/22/getting-rich-from-zero-to-hero-in-one-blog-post/  
 20181008/https://www.mrmoneymustache.com/2011/05/18/how-to-make-money-in-the-stock-market/
-
-<!-- more -->
 
 Now, as for the rest of the site.  On one side, the site describes
 some of the wins of financial independence in greater detail.  On the

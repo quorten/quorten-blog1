@@ -27,6 +27,8 @@ see a sharp line at the edge of the camera's viewable surface.
 Rather, a blurred line is seen due to the edge that defines the image
 boundary to be out-of-focus.
 
+<!-- more -->
+
 By contrast, DSLR camera viewfinders use a more complex design to
 achieve a sharp edge at the image boundary in the viewfinder.  The
 camera optics project the image onto a matte surface.  This image is
@@ -42,8 +44,6 @@ Of course, all this being said, we're not interested in high-end
 optical viewfinders for a Raspberry Pi camera if our goal is to be
 saving as much money as possible.  So, back to the cardboard
 viewfinder concept.  What do I mean by "cardboard viewfinder"?
-
-<!-- more -->
 
 Basically, review the concept of a cheap optical viewfinder that uses
 telescope optics.  The main caveat that I've pointed out with this

@@ -27,6 +27,8 @@ In regard to cleaning film negatives, I guess you can say the same,
 that the best cleaning methods for film negatives are those that are
 best for cleaning a DSLR camera sensor.
 
+<!-- more -->
+
 So, for some good tips from the info source.  Relating to brush
 pressure, for vinyl, the weight of the brush is the max pressure that
 some people recommend.  So, staying more gentle than this for DSLR

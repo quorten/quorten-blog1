@@ -26,6 +26,8 @@ the fact, you better be prepared for a bottleneck.
 
 20180812/https://www.crowdsupply.com/eoma68/micro-desktop/updates/2-7-5-samples-received-dram-is-ok-micro-hdmi-to-confirm
 
+<!-- more -->
+
 Now that I'm here to look, I also see that there are some libre NAS
 devices that look quite interesting.  But the final verdict?  Their
 form factor and power consumption is too large for my desires.  Sure,
@@ -49,8 +51,6 @@ Libre Computer board.  And what am I seeing?
 * The next latest Libre Computer Board on Amazon, Le Potato, has some
   reviews claiming it is good... but their is this other board that is
   better named the ODROID-C2.
-
-<!-- more -->
 
 Okay, so now let's get the lowdown on the ODROID.  My verdict: there
 are multiple versions of the ODROID available, one of the latest of

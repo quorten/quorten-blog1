@@ -32,6 +32,8 @@ Raspberry Pi 3 B+ consumes so much energy.
 Lots of other detailed electrical engineering information is also on
 this page.
 
+<!-- more -->
+
 lolo wrote:
 
 > With such articles, the educational purpose of the raspberry pi
