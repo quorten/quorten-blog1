@@ -3,8 +3,8 @@ layout: post
 title: Ansible in place of Docker Compose
 author: quorten
 date: 2018-06-19 16:35 -0500
-categories: [random-software]
-tags: [random-software]
+categories: [docker, ansible]
+tags: [docker, ansible]
 ---
 
 Important!  Very interesting article here.  Docker Compose or Ansible?

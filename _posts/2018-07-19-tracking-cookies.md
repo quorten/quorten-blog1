@@ -3,8 +3,8 @@ layout: post
 title: Tracking cookies
 author: quorten
 date: 2018-07-19 14:00 -0500
-categories: [random-software]
-tags: [random-software]
+categories: [web-dev]
+tags: [web-dev]
 ---
 
 Oh, the woes of cookies not working on mobile phone browsers.  Why?

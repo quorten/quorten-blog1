@@ -3,8 +3,8 @@ layout: post
 title: As of 2018, better hardware for Linux than Windows
 author: quorten
 date: 2018-09-13 11:52 -0500
-categories: [chat, random-software]
-tags: [chat, random-software]
+categories: [tour-de-force, chat]
+tags: [tour-de-force, chat]
 ---
 
 Chat notes!

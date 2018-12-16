@@ -23,6 +23,8 @@ Around this time, Lego trains had fairly sophisticated remote track
 control features, similar to those found in the established model
 train system.
 
+<!-- more -->
+
 But then, in 1991, when the 9-volt Lego train system came along, the
 Lego trains line saw a slowdown in sophistication.  The remote control
 panels for track switching and multiple train control were done away

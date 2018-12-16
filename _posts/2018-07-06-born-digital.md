@@ -3,8 +3,8 @@ layout: post
 title: Born digital
 author: quorten
 date: 2018-07-06 18:40 -0500
-categories: [misc]
-tags: [misc]
+categories: [inven-sys]
+tags: [inven-sys]
 ---
 
 Born digital?  It is very weird when you think about it.  What is it,

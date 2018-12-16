@@ -3,8 +3,8 @@ layout: post
 title: Redis versus Memcached
 author: quorten
 date: 2018-08-17 15:46 -0500
-categories: [random-software]
-tags: [random-software]
+categories: [web-dev]
+tags: [web-dev]
 ---
 
 So, now you're wondering.  This Redis, is sounds very similar to

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notes on telephone jacks
+title: Notes on telephone jacks, and what a PBX is
 author: quorten
 date: 2018-12-09 20:29 -0600
 categories: [random-software, raspberry-pi]

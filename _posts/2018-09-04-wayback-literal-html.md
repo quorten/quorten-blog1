@@ -3,8 +3,8 @@ layout: post
 title: Restoring literal HTML content from the Wayback Machine
 author: quorten
 date: 2018-09-04 23:00 -0500
-categories: [random-software, reiterate]
-tags: [random-software, reiterate]
+categories: [misc, reiterate]
+tags: [misc, reiterate]
 ---
 
 Again, I reiterate, because this is important!  How do you retrieve

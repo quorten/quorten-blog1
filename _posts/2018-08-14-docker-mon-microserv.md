@@ -3,8 +3,8 @@ layout: post
 title: Docker blog on monitoring microservices
 author: quorten
 date: 2018-08-14 16:21 -0500
-categories: [random-software]
-tags: [random-software]
+categories: [docker]
+tags: [docker]
 ---
 
 Interesting Docker blog on monitoring and microservices.

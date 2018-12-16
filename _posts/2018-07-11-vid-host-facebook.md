@@ -3,8 +3,8 @@ layout: post
 title: Video hosting on Facebook
 author: quorten
 date: 2018-07-11 14:25 -0500
-categories: [random-software]
-tags: [random-software]
+categories: [web-dev]
+tags: [web-dev]
 ---
 
 So what about video hosting on Facebook?  Is Facebook loosing money
