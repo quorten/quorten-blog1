@@ -3,8 +3,8 @@ layout: post
 title: More info on broadcast TV on a computer network
 author: quorten
 date: 2018-08-26 15:12 -0500
-categories: [home-network, reiterate]
-tags: [home-network, reiterate]
+categories: [home-network, media-prog, reiterate]
+tags: [home-network, media-prog, reiterate]
 ---
 
 Okay, so more about the idea of having a single high-quality broadcast

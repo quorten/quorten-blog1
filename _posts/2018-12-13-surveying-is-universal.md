@@ -3,8 +3,8 @@ layout: post
 title: The universality of surveying across many endeavors
 date: 2018-12-13 19:03 -0600
 author: quorten
-categories: [home-network]
-tags: [home-network]
+categories: [home-network, 3d-scanning, 3d-scanner]
+tags: [home-network, 3d-scanning, 3d-scanner]
 ---
 
 Okay, so I was thinking about "house logs for dummies," and one thing
