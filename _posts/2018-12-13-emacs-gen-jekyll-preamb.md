@@ -23,7 +23,6 @@ you up and running on your blog writing fast!
   (setq tz-min (% (/ tz-sec 60) 60))
   (setq tz-hr (/ tz-sec 3600))
   (setq tz-num (+ (* tz-hr 100) tz-min))
-  (princ tz-num)
   (setq fmt-date (append pick-date (list tz-num)))
   (insert "---\n"
           "codename: \n"
