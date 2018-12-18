@@ -10,6 +10,14 @@ use strict;
 
 my $POST_DIVIDER = ('-' x 40) . "\n";
 
+# Note: We keep track of line numbers for the sake of printing error
+# messages.  As it turns out, Perl prints the line numbers for us when
+# we use `warn', but if we convert this script to C, not so much.
+
+# Why C?  Sure, for one-time conversions after a manual article
+# type-up, Perl is fast enough, even on a Raspberry Pi.  But, for an
+# alternative workflow that puts this in the middle of a repeated
+# build from source process... not so much.
 my $linenum = 1;
 my $out;
 my @linebuf = ();
@@ -22,6 +30,9 @@ my $article_error = 0;
 while (<>) {
     if ($_ eq $POST_DIVIDER) {
         # Post divider matched.
+	if ($post_start) {
+	    warn "$linenum: Missing preamble.";
+	}
         $post_start = 1;
         $codename = "";
         $date = "";
@@ -39,7 +50,7 @@ while (<>) {
         # Preamble start/end matched.
         if ($in_preamble) {
             if ($date eq "" or $codename eq "") {
-                warn "$linenum: Missing filename fields.";
+                warn "$linenum: Missing preamble filename fields.";
 		# Clear line buffer leave `post_start' set, set
 		# `article_error', and let `in_preamble' reset to
 		# zero.  This will simply ignore all lines with
