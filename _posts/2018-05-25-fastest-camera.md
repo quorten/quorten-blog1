@@ -8,7 +8,7 @@ tags: [pentax-k-1-camera]
 ---
 
 So, what really is the fastest camera technology you can get in 2018?
-Well, as it turns you, I'm disappointed.  The fastest technology isn't
+Well, as it turns out, I'm disappointed.  The fastest technology isn't
 that much faster than the technology I currently have.
 
 Standard SD max write speed is 25 MB/s.  UHS-I brings that up to 104

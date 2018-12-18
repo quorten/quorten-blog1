@@ -40,7 +40,21 @@ small package.
 
 <!-- more -->
 
-20181117/DuckDuckGo small electric motor metal gear planetary efficiency  
+UPDATE 2018-12-17: I found a very interesting note on the planetary
+gear Wikipedia article that is quite pertinent to my 3D scanner
+development.
+
+> During World War II, a special variation of epicyclic gearing was
+> developed for portable radar gear, where a very high reduction ratio
+> in a small package was needed. This had two outer ring gears, each
+> half the thickness of the other gears. One of these two ring gears
+> was held fixed and had one tooth fewer than did the
+> other. Therefore, several turns of the "sun" gear made the "planet"
+> gears complete a single revolution, which in turn made the rotating
+> ring gear rotate by a single tooth like a Cycloidal drive.[citation
+> needed]
+
+20181117/DuckDuckGo small electric motor metal gear planetary efficiency
 20181117/DuckDuckGo dc motor metal gear planetary efficiency  
 
 This looks like it must either be the website or a near analog of what

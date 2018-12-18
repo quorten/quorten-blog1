@@ -50,17 +50,17 @@ of one hand.  So, let's rehash what those are.
   first to introduce powerful computer hardware to the mass market.
   Windows 95 was the biggest first to bring a device driver model with
   thousands of available device drivers to the IBM PC compatible
-  system.  Windows 95 was the first to bring an elegantly designed
-  user interface to this generation of powerful computer hardware.
-  And, by running on powerful computer hardware, Windows 95 was
-  capable of hosting sophisticated computer software.  Also, unlike
-  Mac OS Classic, support for a text terminal/console was built-in by
-  default, as required for compatibility with MS-DOS software.  As a
-  consequence, support for GNU Unix-like software development tools on
-  Windows grew quickly, and Unix-born software like Web browsers got
-  ported to Windows quickly.  Not too long later, Windows 98 featured
-  powerful modern Internet support built-in to the operating system
-  installation by default.
+  system.  Windows 95 was the biggest first to bring an elegantly
+  designed user interface to this generation of powerful computer
+  hardware.  And, by running on powerful computer hardware, Windows 95
+  was capable of hosting sophisticated computer software.  Also,
+  unlike Mac OS Classic, support for a text terminal/console was
+  built-in by default, as required for compatibility with MS-DOS
+  software.  As a consequence, support for GNU Unix-like software
+  development tools on Windows grew quickly, and Unix-born software
+  like Web browsers got ported to Windows quickly.  Not too long
+  later, Windows 98 featured powerful modern Internet support built-in
+  to the operating system installation by default.
 
   The particularly unusual about thing about Windows 9x at the time,
   which is still considered unusual today, was the iron-heart
@@ -71,6 +71,65 @@ of one hand.  So, let's rehash what those are.
   Therefore, the return to less compatible means of software
   development struck many customers as a surprise when they upgraded
   to Windows XP.
+
+  Windows 98 also made connecting to the Internet super-easy
+  out-of-the-box, a far cry from the technical rigor needed in the
+  past days of early PC microcomputers and bulletin board systems.
+  For this reason, many people have not connected to the Internet from
+  home until the advent of Windows 98, which included Internet
+  Explorer 4.01 in the installation.  Connection was via dialup as it
+  was easiest to setup, since Windows 98 home PCs shipped with a
+  built-in modem.  Hence, Windows 98 marks the beginning of many
+  facets of web development which are still quite similar today as
+  they were at the turn of 1998.
+
+  Almost overnight, many startup companies raced to build the dot com
+  boom, starting in 1995.  Alas, on the user side of affairs, suffice
+  it to say that most people were still learning how to use the
+  Internet in _1998_.  1995 is barely worth considering except for the
+  more technically involved early adopters willing install Internet
+  Explorer manually, setup dialup Internet through more complicated
+  means, and so forth.  Not to mention that the Internet/Web wasn't
+  clearly technologically superior for many things, hence the dot com
+  crash came fairly quickly thereafter.
+
+  In wasn't until the year 2010, due to the advent of smartphones,
+  that a "dot com boom" really started to take off.  Although there
+  were many people who were still learning, there was a much stronger
+  existing knowledgeable community to get things started.  With
+  serendipity, this happened just as the U.S. economy and global
+  economy were recovering from a recession.
+
+  But, despite what I said about the dot com bubble, I cannot rival
+  this quote from a book written by a venture capitalist.
+
+  > "A friend of mine has a great line. He says 'Nothing important has
+  > ever been built without irrational exuberance'. Meaning that you
+  > need some of this mania to cause investors to open up their
+  > pocketbooks and finance the building of the railroads or the
+  > automobile or aerospace industry or whatever. And in this case,
+  > much of the capital invested was lost, but also much of it was
+  > invested in a very high throughput backbone for the Internet, and
+  > lots of software that works, and databases and server
+  > structure. All that stuff has allowed what we have today, which
+  > has changed all our lives... that's what all this speculative
+  > mania built".[49]
+
+  20181217/https://en.wikipedia.org/wiki/Dot-com_bubble
+
+  So, to be honest, that being said, we have a torn picture of web
+  development among software developers at this time.  Some people
+  jumped right in knowing it would be the way of the future, even if
+  that overly enthusiastic prediction might need to experience a crash
+  in the intermin.  Others who knew it was too early decided to wait a
+  few years before learning web development.  However, those that did
+  wait a few years before learning will admit that many simple web
+  applications can easily be implemented to work just as well in the
+  browsers from 1998.
+
+  What matters, ultimately, is that we have a large number of
+  programmers on both sides of this affair, without any "mass
+  majority" waiting toward one side or the other.
 
 * "Second generation Linux," early 2000s, continuing to the present
   day of 2018 and going beyond into the undetermined future.  Starting
