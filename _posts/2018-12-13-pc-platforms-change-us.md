@@ -77,11 +77,10 @@ of one hand.  So, let's rehash what those are.
   past days of early PC microcomputers and bulletin board systems.
   For this reason, many people have not connected to the Internet from
   home until the advent of Windows 98, which included Internet
-  Explorer 4.01 in the installation.  Connection was via dialup as it
-  was easiest to setup, since Windows 98 home PCs shipped with a
-  built-in modem.  Hence, Windows 98 marks the beginning of many
-  facets of web development which are still quite similar today as
-  they were at the turn of 1998.
+  Explorer 4.01 in the installation.  Connection was via dialup
+  because it evolved to be the easiest to setup.  Hence, Windows 98
+  marks the beginning of many facets of web development which are
+  still quite similar today as they were at the turn of 1998.
 
   Almost overnight, many startup companies raced to build the dot com
   boom, starting in 1995.  Alas, on the user side of affairs, suffice
@@ -101,7 +100,7 @@ of one hand.  So, let's rehash what those are.
   economy were recovering from a recession.
 
   But, despite what I said about the dot com bubble, I cannot rival
-  this quote from a book written by a venture capitalist.
+  this quote from a book written by a venture capitalist of the time.
 
   > "A friend of mine has a great line. He says 'Nothing important has
   > ever been built without irrational exuberance'. Meaning that you
@@ -129,7 +128,12 @@ of one hand.  So, let's rehash what those are.
 
   What matters, ultimately, is that we have a large number of
   programmers on both sides of this affair, without any "mass
-  majority" waiting toward one side or the other.
+  majority" weighting toward one side or the other.
+
+  Mentioning that facet of web development, the dot com boomers were
+  among some of very early adopters in the late 1990s of what was to
+  starting become what I call "second generation Linux" and cover in
+  the next key platform...
 
 * "Second generation Linux," early 2000s, continuing to the present
   day of 2018 and going beyond into the undetermined future.  Starting
