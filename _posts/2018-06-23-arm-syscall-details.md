@@ -145,10 +145,10 @@ Now do configuration on your Pi:
     # Add your host as the default gateway, using the Zeroconf address.
     sudo route add default gw 169.254.x.x
     # Add the same nameserver that your host uses into `/etc/resolv.conf'.
-    sudo echo 'nameserver 192.168.1.1' >/etc/resolv.conf
+    sudo sh -c 'echo nameserver 192.168.1.1 >>/etc/resolv.conf'
     # Restart ntp to pick up the changes.
-    service ntp stop
-    service ntp start
+    sudo service ntp stop
+    sudo service ntp start
 
 In my opinion, a nicer option would be to join the broadcast domains
 across the two network devices.  Alas, that implies a switch, not a
