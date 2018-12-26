@@ -17,6 +17,9 @@ statement of how the world appeared from a particular device, at a
 particular time, at a particular location.  That being said, it makes
 sense to store _all_ photos under that organizational guise.
 
+* Footnote: Renote, I searched for this and found it, that means it's
+  important!
+
 So, then, what about photos for your blog?  Naturally, those first
 premises mean that blog photos should be linked from an external
 source.  Diagrams, by contrast, are very dissimilar to photos and more
