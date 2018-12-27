@@ -180,3 +180,19 @@ armature.
 In all of these cases, being able to quickly get an accurate 3D model
 of the plush toy in question is dramatically useful to expediting the
 process.
+
+----------
+
+36 motors!  Wow, that's pretty complicated for a little plush toy.
+Some pretty sophisticated vehicles might only have 50 motors, which is
+not many more than that toy.  Yeah, but at the same time, let's put it
+this way.  It's about the same number of motors that your human body
+uses when playing with a plush toy using only your arms and hands.
+Also, an anthropomorphic model robot of the human body could easily
+end up having over 100 motors.  So, for sure it's a simplification,
+even though it still comes out pretty complicated.
+
+Now, for the mechanical and electrical engineering part of the
+equation, let's just hope we can say that the tools available to us
+have improved greatly and that it will no longer take a Ph.D. in
+mechanical systems motor control to build these kinds of systems.
