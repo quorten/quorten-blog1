@@ -20,3 +20,8 @@ So that's how they got their name.
 
 20180803/https://en.wikipedia.org/wiki/Barbershop_quartet  
 20180803/https://en.wikipedia.org/wiki/Barbershop_music#Historical_origins
+
+----------
+
+Another U.S. nation-wide thing that was started in Washington:
+Starbucks.

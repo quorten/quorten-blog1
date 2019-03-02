@@ -154,6 +154,8 @@ Non-core structure, simple built-in appliances (maps, data sheets):
 
 * Fans
 
+* Light switches
+
 * Electrical outlets
 
 * Telecommunications jacks

@@ -25,6 +25,8 @@ tags: [home-network]
   When smart equipment is not in use, "smart plugs" must be supported
   to cleanly cover up the "smart holes."
 
+* Use conduit!  Even inside the walls.
+
 * Smart cabinets: Every cabinet needs "cable trays" too, for data and
   power hookups.  Quite often, this might just mean "smart holes"
   drilled in the cabinets to support smart equipment.  Oh, also with
@@ -105,6 +107,17 @@ tags: [home-network]
   the disadvantages of having a vertically resting power stip, as
   opposed to ones that rest horizontally.
 
+* Thermostat?  Measure both temperature **and** humidity!  Keeping
+  humidity in bounds is very important, independent of temperature,
+  because too much humidity can cause the critical structural wood to
+  rot and compromise the safety of the structure, not to mention that
+  everything contained within will also get ruined before the core
+  structure starts getting damaged.
+
+  Humidity is the primary source of damage to archival materials, more
+  so than temperature.  So the same can be said about preserving the
+  structural integrity of a house.
+
 * Initial construction: The initial construction process must have
   plenty of documentation of the internal structure: precise
   post-construction measurements, photos of internal structure
@@ -131,3 +144,14 @@ tags: [home-network]
 * Lighting electrical supply must be able to support enough current to
   power traditional incandescent light bulbs, even if the current
   fixtures are more energy efficient alternatives.
+
+* No cheap heat vents!  No plastic bags or twisty turns, straight
+  vents that are designed by air flow principles.
+
+* Custom design on anything that requires hand and arm reach?
+  Simulate it first with foam mockups and real people, in the real
+  world, before building the final model.  Avoid doing too much on
+  paper for these things.
+
+* Bathroom mirror metal supports should be conformal coataed or chrome
+  coated so that they do not rust.

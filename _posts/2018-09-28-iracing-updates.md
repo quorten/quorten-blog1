@@ -3,8 +3,8 @@ layout: post
 title: Updates on the current state of iRacing in 2018
 author: quorten
 date: 2018-09-28 20:55 -0500
-categories: [random]
-tags: [random]
+categories: [motor-vehicle]
+tags: [motor-vehicle]
 ---
 
 iRacing?  How is that doing in recent years?  Let's look at Wikipedia.

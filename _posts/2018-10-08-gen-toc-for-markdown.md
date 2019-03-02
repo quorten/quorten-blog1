@@ -12,6 +12,9 @@ to automatically generate a table of contents?  Use `doctoc`.
 
 20180831/https://github.com/thlorenz/doctoc
 
+* Footnote: Renote, I searched for this and found it, that means it's
+  important!
+
 Now apparently some Markdown generators automatically generate anchors
 to headings.  I the case that your Markdown generator does not, I'll
 have to read up more on this later.

@@ -3,8 +3,8 @@ layout: post
 title: 3D scanner motor vibrations control
 date: 2018-12-15 19:31 -0600
 author: quorten
-categories: [raspberry-pi]
-tags: [raspberry-pi]
+categories: [raspberry-pi, 3d-scanning, 3d-scanner]
+tags: [raspberry-pi, 3d-scanning, 3d-scanner]
 ---
 
 One important design consideration of my 3D scanner design that I
@@ -76,3 +76,8 @@ your chosen camera.  Now, simply due to the inaccuracies caused by DC
 motor vibrations, I'm thinking otherwise.  Under these considerations,
 even a low resolution video projector could prove to be an easier and
 faster setup if you want to get a 3D scanner of reasonable accuracy.
+
+* Footnote: There are interesting similarities between motor vibration
+  control and thermal control.  Insulation versus thermal mass.
+  Isolation versus stabilization.  Shock absorption versus increasing
+  mass.

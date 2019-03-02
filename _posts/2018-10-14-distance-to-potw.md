@@ -3,8 +3,8 @@ layout: post
 title: How far away is the sewage treatment plant on average?
 author: quorten
 date: 2018-10-14 22:00 -0500
-categories: [misc]
-tags: [misc]
+categories: [world-building]
+tags: [world-building]
 ---
 
 Interesting.  So, you're wondering.  How far is it between a typical
