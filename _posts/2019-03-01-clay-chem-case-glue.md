@@ -65,14 +65,14 @@ abundantly available elements and compounds.  Silicate minerals
 compose approximately 90% of the Earth's crust, and according to the
 book _The Mystery of the Periodic Table_ by Benjamin D. Wiker, a
 little over 98.5% of the Earth is made up of only eight elements:
-iron, oxygen, silicon, magnesium, calcium, and aluminum.  "Oxygen and
-Iron by themselves make up about 65% of the earth."  In addition to
-the Earth's dry crust, we literally have oceans full of salt water.
-Add hydrogen and sodium to the mix and you've pretty much covered all
-the elements used in most minerals.  Despite the abundance of carbon
-in your own body, the places you live in, and the materials you work
-with, carbon is actually not that abundant on the Earth's surface as a
-whole.
+iron, oxygen, silicon, magnesium, nickel, sulfur, calcium, and
+aluminum.  "Oxygen and Iron by themselves make up about 65% of the
+earth."  In addition to the Earth's dry crust, we literally have
+oceans full of salt water.  Add hydrogen and sodium to the mix and
+you've pretty much covered all the elements used in most minerals.
+Despite the abundance of carbon in your own body, the places you live
+in, and the materials you work with, carbon is actually not that
+abundant on the Earth's surface as a whole.
 
 You can look at some of the previously mentioned Wikipedia articles on
 clay minerals for more information, but you need not be surprised that
