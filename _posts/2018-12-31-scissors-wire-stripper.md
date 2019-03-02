@@ -104,5 +104,3 @@ are the steps.
    same angle you were shearing, but is otherwise intact.  You can now
    bend the exposed copper back to the same angle as the rest of the
    wire.
-
-JJJ TODO: Add diagram.

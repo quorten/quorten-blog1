@@ -106,10 +106,6 @@ boot to software optimize the 8-pin and 4-pin GPIO headers.  I think
 this is a good trade-off for most projects, as I2S has some noted
 problems and not many projects need more than one SPI interface.
 
-JJJ TODO:
-
-* Insert diagram.
-
 <object type="image/svg+xml"
         data="{{ site.baseurl }}/blog/images/2019-01-01-rpi_gpio.svg"
         width="500" height="300">

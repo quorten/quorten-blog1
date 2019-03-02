@@ -7,8 +7,6 @@ categories: [media-prog, apple-ii]
 tags: [media-prog, apple-ii]
 ---
 
-JJJ TODO: Add schematic diagram.
-
 So, for quite some time, I've been doing a nifty trick with S-Video
 and composite video.  I have this adapter plug that has a S-Video plug
 on one end and a composite video plug on the other end.  I have no
