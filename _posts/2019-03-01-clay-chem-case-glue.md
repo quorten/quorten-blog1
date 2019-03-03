@@ -132,7 +132,8 @@ the mix, stirring and heating.  Do not let the solution over-boil.
 Consult the following references for more precise details.
 
 20190301/https://www.thoughtco.com/make-sodium-silicate-or-water-glass-608271  
-20190301/http://www.instructables.com/id/How-to-Make-Sodium-Silicate-Water-Glass/
+20190301/http://www.instructables.com/id/How-to-Make-Sodium-Silicate-Water-Glass/  
+20190303/https://en.wikipedia.org/wiki/Silica_gel
 
 Also, sodium silicate works well as a relatively impermeable water
 sealant.  A mixture of sodium silicate and calcium silicate can also
