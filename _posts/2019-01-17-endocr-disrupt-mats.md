@@ -4,8 +4,8 @@ title: "Materials with endocrine disruptors and
         hazardous chemical evaluations"
 date: 2019-01-17 18:47 -0600
 author: quorten
-categories: [raspberry-pi, mat-sci]
-tags: [raspberry-pi, mat-sci]
+categories: [raspberry-pi, mat-sci, 3d-printing]
+tags: [raspberry-pi, mat-sci, 3d-printing]
 ---
 
 Endocrine disruptors, wow do they sound dangerous.  So, what does

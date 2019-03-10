@@ -3,8 +3,8 @@ layout: post
 title: Antigens that cause latex allergies, info about Spandex
 date: 2019-02-09 23:14 -0600
 author: quorten
-categories: [raspberry-pi, mat-sci]
-tags: [raspberry-pi, mat-sci]
+categories: [raspberry-pi, mat-sci, 3d-printing]
+tags: [raspberry-pi, mat-sci, 3d-printing]
 ---
 
 So, I was wondering about a quick checkup on the causes of latex

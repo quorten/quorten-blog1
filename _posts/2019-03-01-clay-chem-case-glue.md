@@ -4,8 +4,8 @@ title: "Clay electronic cases, the chemistry of rocks and minerals,
         and sodium silicate glue"
 date: 2019-03-01 21:06 -0600
 author: quorten
-categories: [raspberry-pi, mat-sci]
-tags: [raspberry-pi, mat-sci]
+categories: [raspberry-pi, mat-sci, 3d-printing]
+tags: [raspberry-pi, mat-sci, 3d-printing]
 ---
 
 On the subject of building cheap, simple, handcraft, non-flammable

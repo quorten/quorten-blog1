@@ -4,8 +4,8 @@ title: "Chemical properties of ABS plastic, synthetic rubber, pencil
         erasers, and the \"Bissell\" company name"
 date: 2019-02-05 12:07 -0600
 author: quorten
-categories: [raspberry-pi, mat-sci]
-tags: [raspberry-pi, mat-sci]
+categories: [raspberry-pi, mat-sci, 3d-printing]
+tags: [raspberry-pi, mat-sci, 3d-printing]
 ---
 
 So, to verify.  I've suspected that ABS plastic contains endocrine

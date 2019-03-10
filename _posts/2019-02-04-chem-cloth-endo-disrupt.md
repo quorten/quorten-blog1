@@ -4,8 +4,8 @@ title: "The chemical elements of plastic, paper, cloth, and endocrine
         disruptors"
 date: 2019-02-04 23:19 -0600
 author: quorten
-categories: [raspberry-pi, mat-sci]
-tags: [raspberry-pi, mat-sci]
+categories: [raspberry-pi, mat-sci, 3d-printing]
+tags: [raspberry-pi, mat-sci, 3d-printing]
 ---
 
 So, about the whole endocrine disruptors thing.  What exactly is the

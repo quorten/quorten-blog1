@@ -4,8 +4,8 @@ title: "Does sunscreen contain endocrine disruptors, and reflections
         on chemicals that are good or bad for our planet"
 date: 2019-02-05 12:15 -0600
 author: quorten
-categories: [raspberry-pi, mat-sci]
-tags: [raspberry-pi, mat-sci]
+categories: [raspberry-pi, mat-sci, 3d-printing]
+tags: [raspberry-pi, mat-sci, 3d-printing]
 ---
 
 Does sunscreen contain endocrine disruptors?  I do remember reading
