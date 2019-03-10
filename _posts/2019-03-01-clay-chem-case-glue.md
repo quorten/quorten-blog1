@@ -110,17 +110,24 @@ brush to the components to be glued together, and join the components
 within 5 minutes of application.  Wait one hour for drying and
 hardening time.  To clean up excess, simply use warm soapy
 water... before hardening is complete, otherwise it cannot be removed
-from some surfaces such as glass.  The commercial adhesive CP-97 that
-I linked to is actually a fibrous adhesive that gets stronger as it
-ages.  Also, be careful with sodium silicate because it is alkaline
-and can be quite an irritant to the skin and eyes.  Wear waterproof
-gloves and safety goggles while handling, and wash thoroughly after
-handling.  "KEEP OUT OF REACH OF CHILDREN" is stated by one supplier's
-website.  After opening the storage container for the first time,
-sodium silicate has 18 months of shelf life.
+from some surfaces such as glass.  Sodium silicate is soluble in
+water, so it can be washed away from some surfaces even if it has
+hardened.  The commercial adhesive CP-97 that I linked to is actually
+a fibrous adhesive that gets stronger as it ages.
+
+Also, be careful with sodium silicate because it is alkaline and can
+be quite an irritant to the skin and eyes.  Wear waterproof gloves and
+safety goggles while handling, and wash thoroughly after handling.
+"KEEP OUT OF REACH OF CHILDREN" is stated by one supplier's website.
+After opening the storage container for the first time, sodium
+silicate has 18 months of shelf life.  Because sodium silicate is
+soluble in water, if it gets wet after it's been applied, it can form
+a strong alkaline solution that can be quite an irritant to someone
+who touches it.
 
 20190301/DuckDuckGo water glass  
-20190301/https://www.lehmans.com/product/water-glass-liquid-sodium-silicate
+20190301/https://www.lehmans.com/product/water-glass-liquid-sodium-silicate  
+20190304/https://www.britannica.com/science/water-glass
 
 Interestingly, you can make your own sodium silicate relatively easily
 by mixing silica gel beads, used as desiccants for electronics, and
@@ -135,20 +142,17 @@ Consult the following references for more precise details.
 20190301/http://www.instructables.com/id/How-to-Make-Sodium-Silicate-Water-Glass/  
 20190303/https://en.wikipedia.org/wiki/Silica_gel
 
-Also, sodium silicate works well as a relatively impermeable water
-sealant.  A mixture of sodium silicate and calcium silicate can also
-be used as a purportedly better sealant.  As a sealant, it is often
-used to protect the surface of egg shells and concrete, so naturally
-you can make a cardboard construction waterproof by using this as a
-sealant on cardboard.  Again, calcium silicate is often used in fire
-protection, owing to its non-flammability, so naturally it also works
-well for creating non-flammable electronics cases.  Of course, you
-don't want to make too good of a sealant... the fact that cardboard
-does absorb water vapor from the air is one of the reasons why it is
-resistant to fire, and that requires a porous surface.  Note that
-borax is a good fire retardant additive for paper and cardboard.
-Potassium silicate can also be used as a fire retardant, but maybe it
-is less preferable to work with as it is strongly alkaline.
+Also, when wet sodium silicate is applied to egg shells or the surface
+of cured concrete, "it chemically reacts with calcium hydroxide or
+calcium carbonate to form calcium silicate hydrate."  Again, calcium
+silicate is often used in fire protection, owing to its
+non-flammability, so naturally it also works well for creating
+non-flammable electronics cases.
+
+Note that borax is a good fire retardant additive for paper and
+cardboard.  Potassium silicate can also be used as a fire retardant,
+but maybe it is less preferable to work with as it is strongly
+alkaline.
 
 20190301/https://en.wikipedia.org/wiki/Borax  
 20190301/https://en.wikipedia.org/wiki/Potassium_silicate
@@ -168,11 +172,14 @@ composed out of the predominant materials available in the Earth's
 crust.
 
 * Sand
+* Vermiculite
 * Gravel
 * Rocks
 * Granite
 * Clay
+* Ceramic
 * Concrete
+* Plaster
 * Glass
 * Quartz
 * Portland cement
