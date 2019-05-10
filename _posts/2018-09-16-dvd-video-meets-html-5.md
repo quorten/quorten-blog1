@@ -316,6 +316,9 @@ editing.
 20180916/DuckDuckGo ffmpeg lossless merge video clips  
 20180916/https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg
 
+UPDATE 2019-05-10: `gopchop` is another great program for lossless
+MPEG-2 video editing.
+
 Final challenge.  You have input video in H.264 AVC but wrapped in a
 QuickTime file format container, but you want to rewrap that same
 video data into an MP4 container without transcoding.  How do you do
