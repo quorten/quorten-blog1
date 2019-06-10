@@ -968,7 +968,7 @@ running `ovirt-shell` abd `virt-viewer` from as follows:
     cp ovirt01.pem /etc/pki/ca-trust/source/anchors/
     update-ca-trust extract
 
-Otherwise, `ovirt-viewer` will fail to launch.
+Otherwise, `virt-viewer` will fail to launch.
 
 Okay, now that you've verified you've got that to work, you can try
 out the more challenging method of connecting through the portal, or
