@@ -3,8 +3,8 @@ layout: post
 title: Red List Building Materials -- great start
 date: 2019-03-09 19:42 -0600
 author: quorten
-categories: [raspberry-pi, mat-sci, 3d-printing, home-network]
-tags: [raspberry-pi, mat-sci, 3d-printing, home-network]
+categories: [raspberry-pi, mat-sci, home-network]
+tags: [raspberry-pi, mat-sci, home-network]
 ---
 
 Ah, yes!  Red List building materials.  This ia a great summation that
