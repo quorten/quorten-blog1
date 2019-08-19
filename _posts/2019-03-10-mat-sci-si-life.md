@@ -8,7 +8,7 @@ tags: [mat-sci]
 ---
 
 One of the interesting subjects that comes up in science fiction is
-that of silicon-based lifeforms.  On Earch, carbon is the backbone of
+that of silicon-based lifeforms.  On Earth, carbon is the backbone of
 most lifeforms as we know it.  Silicon is also in the same column of
 the periodic table, so it shares some similar properties with carbon.
 Conceivably, it should then be possible that silicon-based lifeforms

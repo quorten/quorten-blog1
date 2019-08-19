@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Modern Microsoft Office on Windows 10 ARM?  No"
+title: "Modern Microsoft Office on Windows 10 ARM?  No."
 date: 2019-08-06 17:22 -0500
 author: quorten
 categories: [raspberry-pi]

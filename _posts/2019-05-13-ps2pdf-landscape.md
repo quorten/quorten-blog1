@@ -13,7 +13,9 @@ PDF.  How do you fix this?  Use this command line rather than the
 `ps2pdf` command:
 
 ```
-gs -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=printout.pdf -dAutoRotatePages=/None -c "<</Orientation 3>> setpagedevice" -f printout.ps
+gs -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite \
+  -sOutputFile=printout.pdf -dAutoRotatePages=/None \
+  -c "<</Orientation 3>> setpagedevice" -f printout.ps
 ```
 
 20190513/DuckDuckGo ghostscript ps2pdf orientation landscape  
@@ -27,7 +29,9 @@ Well, I guess this must have been the alternative command line I was
 using before:
 
 ```
-gs -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=dummy2.pdf -dDEVICEWIDTHPOINTS=792 -dDEVICEHEIGHTPOINTS=612 -dFIXEDMEDIA -dPSFitPage pirates.ps
+gs -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite \
+  -sOutputFile=dummy2.pdf -dDEVICEWIDTHPOINTS=792 \
+  -dDEVICEHEIGHTPOINTS=612 -dFIXEDMEDIA -dPSFitPage pirates.ps
 ```
 
 <!-- more -->

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The end of Windows Phone]
+title: The end of Windows Phone
 date: 2019-08-14 23:15 -0500
 author: quorten
 categories: [random-software]

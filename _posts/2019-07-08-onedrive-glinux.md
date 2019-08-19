@@ -1,6 +1,6 @@
 ---
 layout: post
-xtitle: OneDrive on GNU/Linux?
+title: OneDrive on GNU/Linux?
 date: 2019-07-08 23:58 -0500
 author: quorten
 categories: [windows]
