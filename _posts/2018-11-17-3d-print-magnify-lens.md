@@ -50,7 +50,7 @@ your own cheap optical camera viewfinder for Raspberry Pi projects.
 You just need to apply some original thinking, get the right
 materials, and, well, do a lot of experimenting.
 
-20181117/DuckDuckGo 3d print magnifying glass
+20181117/DuckDuckGo 3d print magnifying glass  
 20181117/http://www.instructables.com:80/id/3D-Printed-Magnifying-Glass/  
 20181117/https://www.thingiverse.com/thing:1006913
 

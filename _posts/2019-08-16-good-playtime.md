@@ -3,8 +3,8 @@ layout: post
 title: Why don't we play around more often?
 date: 2019-08-16 00:34 -0500
 author: quorten
-categories: [tour-de-force]
-tags: [tour-de-force]
+categories: [misc]
+tags: [misc]
 ---
 
 So, earlier just about half an hour ago, I decided to just look
@@ -21,4 +21,4 @@ so.  Yes, so it is not simply just a way to escape from work, but it
 also makes work more productive in its own right.
 
 DuckDuckGo why don't we play around more often  
-https://bigthink.com/think-tank/2-reasons-why-you-shouldnt-work-so-hard
+20190816/https://bigthink.com/think-tank/2-reasons-why-you-shouldnt-work-so-hard
