@@ -233,3 +233,14 @@ down the wires rather than put on paste and put the whole in a reflow
 oven.  So, although you can do an entire project using only
 conventional solder, you cannot do an entire project using only
 soldering paste.
+
+----------
+
+UPDATE 2019-01-03
+
+How do we know that reflow soldering in your home kitchen's oven
+really works?  Take this piece of vernacular knowledge.  If your
+laptop is not working, put your laptop in the oven with a wet towel
+around it, and that will fix it.  Indeed, that's how we know it works.
+Although, it is more effective if you remove the circuit boards, and
+the wet towel probably isn't necessary.
