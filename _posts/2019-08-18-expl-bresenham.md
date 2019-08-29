@@ -3,8 +3,8 @@ layout: post
 title: Bresenham's line plotting algorithm explained
 date: 2019-08-18 15:05 -0500
 author: quorten
-categories: [media-prog]
-tags: [media-prog]
+categories: [media-prog, unlipic]
+tags: [media-prog, unlipic]
 ---
 
 Okay, so Bresenham's line plotting algorithm has already been
