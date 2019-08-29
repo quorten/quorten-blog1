@@ -197,12 +197,12 @@ these code samples, we've been initializing the remainder to zero, but
 in practice, you probably want to initialize the remainder to 50% so
 that you get a nice 50% rounding pattern on the line rasterizations.
 The last simplification probably doesn't play nicely with 50%
-initialization because we technically code it up without truly which
-remainder is our primary one for the 50% rounding.  Also, we've been
-writing our line plotting algorithms such that we plot the last point
-on the line, but not the first point.  You may want to tweak this
-behavior so thbat we plot the first point, but not the last point, or
-maybe something else.
+initialization because we technically code it up without truly knowing
+which remainder is our primary one for the 50% rounding.  Also, we've
+been writing our line plotting algorithms such that we plot the last
+point on the line, but not the first point.  You may want to tweak
+this behavior so thbat we plot the first point, but not the last
+point, or maybe something else.
 
 ----------
 
