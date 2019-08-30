@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The story behind `tuxcall` in Linux?
+title: "The story behind `tuxcall` in Linux?"
 date: 2019-06-28 19:06 -0500
 author: quorten
 categories: [unlipic]

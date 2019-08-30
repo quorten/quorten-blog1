@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What "MII" in `mii-tool` stands for
+title: "What \"MII\" in `mii-tool` stands for"
 date: 2019-06-14 20:00 -0500
 author: quorten
 categories: [unix]

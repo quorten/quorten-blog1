@@ -1,6 +1,6 @@
 ---
 layout: post
-title: `vmpooler` and `hiera-eyaml`
+title: "`vmpooler` and `hiera-eyaml`"
 date: 2019-07-17 16:00 -0500
 author: quorten
 categories: [ruby, random-software]
