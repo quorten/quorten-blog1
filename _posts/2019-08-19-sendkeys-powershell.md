@@ -1,6 +1,6 @@
 ---
 layout: post
-title: `SendInput()` for Windows PowerShell
+title: "`SendInput()` for Windows PowerShell"
 date: 2019-08-19 20:44 -0500
 author: quorten
 categories: [windows]
