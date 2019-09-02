@@ -46,3 +46,25 @@ bare-bones typography, you still can't see very much text
 simultaneously.  If you want a workspace where you can see both the
 text of your documentation/manuals and your code at the same time, you
 will find yourself very short-handed.
+
+UPDATE 2019-08-30:
+
+So, I actually got around to reading the article on upgrading from SDL
+1.2 to SDL 2, and I must say.  The breaking changes are not as bad as
+I thought they were.  But, nevertheless, compared to the other APIs I
+have mentioned, the fact that there have been breaking changes is what
+makes it different.  So, overall, SDL is a pretty good and stable API,
+though not quite as stable as those other APIs.
+
+20190830/http://wiki.libsdl.org/MigrationGuide
+
+Likewise, another oversight that I was aware of, but did not mention
+when writing the original article was the breaking changes made
+between Qt 3 and Qt 4.  Here is the corresponding migration guide for
+Qt.  But, Qt 4 does provide a Qt 3 support library to ease porting to
+Qt 4.  Also, there are some minor breaking changes between Qt 4 and Qt
+5.
+
+20190830/http://doc.qt.io/archives/qt-4.8/porting4-overview.html  
+20190830/https://wiki.qt.io/Transition_from_Qt_4.x_to_Qt5  
+20190830/https://en.wikipedia.org/wiki/Qt_version_history
