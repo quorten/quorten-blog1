@@ -10,25 +10,25 @@ tags: [tour-de-force, twitter, chat, reiterate]
 So, an interesting conversation developed on Twitter with another
 engineer.
 
-> [ME]: Unix old-timers loved printed manuals, and we can all see why
-> before the advent of 4K monitors at reasonable prices.
+> \[ME\]: Unix old-timers loved printed manuals, and we can all see
+> why before the advent of 4K monitors at reasonable prices.
 
-> [P1]: Who you callin' an old timer, young whippersnapper?!
+> \[P1\]: Who you callin' an old timer, young whippersnapper?!
 
-> [ME]: Who am I calling an old timer?  Anyone who was smart enough to
-> step up to the plate when the PC revolution was at its finest in the
-> late 1980s and 1990s.  It's an honor to know you, great master.
+> \[ME\]: Who am I calling an old timer?  Anyone who was smart enough
+> to step up to the plate when the PC revolution was at its finest in
+> the late 1980s and 1990s.  It's an honor to know you, great master.
 
-> [P1]: Each generation has unique but equal challenges to overcome. I
-> can't imagine trying to start out these days with the sprawl of
-> technology domains. There was a brief moment in the mid 90s when I
-> thought I could keep enough in my head to be considered an a domain
-> expert.
+> \[P1\]: Each generation has unique but equal challenges to
+> overcome. I can't imagine trying to start out these days with the
+> sprawl of technology domains. There was a brief moment in the mid
+> 90s when I thought I could keep enough in my head to be considered
+> an a domain expert.
 
-> [P1]: But alas, I am ever-drawn to be a generalist.
+> \[P1\]: But alas, I am ever-drawn to be a generalist.
 
-> [P1]: While your praise is unwarranted, it is also awkwardly
-> acknowledged. [geek glasses emoji]
+> \[P1\]: While your praise is unwarranted, it is also awkwardly
+> acknowledged. \[geek glasses emoji\]
 
 So, interestingly, this conversation reaffirms some previous
 statements that have been mentioned once before.  Again, I reiterate,
