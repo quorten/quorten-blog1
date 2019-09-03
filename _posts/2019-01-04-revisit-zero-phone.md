@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Revisiting the Zero Phone
-date: 2019-01-04 15:50 -0500
+date: 2019-01-04 15:50 -0600
 author: quorten
 categories: [raspberry-pi]
 tags: [raspberry-pi]
