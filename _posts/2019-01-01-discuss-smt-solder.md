@@ -211,6 +211,13 @@ distilled water in a cheap crockpot and a toothbrush is a good way to
 do this at home.  If you only have a small number of connections to
 clean, a Q-tip with some isopropyl alcohol works quite well.
 
+UPDATE 2019-01-06: Okay, so why did I never had to clean the flux from
+the solder before?  I have a serial cable that I've soldered together
+quite a few years back, and it still works just fine.  Well, it was
+nominally 60% tin 40% lead solder, and possibly Rosin-core.  Maybe
+that since it came with a starter kit, it was formulated to make this
+be less of a problem.
+
 ----------
 
 Alas, I must concede that the leaded versus lead-free solder paste

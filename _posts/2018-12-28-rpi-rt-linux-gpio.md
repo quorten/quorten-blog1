@@ -720,3 +720,72 @@ breach.
 
 20181230/DuckDuckGo rtkit  
 20181230/https://askubuntu.com/questions/48888/why-is-rtkit-daemon-eating-100-of-my-cpu
+
+----------
+
+JJJ TODO FIXUP!
+
+* Discussion on double-buffering for read.  Need separate double
+  buffers for read buffers and write buffers.
+
+  KEY ASSUMPTION: there are only two users of the double-buffering
+  system.  The realtime thread, and the non-realtime thread.  If there
+  can be more than two non-realtime users, their access patterns must
+  be coalesced to effectively be a single user.  The key problem that
+  you could otherwise have is two user threads reserved both of the
+  two double buffers.
+
+  Concurrent read access as-is is perfectly fine.  Concurrent write
+  access does not work, on the other hand.  A more elaborite multi-use
+  front end must be coded up.  For keyboards and modern desktops,
+  we've learned that there should be limits to concurrent read, namely
+  that of the keyboard focus mechanism.  Only the alternative global
+  hotkey mechanism, typically bound to a function key, makes logical
+  sense.
+
+  So, you have a few stages.
+
+  1. Realtime hardware scanning/polling loop
+  2. Realtime preprocess, i.e. change event generation and debounce
+     filtering
+  3. Realtime event queueing
+  4. Host operating system event queueing
+  5. Application event processing
+
+  However, if this is generalized to the circular buffer concept, then
+  you simply only need to make sure that the realtime thread has its
+  own two slot reserved: current and past.  Or you could use a memory
+  allocation generalized concept for circular buffers...
+
+  Okay, I'll stop there.  That's definitely too complicated for
+  realtime control loops.  Double buffering is the limit on the bridge
+  between realtime and non-realtime.  The only other change we may
+  support?  Rather than fixed buffers, you have a "double buffer" of
+  pointers, the pointers in the two slots being able to be rewritten
+  as you please.  Due to the realtime code needing to save the old
+  pointer, we'll need a method where the realtime code can signal that
+  it's completely done with a buffer, but it doesn't get freed until
+  the non-realtime code starts.
+
+  Wait, we have a quick exit in this case.  The latent hold will only
+  happen in the last moments during a swap buffers call.  Therefore,
+  all buffer allocation and freeing can happen entirely on the
+  non-realtime side.
+
+* TODO: Update discussion.  Assumption that realtime thread runs on
+  same CPU as non-realtime thread.  If they are different, then what?
+  Then you _can_ get problems where sending a signal would interrupt
+  the realtime thread in progress.  Also, in this case, continuing to
+  run the other thread until it exits its locked section is not as
+  bad.
+
+* Go up the stack on keyboard controllers.  After scanning the
+  keyboard matrix to determine the current state, you want to
+  translate this into scancode events.  The first step is to generate
+  a stream of changes between matrix scan images.  The second step is
+  to debounce this, if necessary.  Finally, you send the processed
+  stream of key change events to higher level software.
+
+  ADVANCED: Driver for a general-purpose Linux keyboard input that can
+  type on the console and in Xorg.
+

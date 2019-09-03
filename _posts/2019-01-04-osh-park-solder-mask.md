@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OSH Park, solder mask, amd robotic pick and place
+title: OSH Park, solder mask, and robotic pick and place
 date: 2019-01-04 16:15 -0600
 author: quorten
 categories: [raspberry-pi, reiterate]
