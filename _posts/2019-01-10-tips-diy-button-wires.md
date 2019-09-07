@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tips on home-grown electronic push buttons and wire shaping
-date: 2019-09-07 10:28 -0500
+date: 2019-01-10 20:28 -0600
 author: quorten
 categories: [raspberry-pi]
 tags: [raspberry-pi]
