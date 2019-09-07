@@ -20,5 +20,12 @@ includes the OpenCL acceleration.  If not, you'll need to rebuild your
 own ImageMagick with the feature enabled.
 
 20190402/DuckDuckGo ImageMagick OpenCL GPU acceleration  
+20190402/DuckDuckGo raspberry pi command line gpu accelerated image
+  manipulation  
+20190402/DuckDuckGo image magick gpu acceleration  
+20190402/DuckDuckGo imagemagick gpu acceleration at DuckDuckGo  
+20190402/DuckDuckGo imagemagick command line gpu image resize  
+20190402/DuckDuckGo raspberry pi command line gpu image resize  
+20190402/DuckDuckGo imagemagick gpu acceleration at DuckDuckGo  
 20190402/https://imagemagick.org/script/opencl.php  
 20190402/https://stackoverflow.com/questions/31582141/how-do-i-build-imagemagick-with-opencl
