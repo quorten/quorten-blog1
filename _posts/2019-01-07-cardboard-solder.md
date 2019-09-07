@@ -18,4 +18,6 @@ okay even with the higher temperatures.
 
 What are alternatives you can use in the way of your own plastic
 sheets?  3D printed base is an option.  If you want sheets of plastic,
-you can get them via 3D printing.
+you can get them via 3D printing.  Plastic sheets are useful, for
+example, if you have multiple separate circuit boards that you want to
+mount inside a single case.
