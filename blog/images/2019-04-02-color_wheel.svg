@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="350"
+   height="350"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="2019-04-02-color_wheel.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="312.06313"
+     inkscape:cy="209.52219"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1268"
+     inkscape:window-height="768"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:object-nodes="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="arc"
+       style="fill:#f3f3f3;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1"
+       id="path3598"
+       sodipodi:cx="280.72141"
+       sodipodi:cy="111.20306"
+       sodipodi:rx="150.61375"
+       sodipodi:ry="150.61375"
+       d="m 431.33516,111.20306 a 150.61375,150.61375 0 1 1 -301.22751,0 150.61375,150.61375 0 1 1 301.22751,0 z"
+       transform="translate(-105.72141,63.796944)" />
+    <path
+       transform="translate(-105.72141,63.796944)"
+       d="m 390.32295,111.20306 a 109.60155,109.60155 0 0 1 -54.80078,94.91772 l -54.80076,-94.91772 z"
+       sodipodi:ry="109.60155"
+       sodipodi:rx="109.60155"
+       sodipodi:cy="111.20306"
+       sodipodi:cx="280.72141"
+       id="path3600"
+       style="fill:#e00000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1"
+       sodipodi:type="arc"
+       sodipodi:start="0"
+       sodipodi:end="1.0471976" />
+    <path
+       sodipodi:end="2.0943951"
+       sodipodi:start="1.0471976"
+       sodipodi:type="arc"
+       style="fill:#f38800;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1"
+       id="path3602"
+       sodipodi:cx="280.72141"
+       sodipodi:cy="111.20306"
+       sodipodi:rx="109.60155"
+       sodipodi:ry="109.60155"
+       d="m 335.52217,206.12078 a 109.60155,109.60155 0 0 1 -109.60154,0 l 54.80078,-94.91772 z"
+       transform="translate(-105.72141,63.796944)" />
+    <path
+       transform="translate(-105.72141,63.796944)"
+       d="m 225.92063,206.12078 a 109.60155,109.60155 0 0 1 -54.80077,-94.91773 l 109.60155,10e-6 z"
+       sodipodi:ry="109.60155"
+       sodipodi:rx="109.60155"
+       sodipodi:cy="111.20306"
+       sodipodi:cx="280.72141"
+       id="path3604"
+       style="fill:#f3ed00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1"
+       sodipodi:type="arc"
+       sodipodi:start="2.0943951"
+       sodipodi:end="3.1415927" />
+    <path
+       sodipodi:end="4.1887902"
+       sodipodi:start="3.1415927"
+       sodipodi:type="arc"
+       style="fill:#00a800;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1"
+       id="path3606"
+       sodipodi:cx="280.72141"
+       sodipodi:cy="111.20306"
+       sodipodi:rx="109.60155"
+       sodipodi:ry="109.60155"
+       d="m 171.11986,111.20305 a 109.60155,109.60155 0 0 1 54.80077,-94.917718 l 54.80078,94.917728 z"
+       transform="translate(-105.72141,63.796944)" />
+    <path
+       transform="translate(-105.72141,63.796944)"
+       d="m 225.92063,16.285332 a 109.60155,109.60155 0 0 1 109.60155,3e-6 l -54.80077,94.917725 z"
+       sodipodi:ry="109.60155"
+       sodipodi:rx="109.60155"
+       sodipodi:cy="111.20306"
+       sodipodi:cx="280.72141"
+       id="path3630"
+       style="fill:#0000d9;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1"
+       sodipodi:type="arc"
+       sodipodi:start="4.1887902"
+       sodipodi:end="5.2359878" />
+    <path
+       sodipodi:end="6.2831853"
+       sodipodi:start="5.2359878"
+       sodipodi:type="arc"
+       style="fill:#a800a8;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1"
+       id="path3632"
+       sodipodi:cx="280.72141"
+       sodipodi:cy="111.20306"
+       sodipodi:rx="109.60155"
+       sodipodi:ry="109.60155"
+       d="m 335.52218,16.285335 a 109.60155,109.60155 0 0 1 54.80077,94.917725 l -109.60154,0 z"
+       transform="translate(-105.72141,63.796944)" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       id="text3658"><textPath
+         xlink:href="#path3665"
+         id="textPath2985"><tspan
+   id="tspan3660">The Color Wheel of Old Skool Art Class</tspan></textPath></text>
+    <path
+       style="fill:none;stroke:none"
+       d="M 54.791835,175 C 54.791845,108.61086 108.61087,54.791837 175,54.79184 c 66.38913,3e-6 120.20816,53.81903 120.20816,120.20817"
+       id="path3665" />
+  </g>
+</svg>
