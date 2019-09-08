@@ -33,6 +33,8 @@ When playing around in your favorite computer graphics drawing
 program, you've probably seen a color picker dialog that looks
 something like this.
 
+<!-- more -->
+
 <img src="{{ site.baseurl }}/blog/images/2019-04-02-colpicker.png"
      alt="Color picker screenshot"
      width="453" height="324" />
@@ -216,7 +218,9 @@ blending is here with us to stay.  If you want gamma-correct color
 blends on the web, you need to build your own multi-stop gradients for
 a piecewise approximation of a non-linear function.
 
-JJJ TODO: Insert diagram.
+<img src="http://www.ericbrasseur.org/gamma-1.0-or-2.2.png"
+     alt="Image scaling test image"
+     width="512" height="256" />
 
 Check out this great old article for more information about the state
 of affairs in gamma-incorrect mass-market image editing software, and
@@ -224,7 +228,8 @@ also a great cross-section of what various related professionals have
 to say about the state of affairs.  Despite its age, it is still
 relevant today in 2019.
 
-20190402/http://www.ericbrasseur.org/gamma.html
+20190402/http://www.ericbrasseur.org/gamma.html  
+20190402/http://www.ericbrasseur.org/gamma-1.0-or-2.2.png
 
 ### Why are such errors prevalent in mass-market software?
 
@@ -325,7 +330,17 @@ screen, but if you do happen to catch sight of an ideal prism spectrum
 display, remember, _that_ is the full range of all colors that you can
 see.
 
-JJJ TODO: Insert prism spectrum.
+<a href="https://en.wikipedia.org/wiki/File:Light_dispersion_of_a_mercury-vapor_lamp_with_a_flint_glass_prism_IPNr%C2%B00125.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Light_dispersion_of_a_mercury-vapor_lamp_with_a_flint_glass_prism_IPNr%C2%B00125.jpg/170px-Light_dispersion_of_a_mercury-vapor_lamp_with_a_flint_glass_prism_IPNr%C2%B00125.jpg"
+     alt="Prism spectrum photo"
+     width="169" height="207" />
+</a>
+
+20190402/https://en.wikipedia.org/wiki/Prism
+
+PLEASE NOTE: The previous photo shows the spectrum of a mercury-vapor
+lamp.  I should replace that photo with one of an incandescent
+spectrum.
 
 Also, remember our tendency to refer to a color spectrum as
 "rainbow-like."  Indeed, it is exactly that: a rainbow is _like_ a
@@ -333,7 +348,11 @@ color spectrum, but clearly it is a less clear and lower fidelity
 display of colors, as many of us know from the difficulty of spotting
 a rainbow in the sky first-hand.
 
-JJJ TODO: Insert rainbow
+<a href="https://en.wikipedia.org/wiki/File:Rainbow_above_Kaviskis_Lake,_Lithuania.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Rainbow_above_Kaviskis_Lake%2C_Lithuania.jpg/170px-Rainbow_above_Kaviskis_Lake%2C_Lithuania.jpg"
+     alt="Rainbow photo"
+     width="170" height="280" />
+</a>
 
 Indeed, the colors generally do appear more vivid than your typical
 rainbow or prism spectrum display.
@@ -355,7 +374,6 @@ to the newest of amateurs, it is an enduring myth.
 
 20190402/https://en.wikipedia.org/wiki/Rainbow  
 20190402/https://en.wikipedia.org/wiki/File:Double-alaskan-rainbow.jpg  
-
 20190402/https://en.wikipedia.org/wiki/Spectrum  
 20190402/https://en.wikipedia.org/wiki/File:EM_Spectrum_Properties_edit.svg  
 20190402/https://en.wikipedia.org/wiki/File:Rainbow_above_Kaviskis_Lake,_Lithuania.jpg
@@ -364,11 +382,15 @@ Myth: Human vision has three cone types, red, green, and blue light.
 
 It is true that there are three cone types, but they have rather large
 spectral perception ranges.  The three cones are the L cones, M cones,
-and S cones, for low, medium, and high frequencies respectively.  Each
-of these cones has a spectral response curve and limits on which
-frequencies they are sensitive to.
+and S cones, for long, medium, and short wavelengths respectively.
+Each of these cones has a spectral response curve and limits on which
+wavelengths they are sensitive to.
 
-JJJ TODO: Insert LMS curves diagram
+<a href="https://en.wikipedia.org/wiki/File:Cones_SMJ2_E.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Cones_SMJ2_E.svg/287px-Cones_SMJ2_E.svg.png"
+     alt="LMS curves diagram"
+     width="287" height="217" />
+</a>
 
 20190402/https://en.wikipedia.org/wiki/LMS_color_space  
 20190402/https://en.wikipedia.org/wiki/File:Cones_SMJ2_E.svg  
@@ -391,12 +413,12 @@ value that proportionally affects the M cones the strongest, and also
 has a considerable affect on the L cones.  This is why red, green, and
 blue cannot be mixed to form all colors.
 
-A very simple and coarse way to remember spectral frequencies similar
+A very simple and coarse way to remember spectral wavelengths similar
 to those used for pure spectral color primaries: 650 nm red, 550 nm
 green, 450 nm blue.
 
 Over the decades, various different standards were developed that
-specified which spectral frequencies to use for color primaries in
+specified which spectral wavelengths to use for color primaries in
 film and television.  One of the major considerations between the
 choices was cost.  Here are some Wikipedia articles on the various
 standards and related subjects for reference.
@@ -436,7 +458,9 @@ same, i.e. at same amplitude.  So, you need to be able to define
 perceived color brightness separately from physical brightness.
 
 The strong contribution of L in green means that you need to back it
-out faster than you'd normally expect.
+out faster than you'd normally expect.  Also, it must stay high for
+longer, say for 75% of its region of affect, after which point it
+backs out quickly to zero.
 
 Because of these considerations, straight line linear intensity
 changes work pretty well.  Now it's just a crude approximation, but
@@ -452,7 +476,52 @@ Finally, you simply add a linear amount of red back to get the correct
 purplish hue at the edge.  The last blend from purple to red can
 simply be done linearly, as these are non-spectral colors.
 
-JJJ TODO: Insert diagram
+```
+Base "computer color" spectrum gradient stop points:
+R Y      G      C  B      M      R
+0 16.667 33.333 50 66.667 83.333 100
+
+For the sake of simplicity, we'll use a simple gamma translation
+function, rather than the full sRGB formula.  It's close enough for
+our purposes of creating more physically accurate linear light
+intensity gradients.
+
+LI = Linear Light Intensity, range 0.0 - 1.0
+GCIS = Gamma-Coded Image Sample, range 0 - 255
+
+LI = (GCIS/255)^2.2
+
+GCIS = LI^(1/2.2) * 255
+GCIS = LI^0.45 * 255
+
+Now we compute key gradient stop points that are required so that we
+can get a reasonably accurate linear intensity spectrum even when
+gamma-incorrect interpolation is being used, i.e. as is the case in
+SVG.
+
+(0.000 ^ (1/2.2)) * 255 =   0
+(0.125 ^ (1/2.2)) * 255 =  99
+(0.250 ^ (1/2.2)) * 255 = 136
+(0.375 ^ (1/2.2)) * 255 = 163
+(0.500 ^ (1/2.2)) * 255 = 186
+(0.625 ^ (1/2.2)) * 255 = 206
+(0.750 ^ (1/2.2)) * 255 = 224
+(0.875 ^ (1/2.2)) * 255 = 240
+(1.000 ^ (1/2.2)) * 255 = 255
+
+And we need a little bit more precision to handle our red-orange-green
+dynamics.
+
+(0.9375 ^ (1/2.2)) * 255 = 248
+```
+
+<object type="image/svg+xml"
+        data="{{ site.baseurl }}/blog/images/2019-04-02-approx_spectrum.svg"
+        width="600" height="250">
+  <img src="{{ site.baseurl }}/blog/images/2019-04-02-approx_spectrum.png"
+       alt="Approximate spectrum diagram"
+       width="600" height="250" />
+</object>
 
 Note the original LMS data measures in log space, and the graphs are
 nearly parabolas.  Graphed in linear space, the effect is nearly a
@@ -628,17 +697,17 @@ of all visible light wavelengths, but it results in the same
 perceptual brightness, that's a lot of energy and money you can save.
 Indeed, this is one of the principal techniques used to save energy in
 fluorescent and LED lighting, in addition to not generating light in
-invisible light frequencies like infrared.
+invisible light wavelengths like infrared.
 
 Unfortunately, agressive use of this technique results in reducvd
 _color rendering index_ (CRI).  The truth is, when you are working
 with artificial lighting, there are many object surfaces of which you
 do not and cannot know the exact range of spectral reflections.  If
-your frequency bands of artificial light are not at the peak
-reflection frequencies of the objects in question, their colors are
+your "frequency bands" of artificial light are not at the peak
+reflection wavelengths of the objects in question, their colors are
 going to look weird, inaccurate, and outright incorrect.  The only
 remedy for this is to use a more spectral illuminant, which means you
-must project light over more frequencies and pay for that additional
+must project light over more wavelengths and pay for that additional
 energy cost.  So you can't get everything for free.
 
 20190907/https://en.wikipedia.org/wiki/Color_rendering_index
@@ -687,45 +756,3 @@ By all means, I hope this is a great article for those coming from the
 beginner's starting point and wishing to work upward to the pros.  A
 universally grounded scientific basis is a good starting point to
 build off of.
-
-----------
-
-F.Y.I. Here are some of the scratch-pad calculations I used when
-preparing the images.
-
-```
-R Y G C B M R
-0 16.667 33.333 50 66.667 83.333 100
-
-LI = Linear Light Intensity, range 0.0 - 1.0
-GCIS = Gamma-Coded Image Sample, range 0 - 255
-
-LI = (GCIS/255)^2.2
-
-GCIS = LI^(1/2.2) * 255
-GCIS = LI^0.45 * 255
-
-For the sake of simplicity, we'll use a simple gamma translation
-function, rather than the full sRGB formula.  It's close enough for
-our purposes of creating more physically accurate linear light
-intensity gradients.
-
-0.5 = x^2.2
-
-0.015625 ^ (1/2.2) = x = 39
-0.03125 ^ (1/2.2) = x = 53
-0.0625 ^ (1/2.2) = x = 72
-0.125 ^ (1/2.2) = x = 99
-0.25 ^ (1/2.2) = x = 136
-0.35 ^ (1/2.2) = x = 158
-0.40 ^ (1/2.2) = x = 168
-0.45 ^ (1/2.2) = x = 177
-0.50 ^ (1/2.2) = x = 186
-0.70 ^ (1/2.2) = x = 217
-0.75 ^ (1/2.2) = x = 224
-0.85 ^ (1/2.2) = x = 237
-
-0.906 ^ (1/2.2) = x = 243
-0.938 ^ (1/2.2) = x = 248
-0.969 ^ (1/2.2) = x = 251
-```
