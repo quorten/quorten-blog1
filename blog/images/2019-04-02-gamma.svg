@@ -15,7 +15,7 @@
    viewBox="0 0 384.8 288.8"
    version="1.1"
    id="svg1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.47 r22583"
    sodipodi:docname="2019-04-02-gamma.svg">
   <metadata
      id="metadata378">
@@ -45,8 +45,8 @@
      id="namedview374"
      showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="274.78112"
-     inkscape:cy="176.05914"
+     inkscape:cx="266.95752"
+     inkscape:cy="185.80657"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -546,4 +546,29 @@
        x="38.949116"
        id="tspan4203"
        sodipodi:role="line">1.0</tspan></text>
+  <text
+     sodipodi:linespacing="125%"
+     xml:space="preserve"
+     style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+     x="196.92369"
+     y="279.58588"
+     id="text2918"><tspan
+       sodipodi:role="line"
+       id="tspan2920"
+       x="196.92369"
+       y="279.58588"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans">Gamma Input Voltage</tspan></text>
+  <text
+     id="text2922"
+     y="19.621016"
+     x="-144.6711"
+     style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+     xml:space="preserve"
+     sodipodi:linespacing="125%"
+     transform="matrix(0,-1,1,0,0,0)"><tspan
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans"
+       y="19.621016"
+       x="-144.6711"
+       id="tspan2924"
+       sodipodi:role="line">Linear Light Intensity</tspan></text>
 </svg>

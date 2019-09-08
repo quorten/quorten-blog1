@@ -384,7 +384,12 @@ It is true that there are three cone types, but they have rather large
 spectral perception ranges.  The three cones are the L cones, M cones,
 and S cones, for long, medium, and short wavelengths respectively.
 Each of these cones has a spectral response curve and limits on which
-wavelengths they are sensitive to.
+wavelengths they are sensitive to.  Please note, however, that there
+is no "one size fits all" sensitivity curve because the exact
+composition of the pigments in the cones varies from person to person,
+not to mention that some people are colorblind.  However, the
+experimentally determined values represent an average case that is
+fairly accurate for most people.
 
 <a href="https://en.wikipedia.org/wiki/File:Cones_SMJ2_E.svg">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Cones_SMJ2_E.svg/287px-Cones_SMJ2_E.svg.png"
@@ -440,6 +445,10 @@ standards and related subjects for reference.
 20190402/https://en.wikipedia.org/wiki/File:CIExy1931_Rec_709.svg  
 20190402/https://en.wikipedia.org/wiki/Rec._601  
 20190402/https://en.wikipedia.org/wiki/NTSC
+
+----------
+
+### Constructing a more accurate computer color spectrum
 
 Now, let's try to discuss a simple and approximate means of linearly
 visualizing spectral colors on a computer screen.  Of course, the only
@@ -523,7 +532,8 @@ dynamics.
        width="600" height="250" />
 </object>
 
-Note the original LMS data measures in log space, and the graphs are
+Note the original LMS data (from the research papers linked in the
+Wikipedia article) measures in log space, and the original graphs are
 nearly parabolas.  Graphed in linear space, the effect is nearly a
 Gaussian curve.  So, we know this data is correct without an improper
 gamma or log interpretation.
@@ -544,12 +554,29 @@ physical brightness before you perform subsequent calculations.
 So, as we can see, the main benefit of linearizing these color
 combinations to a spectral scale is that we have more headroom to
 select our oranges and yellows.  Second comes a little more headroom
-for selecting cyans add magentas.  Obviously, these are important user
-interface improvements for selecting color.  Had it been otherwise, I
-would have recommended the default method of showing a computer hue
-spectrum.
+for selecting turquoises and purples.  Obviously, these are important
+user interface improvements for selecting color.  Had it been
+otherwise, I would have recommended the default method of showing a
+computer hue spectrum.
+
+And seriously, I can't help but admit this as a side comment.  Why is
+human color vision so sensitive to oranges, yellows, and greens?
+That's how you tell if fruit is ripe!  The only reason why berry
+picking and fruit picking is touted as such as "low skill" among human
+society is because humans have evolved to be so good at it!  As for
+those people who are colorblind, well they have the advantage that
+they are less susceptible to being fooled by camouflage, so they're
+the ones who are the hunters in society.  And it makes sense that
+colorblind people are a relative minority, because fruit is larger in
+the food pyramid than protein, so more work needs to be done with
+fruit than with meat.  Either that, or they're the ones that always
+win against the color-sighted people when playing first-person shooter
+games where everything is all camouflaged and hard for color-sighted
+people to see.
 
 ----------
+
+### Debunking the saturation myths
 
 Okay, so I've debunked myths about hue and luminance, but I haven't
 yet covered saturation.  But, don't worry.  A physically correct
@@ -677,14 +704,17 @@ to gamma to get your grayscale color.
 
 A final easy case, though hardly ever used in practice, is convert to
 orthochromatic grayscale.  This is simply taking only the blue channel
-intensities and using those for all channels.  This mirrors the
-behavior of orthochromatic black and white photographic film, and
+intensities and using those for all channels.  (Possibly, you might
+consider emulating weak sensitivity for green and red.)  This mirrors
+the behavior of orthochromatic black and white photographic film, and
 likewise, the reason it is seldom used is because it produced quite
 inaccurate depictions of human faces.
 
 20190907/https://en.wikipedia.org/wiki/Panchromatic_film
 
 ----------
+
+### Artificial lighting and color saturation
 
 The perception of color saturation plays an important role in
 artificial lighting.  If you haven't picked it up from what I've
@@ -717,6 +747,16 @@ require artificial lighting through screens, this would be much less
 of a problem and we could save a heck of a lot of energy.  But that's
 a long ways away off into the future, when going paperless becomes
 much more mainstream in society.
+
+In the natural environments that are habitable to humans, the major
+natural light sources are spectral illuminants: the sun and fires.
+_Black-body radiation_ is the name given to objects that emit a light
+spectrum determined primarily by the temperature of the object and no
+other chemical properties.  An incandescent light is one of the few
+modern sources of artificial light that have a black-body radiation
+emission spectrum.
+
+20190907/https://en.wikipedia.org/wiki/Black-body_radiation
 
 ----------
 
