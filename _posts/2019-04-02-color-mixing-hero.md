@@ -763,7 +763,7 @@ emission spectrum.
 ### Conclusion
 
 Since the start of film and television, we've certainly come a long
-ways in democratizing access to professional media technologies, and
+ways in democratizing access to advanced media technologies, and
 computers have been at the forefront of this.  Alas, there remains the
 eternal skills gap between what are technology is capable of versus
 what the layperson understands.  For lack of better education, over
@@ -771,10 +771,10 @@ what the layperson understands.  For lack of better education, over
 is going to be exactly the same for the next 20 years or so.
 
 Meanwhile, the film industry and "triple-A" video game industry is
-racing forward with high dynamic range, wide color gammut, high
-resolution, and other highly advanced technologies.  All of this is
-happening while the amateur computer user still barely understands the
-basics.
+racing forward with stereoscopic 3D, high dynamic range, wide color
+gammut, ultra high definition, and other highly advanced technologies.
+All of this is happening while the amateur computer user still barely
+understands the basics.
 
 The bigger point being called into question, though, is this: Beyond
 higher resolution, is there really any value to end customers for all
