@@ -59,3 +59,19 @@ resources, but most teams squander their resources.
 
 Time is money.  Saving time and investing it properly is saving and
 investing money itself.
+
+The primary quantity that humans are good at measuring is not time,
+but attention span.  Humans then use their measure of attention span
+to infer time durations.  The problem, of course, is that human
+attention is not consistent over waking hours, but varies with its
+highs and lows.
+
+UPDATE 2019-09-08: Humans have less attention ability when they are
+very young, more when they are middle aged, then less when they are
+very old.  This is one of the reasons why people say it feels like
+time passes faster when they are older.  Then again, the quantity that
+they neglect to mention is their true perception of time when they are
+younger.  When they are younger, there are some instances where they
+have very high attention span and fine granular perception of time,
+but still large swaths of time with a lesser attention span, and
+therefore a shorter perception of time.
