@@ -203,12 +203,12 @@ incorrect.
 
 Operating on gamma-correct images is very important and fundamental
 for virtually all image editing operations.  Resizing, rotating, color
-levels, and blending are a few examples.  None of these simple image
-manipulations can be done correctly if they are not done in linear
-intensity image samples.  Yet, in spite of the fact that I have just
-said that, the most popular computer software over the past few
-decades have always done image scaling on gamma-coded image samples,
-which results in incorrect and artificially dark images.
+levels, transparency, and blending are a few examples.  None of these
+simple image manipulations can be done correctly if they are not done
+in linear intensity image samples.  Yet, in spite of the fact that I
+have just said that, the most popular computer software over the past
+few decades have always done image scaling on gamma-coded image
+samples, which results in incorrect and artificially dark images.
 
 Likewise, defective, gamma-incorrect blending has been officially
 standardized in the Scalable Vector Graphics (SVG) web specification,
@@ -230,6 +230,22 @@ relevant today in 2019.
 
 20190402/http://www.ericbrasseur.org/gamma.html  
 20190402/http://www.ericbrasseur.org/gamma-1.0-or-2.2.png
+
+A final note that is worth mention: image sensors.  Historic CRT video
+camera tubes and photomultiplier tubes in early digital scanners had a
+gamma-response curve, so no correction was needed for the purpose of
+display on CRT monitors.  However, modern CCD and CMOS image sensors
+have a linear response, so gamma correction to sRGB is required for
+proper display.  Interestingly, although the response curve of CCD and
+CMOS image sensors is linear, camera manufacturers have each developed
+their own creative conversion curves when converting from RAW camera
+data to JPEG image data, which turn out not to be strict gamma curves.
+Digital darkroom software like `darktable` has built-in logic to
+handle this phenomenon.  That being said, if you are working with a
+random JPEG image, rather than assuming it is gamma-correct, you
+should see if you can shoot a calibration photo from the same camera
+to determine if any conversion curves are needed to get a more
+physically-accurate image.
 
 ### Why are such errors prevalent in mass-market software?
 
