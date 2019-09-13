@@ -231,6 +231,8 @@ relevant today in 2019.
 20190402/http://www.ericbrasseur.org/gamma.html  
 20190402/http://www.ericbrasseur.org/gamma-1.0-or-2.2.png
 
+#### Native image sensor curves
+
 A final note that is worth mention: image sensors.  Historic CRT video
 camera tubes and photomultiplier tubes in early digital scanners had a
 gamma-response curve, so no correction was needed for the purpose of
@@ -649,6 +651,8 @@ values, which is mathematically incorrect.  Fortunately, the error
 margins here are much smaller than is the case with the other
 erroneous computations.
 
+#### Desaturation filters
+
 The primary myth that lies in the color saturation is not the concept
 per se, but the methods and motivations for adjustments.  Want to wash
 out the colors in a picture?  Sure, that's easy, just blend with
@@ -701,6 +705,8 @@ of the theater, leaving the rest of the theater auditorium darkened.
 Again, we're talking purely physical, linear manipulations, no nifty
 per-pixel digital signal processing filters.
 
+#### Convert to grayscale
+
 Another consideration with the concept of saturation is convert to
 grayscale.  You can do this by perceived brightness or physical
 panchromatic brightness, the latter in which case you simply convert
@@ -727,6 +733,36 @@ likewise, the reason it is seldom used is because it produced quite
 inaccurate depictions of human faces.
 
 20190907/https://en.wikipedia.org/wiki/Panchromatic_film
+
+#### LED color mixing
+
+Sometimes RGB LED color mixing is touted as being entirely different from
+standard web color mixing, but actually this is not quite the case.
+All of the fundamental principles apply essentially the same, it's
+just that the specifics are different.  Namely, the black point is
+generally assumed to be much higher in LED color mixing than is the
+case for computer screen and computer print color mixing.  Because of
+this, there is a limited range of colors that can be displayed, and in
+particular, low-luminosity colors that are less than the black point's
+intensity cannot be displayed at all.  A common example given is that
+brown cannot be displayed via LED color mixing.  Indeed, in technical
+terms, brown is simply dark orange.  This means that if you want brown
+in LED color mixing, chances are that the best you may be able to get
+is an orange.
+
+If total room lighting is controlled to have a very low amount of
+ambient light, then it is, in fact, technically possible to display
+brown via LED color mixing.  The main implication here is that you
+must also have a comparatively high white point for reference,
+otherwise your brown will again simply appear to be an orange.
+
+Also, the principles of gamma correction are also still in full force.
+LEDs technically have a non-linear light intensity output curve that
+varies with temperature, but in abstract, the curve is approximately
+linear, not a gamma curve.  This means that if you want users to be
+able to choose an HTML color value when programming the LED, you must
+convert from the sRGB gamma curve to a linear scale when driving the
+LEDs to display the given color.
 
 ----------
 
