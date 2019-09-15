@@ -85,7 +85,7 @@ the original _Inside Macintosh_ printed book, Volumes I, II, and III.
 
 * The Device Manager API has been fairly stable across all generations
   of Macintoshes.  Despite tremendous innovation that needed to happen
-  in newer Macintoshes, the overall field layout in the IOParam data
+  in newer Macintoshes, the overall field layout in the `IOParam` data
   stsructure is identical at the beginning.  Pretty much the only
   extension made in newer Macintoshes was the `XIOParam` interface to
   support disks larger than 4 GB.
