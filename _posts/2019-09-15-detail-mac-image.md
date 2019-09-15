@@ -38,7 +38,9 @@ the original _Inside Macintosh_ printed book, Volumes I, II, and III.
   Luckily, the drive queue also includes the size of the drive in
   logical blocks (512-byte blocks), which you can use to display in
   your user interface to help the operator identify which drive they
-  are working with.
+  are working with.  The information on the _drive queue_ is found in
+  one of the last sections of "The File Manager" chapter of Volume II
+  of _Inside Macintosh_.
 
 * Next, the user configures the software to select the source and
   destination of their copy.  They can copy between two disk drives,
@@ -49,8 +51,8 @@ the original _Inside Macintosh_ printed book, Volumes I, II, and III.
   is an abstract interface defined for device I/O, and you simply use
   these abstract routines with the respective drive number and driver
   reference number to read and write data from a disk drive.  See "The
-  Device Manager" and "The Disk Driver" chapters from _Inside
-  Macintosh_ for details on how to do this.
+  Device Manager" and "The Disk Driver" chapters from Volume II of
+  _Inside Macintosh_ for details on how to do this.
 
   One particular note for correct copies to and from large disks.
   Always use absolute positioning rather than relative positioning,
@@ -68,7 +70,8 @@ the original _Inside Macintosh_ printed book, Volumes I, II, and III.
 * Thankfully, the serial communications interface is quite simple too,
   again using the Device Manager for reads and writes.  The additional
   information for using the serial communications interface is
-  specified in "The Serial Drivers" chapter of _Inside Macintosh_.
+  specified in "The Serial Drivers" chapter from Volume II of _Inside
+  Macintosh_.
 
 * The Device Manager API has been fairly stable across all generations
   of Macintoshes.  Despite tremendous innovation that needed to happen
