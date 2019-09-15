@@ -3,8 +3,8 @@ layout: post
 title: Copy a Windows 9x disk image over the network
 date: 2019-04-06 09:48 -0500
 author: quorten
-categories: [vintage-computing, windows]
-tags: [vintage-computing, windows]
+categories: [vintage-computing, windows, mac-classic]
+tags: [vintage-computing, windows, mac-classic]
 ---
 
 Now, here's a challenge.  Say you've got an old 1990s PC running
@@ -992,18 +992,18 @@ DSL, but not today.
 
 * Alternative to blockdev in `tomsrtbt`:
 
-  # Hard drive C:
-  cat /proc/ide/ide0/hda/capacity
-  # Hard drive D:
-  cat /proc/ide/ide0/hdb/capacity
-  # CD-ROM drive E:
-  cat /proc/ide/ide1/hdc/capacity
+      # Hard drive C:
+      cat /proc/ide/ide0/hda/capacity
+      # Hard drive D:
+      cat /proc/ide/ide0/hdb/capacity
+      # CD-ROM drive E:
+      cat /proc/ide/ide1/hdc/capacity
 
   You'll get the drive size in 512-byte blocks.  So, divide by 2
   (multiply by 512, divide by 1024) to get size in KiB.
 
-  # Only works for hard drives:
-  cat /proc/partitions
+      # Only works for hard drives:
+      cat /proc/partitions
 
   You'll get the size in KiB.
 

@@ -7,20 +7,18 @@ categories: [mac-classic, home-network, reiterate]
 tags: [mac-classic, home-network, reiterate]
 ---
 
-JJJ TODO LINK!
-
-Recently, I've been following through on my previous notes on how to
-build a serial cable to connect a Macintosh SE to a PC via a null
-modem serial cable.  Indeed, the devil is in the details!  I didn't
-realize the first time upon discovering those sources that the
-original Macintosh didn't support full hardware handshaking, but later
-ones did, and this resulted in some early software having bugs whereby
-it doesn't manage the handshaking status lines.  So, that one really
-threw me off with three potential decisions to make on how to wire up
-a Macintosh Classic serial cable.  Oh, and the fact that there is no
-easy way to wire up the much needed critical DCD signal, unlike is the
-case with the Apple IIc Plus.  Initially, I planned on this scheme for
-my use:
+Recently, I've been following through on my [previous notes]({{
+site.baseurl }}/blog/2018/12/31/classic-mac-serial) on how to build a
+serial cable to connect a Macintosh SE to a PC via a null modem serial
+cable.  Indeed, the devil is in the details!  I didn't realize the
+first time upon discovering those sources that the original Macintosh
+didn't support full hardware handshaking, but later ones did, and this
+resulted in some early software having bugs whereby it doesn't manage
+the handshaking status lines.  So, that one really threw me off with
+three potential decisions to make on how to wire up a Macintosh
+Classic serial cable.  Oh, and the fact that there is no easy way to
+wire up the much needed critical DCD signal, unlike is the case with
+the Apple IIc Plus.  Initially, I planned on this scheme for my use:
 
 * Tie RTS & CTS together on the PC-side.
 * Wire DCD to DTR on the PC-side.
@@ -75,11 +73,11 @@ of the maze.
 My first choice on serial software is Kermit.  Yes, Kermit is the
 software of choice if you want to perform some sort of serial
 communications file transfer on an old 1980s vintage computer, which
-was exactly what this is.  BUT... reading into Kermit further, I found
-out that there is a considerable culture divide.  Kermit, despite
-supporting a large number of different computers, was, in fact, never
-really largely used by _most_ computer users. The original scope of
-Kermit use was for connections between mainframe and PC
+was exactly what this is.  **But**... reading into Kermit further, I
+found out that there is a considerable culture divide.  Kermit,
+despite supporting a large number of different computers, was, in
+fact, never really largely used by _most_ computer users. The original
+scope of Kermit use was for connections between mainframe and PC
 microcomputers, like that which was found at Columbia University.  Who
 ever had mainframe computers, anyways?  Unilaterally, this was large
 "institutions," such as universities, governments, banks, or
@@ -164,6 +162,8 @@ particular Macintosh SE as it is.  Sure, I can install Macintosh
 System 7 on it, but let's save the more invasive changes until after I
 figure out how to copy a full disk image of this classic Macintosh.
 
+* UPDATE: ZTerm does work on Macintosh System 6, read on for details.
+
 20190516/DuckDuckGo zmoden macintosh  
 20190516/http://www.macintoshrepository.org/156-zmodem-tool  
 20190516/DuckDuckGo ymodem macintosh  
@@ -181,7 +181,7 @@ is more into the Macintosh hobbyist computing mindset than Kermit.
 
 Failed search.
 
-20190516/DuckDuckGo macintosh classic system 6 serial modem  
+20190516/DuckDuckGo macintosh classic system 6 serial modem
 
 On the other hand, I did find this useful article on Macintosh serial
 throughput.  So, are you looking for a good fastest baud rate to get
@@ -196,11 +196,12 @@ requires at least a 68020 processor and System 7.1, so that means no
 20190516/http://www.mac.org/internet/freeppp/
 
 In particular, running System 7 on an old Macintosh will slow down
-your serial port throughput.  So, that means on ZTerm for me.  If you
-get some errors at 28.8 kbps, you may need to slow down to 19.2 kbps.
-If you want the full speed for the higher speeds, make sure you don't
-use your floppy disk drive, hard drive, or CPU intensive software
-during the transfer.  If possible and necessary, copy your files to be
+your serial port throughput.  So, that means "no ZTerm for me."
+(Please note we will describe ZTerm on System 6 later.)  If you get
+some errors at 28.8 kbps, you may need to slow down to 19.2 kbps.  If
+you want the full speed for the higher speeds, make sure you don't use
+your floppy disk drive, hard drive, or CPU intensive software during
+the transfer.  If possible and necessary, copy your files to be
 transferred to a RAM drive first.
 
 20190516/http://lowendmac.com/1999/real-world-mac-serial-throughput/
@@ -211,7 +212,7 @@ Now, let's segway into another important topic to discuss, then we'll
 come back to our first subject at hand.  It seems there's a relative
 shortage of Macintosh networking software, why is that?  Well, when I
 think about this, I want to say that most Macintosh users weren't
-really concerned about connecting to the Internet.  The rason for the
+really concerned about connecting to the Internet.  The reason for the
 shortage of software and knowledge is not so much the technical
 capabilities of the machine, but the typical desires of end computer
 uesrs.  My undertanding is that most early Macintosh users used the
@@ -396,12 +397,12 @@ Also, indeed there still is good hardware information on the Linux
 m68k website.
 
 20190516/https://www.linuxjournal.com/article/2996  
-20190516/DuckDuckGo ? <lost search string>  
+20190516/DuckDuckGo ? \<lost search string\>  
 20190516/http://www.mac.linux-m68k.org/devel/plushw.php  
 20190516/http://www.mac.linux-m68k.org/status/MAC_MODEL_SE30.php  
 20190516/http://www.mac.linux-m68k.org/docs/faq.php#sec-4.5  
 20190516/https://en.wikipedia.org/wiki/Embeddable_Linux_Kernel_Subset  
-20190516/https://en.wikipedia.org/wiki/%CE%9CClinux  
+20190516/https://en.wikipedia.org/wiki/%CE%9CClinux
 
 Here is more information on setting up Point-to-Point Protocol (PPP)
 on your GNU/Linux server-side.  Good news, setting up PPP is pretty
@@ -591,6 +592,14 @@ Requires System 7 or newer and 2.5+ MB of RAM:
 * FreePPP, "faster" alternative to MacPPP, but requires 68020
   processor and newer, System 7 and newer.  It's not faster if you
   can't get it running, of course.
+
+Please see this next logical article in the sequence for some
+information on how to configure Kermit/ZMODEM software on your modern
+Unix-like PC side.  Or, for extra credit, how to set up vintage Linux
+on a Windows 9x-era PC for running the Kermit/ZMODEM software.
+
+[Copy a Windows 9x disk image over the network]({{ site.baseurl
+}}/blog/2019/04/06/win9x-disk-image)
 
 ----------
 
