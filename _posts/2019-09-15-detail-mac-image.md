@@ -67,6 +67,16 @@ the original _Inside Macintosh_ printed book, Volumes I, II, and III.
   i.e. `PBRead`.  However, for the mode specifier, the mode may be
   specified as a special function name, such as `PBReadSync()`.
 
+  Also, one thing that is unique about Macintosh disks, mentioned in
+  _Inside Macintosh_, is that each 512-byte sector of a Macintosh disk
+  has an additional 12 bytes of data called the _file tags_.  This is
+  a metadata structure that contains information on how to reconstruct
+  files in the event that the filesystem gets destroyed.  Under normal
+  conditions, this information will be redundant, but if it's there,
+  why not read it and archive it?  The main disadvantage, so it seems,
+  is that you must only read one sector at a time in order to reliably
+  retrieve and archive the file tags for all sectors.
+
 * Thankfully, the serial communications interface is quite simple too,
   again using the Device Manager for reads and writes.  The additional
   information for using the serial communications interface is
