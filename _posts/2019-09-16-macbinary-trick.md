@@ -3,8 +3,8 @@ layout: post
 title: The trick to understanding MacBinary
 date: 2019-09-16 20:00 -0500
 author: quorten
-categories: [mac-software]
-tags: [mac-software]
+categories: [mac-classic]
+tags: [mac-classic]
 ---
 
 On one hand, it is a great convenience that ZTerm includes support for
