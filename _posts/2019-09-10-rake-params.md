@@ -12,3 +12,5 @@ Running rake with parameters is easy.  Example:
 ```
 rake beaker:ssh:mything[mybox,next_arg]
 ```
+
+20190910/https://github.com/ruby/rake/blob/master/doc/rakefile.rdoc
