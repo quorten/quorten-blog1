@@ -29,18 +29,28 @@ the original _Inside Macintosh_ printed book, Volumes I, II, and III.
 <!-- more -->
 
 * First, start by iterating all available disk drives.  Use the
-  `GetDrvQHdr()` nacri to get a pointer to the _drive queue_ header,
-  namely the first drive queue linked list data structure.  The
-  location of the first drive queue header is actually a constant
-  memory address.  You can then iterate this linked list to get the
-  key information needed to read raw data off of a Macintosh disk
-  drive: the _drive number_ and the _driver reference number_.
-  Luckily, the drive queue also includes the size of the drive in
-  logical blocks (512-byte blocks), which you can use to display in
-  your user interface to help the operator identify which drive they
-  are working with.  The information on the _drive queue_ is found in
-  one of the last sections of "The File Manager" chapter of Volume II
-  of _Inside Macintosh_.
+  `GetDrvQHdr()` macro to get a pointer to the _drive queue_ header.
+  The `QHdr` data structure is described in Chapter 13 of Volume II
+  from _Inside Macintosh_.  The location of the drive queue header is
+  actually a constant memory address.  You can then iterate this
+  linked list to get the key information needed to read raw data off
+  of a Macintosh disk drive: the _drive number_ and the _driver
+  reference number_.  Luckily, the drive queue also includes the size
+  of the drive in logical blocks (512-byte blocks), which you can use
+  to display in your user interface to help the operator identify
+  which drive they are working with.  The information on the _drive
+  queue_ is found in one of the last sections of "The File Manager"
+  chapter of Volume II of _Inside Macintosh_.
+
+    * Please note: There are some variations in the size header
+      specifications in the drive queue element data structures.  The
+      original value of `qType` value was always equal to `drvQType`,
+      which is 3.  Newer systems that support large disks will have a
+      value of zero for small disks, 1 for large disks.  In large
+      disks, a second 16-bit word is specified after the first that
+      contains the high-order size data.
+
+      20190916/https://web.archive.org/web/20001214111300/http://developer.apple.com/techpubs/mac/Files/Files-112.html
 
 * Next, the user configures the software to select the source and
   destination of their copy.  They can copy between two disk drives,
