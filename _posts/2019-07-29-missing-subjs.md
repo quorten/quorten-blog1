@@ -3,8 +3,8 @@ layout: post
 title: Missing subjects from my blog
 date: 2019-07-29 17:08 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [blogging, misc]
+tags: [blogging, misc]
 ---
 
 Over the course of some of my recent previous work for hire, I worked

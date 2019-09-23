@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create an empty branch
+title: Create an empty Git branch
 date: 2019-09-23 16:46 -0500
 author: quorten
 categories: [git]
