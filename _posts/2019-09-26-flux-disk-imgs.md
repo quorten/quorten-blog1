@@ -25,15 +25,14 @@ on.
 
 Important!  See my older blog articles on the same subject.
 
-<a href="{{ site.baseurl }}/blog/2019/05/25/mac-classic-disk-io">
-Macintosh Classic disk interface</a>
-
-<a href="{{ site.baseurl }}/blog/2019/07/31/no-linux-floppy">
-Linus kills the floppy disk driver from Linux</a>
+* [Macintosh Classic disk interface]({{ site.baseurl }}/blog/2019/05/25/mac-classic-disk-io)
+* [Linus kills the floppy disk driver from Linux]({{ site.baseurl }}/blog/2019/07/31/no-linux-floppy)
 
 So, the next in line high tech flux disk imagers.  The SuperCard Pro
 is a rather old one, it's been around since 2013 with an emphasis on
 Amiga and Commodore systems.  cmbstuff.com is the name of the website.
+
+<!-- more -->
 
 20190926/DuckDuckGo pro flux image floppy  
 20190926/http://www.cbmstuff.com/forum/showthread.php?tid=16  
