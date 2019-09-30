@@ -14,7 +14,7 @@ handle disk images at the lowest level?  Applesauce disk images, PRI
 disk images?  Whoah, what's that?  It's the specially built hardware
 to read those disk images?  Yep, and wow, it's with modern
 manufacturing.  You know the long dead Catweasel and KryoFlux?  Well,
-about Kryoflux... they're still alive and well, but yeah, they have
+about KryoFlux... they're still alive and well, but yeah, they have
 those weird licensing terms.
 
 All of this in the midst of Linus Torvalds killing off the floppy disk
@@ -76,3 +76,29 @@ computing community and was dormant for quite a while, namely that I
 felt I did not have sufficient resources to do a whole lot interesting
 in there, now I am back to taking a look at what they're off to, and
 wow, they don't slow down.
+
+----------
+
+Now, another reflection I have is that of emulator disk image
+development.  My first experience with vintage computing disk imaging
+was Apple II Disk Transfer ProDOS.  The documentation of ADT ProDOS
+specifically indicates that the more advanced format capable of
+copying the nibble and half-tracks of copy-protected disk images was
+only supported by Virtual ][ A2V2.  So yeah, there was always a
+stratification in the level of support of sophisticated disk image
+formats, and as I understood it, the simpler formats were more
+practical when they worked.  But, the big point in hand that I have
+here is that emulator support for advanced disk imaging formats is
+scaling up by a lot now, for whatever reason.
+
+My first suspicion is simply that the developers of these newer disk
+imagers are doing a much better job with community engagement,
+especially with documenting the file formats their hardware produces.
+Even though they are still proprietary software developers, these new
+folks on the block are trying to do a much better job with an open
+community model.  By all means, this has attracted the interest of
+some big parties such as the Internet Archive that are scanning disk
+images en masse, making it a much greater value proposition for
+emulator developers to support the more advanced disk image formats.
+So that's another reason why we're seeing more development on this
+front nowadays than we did 10 years ago.
