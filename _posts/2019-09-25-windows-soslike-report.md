@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gather report on Windows like `sosreport`
+title: "Gather report on Windows like `sosreport`"
 date: 2019-09-25 18:55 -0500
 author: quorten
 categories: [windows]

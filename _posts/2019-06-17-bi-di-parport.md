@@ -3,8 +3,8 @@ layout: post
 title: Bi-directional communication on a parallel port
 date: 2019-06-17 22:34 -0500
 author: quorten
-categories: [windows, unlipic]
-tags: [windows, unlipic]
+categories: [dos, windows, unlipic]
+tags: [dos, windows, unlipic]
 ---
 
 The Art of Assembly Language book, Borland C/C++ compilers, and the
