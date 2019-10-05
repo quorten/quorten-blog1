@@ -48,5 +48,6 @@ guarantee to do this for you.
 
 20190926/DuckDuckGo jenkins git_askpass  
 20190926/https://wiki.jenkins.io/display/JENKINS/Git+Client+Plugin  
+20190926/https://github.com/jenkinsci/git-client-plugin/commit/62872bccaf3f0e02c663acfdd85be2b38bddf1e8  
 20190926/DuckDuckGo .gitcredentials  
 20190926/https://git-scm.com/docs/gitcredentials
