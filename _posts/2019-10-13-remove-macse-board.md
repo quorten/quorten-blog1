@@ -29,6 +29,8 @@ to the iconic MC68000 CPU.  Also noteworthy is that the Macintosh SE
 uses a SIMM slot for a removable ROM module... so that gives you the
 opportunity to make your own custom ROMs with ease.
 
+<!-- more -->
+
 Now, to summarize the instructions on the other site.  Remove these
 two internal drive connectors.  Remove the analog board connector by
 depressing and unlatching the locking tab.  Now lift up the board

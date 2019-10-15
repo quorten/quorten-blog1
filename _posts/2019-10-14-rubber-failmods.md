@@ -32,6 +32,8 @@ this is a "reversion" of the manufacturing process.  For recycling
 rubber, this is a good thing, as it allows you to reuse the material
 just the same as you would commercially.
 
+<!-- more -->
+
 But really, what causes the sticky breakdown?  The root cause is a
 breakdown of the long crosslinks into short crosslinks.  Possible
 environmental causes could be too must pressure exposure, acid/base

@@ -33,6 +33,8 @@ Here is a repository of classic Macintosh drivers, including video
 drivers.  Presumably I could find the drivers for my particular card
 in there... alas, no!
 
+<!-- more -->
+
 20191014/DuckDuckGo macintosh pds drivers  
 20191014/https://vintageapple.org/macdrivers/network.shtml  
 20191014/https://vintageapple.org/macdrivers/  
