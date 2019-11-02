@@ -12,8 +12,8 @@ visit the Wikipedia articles on the subject and read about the fools
 who sit on the other side of the television.  This is what I found,
 again.  Again, I reiterate, because this is important!
 
-https://en.wikipedia.org/wiki/Television
-https://en.wikipedia.org/wiki/Television_consumption
+20191024/https://en.wikipedia.org/wiki/Television  
+20191024/https://en.wikipedia.org/wiki/Television_consumption
 
 How much time Americans spend watching television... surely people who
 watch a lot of television have trouble getting a boyfriend or
