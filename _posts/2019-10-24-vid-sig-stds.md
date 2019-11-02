@@ -33,6 +33,8 @@ video.
 
 20191024/https://en.wikipedia.org/wiki/Atari_TT030
 
+<!-- more -->
+
 ----------
 
 This is a useful page on video signal adaption between TTL and VGA.
