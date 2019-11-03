@@ -13,14 +13,18 @@ Celsius.  How does this relate with other hot temperatures?
 Temperatures given are approximate for simplicity.
 
 * 0100 C : Boiling water, limit of non-pressurized cooking
-* 0200 C : Baking with browning effects, reflow soldering oven,
-  spontaneous combustion of paper and wood
+* 0200 C : Baking with browning effects, spontaneous combustion of
+  paper and wood, melting point and glass transition temperature of
+  most plastics (LDPE, HDPE, PP, PMMA, PLA, ABS, PC)
+* 0260 C : Reflow soldering oven, melting point of PS, PET, PVC
+  plastic
 * 0400 C : Lead-free soldering iron, melting point of lead
 * 0600 C : Minimum match and candle temperature
 * 0800 C : Maximum match temperature
 * 1000 C : Melting point of silver, gold, and copper
-* 1400 C : Maximum candle temperature
-* 1550 C : Bunsen burner temperature, melting point of iron
+* 1400 C : Maximum candle temperature, minimum melting point of glass
+* 1550 C : Bunsen burner temperature, maximum melting point of glass,
+  melting point of iron
 
 20191101/DuckDuckGo how hot does a match burn  
 20191101/https://www.reference.com/science/temperature-burning-match-c017826a9e115258  
