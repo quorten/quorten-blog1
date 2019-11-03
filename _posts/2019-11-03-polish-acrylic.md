@@ -22,3 +22,11 @@ So, armed with knowledge of this technique, you can proceed to finish
 3D printed acrylic parts, provided that you have good solid formation
 in the middle of the material.  100% infill, without interior layering
 boundaries.
+
+Please note that pure acrylic plastic is brittle and scratches/chips
+more easily than glass, so your shined material is vulnerable to
+damage and you may feel the need to re-shine in the future.  You may
+consider using other plastics that are tougher but come at the expense
+of less shine.
+
+20191103/https://en.wikipedia.org/wiki/Poly%28methyl_methacrylate%29
