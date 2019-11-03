@@ -67,7 +67,8 @@ this article.
 Here are details on how to print polycarbonate with the Prusa i3.
 
 20181117/DuckDuckGo prusa i3 polycarbonate  
-20181117/https://shop.prusa3d.com/forum/print-tips-archive--f86/polycarbonate-here-s-how-to-print-it-without-warpi-t6919.html  
+broken/20181117/https://shop.prusa3d.com/forum/print-tips-archive--f86/polycarbonate-here-s-how-to-print-it-without-warpi-t6919.html  
+20191103/https://forum.prusaprinters.org/forum/original-prusa-i3-mk3s-mk3-print-tips-archive/polycarbonate-here-s-how-to-print-it-without-warping-delamination-or-an-enclosure-with-better-than-abs-results./  
 20181117/DuckDuckGo prusa i3 transparent hdpe  
 20181117/DuckDuckGo prusa i3 transparent polypropylene  
 20181117/https://hackaday.com/2012/11/27/prusas-nozzle-prints-polycarbonate-peek-nylon/  
