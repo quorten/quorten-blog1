@@ -15,16 +15,20 @@ Temperatures given are approximate for simplicity.
 * 0100 C : Boiling water, limit of non-pressurized cooking
 * 0200 C : Baking with browning effects, spontaneous combustion of
   paper and wood, melting point and glass transition temperature of
-  most plastics (LDPE, HDPE, PP, PMMA, PLA, ABS, PC)
-* 0260 C : Reflow soldering oven, melting point of PS, PET, PVC
-  plastic
+  most plastics (LDPE, HDPE, PP, PMMA, PLA, ABS, PC), melting point of
+  leaded solder
+* 0260 C : Lead-free reflow soldering oven, melting point of PS, PET,
+  PVC plastic
 * 0400 C : Lead-free soldering iron, melting point of lead
 * 0600 C : Minimum match and candle temperature
+* 0660 C : Melting point of aluminum
 * 0800 C : Maximum match temperature
 * 1000 C : Melting point of silver, gold, and copper
 * 1400 C : Maximum candle temperature, minimum melting point of glass
 * 1550 C : Bunsen burner temperature, maximum melting point of glass,
-  melting point of iron
+  melting point of iron, decomposition of carbon-fiber reinforced
+  epoxy
+* 2500 C : Thermite reaction temperature range
 
 20191101/DuckDuckGo how hot does a match burn  
 20191101/https://www.reference.com/science/temperature-burning-match-c017826a9e115258  

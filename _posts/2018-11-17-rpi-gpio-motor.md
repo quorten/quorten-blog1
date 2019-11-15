@@ -163,18 +163,57 @@ I wouldn't need to understand the internals too carefully.
 
 20181117/DuckDuckGo h-bridge circuit  
 20181117/http://www.circuitstoday.com/h-bridge-motor-driver-circuit  
-20181117/https://en.wikipedia.org/wiki/H_bridge
+20181117/https://en.wikipedia.org/wiki/H_bridge  
+20181117/https://en.wikipedia.org/wiki/Diode_bridge
 
 What are the keys to the H-bridge circuit?  The ability to reverse the
 voltage using 4 transistors, each of which can be wired to a GPIO pin,
 and the flyback diode to protect those transistors and the other
-sensitive circuits from the inductive kick-back.  For simple
-low-voltage micro motors, the cheap commodity silicon diodes (1N540x
-and 1N400x) can be used.  Note that in my very simplest of cases of
-motor control, where I just have a motor and a laser wired directly to
-a power supply and the slide switch on the power supply is what I use
-to "control" the motor, the motor control circuit can be further
-simplified under some circumstances.
+sensitive circuits from the inductive kick-back.  UPDATE 2019-11-11:
+Note that the actual configuration of the circuit is a diode bridge
+rectifier between the motor and the power supply, not merely flyback
+diodes to connect a loop to the motor itself.  A large grounding plane
+probably helps increase the efficacy of such a setup, but if the power
+circuit is totally open, it could be that the diode bridge rectifier
+may provide no protection whatsoever.  However, a similar design is
+used for the protective circuitry in the original Raspberry Pi audio
+connection, so the circuit design still does have some merit.
+
+A number of steps can be taken to increase the effectiveness of this
+method of protection.  A resistor across Vcc and GND can help.  Matter
+of fact, that is almost how the Raspberry Pi Zero is designed,
+specifically having both a resistor and a capacitor to ground to act
+as a low-pass filter, better called a _decoupling capacitor_.  This
+provides a clear path for high frequency kick-back to flow, but
+low-frequency "kick-back," literally the case where the motor is being
+turned like an electric generator, does not have a return path when
+the circuit is switched off.  Again, however, this is probably
+acceptable since the audio circuit is wired up the same way, and
+naturally the low-frequency current will be low voltage since it will
+be related to maximum natural operating voltage of your motor.
+Essentially, a low-pass filter circuit is a form of electrostatic
+discharge (ESD) protection.  But, to be on the safe side when
+designing complex circuits, it never hurts to add additional
+decoupling capacitors to your system.
+
+* 5 V protection: 100 K resistor + 100 nF capacitor, 2 x 10 uF
+  capacitors, 47 uF capacitor
+* 3.3 V protection: 10 uF capacitor, 220 nF capacitor
+* 1.8 V protection: 10 uF capacitor, 220 nF capacitor
+
+All of this being said, one final word of warning is not to try to
+insert a "variable supply voltage" circuit in front of the power to
+the motor, since this would tantamount to eliminating the kick-back
+voltage return path that goes through the power supply's ESD
+protection bridge, unless you also design that circuit to have an ESD
+return path.
+
+For simple low-voltage micro motors, the cheap commodity silicon
+diodes (1N540x and 1N400x) can be used.  Note that in my very simplest
+of cases of motor control, where I just have a motor and a laser wired
+directly to a power supply and the slide switch on the power supply is
+what I use to "control" the motor, the motor control circuit can be
+further simplified under some circumstances.
 
 1. First of all, only a single flyback diode needs to be used for
    motor control if the motor can never be controlled in the reverse

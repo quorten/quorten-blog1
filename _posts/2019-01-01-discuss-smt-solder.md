@@ -251,3 +251,13 @@ laptop is not working, put your laptop in the oven with a wet towel
 around it, and that will fix it.  Indeed, that's how we know it works.
 Although, it is more effective if you remove the circuit boards, and
 the wet towel probably isn't necessary.
+
+UPDATE 2019-11-05
+
+However, please note that the lead-free reflow soldering temperature,
+about 260 degrees Celsius, is above the melting point of most
+plastics, about 200 degrees Celsius.  This means that you _cannot_ put
+an electronic in an oven whole to do a reflow solder.  It would melt
+the plastic casing and it would be ruined.  You must put **only** the
+circuit boards in the oven and remove all other external casing,
+batteries, SD memory cards, and so on.

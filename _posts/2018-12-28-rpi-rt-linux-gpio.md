@@ -214,6 +214,12 @@ diode bridge tidbit of hardware simply for the sake of electrical
 protection ans isolation of the circuitry from stay currents on the
 audio input.
 
+* Original design low pass filter components: (1) 270 ohm resistor,
+  (2) 33 nF capacitor to ground.  Cut-off frequency 18 kHz.
+
+* Original design high pass filter components: (1) 150 ohm resistor to
+  ground, (2) 10 uF capacitor.  Cut-off frequency 100 Hz.
+
 So, what about my earlier comment on hints that later board revisions
 might use I2S for the built-in audio output?  As it turns out, the
 correct clarification is that earlier board revisions didn't have I2S
@@ -475,7 +481,7 @@ main (int argc, char *argv)
     if (result != 0) {
       /* Handle error */
     }
-    result = pthread_create (&rt_tid, &rt_attr, arg, thread_func);
+    result = pthread_create (&rt_tid, &rt_attr, thread_func, arg);
     if (result != 0) {
       /* Handle error */
     }
@@ -789,3 +795,38 @@ JJJ TODO FIXUP!
   ADVANCED: Driver for a general-purpose Linux keyboard input that can
   type on the console and in Xorg.
 
+JJJ TODO UPDATE 2019-11-06:
+
+The pthread method of setting realtime priority was lamely not working
+for me, so I had to go with a Linux-specific approach instead.
+Example code here.
+
+20191106/DuckDuckGo sched_setscheduler thread  
+20191106/https://stackoverflow.com/questions/38193214/sched-setscheduler-is-for-all-threads-or-main-thread
+
+Also, `clock_nanosleep()` does not place under realtime priority timer
+interrupts.  At the very least, try using the `timer_create()` and
+similar functions instead.  Failing that, go with `hrtimer()` and last
+resort, `snd_hrtimer()`.
+
+Also update, how do you do `clock_nanosleep()` using busy waiting
+rather than context switching?  If you specify a time interval less
+than 2 ms, a busy-wait will be performed without context switching.
+Otherwise, the total latency time is rounded up to the next kernel
+timer tick.  This is where you've got to have that custom compiled
+kernel with the higher resolution timer ticks, 250 Hz, 1000 Hz, and so
+on.  The big problem is, if you only have a 100 Hz kernel timer tick,
+your realtime frequency limit is generally 50 Hz.
+
+20191107/DuckDuckGo linux realtime nanosleep without context switch  
+20191107/https://www.linuxquestions.org/questions/programming-9/nanosleep-problem-269563/
+
+Also, to find out your current Raspberry Pi's configuration, do this:
+
+```
+sudo modprobe configs
+gzip -dc /proc/config.gz >config-`uname -r`
+```
+
+20191107/DuckDuckGo raspberry pi view kernel config  
+20191107/https://www.raspberrypi.org/forums/viewtopic.php?p=824645

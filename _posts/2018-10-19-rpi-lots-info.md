@@ -161,6 +161,9 @@ Zero need to be stated.  Important!
   use them (HDMI and USB hub), so the fact that they don't get
   sufficient power is irrelevant.
 
+  **Please note** that other sources recommend that you never wire a
+    power supply into the 3.3 V pins, lest you damage your board.
+
   No, really, why does 2.8 V power work okay?  Indeed there is a 1.0 V
   to 1.1 V voltage drop through the 3.3 V voltage regulator, but the
   processor itself only needs to run off of 1.8 V, which is just in

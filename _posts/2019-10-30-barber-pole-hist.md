@@ -7,7 +7,7 @@ categories: [random]
 tags: [random]
 ---
 
-The striped trobber indicator in user interfaces kind of looks like a
+The striped throbber indicator in user interfaces kind of looks like a
 "barber pole."
 
 What is the history of the barber pole?  I heard an interesting
