@@ -47,3 +47,11 @@ Commercial electronics cut costs by omitting components #2 and #4
 as they apply on the high-voltage side, since these are also
 larger and add more bulk and weight to your mobile device's
 charger.
+
+Speaking of volage regulators, here are some useful info sources for
+the sake of building really cheap voltage regulators.  Voltage
+regulators are, of course, good for electrostatic discharge
+protection.
+
+20191115/https://en.wikipedia.org/wiki/Voltage_divider  
+20191115/https://en.wikipedia.org/wiki/Zener_diode

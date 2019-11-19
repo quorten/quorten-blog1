@@ -134,25 +134,52 @@ the event that you use your microcomputer to generate the analog
 conversion clock signal, you must sacrifice one GPIO pin to dedicate
 to that purpose.
 
-So, the full design of any analog to digital conversion setup can be
+Finally, an additional useful feature of an expensive ADC is to
+provide not just a single PCM register per input, but an entire buffer
+of consecutive PCM values, thus allowing high-frequency data to be
+buffered up and read out in bulk by a non-realtime process.
+Interrupts can be issued at particular fullness intervals, and also to
+indicate if a "buffer overrun" occurs.  That is, a failure to read the
+buffer fast enough resulted in old samples being overwritten by new
+samples and therefore lost.  Sound hardware is one of the primary use
+cases where the more advanced ADC and DAC features justifies the cost.
+
+But, ultimately, there's more than one way to construct an full-system
+ADC, some methods being more expensive than the others.  The Wikipedia
+article on the subject provides a less-organized but more
+comprehensive treatment.  The main issue with ADC quality is that
+"cheap" ADCs are technically not "single-chip" designs, and therefore
+they are more susceptible to any source of noise and error,
+temperature dependence being but one of the sources.
+
+20191116/https://en.wikipedia.org/wiki/Analog-to-digital_conversion
+
+That being said, the full design of the most conventional analog to
+digital conversion setups I've mentioned in this article can be
 described in these main stages, with a variety of implementation
 techniques for each stage.
 
 1. Generation of an analog conversion clock signal
     * Local oscillator
-    * Microcomputer-generated oscillating signal
-    * Microcomputer-generated trigger signal
+    * Microcomputer-generated oscillating signal, PDM with low-pass
+      filter
+    * Microcomputer-generated trigger signal, capacitor discharge
+      sawtooth
     * Microcomputer-generated successive approximation signal
 2. Conversion from analog to PDM
     * Comparator-based PDM conversion
     * 555 one-shot timer pulse, comparator embedded
     * Comparator-based successive approximation
-2. Conversion from PDM to PCM
+3. Conversion from PDM to PCM
     * Local counter-based converter
     * Software-based full period cumulative
     * Software-based trigger pulse timing
     * Software-based successive approximation, PCM value in
       approximation output register
+4. PCM sample processing
+    * Immediate, realtime sample processing
+    * Hardware sample buffering, delayed processing in bulk
+    * Software sample buffering, delayed processing in bulk
 
 Notably, all conversion techniques require a comparator, that's the
 one electronic circuit component that you cannot get around.
@@ -171,3 +198,48 @@ Also note that the "cut-off frequency" is better understood as a
 
 20191111/https://en.wikipedia.org/wiki/Low-pass_filter  
 20191111/https://en.wikipedia.org/wiki/High-pass_filter
+
+----------
+
+Another notable discussion point is latency of ADCs.  Referring to the
+steps mentioned above, the primary areas where latency are introduced
+are in conversion from PDM to PCM, known as _quantization latency_,
+and buffering of PCM samples.  Notably, conversion from analog to PDM
+doesnn't technically need to introduce very much latency, the primary
+source of latency is from the analog signal traveling through the
+comparator gates.  Quantization latency is inevitable, but buffering
+latency can be minimized by using the smallest possible buffers.  Of
+course, the 555 timer technique and successive approximation technique
+necessarily roll other steps together that do introduce more latency.
+
+Another related problem is generating an analog conversion clock
+signal using a microcomputer.  If you use a cheap low-pass filter as
+your digital to analog converter, you are necessarily rather limited
+in the frequency by which you can generate your analog conversion
+clock, which necessarily limits your ADC input frequency to much less
+than your DAC output frequency.  In the vein that generating a
+sawtooth or triangle wave and feeding it to a comparator is
+essentially a format of successive approximation, you might as well
+just do that instead to get a faster response time.  Likewise, in this
+vein, it turns out that the 555 timer approach is also a faster way to
+generate the analog conversion clock: a one-shot sawtooth waveform is
+generated via a capacitor discharge.  So, we can rank the cheap ADC
+conversion techniques in terms of speed, from slowest to fastest.
+
+1. Class-D amplifier style ADC, sawtooth/triangle signal is generated
+   by microcomputer PDM with low-pass filter.
+2. Successive approximation using low-pass filter for DAC.
+3. 555 timer approach, capacitor as one-shot sawtooth wave generator,
+   microcomputer drives leading edge of conversion clock.
+4. Class-D amplifier style ADC, sawtooth/triangle signal is generated
+   via a local oscillator.
+
+If you have an expensive ADC connected almost directly to the address
+bus, then embedded PCM conversion and buffering can also contribute to
+speed.  Otherwise, serial communications with an ADC with PCM
+conversion embedded doesn't buy you much time compared to compared to
+microcomputer PDM conversion.
+
+Notably, the 555 timer technique is pretty much the best technique
+overall.  Like successive approximation, it also requires one
+capacitor and one comparator, but it is faster and still pretty cheap.
