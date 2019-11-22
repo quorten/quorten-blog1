@@ -18,7 +18,7 @@ you up and running on your blog writing fast!
   "Generate the preamble for a new blog post."
   (interactive "MTags: ")
   (setq cur-date (decode-time))
-  (setq pick-date (cdr (cdr (cdr (reverse (cdr (decode-time)))))))
+  (setq pick-date (cdr (cdr (cdr (reverse (cdr cur-date))))))
   (setq tz-sec (nth 8 cur-date))
   (setq tz-min (% (/ tz-sec 60) 60))
   (setq tz-hr (/ tz-sec 3600))
