@@ -4,8 +4,8 @@ title: "Why Raspberry Pi production capacity is so low, info on AA
         battery power and camera"
 date: 2016-06-03 21:00 -0600
 author: quorten
-categories: [raspberry-pi]
-tags: [raspberry-pi]
+categories: [raspberry-pi, reiterate]
+tags: [raspberry-pi, reiterate]
 ---
 
 Okay, now time to search for some information on the Raspberry Pi
