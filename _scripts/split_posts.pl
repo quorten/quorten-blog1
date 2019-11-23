@@ -27,6 +27,9 @@ my $codename = "";
 my $date = "";
 my $article_error = 0;
 
+my $total_posts = 1;
+my $cvted_posts = 0;
+
 while (<>) {
     if ($_ eq $POST_DIVIDER) {
         # Post divider matched.
@@ -37,6 +40,7 @@ while (<>) {
         $codename = "";
         $date = "";
 	$article_error = 0;
+	$total_posts++;
 	if ($out) {
 	    # Flush the line buffer, except for a trailing blank line.
 	    pop @linebuf if ($linebuf[$#linebuf] eq "\n");
@@ -59,6 +63,7 @@ while (<>) {
 		@linebuf = ();
 		$article_error = 1;
             } else {
+		$cvted_posts++;
 		my $filename = "$date-$codename.md";
 		open($out, ">", $filename) or die "$filename: $!";
 		# Flush the line buffer, except for a leading blank line.
@@ -103,3 +108,8 @@ if ($out) {
     close $out or die "$out: $!";
     $out = undef;
 }
+
+# Output statistics.
+my $cvt_percent = $cvted_posts / $total_posts * 100;
+my $cvt_per_str = sprintf('%.2f', $cvt_percent);
+warn "$cvted_posts/$total_posts = $cvt_per_str% converted"
