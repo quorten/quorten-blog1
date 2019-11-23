@@ -332,8 +332,6 @@ paper that you have around your regular physical environment.
 
 ----------
 
-Raspberry Pi notes.
-
 What are the RUN pins on the Raspberry Pi Zero?  If you connect the
 two pins, that causes a RESET to the Broadcom CPU.
 
