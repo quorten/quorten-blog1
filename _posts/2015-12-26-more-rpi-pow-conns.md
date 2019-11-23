@@ -43,8 +43,8 @@ generation electronics.
 
 VERY Helpful Raspberry Pi FAQ.  Yeah, I may have jumped too soon on
 some of my adapters.  However, hopes are high for me, I've got reports
-that they will work alright.  See my other Raspberry Pi notes for more
-information.  JJJ TODO Sort this out!
+that they will work alright.  See my other [Raspberry Pi notes]({{
+site.baseurl }}/blog/categories/raspberry-pi) for more information.
 
 20151226/https://www.raspberrypi.org/help/faqs/
 

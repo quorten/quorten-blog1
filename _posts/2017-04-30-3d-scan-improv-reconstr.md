@@ -45,7 +45,7 @@ interpolation, and Lanczos 3-lobe interpolation.
 
 <img width="608" height="260"
      alt="Interpolation functions visualization"
-     href="{{ site.baseurl }}/blog/images/2017-04-30-interpol-funcs.png" />
+     src="{{ site.baseurl }}/blog/images/2017-04-30-interpol-funcs.png" />
 
 These scalings were done in the GIMP.  Note that the source image is
 solely black and white, so you need not worry about gamma here when

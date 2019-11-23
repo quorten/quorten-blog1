@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hard drive stiction
-date: 2016-01-05 21:00 -0600
+date: 2016-10-05 21:00 -0600
 author: quorten
 categories: [vintage-computing]
 tags: [vintage-computing]

@@ -3,8 +3,8 @@ layout: post
 title: Battery backup system alternatives to lithium-ion batteries
 date: 2017-06-11 21:00 -0600
 author: quorten
-categories: [battery-backup]
-tags: [battery-backup]
+categories: [battery-backup, raspberry-pi]
+tags: [battery-backup, raspberry-pi]
 ---
 
 Yes, yes, yes.  Battery backup system notes.  Server notes.  As I have
