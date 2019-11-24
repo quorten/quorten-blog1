@@ -10,7 +10,7 @@ tags: [mat-sci, raspberry-pi]
 
 Use a soldering iron to weld separate 3D printed plastic parts or as a
 cheap replacement for a hot air gun for shrinking heat shrink tubing?
-Na!  A soldering iron is generally too hot for those uses: Unless you
+Nah!  A soldering iron is generally too hot for those uses: Unless you
 have a wide range of temperature control, a 370 degree Celsius
 soldering iron runs the risk of burning plastic and heat-shrink
 tubing.  Instead, you can use a low-temperature hot glue gun, this
