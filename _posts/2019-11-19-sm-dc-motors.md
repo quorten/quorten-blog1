@@ -60,6 +60,12 @@ mobile communications devices.
 20191119/https://www.precisionmicrodrives.com/content/ab-004-understanding-erm-vibration-motor-characteristics/  
 20191119/https://www.precisionmicrodrives.com/vibration-motors/eccentric-rotating-mass-vibration-motors-erms/
 
+What if you want an even smaller motor than is possible with the
+smallest of DC motors?  Consider if you can use a solenoid instead.
+These are often used on mechanical systems that need only two states
+of motion, and they can be built to be smaller than the smallest of DC
+motors.  Some solenoids may also be three-state or four-stage.
+
 Now, what about steering mechanisms for small car-style devices?  Two
 main styles.  For maximum maneuverability, there is "skid-steer" where
 you have one motor to control left-side wheels and one motor to
