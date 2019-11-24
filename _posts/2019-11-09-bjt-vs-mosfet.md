@@ -65,7 +65,7 @@ for higher-power applications than MOSFETs.  Thyristors are also less
 sensitive to temperature than MOSFETs.
 
 20191109/DuckDuckGo thyristor versus mosfet  
-https://www.ecstuff4u.com/2018/05/difference-between-thyristor-and-mosfet.html
+20191109/https://www.ecstuff4u.com/2018/05/difference-between-thyristor-and-mosfet.html
 
 ----------
 
