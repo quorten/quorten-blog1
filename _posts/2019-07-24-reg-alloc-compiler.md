@@ -24,4 +24,3 @@ The extreme opposite end, loading a variable into a register for one
 use, computing, and storing it back to memory, is the easiest and most
 orthogonal to compile, but also the least efficient computation
 technique.
-
