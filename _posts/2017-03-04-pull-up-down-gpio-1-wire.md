@@ -28,84 +28,12 @@ reaction game.  It probably got rewritten after the advent of GPIO
 Zero, but before that, there may have been an older version that
 introduced the pull up and pull down concepts.
 
-<!-- more -->
-
 * Let me state the answer to the question more clearly here, though.
   "Pull up" means that a transition from 3.3V to 0V is a transition
   into the "on" state, "pull down" means that a transition from 0V to
   3.3V is a transition into the "on" state.
 
-    * UPDATE 2018-11-25: With pull-up, you're connecting the
-      button/switch to a constant ground rather than a constant
-      voltage source, hence it is generally safer and less susceptible
-      to RF interference.
-
-      Pull-up means that your GPIO input pin is like a connection to a
-      pull-up resistor (resistor to positive voltage source),
-      pull-down means your GPIO input pin is like a pull-down resistor
-      (resistor to ground).  So, for current to flow, the connection
-      on the opposite side of a pull-up input should be ground, and
-      for a pull-down input, it should be the positive voltage source
-      3.3V.
-
-      With this explanation, the phrase "pull-up termination" makes
-      perfect sense.  You connect a pull-up resistor to the circuit
-      that provides a positive voltage source on the GPIO pin, hence
-      it is "pull-up."  Also, for the `gpiozero` library, pull-up is
-      the default configuration for inputs, which is why the quick
-      reaction game didn't need to configure it.
-
-      In the case of output pins, however, "pull-up" and "pull-down"
-      are literally true to their meaning like connection to pull-up
-      and pull-down resistors.  A pull-up output will supply the
-      positive voltage source when enabled, and a pull-down output
-      will supply a path to ground when enabled.
-
-      UPDATE 2019-11-24: Also, to be really technical about the case
-      of input pins, "pull-up" and "pull-down" are also literally true
-      to their meaning, but it takes a bit more effort to explain.
-      CMOS logic gates must never be floating: the gate must either be
-      connected to the positive voltage source or ground.  To ensure
-      this is the case with GPIO input buttons that are "floating"
-      when open and conducting when closed, a pull-up or pull-down
-      resistor is also wired up on the gate side of the CMOS logic
-      gate used for the GPIO input.  When the GPIO input button is
-      floating, the value of the CMOS logic gate will be asserted to
-      the value of the pull-up/pull-down resistor, but when the GPIO
-      input button is conducting, the pull-up/pull-down resistor value
-      will short to the opposite side of the GPIO input button, and
-      the CMOS logic gate will be asserted to the voltage value on the
-      opposite side of the GPIO input button.
-
-      Matter of fact, if you wire up an LED to a pull-up GPIO input,
-      you will see the LED will dimly light, showing that there is
-      still current flowing even after the CMOS logic gate has been
-      switched.  Also note that because CMOS logic gates only consume
-      current when switching, we can take advantage of this fact to
-      use a high value pull-up/down resistor and still get the proper
-      voltage across the CMOS logic gate: because so little current
-      flows after a CMOS logic gate has switched, the CMOS logic gate
-      behaves as a very high impedance load, which means most of the
-      voltage drop is across the CMOS logic gate rather than the
-      pull-up/down resistor, so the voltage value at the gate is very
-      nearly the source supply value.  The high-value pull-up/down
-      resistor likewise limits the amount of current drawn when the
-      GPIO input button is conducting.
-
-      Keep this in mind when working with Raspberry Pi GPIO inputs at
-      the lowest level.  When you configure a GPIO input as pull-up,
-      you will get the value "1" when the button is floating and the
-      value "0" when the button is conducting, which is the opposite
-      of what you'd normally expect from a software standpoint.
-
-      Also, note that microcontrollers other than the Raspberry Pi may
-      not have built-in pull-up/pull-down resistors.  In that case,
-      you must wire up your own pull-up/pull-down resistors when
-      connecting GPIO inputs.  A 4.7 K resistor seems to be
-      recommended as a good value to use.
-
-      20191124/DuckDuckGo raspberry pi gpio input pull resistance  
-      20191124/http://www.raspberryvi.org/stories/pull-up-and-pull-down-resistors.html
+<!-- more -->
 
 20170304/https://www.raspberrypi.org/documentation/usage/gpio/  
 20170304/https://www.raspberrypi.org/learning/python-quick-reaction-game/  
@@ -115,7 +43,76 @@ introduced the pull up and pull down concepts.
 20170304/https://www.raspberrypi.org/blog/using-the-gpio/  
 20170304/https://www.raspberrypi.org/blog/make-your-own-ribbon-cable-with-gert/
 
-Now, I'm also interesting.  Is it possible to build an (E)EPROM
+* UPDATE 2018-11-25: With pull-up, you're connecting the button/switch
+  to a constant ground rather than a constant voltage source, hence it
+  is generally safer and less susceptible to RF interference.
+
+  Pull-up means that your GPIO input pin is like a connection to a
+  pull-up resistor (resistor to positive voltage source), pull-down
+  means your GPIO input pin is like a pull-down resistor (resistor to
+  ground).  So, for current to flow, the connection on the opposite
+  side of a pull-up input should be ground, and for a pull-down input,
+  it should be the positive voltage source 3.3V.
+
+  With this explanation, the phrase "pull-up termination" makes
+  perfect sense.  You connect a pull-up resistor to the circuit that
+  provides a positive voltage source on the GPIO pin, hence it is
+  "pull-up."  Also, for the `gpiozero` library, pull-up is the default
+  configuration for inputs, which is why the quick reaction game
+  didn't need to configure it.
+
+  In the case of output pins, however, "pull-up" and "pull-down" are
+  literally true to their meaning like connection to pull-up and
+  pull-down resistors.  A pull-up output will supply the positive
+  voltage source when enabled, and a pull-down output will supply a
+  path to ground when enabled.
+
+  UPDATE 2019-11-24: Also, to be really technical about the case of
+  input pins, "pull-up" and "pull-down" are also literally true to
+  their meaning, but it takes a bit more effort to explain.  CMOS
+  logic gates must never be floating: the gate must either be
+  connected to the positive voltage source or ground.  To ensure this
+  is the case with GPIO input buttons that are "floating" when open
+  and conducting when closed, a pull-up or pull-down resistor is also
+  wired up on the gate side of the CMOS logic gate used for the GPIO
+  input.  When the GPIO input button is floating, the value of the
+  CMOS logic gate will be asserted to the value of the
+  pull-up/pull-down resistor, but when the GPIO input button is
+  conducting, the pull-up/pull-down resistor value will short to the
+  opposite side of the GPIO input button, and the CMOS logic gate will
+  be asserted to the voltage value on the opposite side of the GPIO
+  input button.
+
+  Matter of fact, if you wire up an LED to a pull-up GPIO input, you
+  will see the LED will dimly light, showing that there is still
+  current flowing even after the CMOS logic gate has been switched.
+  Also note that because CMOS logic gates only consume current when
+  switching, we can take advantage of this fact to use a high value
+  pull-up/down resistor and still get the proper voltage across the
+  CMOS logic gate: because so little current flows after a CMOS logic
+  gate has switched, the CMOS logic gate behaves as a very high
+  impedance load, which means most of the voltage drop is across the
+  CMOS logic gate rather than the pull-up/down resistor, so the
+  voltage value at the gate is very nearly the source supply value.
+  The high-value pull-up/down resistor likewise limits the amount of
+  current drawn when the GPIO input button is conducting.
+
+  Keep this in mind when working with Raspberry Pi GPIO inputs at the
+  lowest level.  When you configure a GPIO input as pull-up, you will
+  get the value "1" when the button is floating and the value "0" when
+  the button is conducting, which is the opposite of what you'd
+  normally expect from a software standpoint.
+
+  Also, note that microcontrollers other than the Raspberry Pi may not
+  have built-in pull-up/pull-down resistors.  In that case, you must
+  wire up your own pull-up/pull-down resistors when connecting GPIO
+  inputs.  A 4.7 K resistor seems to be recommended as a good value to
+  use.
+
+  20191124/DuckDuckGo raspberry pi gpio input pull resistance  
+  20191124/http://www.raspberryvi.org/stories/pull-up-and-pull-down-resistors.html
+
+Now, I'm also interested.  Is it possible to build an (E)EPROM
 programmer with an Arduino or a Raspberry Pi?  I'm thinking there may
 be more information on how to do it with an Arduino, so I better
 include both in my search query for safe measure.  Alas, I was wrong.
