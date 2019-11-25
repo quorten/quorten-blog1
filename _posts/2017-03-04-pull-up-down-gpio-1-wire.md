@@ -28,12 +28,12 @@ reaction game.  It probably got rewritten after the advent of GPIO
 Zero, but before that, there may have been an older version that
 introduced the pull up and pull down concepts.
 
+<!-- more -->
+
 * Let me state the answer to the question more clearly here, though.
   "Pull up" means that a transition from 3.3V to 0V is a transition
   into the "on" state, "pull down" means that a transition from 0V to
   3.3V is a transition into the "on" state.
-
-<!-- more -->
 
     * UPDATE 2018-11-25: With pull-up, you're connecting the
       button/switch to a constant ground rather than a constant
