@@ -23,13 +23,22 @@ supported, though.  Still, come on, that's pretty good!
 20191125/https://support.jlcpcb.com/article/79-pick-place-file-for-smt-assembly  
 20191125/https://support.jlcpcb.com/article/80-bill-of-materialsbom-file-for-smt-assembly
 
+Interesting that they've only been around for 12 years.  "Only" 12
+years?  Come on, that's a long time!  In the tech world in general,
+yeah, **but** they are relatively young compared to other companies in
+their area of electronics prototyping/manufacturing support companies
+such as Digi-Key, Mouser, etc.  Then again, PCB manufacturing service
+companies seem to be rather young... many of the old big electronics
+businesses did the whole process in-house.  So in that respect, they
+are old for a PCB manufacturing services company.
+
+<!-- more -->
+
 And looking more into this, now I realize that `dirtypcbs.com` may
 provide the same through their "dirty BOM" site feature.  Oh yeah, and
 the custom cables?  That is mainly about getting a service to crimp
 standard cables onto standard connectors for you, with minor tweaking.
 No need to suffer the pain of crimping your own cables.
-
-<!-- more -->
 
 Yeah, unfortunately, OSH Park offers nothing along the lines of BOM.
 If you want professional automation, you've got to take it to Hong
