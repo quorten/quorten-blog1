@@ -4,7 +4,7 @@ title: C64 BASIC program found on Christian rock band vinyl record
 date: 2019-11-26 00:20 -0600
 author: quorten
 categories: [random]
-tags: [random
+tags: [random]
 ---
 
 Interesting, a C64 BASIC program found on a Christian rock band vinyl
