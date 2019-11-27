@@ -11,6 +11,8 @@ Important!  RHEL Red Hat CentOS notes.  Find out the list of files
 that are in an installed package.
 
     repoquery --list autofs
+    # UPDATE 2019-11-26: Alternatively:
+    rpm -ql autofs
 
 Find out which package a file belongs to.
 
