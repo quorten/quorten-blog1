@@ -3,8 +3,8 @@ layout: post
 title: Search index information in PDF, HTML, etc.
 author: quorten
 date: 2017-03-06
-categories: [misc, important]
-tags: [misc, important]
+categories: [media-prog, important]
+tags: [media-prog, important]
 ---
 
 Important!  For searchable information, how do you convert PDF and
