@@ -35,7 +35,8 @@ power.
 20171118/https://electronics.stackexchange.com/questions/113233/switching-between-backup-battery-and-main-power-supply  
 20171118/http://www.edaboard.com/thread183013.html  
 20171118/DuckDuckGo LTC4412 IC  
-20171118/http://www.linear.com/docs/en/datasheet/4412hvfs.pdf  
+broken/20171118/http://www.linear.com/docs/en/datasheet/4412hvfs.pdf  
+20191128/https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf  
 20171118/DuckDuckGo FDN306P  
 20171118/http://morrow.ece.wisc.edu/IEEE/2010/Datasheets/Fairchild/FDN306P.pdf  
 20171118/https://www.mouser.com/ProductDetail/ON-Semiconductor-Fairchild/FDN306P/?qs=GeD7q9OHBPy9Kkc110idSQ%3d%3d
