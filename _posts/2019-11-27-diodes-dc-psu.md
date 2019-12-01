@@ -204,3 +204,24 @@ are all the PMICs.  It has built-in current limiting, which may
 obviate the need for a polyfuse.
 
 20191127/https://www.digikey.com/product-detail/en/texas-instruments/LM3578AN-NOPB/LM3578AN-NOPB-ND/32487
+
+----------
+
+Okay, so there's another lesson I learned that you must beware about,
+looking further into the data sheets for the switch-mode power
+supplies.  If you do use higher frequency switching, you must also be
+more careful about the length of your wires connecting your PMIC to
+its external inductor and capacitor components.  Keep the length of
+the wires as short as possible, and use wide traces.  Especially,
+we're talking small components and short distances if we're using a
+surface-mount PMIC.  That means that the highest switching frequencies
+are basically off limits when doing basic novice electronics work.
+For this reason, there is a benefit to lower frequency switching power
+supplies: they can be built on a breadboard, though this comes at the
+expense of larger components, possibly incurring more noise and less
+efficiency.
+
+This is where if you do want to use a high frequency switch-mode power
+supply, it may be beneficial to buy one of those pre-built Adafruit
+boards, even though it does come at a higher price.  But that's the
+price you pay for buying lower-volume manufactured boards.
