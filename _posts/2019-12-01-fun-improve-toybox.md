@@ -191,6 +191,14 @@ open space, but this can contribute to a greater mess for everyone.
 Otherwise, wireless works best if anyone can be anywhere because there
 are not well-defined rooms.
 
+<object type="image/svg+xml"
+        data="{{ site.baseurl }}/blog/images/2019-12-01-telecom.svg"
+        width="425" height="225">
+  <img src="{{ site.baseurl }}/blog/images/2019-12-01-telecom.png"
+       alt="Wire stripping steps in diagrams"
+       width="425" height="225" />
+</object>
+
 Actual surveillance cameras are still pretty expensive for toy land,
 although the prices have gone down considerably.  Maybe only one
 actual camera for the entire toybox.
