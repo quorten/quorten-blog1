@@ -33,8 +33,8 @@ the toybox, not the bottom.
 The traditional layout of an apartment looks something like this.
 There is ample room for multiple hallways, stairs, elevators, even a
 utility closet.  Depending on the layout of a particular building,
-there may be common areas for bathrooms and lockers, or these amy be
-included in each individual room.q
+there may be common areas for bathrooms and lockers, or these any be
+included in each individual room.
 
 <!-- TODO: IMAGE! -->
 
@@ -61,18 +61,18 @@ toybox.  Methods that effectively increase the space around plush toys
 will decrease the population density, which means a toybox will
 probably need to be expanded with more interior space.
 
-Another particular problem is that not all plush toys are not all the
-same size.  In the human world, this is largely not a problem since
-ample space in their rooms to such that the differences are
-negligible.  But again, this can also come at a considerable expense
-if it means greatly expanding the interior space of a toybox.
+Another particular problem is that not all plush toys are the same
+size.  In the human world, this is largely not a problem since ample
+space in their rooms to such that the differences are negligible.  But
+again, this can also come at a considerable expense if it means
+greatly expanding the interior space of a toybox.
 
 Here is a ranking of methods for improving the ability of plush toys
 to enter and exit the toybox, from cheapest and easiest to construct,
 to most expensive and most difficult to construct.
 
 First method: Separate 11 x 11 inch bags for separate floors, each
-floor about 2.4 inches tall.  For a 12 x 3.5 x 12 inch toybox
+floor about 2.4 inches tall.  For a 12 x 15.5 x 12 inch toybox
 dominated small 5-inch tall plush toys, at least 10 such plush toys
 can live on one floor, maybe somewhere closer to 20.  For simplicity,
 suppose there are 50 plush toys in a toybox, and we assume 10 plush
@@ -154,6 +154,14 @@ fire alarm system, illuminated exit signs, hallway lights with battery
 backup, RFID keycard security system, maybe even surveillance cameras.
 
 <!-- TODO: IMAGE! -->
+
+<object type="image/svg+xml"
+        data="{{ site.baseurl }}/blog/images/2019-12-01-fire-safety.svg"
+        width="500" height="200">
+  <img src="{{ site.baseurl }}/blog/images/2019-12-01-fire-safety.png"
+       alt="Wire stripping steps in diagrams"
+       width="500" height="200" />
+</object>
 
 <object type="image/svg+xml"
         data="{{ site.baseurl }}/blog/images/2019-12-01-security.svg"
