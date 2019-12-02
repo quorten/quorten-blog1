@@ -80,7 +80,8 @@ makes navigation much easier for picking a random plush toy: (1) pick
 one out of the 5 bags, (2) pick one out of the 10/20 plush toys in the
 bag, looking through the easy to see transparent bag.  The width,
 height, and depth of such "floor" constructions is also comparable to
-the standard dimensions for a ream of 500 sheets of printer paper.
+the standard dimensions for a 2.5 inch thick ream of 500 sheets of 8.5
+x 11 inch printer paper.
 
 <object type="image/svg+xml"
         data="{{ site.baseurl }}/blog/images/2019-12-01-bags.svg"
@@ -223,7 +224,10 @@ What's not included?
 
 * Water, sewage, bathrooms.
 
-* Lighting fixtures.
+* Lighting fixtures.  These could be installed as orange LEDs inside
+  the toybox to help illuminate the interior better when opening it
+  up, but typically this is not needed since there is sufficient light
+  simply by opening the toybox.
 
 * Electricity.
 
