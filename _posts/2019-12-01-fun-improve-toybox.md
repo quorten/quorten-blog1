@@ -36,13 +36,11 @@ utility closet.  Depending on the layout of a particular building,
 there may be common areas for bathrooms and lockers, or these any be
 included in each individual room.
 
-<!-- TODO: IMAGE! -->
-
 <object type="image/svg+xml"
         data="{{ site.baseurl }}/blog/images/2019-12-01-apartment.svg"
         width="500" height="325">
   <img src="{{ site.baseurl }}/blog/images/2019-12-01-apartment.png"
-       alt="Wire stripping steps in diagrams"
+       alt="Traditional apartment layout diagram"
        width="500" height="325" />
 </object>
 
@@ -62,35 +60,33 @@ will decrease the population density, which means a toybox will
 probably need to be expanded with more interior space.
 
 Another particular problem is that not all plush toys are the same
-size.  In the human world, this is largely not a problem since ample
-space in their rooms to such that the differences are negligible.  But
-again, this can also come at a considerable expense if it means
-greatly expanding the interior space of a toybox.
+size.  In the human world, this is largely not a problem since humans
+have ample space in their rooms such that the differences are
+negligible.  But again, this can also come at a considerable expense
+if it means greatly expanding the interior space of a toybox.
 
 Here is a ranking of methods for improving the ability of plush toys
 to enter and exit the toybox, from cheapest and easiest to construct,
 to most expensive and most difficult to construct.
 
-First method: Separate 11 x 11 inch bags for separate floors, each
-floor about 2.4 inches tall.  For a 12 x 15.5 x 12 inch toybox
-dominated small 5-inch tall plush toys, at least 10 such plush toys
-can live on one floor, maybe somewhere closer to 20.  For simplicity,
-suppose there are 50 plush toys in a toybox, and we assume 10 plush
-toys can live on one floor, then such a toybox can be seen like a
-5-story apartment building.  Likewise, this makes navigation much
-easier for picking a random plush toy: (1) pick one out of the 5 bags,
-(2) pick one out of the 10/20 plush toys in the bag, looking through
-the easy to see transparent bag.  The width, height, and depth of such
-"floor" constructions is also comparable to the standard dimensions
-for a ream of 500 sheets of printer paper.
-
-<!-- TODO: IMAGE! -->
+First method: Use separate 11 x 11 inch bags for separate floors.
+Each floor is about 2.4 inches tall.  For a 12 x 15.5 x 12 inch toybox
+dominated small 5-inch tall plush toys, 5-10 such plush toys can live
+on one floor, maybe somewhere closer to 20 if you can fit two bags on
+one floor.  For simplicity, suppose there are 50 plush toys in a
+toybox, and we assume 10 plush toys can live on one floor, then such a
+toybox can be seen like a 5-story apartment building.  Likewise, this
+makes navigation much easier for picking a random plush toy: (1) pick
+one out of the 5 bags, (2) pick one out of the 10/20 plush toys in the
+bag, looking through the easy to see transparent bag.  The width,
+height, and depth of such "floor" constructions is also comparable to
+the standard dimensions for a ream of 500 sheets of printer paper.
 
 <object type="image/svg+xml"
         data="{{ site.baseurl }}/blog/images/2019-12-01-bags.svg"
         width="550" height="400">
   <img src="{{ site.baseurl }}/blog/images/2019-12-01-bags.png"
-       alt="Wire stripping steps in diagrams"
+       alt="Bags stacking organization method"
        width="550" height="400" />
 </object>
 
@@ -105,20 +101,18 @@ rooms for each plush toy.  The disadvantage, of course, is that for
 plush toys that are tall enough to require spanning multiple floors,
 special such spaces must be built.
 
-<!-- TODO: IMAGE! -->
-
 <object type="image/svg+xml"
         data="{{ site.baseurl }}/blog/images/2019-12-01-pouches.svg"
         width="500" height="250">
   <img src="{{ site.baseurl }}/blog/images/2019-12-01-pouches.png"
-       alt="Wire stripping steps in diagrams"
+       alt="Grid pouches organization method"
        width="500" height="250" />
 </object>
 
 Other considerations for the bags or partitions.  Generally you're
 going to want a soft material that will not rub or scratch.  Plastics
 with low coefficients of friction are good for this, such as
-low-density polyethylene (LDPE) and polyethylene teraphthalate (PET)
+low-density polyethylene (LDPE) and polyethylene terephthalate (PET)
 work well for this.  Cotton cloth can also be used.  The advantage is
 that it allows air through and is not a suffocation hazard, the
 disadvantage is that it is opaque.  Also, there are multiple ways to
@@ -137,29 +131,25 @@ amply available external windows.  With a toybox this big, there ought
 to be double front doors at the least, maybe even a row of 4 doors at
 the front.
 
-<!-- TODO: IMAGE! -->
-
 <object type="image/svg+xml"
         data="{{ site.baseurl }}/blog/images/2019-12-01-decor.svg"
         width="400" height="550">
   <img src="{{ site.baseurl }}/blog/images/2019-12-01-decor.png"
-       alt="Wire stripping steps in diagrams"
+       alt="Improved toybox exterior decoration"
        width="400" height="550" />
 </object>
 
-Additioanlly, you can see there are potted plants in the hallways, and
+Additionally, you can see there are potted plants in the hallways, and
 someone's got to water them since they're owned by the administration,
 so that means more jobs.  And janitors, facilities maintenance for the
 fire alarm system, illuminated exit signs, hallway lights with battery
 backup, RFID keycard security system, maybe even surveillance cameras.
 
-<!-- TODO: IMAGE! -->
-
 <object type="image/svg+xml"
         data="{{ site.baseurl }}/blog/images/2019-12-01-fire-safety.svg"
         width="500" height="200">
   <img src="{{ site.baseurl }}/blog/images/2019-12-01-fire-safety.png"
-       alt="Wire stripping steps in diagrams"
+       alt="Fire safety devices picture"
        width="500" height="200" />
 </object>
 
@@ -167,7 +157,7 @@ backup, RFID keycard security system, maybe even surveillance cameras.
         data="{{ site.baseurl }}/blog/images/2019-12-01-security.svg"
         width="550" height="250">
   <img src="{{ site.baseurl }}/blog/images/2019-12-01-security.png"
-       alt="Wire stripping steps in diagrams"
+       alt="Security devices picture"
        width="550" height="250" />
 </object>
 
@@ -203,7 +193,7 @@ are not well-defined rooms.
         data="{{ site.baseurl }}/blog/images/2019-12-01-telecom.svg"
         width="425" height="225">
   <img src="{{ site.baseurl }}/blog/images/2019-12-01-telecom.png"
-       alt="Wire stripping steps in diagrams"
+       alt="Telecommunications devices picture"
        width="425" height="225" />
 </object>
 
@@ -213,24 +203,23 @@ actual camera for the entire toybox.
 
 ### What is not included
 
-<!-- TODO: IMAGE! -->
-
 <object type="image/svg+xml"
         data="{{ site.baseurl }}/blog/images/2019-12-01-electric.svg"
         width="225" height="225">
   <img src="{{ site.baseurl }}/blog/images/2019-12-01-electric.png"
-       alt="Wire stripping steps in diagrams"
+       alt="Electrical outlets picture"
        width="225" height="225" />
 </object>
 
 What's not included?
 
-* HVAC and gas.  "Smart thermostat" is as much toybox needs under most
-  circumstances.  Monitor temperature and humidity conditions, send
-  out an alarm if conditions are out of bounds.  Typically not
-  necessary if the external environment is already climate controlled.
-  No need for active heating, air conditioning, and humidity control.
-  And no need for ventilation since plush toys don't actually breathe.
+* HVAC and gas.  A "smart thermostat" is as much toybox needs under
+  most circumstances.  It monitors the temperature and humidity
+  conditions and sends out an alarm if conditions are out of bounds.
+  Typically, it's not necessary if the external environment is already
+  climate controlled.  No need for active heating, air conditioning,
+  and humidity control.  And no need for ventilation since plush toys
+  don't actually breathe.
 
 * Water, sewage, bathrooms.
 
@@ -238,10 +227,16 @@ What's not included?
 
 * Electricity.
 
-* Garbage services.
+* Recycling and garbage removal services.
 
 * Internal mail distribution.
 
 * Lockers.
 
 * Cafeteria.
+
+* Vehicle parking.
+
+* Active landscaping services, i.e. lawnmowing, snow removal.
+
+* Garden.
