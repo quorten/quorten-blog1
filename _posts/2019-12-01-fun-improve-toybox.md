@@ -3,8 +3,8 @@ layout: post
 title: Fun ways to build improvements to a toybox
 date: 2019-12-01 04:12 -0600
 author: quorten
-categories: [inven-sys, personal-finance, raspberry-pi, mat-sci]
-tags: [inven-sys, personal-finance, raspberry-pi, mat-sci]
+categories: [inven-sys, personal-finance, raspberry-pi, mat-sci, home-network]
+tags: [inven-sys, personal-finance, raspberry-pi, mat-sci, home-network]
 ---
 
 One thing that can sometimes be a challenge is improving the
