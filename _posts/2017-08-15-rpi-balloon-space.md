@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Raspberry Pi weather balloon in space
-date: 2017-08-15 21:30 -0600
+date: 2017-08-15 21:30 -0500
 author: quorten
 categories: [raspberry-pi]
 tags: [raspberry-pi]
