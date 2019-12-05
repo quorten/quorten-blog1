@@ -9,7 +9,7 @@ tags: [raspberry-pi]
 
 Power a Raspberry Pi Zero from the sun?  You can do it.
 
-20171013/DuckDuckGo raspberry pi zero continuous solar power
+20171013/DuckDuckGo raspberry pi zero continuous solar power  
 20171013/https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=192481
 
 Raspberry Pi Zero is still limited to one per customer, unfortunately.
