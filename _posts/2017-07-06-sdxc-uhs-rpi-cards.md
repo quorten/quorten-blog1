@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What is SDXC versus UHS and why high-capacity cards typically
-        aren't used with Raspberry Pi"x
+        aren't used with Raspberry Pi"
 date: 2017-07-06 21:00 -0500
 author: quorten
 categories: [pentax-k-1-camera, raspberry-pi]
