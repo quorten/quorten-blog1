@@ -21,21 +21,23 @@ that the Raspberry Pi Zero itself is only a $5 component in your
 larger system.
 
 But, anwyas, on the subject of 7-segment LCD display control.  Upon
-closer analysis of the 7-segment LCD displays on Digi-Key, these are
-**not** multiplexed displays like the LED displays are.  Rather, there
-are two control pins for every LCD segment on the display, plus a few
-more pins for common ground and voltage.  So if you do want to drive
-an LCD display the same way you'd drive a multiplexed LED display, you
-need to buy an LCD display controller chip and insert that into your
-system, or build your own out of a collection of chips.
+closer analysis of the 7-segment LCD displays on Digi-Key, some of
+them are **not** multiplexed displays like the LED displays are.
+Rather, there are two control pins for every LCD segment on the
+display, plus a few more pins for common ground and voltage.  So if
+you do want to drive an LCD display the same way you'd drive a
+multiplexed LED display, you need to buy an LCD display controller
+chip and insert that into your system, or build your own out of a
+collection of chips.  However, some LCD 7-segment displays are
+multiplexed, typically only the more complicated ones.
 
 Also looking on Wikipedia, it confirmed this knowledge, albeit only in
 a very minor side note on the liquid crystal display article.  Most of
 the article was about compute monitor LCDs.
 
-20191129/https://en.wikipedia.org/wiki/Liquid-crystal_display
-
 <!-- more -->
+
+20191129/https://en.wikipedia.org/wiki/Liquid-crystal_display
 
 Also, along the way, I found the Wikipedia articles on those flat
 printed flexible black-and-white striped ribbon cables you sometimes
