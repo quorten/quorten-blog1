@@ -41,6 +41,12 @@ counter.
 
 ### Basic Design
 
+<a href="{{ site.baseurl }}/blog/images/2019-11-29-keyscan_hardware.svg">
+<img src="{{ site.baseurl }}/blog/images/2019-11-29-keyscan_hardware_sm.png"
+     alt="Keyboard scanner schematic"
+     width="700" height="325" />
+</a>
+
 The basic hardware design can be explained as follows.
 
 To scan the keyboard matrix, you simply connect the corresponding
@@ -74,14 +80,6 @@ Finally, once you have the delta keyboard state image, you simply need
 to scan through each entry and shift it out through the UART.  For
 `nil` events, you can simply use silence on the UART, i.e. the line is
 simply held high and no character is encoded and sent.
-
-<object type="image/svg+xml"
-        data="{{ site.baseurl }}/blog/images/2019-11-29-keyscan_hardware.svg"
-        width="1400" height="650">
-  <img src="{{ site.baseurl }}/blog/images/2019-11-29-keyscan_hardware.png"
-       alt="Electrical outlets picture"
-       width="1400" height="650" />
-</object>
 
 ### Design Considerations
 
@@ -130,6 +128,12 @@ simply held high and no character is encoded and sent.
 
 ### Running the UART off an independent clock
 
+<a href="{{ site.baseurl }}/blog/images/2019-11-29-keyscan_uart_fifo.svg">
+<img src="{{ site.baseurl }}/blog/images/2019-11-29-keyscan_uart_fifo_sm.png"
+     alt="Keyboard scanner UART FIFO schematic"
+     width="688" height="275" />
+</a>
+
 It is possible to run the UART off of a fully independent clock from
 that of the matrix keyboard scanner.  However this comes at the risk
 of buffer overruns if the UART character clock runs at a slower speed
@@ -153,14 +157,6 @@ notified of the most up-to-date state as soon as possible.  This is
 why we let new key state changes on the same key overwrite old ones
 rather than discard new key states.  Otherwise, missed messages can
 result in a key getting stuck in the wrong state on the host.
-
-<object type="image/svg+xml"
-        data="{{ site.baseurl }}/blog/images/2019-11-29-keyscan_uart_fifo.svg"
-        width="1375" height="550">
-  <img src="{{ site.baseurl }}/blog/images/2019-11-29-keyscan_uart_fifo.png"
-       alt="Electrical outlets picture"
-       width="1375" height="550" />
-</object>
 
 ### MIDI Keyboard Controller in Hardware
 
