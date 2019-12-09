@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1375"
+   height="550"
+   viewBox="0 0 1375 550"
+   id="svg3725"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="keyscan_uart_fifo.svg">
+  <defs
+     id="defs3727">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path3851"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3568"
+       style="overflow:visible">
+      <path
+         id="path3570"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3572"
+       style="overflow:visible">
+      <path
+         id="path3574"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3576"
+       style="overflow:visible">
+      <path
+         id="path3578"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3580"
+       style="overflow:visible">
+      <path
+         id="path3582"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3584"
+       style="overflow:visible">
+      <path
+         id="path3586"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3588"
+       style="overflow:visible">
+      <path
+         id="path3590"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3592"
+       style="overflow:visible">
+      <path
+         id="path3594"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3596"
+       style="overflow:visible">
+      <path
+         id="path3598"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3600"
+       style="overflow:visible">
+      <path
+         id="path3602"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3604"
+       style="overflow:visible">
+      <path
+         id="path3606"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3608"
+       style="overflow:visible">
+      <path
+         id="path3610"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3612"
+       style="overflow:visible">
+      <path
+         id="path3614"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3616"
+       style="overflow:visible">
+      <path
+         id="path3618"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3620"
+       style="overflow:visible">
+      <path
+         id="path3622"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3624"
+       style="overflow:visible">
+      <path
+         id="path3626"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="757.87756"
+     inkscape:cy="310.01255"
+     inkscape:document-units="px"
+     inkscape:current-layer="svg3725"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1364"
+     inkscape:window-height="700"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3730">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="208.76028"
+       y="29.400572"
+       id="text3627"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3629"
+         x="208.76028"
+         y="29.400572">More complex way to prevent lost messages</tspan><tspan
+         sodipodi:role="line"
+         x="208.76028"
+         y="48.150574"
+         id="tspan3637">when transmit buffer is full.</tspan><tspan
+         sodipodi:role="line"
+         x="208.76028"
+         y="66.900574"
+         id="tspan3635">Accumulate all pending key messages</tspan><tspan
+         sodipodi:role="line"
+         x="208.76028"
+         y="85.650574"
+         id="tspan3631">to get to most current state, after successful</tspan><tspan
+         sodipodi:role="line"
+         x="208.76028"
+         y="104.40057"
+         id="tspan3633">send set message to nil.</tspan><tspan
+         sodipodi:role="line"
+         x="208.76028"
+         y="123.15057"
+         id="tspan3783">UART accesses all key msgs memory on</tspan><tspan
+         sodipodi:role="line"
+         x="208.76028"
+         y="141.90057"
+         id="tspan3785">alternating cycles compared to keyboard</tspan><tspan
+         sodipodi:role="line"
+         x="208.76028"
+         y="160.65057"
+         id="tspan3787">scanner to avoid simultaneous writes to</tspan><tspan
+         sodipodi:role="line"
+         x="208.76028"
+         y="179.40057"
+         id="tspan3789">memory.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="217.61429"
+       y="364.98944"
+       id="text3757"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3759"
+         x="217.61429"
+         y="364.98944">Remember, the goal is to take</tspan><tspan
+         sodipodi:role="line"
+         x="217.61429"
+         y="383.73944"
+         id="tspan3763">a full keyboard buffer and delta</tspan><tspan
+         sodipodi:role="line"
+         x="217.61429"
+         y="402.48944"
+         id="tspan3767">encode it into messages in such</tspan><tspan
+         sodipodi:role="line"
+         x="217.61429"
+         y="421.23944"
+         id="tspan3769">a way that the host computer is</tspan><tspan
+         sodipodi:role="line"
+         x="217.61429"
+         y="439.98944"
+         id="tspan3771">notified by the most up-to-date state</tspan><tspan
+         sodipodi:role="line"
+         x="217.61429"
+         y="458.73944"
+         id="tspan3773">as soon as possible.  This is why we let</tspan><tspan
+         sodipodi:role="line"
+         x="217.61429"
+         y="477.48944"
+         id="tspan3775">new key state changes overwrite old ones</tspan><tspan
+         sodipodi:role="line"
+         x="217.61429"
+         y="496.23944"
+         id="tspan3777">rather than discard new key states.  Else</tspan><tspan
+         sodipodi:role="line"
+         x="217.61429"
+         y="514.98944"
+         id="tspan3779">missed messages can result in a key getting</tspan><tspan
+         sodipodi:role="line"
+         x="217.61429"
+         y="533.73944"
+         id="tspan3781">stuck in the wrong state on the host.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="28.650305"
+       y="248.23378"
+       id="text3791"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3793"
+         x="28.650305"
+         y="248.23378">!old &amp; new =&gt; keydown</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3795"
+       width="171.15582"
+       height="34"
+       x="18.876865"
+       y="227.23108" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3797"
+       y="302.23383"
+       x="28.650305"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="302.23383"
+         x="28.650305"
+         id="tspan3799"
+         sodipodi:role="line">old &amp; !new =&gt; keyup</tspan></text>
+    <rect
+       y="281.23114"
+       x="18.876865"
+       height="34"
+       width="171.15582"
+       id="rect3801"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3803"
+       d="m 190.03271,243.36697 39.8442,0.7071"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3805"
+       d="m 190.03271,300.64257 39.8442,-49.4974"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3807"
+       y="252.47646"
+       x="239.6503"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="252.47646"
+         x="239.6503"
+         id="tspan3809"
+         sodipodi:role="line">all key msgs</tspan></text>
+    <rect
+       y="231.47369"
+       x="229.87686"
+       height="34"
+       width="105.15576"
+       id="rect3811"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="28.650305"
+       y="192.81952"
+       id="text3813"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3815"
+         x="28.650305"
+         y="192.81952">old == new =&gt; nil</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3817"
+       width="171.15582"
+       height="34"
+       x="18.876865"
+       y="171.81683" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="382.48587"
+       y="224.19214"
+       id="text3819"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3821"
+         x="382.48587"
+         y="224.19214">!(UART full)</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3823"
+       width="105.15576"
+       height="34"
+       x="372.71243"
+       y="203.18945" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3825"
+       y="314.70184"
+       x="382.48587"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="314.70184"
+         x="382.48587"
+         id="tspan3827"
+         sodipodi:role="line">UART full</tspan></text>
+    <rect
+       y="293.69916"
+       x="372.71243"
+       height="34"
+       width="105.15576"
+       id="rect3829"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 335.03261,239.12437 37.6798,-19.79903"
+       id="path3831"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 335.03261,251.85227 37.6798,60.1041"
+       id="path3833"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="516.83618"
+       y="314.70184"
+       id="text3835"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3837"
+         x="516.83618"
+         y="314.70184">Do nothing.</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3839"
+       width="105.15576"
+       height="34"
+       x="507.06277"
+       y="293.69916" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 477.86821,308.42077 29.1946,0"
+       id="path3841"
+       inkscape:connector-curvature="0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3843"
+       y="224.19214"
+       x="518.25037"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="224.19214"
+         x="518.25037"
+         id="tspan3845"
+         sodipodi:role="line">Write nil to key msg</tspan></text>
+    <rect
+       y="203.18945"
+       x="508.47696"
+       height="34"
+       width="148.99638"
+       id="rect3847"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 523.08431,203.18947 0,-9.5 -285.6711,0 0,37.78427"
+       id="path3849"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="518.25037"
+       y="258.19208"
+       id="text3851"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3853"
+         x="518.25037"
+         y="258.19208">Shift msg into UART FIFO</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3855"
+       width="190.00853"
+       height="34"
+       x="508.47696"
+       y="237.18945" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 477.86821,228.51772 30.6088,0"
+       id="path3857"
+       inkscape:connector-curvature="0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3859"
+       y="258.19208"
+       x="738.16058"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="258.19208"
+         x="738.16058"
+         id="tspan3861"
+         sodipodi:role="line">UART FIFO</tspan></text>
+    <rect
+       y="237.18945"
+       x="728.38715"
+       height="34"
+       width="92.427811"
+       id="rect3863"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 698.48551,253.26647 29.9016,0"
+       id="path3865"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="869.21796"
+       y="229.67218"
+       id="text3867"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3869"
+         x="869.21796"
+         y="229.67218">FIFO empty</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3871"
+       width="99.852417"
+       height="34"
+       x="859.909"
+       y="208.66956" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3873"
+       d="m 820.81501,247.43287 39.094,-22.62746"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3875"
+       d="m 820.81501,258.74657 39.094,31.8198"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3877"
+       y="294.01898"
+       x="864.26825"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="294.01898"
+         x="864.26825"
+         id="tspan3879"
+         sodipodi:role="line">!(FIFO empty)</tspan></text>
+    <rect
+       y="273.0163"
+       x="859.909"
+       height="34"
+       width="100.55952"
+       id="rect3881"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3883"
+       y="229.67218"
+       x="994.08295"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="229.67218"
+         x="994.08295"
+         id="tspan3885"
+         sodipodi:role="line">UART encode silence</tspan></text>
+    <rect
+       y="208.66956"
+       x="984.30951"
+       height="34"
+       width="160.59937"
+       id="rect3887"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="994.08295"
+       y="293.6723"
+       id="text3889"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3891"
+         x="994.08295"
+         y="293.6723">UART encode char</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3893"
+       width="159.09937"
+       height="34"
+       x="984.30951"
+       y="272.66962" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3895"
+       y="261.6723"
+       x="1200.0829"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="261.6723"
+         x="1200.0829"
+         id="tspan3897"
+         sodipodi:role="line">shift out UART buffer</tspan></text>
+    <rect
+       y="240.66957"
+       x="1190.3094"
+       height="33.999985"
+       width="161.09937"
+       id="rect3899"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3901"
+       d="m 1144.9089,224.86908 45.4006,24.99999"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3903"
+       d="m 1143.4089,289.63167 46.9006,-26.7626"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3905"
+       d="m 960.50841,224.86908 23.8011,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3907"
+       d="m 960.50841,288.86907 23.8011,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="732.50372"
+       y="138.6911"
+       id="text3909"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3911"
+         x="732.50372"
+         y="138.6911">shift out on</tspan><tspan
+         sodipodi:role="line"
+         x="732.50372"
+         y="157.4411"
+         id="tspan3915">UART CLOCK</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3913"
+       width="106.56999"
+       height="53.091885"
+       x="722.73029"
+       y="117.68841" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3917"
+       y="368.50079"
+       x="728.26105"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="368.50079"
+         x="728.26105"
+         id="tspan3919"
+         sodipodi:role="line">shift in on</tspan><tspan
+         id="tspan3921"
+         y="387.25079"
+         x="728.26105"
+         sodipodi:role="line">keyscan clock</tspan></text>
+    <rect
+       y="347.49811"
+       x="722.73029"
+       height="53.091885"
+       width="106.56999"
+       id="rect3923"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 809.46261,170.7803 0,66.40917"
+       id="path3925"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 738.04481,347.49807 0,-76.3086"
+       id="path3927"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="518.13452"
+       y="348.72589"
+       id="text3965"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3967"
+         x="518.13452"
+         y="348.72589">Alternatively, we could set</tspan><tspan
+         sodipodi:role="line"
+         x="518.13452"
+         y="367.47589"
+         id="tspan3969">a &quot;buffer overrun&quot; flag, and</tspan><tspan
+         sodipodi:role="line"
+         x="518.13452"
+         y="386.22589"
+         id="tspan3971">the moment the buffer</tspan><tspan
+         sodipodi:role="line"
+         x="518.13452"
+         y="404.97589"
+         id="tspan3973">becomes available, we shift</tspan><tspan
+         sodipodi:role="line"
+         x="518.13452"
+         y="423.72589"
+         id="tspan3975">out a buffer overrun message</tspan><tspan
+         sodipodi:role="line"
+         x="518.13452"
+         y="442.47589"
+         id="tspan3977">and clear the flag.</tspan></text>
+  </g>
+</svg>
