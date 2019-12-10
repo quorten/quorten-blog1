@@ -13,7 +13,7 @@ really find LCD displays less than $10 with as many segments as I
 wanted, i.e. around 10 segments.  Likewise, I found out that LED
 displays ran around similar costs, $5 for 4 digits.  But, now I search
 again, and the magic is in opening up the search criteria.  Sure, I
-can't find a **?-segment** LCD display with as many digits as I like
+can't find a **7-segment** LCD display with as many digits as I like
 at the price point I want, but I found a 14-segment display with 8
 digits and about $4 for one unit.
 

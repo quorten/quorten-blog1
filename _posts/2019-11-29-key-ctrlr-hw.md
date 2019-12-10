@@ -185,28 +185,53 @@ does not result in a faster keyboard scanning rate.
 So, here's how to do the modification for MIDI keyboard timing in the
 keyboard controller.  First keydown switch sets a "half keydown" state
 in the delta keyboard state buffer, which is not sent out.  It
-includes the time code.  Next keydown switch sets a "full keydown"
+includes the time stamp.  Next keydown switch sets a "full keydown"
 state in the delta keyboard state buffer, which overwrites the
-location of the half keydown state and stores the delta time code,
+location of the half keydown state and stores the delta time codes,
 with saturating arithmetic.  The full keydown message is send out to
 the UART.  Likewise can be done for keyup.
 
 Additionally, another modification we could make is to also encode the
-time code of key events into the key messages _in the controller
+time stamp of key events into the key messages _in the controller
 itself_.  This eliminates the need for the host computer to respond to
-key events in realtime and attach time codes to them.  But, how
+key events in realtime and attach time stamps to them.  But, how
 exactly can this be advantageous?  Doesn't the host computer need to
 immediately respond on the interrupt anyways?  Not necessarily.  If
 there is a UART FIFO receive buffer, then the host computer can take
 its time.  This would typically be okay for key events from a
 "typewriter" keyboard, but it would be unacceptably inaccurate for
-musical input.  Ultimately, however, the keyboard time codes are
-measured on a circular buffer, and "ping messages" would be needed so
-that the host computer can keep track of time code wraparounds.
+musical input.  Ultimately, however, the keyboard time stamps are
+measured with fixed-width integers, and "ping messages" would be
+needed so that the host computer can keep track of time stamp
+wraparounds.
 
 What about encoding the messages so they specify a delta between the
 last message instead of a quasi-absolute time?  In general, that's
 harder to program against because all such messages must be processed
-in-order.  With a quasi-absolute time code, some degree of
+in-order.  With a quasi-absolute time stamp, some degree of
 out-of-order and parallel is permitted, thus also allowing for
 programming more performant code.
+
+On the other hand, the architecture of a keyboard that keeps track of
+time may not work so well when you have multiple such peripherals with
+their own clocks.  In this case, you may want to delegate time
+stamping to a centralized upstream event processing unit.  It is a
+dedicated hardware circuit, so that time tracking without skipping a
+beat is easy, but it has one big central clock for all event time
+stamping.  That way, clock wraparound ping messages can be handled in
+a consistent manner on the host computer.  When inputs are received,
+it augments the input messages with time stamps and then forwards them
+to the host.
+
+When are time stamps not needed for input?  Any time input is sent in
+a continuous stream, such as recording audio of video data.  You can
+also do likewise with a keyboard scanner, by sending the key scan
+stream output directly to the host computer, but this is seldom done
+on early and simple computers due to the requirement for higher
+bandwidth and processing speed on the host computer.  But, if it were
+done, it would eliminate the need to times tamp the asynchronous delta
+messages.
+
+Nevertheless, you also either need centralized clock control or
+periodic time synchronization messages to prevent clock drift in these
+systems too.

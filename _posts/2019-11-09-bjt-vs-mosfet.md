@@ -132,7 +132,9 @@ provides for multiple ADC inputs, since the local oscillator signal
 can be shared across all the ADC input comparators.  Conversely, in
 the event that you use your microcomputer to generate the analog
 conversion clock signal, you must sacrifice one GPIO pin to dedicate
-to that purpose.
+to that purpose.  On the other hand, when there are _several_
+simultaneous outputs supported tied to one big central clock, that can
+considerably increase the cost of the ADC.
 
 Finally, an additional useful feature of an expensive ADC is to
 provide not just a single PCM register per input, but an entire buffer
