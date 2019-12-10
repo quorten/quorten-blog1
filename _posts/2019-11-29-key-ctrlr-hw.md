@@ -131,7 +131,7 @@ simply held high and no character is encoded and sent.
 <a href="{{ site.baseurl }}/blog/images/2019-11-29-keyscan_uart_fifo.svg">
 <img src="{{ site.baseurl }}/blog/images/2019-11-29-keyscan_uart_fifo_sm.png"
      alt="Keyboard scanner UART FIFO schematic"
-     width="688" height="275" />
+     width="688" height="180" />
 </a>
 
 It is possible to run the UART off of a fully independent clock from

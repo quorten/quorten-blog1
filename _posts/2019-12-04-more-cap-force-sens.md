@@ -1,6 +1,6 @@
 ---
 layout: post
-title: More informationv on capacitive force sensors
+title: More information on capacitive force sensors
 date: 2019-12-04 22:13 -0600
 author: quorten
 categories: [raspberry-pi]
@@ -28,6 +28,8 @@ a button or a crude change in force sensor.
 Indeed, the same vendor has low capacity sensors too.
 
 20191205/https://www.loadstarsensors.com/rapg-low-capacity-single-point-aluminum-load-cell.html
+
+<!-- more -->
 
 Actually, it's just what I need!  6 inch by 6 inch scale plate?  Wow,
 that's almost large enough for a full sheet of paper.  The 100 g
