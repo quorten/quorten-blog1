@@ -21,6 +21,9 @@ Only $3!  Much better than my previous $15 find!
 20161222/https://www.aliexpress.com/item/CCTV-IP-module-dedicated-IR-CUT/32323006210.html  
 20161222/https://www.raspberrypi.org/forums/viewtopic.php?f=37&t=96997&p=673996#p673996
 
+UPDATE 2019-11-28: The AliExpress link is no longer valid, the
+manufacturer discontinued the item.
+
 Oh, so this is the story behind the included blue gel filter that
 comes with the Raspberry Pi NoIR camera.
 
