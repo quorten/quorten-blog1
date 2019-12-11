@@ -100,3 +100,14 @@ loosing all your PRAM.
 
 But, alas, these are all shortcoming that I've made, and regardless, I
 am fortunate that the whole system works nicely!
+
+----------
+
+Also, one last note on polarized versus non-polarized pin header
+connectors.  After this discussion, you might think that polarized pin
+header connectors are always superior to non-polarized connectors, so
+why use the non-polarized connectors at all if you are using a 2-pin
+header pair?  There are, of course, some uses where the connected
+device does not need a polarized connection, such as a connection for
+a tactile switch.  Or, if you are expecting alternating current like
+for a speaker wire connection.
