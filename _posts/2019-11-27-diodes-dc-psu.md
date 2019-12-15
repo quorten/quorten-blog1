@@ -225,3 +225,16 @@ This is where if you do want to use a high frequency switch-mode power
 supply, it may be beneficial to buy one of those pre-built Adafruit
 boards, even though it does come at a higher price.  But that's the
 price you pay for buying lower-volume manufactured boards.
+
+----------
+
+Do you really need a PMIC for a switch-mode power supply?  Yes, you
+do, if you are powering integrated circuits or the like.  Take a look
+at the Wikipedia article on "Joule thief."  The Joule thief is a very
+simple circuit for a switch-mode power supply, but it results in
+flickering of the output.  The various techniques to improve the
+output quality ultimately result in a lot of complexity that is better
+expressed in an integrated circuit package than with discrete
+circuits.
+
+20191127/https://en.wikipedia.org/wiki/Joule_thief

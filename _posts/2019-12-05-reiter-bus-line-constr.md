@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reiterate transmission line bus construction, RS-485 line
-        drivers, and comparison with LocalTalk"
+        drivers, comparison with LocalTalk, and power over RS-422/485"
 date: 2019-12-05 22:01 -0600
 author: quorten
 categories: [raspberry-pi, reiterate]
@@ -161,3 +161,63 @@ network, just like RS-485.  So indeed, the input impedance
 configuration is not somehow superior to that used on RS-485.
 
 20191210/https://en.wikipedia.org/wiki/AppleTalk
+
+----------
+
+Again, I reiterate, because this is important!
+
+Now this really gets me thinking.  Isolating transformers on a
+RS-422-style differential communications through LocalTalk?  Well if
+that works just fine, now I'm thinking power over RS-422, similar to
+Power over Ethernet (PoE).  As I've learned on the Wikipedia article
+on Power over Ethernet, PoE is pretty simple to implement due to the
+center tap transformer design of Ethernet transceivers.  Now I see
+that clearly for RS-422/485 communications too, thanks to the
+LocalTalk schematics.  In the case of RS-485, you'd use a spare wire
+pair to carry the other common-mode power or ground, whichever is the
+opposite of what is carried on the data wires.
+
+Likewise, the schematics of the Raspberry Pi 3 Ethernet jack are also
+very insightful for the particular design of Power over Ethernet.
+Note that the center tap on the Raspberry Pi side of the circuit is
+used for the power.  Notably, there are also ferrite core chokes used
+to suppress any common-mode noise common across _all_ Ethernet wires
+on the outside world input/output side.
+
+20191210/https://en.wikipedia.org/wiki/Power_over_Ethernet  
+20191210/https://en.wikipedia.org/wiki/Transformer_types#Pulse_transformer  
+20191210/https://hackaday.com/2018/06/01/raspberry-pis-power-over-ethernet-hardware-sparks-false-spying-hubub/
+
+The particular types of transformers used in Ethernet jacks are called
+_pulse transformers_.  These are transformers that are optimized to
+work with square wave signals.  Also, a duty cycle near 50% is pretty
+much required.  Okay, so thinking about this, sure that may work well
+for Ethernet and LocalTalk, but it may encounter problems with RS-422
+and RS-485 serial communications.  But surely, there is technical info
+on how to make it work for that application?  Indeed there is.
+
+So, here's what looks like the trick is to putting RS-485 through
+isolation transformers.  You might add an additional oscillator for
+signal modulation so that your flat runs of high signal value will
+register as the presence of high frequency oscillation.  But, I guess
+I don't fully understand exactly how the pulse transformer is matched
+with the serial communications frequency and what the frequency
+response curve looks like.
+
+20191213/DuckDuckGo rs-485 pulse transformer  
+20191213/https://www.ti.com/lit/ds/symlink/iso35t.pdf  
+20191213/https://www.digikey.com/catalog/en/partgroup/iso35t-series/58979
+
+Also, thinking more about PoE, if you extract your power on your
+device's side of the transformer, the common mode power source must
+also be an alternating current signal in order to make it through the
+transformer.  Ah, yes, so that's why the article on the Raspberry Pi's
+Ethernet jack noted that the transformer needed to pass the
+alternating current power through.  You don't want to use a direct
+current common mode signal because then you must tap out away from the
+device side, and you render in the risk of ground loops and limiting
+the common mode voltage range.
+
+Yeah, the whole concept of these transformers in longer data
+transmissions lines is pretty much the same as that of the isolation
+transformers in single-wire earth return.

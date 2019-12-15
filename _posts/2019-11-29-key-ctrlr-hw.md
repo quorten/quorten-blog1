@@ -61,27 +61,35 @@ RESET must zero the register and prime it with a one at the input.
 The continuous stream of PISO shift outputs will give you a sequential
 list of keyboard state images at each consecutive keyboard scan cycle.
 You then want to translate this "absolute state" image into a "delta
-state" image.  What keyboard state changes happen from one scan cycle
-to the next?  This can be determined simply by comparing the old
-keyboard state to the new keyboard state.  From such a comparison, you
-can generate a "delta keyboard state" image, with one of the following
-"delta state" values for every key.
+state" image.  The absolute keyboard state images can be stored in a
+circular buffer with three elements: old, current, and new.  "New" is
+where the keyboard matrix scan in progress is stored to, so as to not
+interfere with the keyboard state comparison circuit.
 
-1. `old == new => nil`
-2. `!old & new => keydown`
-3. `old & !new => keyup`
+What keyboard state changes happen from one scan cycle to the next?
+This can be determined simply by comparing the old keyboard state to
+the current keyboard state.  From such a comparison, you can generate
+a "delta keyboard state" image, with one of the following "delta
+state" values for every key.
 
-The absolute keyboard state images can be stored in a circular buffer
-with three elements: old, current, and new.  "New" is where the
-keyboard matrix scan in progress is stored to, so as to not interfere
-with the keyboard state comparison circuit.
+1. `old == cur => nil`
+2. `!old & cur => keydown`
+3. `old & !cur => keyup`
 
-Finally, once you have the delta keyboard state image, you simply need
-to scan through each entry and shift it out through the UART.  For
-`nil` events, you can simply use silence on the UART, i.e. the line is
-simply held high and no character is encoded and sent.
+After you generate the delta keyboard state for a single key, you can
+simply shift it out through the UART.  For `nil` events, you can
+simply use silence on the UART, i.e. the line is simply held high and
+no character is encoded and sent.
 
 ### Design Considerations
+
+* The simplest way to debounce the keyboard is to limit the keyboard
+  scanning frequency so that it doesn't scan faster than the
+  debouncing time interval.  A more complicated debouncing would
+  involve immediately responding to a key event, but scheduling a
+  "dead time" where key events are not generated until the interval
+  expires.  This requires a memory buffer to keep track of individual
+  interval timeouts per key.
 
 * The need for detecting ghost keys can be eliminated by using diode
   isolation on every single key in the keyboard matrix to support
@@ -95,12 +103,13 @@ simply held high and no character is encoded and sent.
   as would be the case with ghost key detection.
 
 * Ghost key detection can be implemented by incrementing a counter as
-  we scan the keyboard.  If any ghost keys are detected, we discard
-  the entire keystate buffer by refusing to increment the CNTR.  To
-  implement this logic proper, we need to allocate extra time cycles,
-  literally like special buffer positions for "ghost keys."  This is
-  the cycle where the decision is made whether or not to increment
-  CNTR, and to reset the ghost key counter.
+  we scan the keyboard.  If too many keys are pressed simultaneously
+  and would likely result in ghost keys, we discard the entire
+  keystate buffer by refusing to increment the CNTR.  To implement
+  this logic proper, we need to allocate extra time cycles, literally
+  like special buffer positions for "ghost keys."  This is the cycle
+  where the decision is made whether or not to increment CNTR, and to
+  reset the ghost key counter.
 
   Additionally, we could also encode a special message on the UART to
   indicate ghost keys were detected and the entire instantaneous
@@ -117,7 +126,8 @@ simply held high and no character is encoded and sent.
   general trick to eliminate this is to define sub-cycles where each
   user accesses the memory only on alternating cycles.  If the same
   item is accessed at the same time, multi-read single-write style,
-  this can be done in the same cycle.
+  this can be done in the same cycle, assuming latch register style
+  memory.  RAM-style memory may require a dedicated write cycle.
 
   Another trick is to use double-buffering in place of triple
   buffering.  If one user loops through the buffer at an offset
@@ -125,6 +135,17 @@ simply held high and no character is encoded and sent.
   whole older or whole newer copy of the same bufer.  However, this
   also requires one extra buffer entry to preserve consistency for the
   very first and last elements.
+
+* Further simplifications on memory buffers.  Actualy, you don't even
+  need the offset trick to go from three memory buffers to just two.
+  In the three buffer case, rather than storing the newly scanned keys
+  to the buffer and comparing them on the next cycle, we can
+  immediately compare them on the same cycle we are storing them.
+  This allows us to get by with only two buffers and without any
+  offset trick.  But additionally, with latch register style memory
+  discipline, we can prime the new value during the same cycle we are
+  reading the old value, which allows us to get by with only one
+  "latch-style" memory buffer for the old keyboard state.
 
 ### Running the UART off an independent clock
 
