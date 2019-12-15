@@ -61,7 +61,7 @@ easy conversion via a simple `sed` script.
 
 ```
 find -name '*.md' -print0 | xargs -0 -n 1000 \
-  sed -i -e 's/ -0\(5\|6\)00/:00-0\100/g' *.md
+  sed -i -e 's/ -0\(5\|6\)00/:00-0\100/g'
 ```
 
 Long term, I should submit a pull request to fix this defect.
