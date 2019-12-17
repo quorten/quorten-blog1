@@ -27,13 +27,13 @@ Maybe I should have searched for "Standard Operating Procedures for
 libraries" or something like that.  But that is for another time.  For
 now, I've got to catalog my findings in a more organized manner.
 
+<!-- more -->
+
 * Yeah, like you were saying.  One really good thing about academia is
   that when they write research papers, trying to search for
   information on "related work" and "previous work" is put forth as
   very important.  Unfortunately, this is considerably hard to do for
   new fields that have no standard terminology.
-
-<!-- more -->
 
     * Yes, hard to do for the field that is new that has no standard
       terminology for the field itself, but you know what?  All
