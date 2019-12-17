@@ -3,8 +3,8 @@ layout: post
 title: Updates on rubber decay and preservation
 date: 2019-12-16 21:29 -0600
 author: quorten
-categories: [mat-sci]
-tags: [mat-sci]
+categories: [mat-sci, vintage-computing, mac-classic]
+tags: [mat-sci, vintage-computing, mac-classic]
 ---
 
 So, on the question of rubber decay.  What exactly are the specific
