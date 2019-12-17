@@ -111,3 +111,29 @@ header pair?  There are, of course, some uses where the connected
 device does not need a polarized connection, such as a connection for
 a tactile switch.  Or, if you are expecting alternating current like
 for a speaker wire connection.
+
+----------
+
+ANOTHER note on polarized connectors in the Macintosh SE.  You can
+rest assured that my statements of reversed polarity causing damage.
+Why?  Because the clock circuit's power system is designed with diodes
+so that the chip can be powered either from the motherboard power
+source OR the battery source.  A diode-OR circuit is configured, which
+is also necessary to ensure that the motherboard power does not
+attempt to send power to the battery like "recharging."  As a nice
+effect of this design, it also means that the clock chip is protected
+from reverse polarity damage.  Also, it's worth noting, that if "diode
+D3" is not working, your clock chip will not work at all due to lack
+of power.
+
+----------
+
+Another comment on strain relief connectors.  Soldering directly to a
+circuit board with through-hole components is great because it causes
+the circuit board to act as a pretty good strain relief connection.
+If you've got a great solder connection, it's not just the solder
+joints bearing the load, the force is well transferred to the through
+hole areas of the circuit board itself, thereby ensuring that the
+solder joints don't need to take all the blunt of the force.
+Through-hole perfboard also works very well, even if you are using a
+sheet of cardboard for your circuit board.

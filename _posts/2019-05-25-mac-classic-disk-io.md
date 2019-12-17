@@ -34,13 +34,13 @@ Macintosh Classic information from their website.
 
 <!-- more -->
 
-My old versions of Inside Macintosh are also pretty helpful too.
-Basically, once you've got the driver number figured out to access a
-SCSI disk, you just call this really simple and easy Toolbox routine
-where you specify the address of the block you want to read, and it
-will be placed inside a buffer.  Then you can easily complete the rest
-of the job just by using the documented serial interface in the old
-Inside Macintosh books.
+My old versions of Inside Macintosh (from pagetable.com) are also
+pretty helpful too.  Basically, once you've got the driver number
+figured out to access a SCSI disk, you just call this really simple
+and easy Toolbox routine where you specify the address of the block
+you want to read, and it will be placed inside a buffer.  Then you can
+easily complete the rest of the job just by using the documented
+serial interface in the old Inside Macintosh books.
 
 Now, here's another surprise.  Once upon a time, there has a physical
 hardware device named _Catweasel_ that allowed you to read
