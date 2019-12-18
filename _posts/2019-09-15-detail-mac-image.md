@@ -28,6 +28,12 @@ the original _Inside Macintosh_ printed book, Volumes I, II, and III.
 
 <!-- more -->
 
+UPDATE 2019-09-21: Please note that my terminology of "drive" here is
+a misnomer, it is technically a "volume" or "partition."  In order to
+get a full hard disk image, including the partition table, you need to
+use the SCSI Manager.  See [my newer blog article]({{ site.baseurl
+}}/blog/2019/09/22/mac-dc-128k-io-speed) for details.
+
 * First, start by iterating all available disk drives.  Use the
   `GetDrvQHdr()` macro to get a pointer to the _drive queue_ header.
   The `QHdr` data structure is described in Chapter 13 of Volume II
@@ -86,6 +92,12 @@ the original _Inside Macintosh_ printed book, Volumes I, II, and III.
   why not read it and archive it?  The main disadvantage, so it seems,
   is that you must only read one sector at a time in order to reliably
   retrieve and archive the file tags for all sectors.
+
+  UPDATE 2019-09-26: Please note that file tags have been deprecated
+  from newer Macintoshes, but they are still a feature of older
+  Macintoshes.  See [my blog article on file tags]({{ site.baseurl
+  }}/blog/2019/09/26/dc42-file-tags-format/blog/2019/09/26/dc42-file-tags-format)
+  for more information.
 
 * Thankfully, the serial communications interface is quite simple too,
   again using the Device Manager for reads and writes.  The additional

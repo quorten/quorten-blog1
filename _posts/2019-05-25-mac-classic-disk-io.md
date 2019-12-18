@@ -42,7 +42,7 @@ you want to read, and it will be placed inside a buffer.  Then you can
 easily complete the rest of the job just by using the documented
 serial interface in the old Inside Macintosh books.
 
-Now, here's another surprise.  Once upon a time, there has a physical
+Now, here's another surprise.  Once upon a time, there was a physical
 hardware device named _Catweasel_ that allowed you to read
 Macintosh-style floppy disks from a PC.  Unfortunately, it appears to
 no longer be on the market.  If you had it, then there was this fancy
