@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disk Copy 4.2 file format
+title: Disk Copy 4.2 file format and file tags
 date: 2019-09-26 18:53 -0500
 author: quorten
 categories: [mac-classic]

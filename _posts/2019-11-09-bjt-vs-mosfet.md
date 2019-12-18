@@ -245,3 +245,8 @@ microcomputer PDM conversion.
 Notably, the 555 timer technique is pretty much the best technique
 overall.  Like successive approximation, it also requires one
 capacitor and one comparator, but it is faster and still pretty cheap.
+
+On the other hand, the successive approximation technique does have an
+advantage of a sort: it does not require a realtime software timing
+loop to get accurate results.  That is, accurate to the limits of the
+DAC and comparator.
