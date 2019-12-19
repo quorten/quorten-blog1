@@ -108,3 +108,30 @@ shorter to write the slower version as you do not have to define a new
 variable, but keep in mind that tight inner loops are
 performance-critical, so save the liberal use of the syntactic
 shortcuts to code outside of tight inner loops!
+
+----------
+
+UPDATE 2019-12-18: Worried about running off the edge of the array
+bounds, but still want to use unsigned integer arithmetic?  Here's a
+nifty trick to keep in mind.  If you use an unsigned integer to
+indicate the length of an array, the maximum array length is UINT_MAX,
+and the maximum array index is UINT_MAX - 1.  This means that you will
+always have at least one "invalid" array index, and in the case the
+array is shorter, you will have a larger range of invalid array
+indices.  Namely, any unsigned integer that meets or exceeds the array
+length.  Armed with this knowledge, you can add additional safety to
+counting forwards with negative indices from the end of the array as
+follows:
+
+    unsigned n_message_len = (unsigned)-message.len;
+    unsigned i = n_message.len;
+    char *message_d = message.d[message.len];
+    while (i >= n_message_len) /* (unsigned negative)i < 0 */
+    {
+        putchar(message_d[i]);
+        i++;
+    }
+
+Finally, in light of range considerations, we must also use the
+"negated" `message.len` when comparing `i` so that we also preserve
+the fully available range.
