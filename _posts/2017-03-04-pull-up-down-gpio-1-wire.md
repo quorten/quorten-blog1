@@ -112,6 +112,14 @@ introduced the pull up and pull down concepts.
   20191124/DuckDuckGo raspberry pi gpio input pull resistance  
   20191124/http://www.raspberryvi.org/stories/pull-up-and-pull-down-resistors.html
 
+  BUT, please note, the Raspberry Pi's built-in pull-up resistors are
+  50 K to 60 K, and up to 65 K for the pull-up resistors only.
+
+  20191220/DuckDuckGo raspberry pi internal pull up resistor value  
+  20191220/https://lb.raspberrypi.org/forums/viewtopic.php?t=202568  
+  20191220/https://www.raspberrypi.org/forums/viewtopic.php?p=336915  
+  20191220/https://elinux.org/RPi_Low-level_peripherals
+
 Now, I'm also interested.  Is it possible to build an (E)EPROM
 programmer with an Arduino or a Raspberry Pi?  I'm thinking there may
 be more information on how to do it with an Arduino, so I better
