@@ -238,3 +238,49 @@ expressed in an integrated circuit package than with discrete
 circuits.
 
 20191127/https://en.wikipedia.org/wiki/Joule_thief
+
+----------
+
+What's the difference between a PMIC switching regulator and a DC-DC
+converter?  A PMIC requires other components for a complete
+switch-mode power supply, whereas DC-DC converter basically gives you
+the full power regulation module: PMIC, inductor, capacitors,
+protective diodes, and all.  With a DC-DC converter, it may be
+designed so that it will not be damaged if there is no load connected.
+However, there are of course disadvantages to a DC-DC converter,
+mainly that the commercially available modules cover a more limited
+selection of voltage/power options than what is possible when
+designing your own power module.  Furthermore, designing your own
+power module allows you to integrate the same components on a smaller
+amount of board space and shorter vertical height.
+
+That being said, I've found a selection of some good 5 V and 9 V DC-DC
+converters to include here for representation.
+
+5 V:
+
+20191219/https://www.digikey.com/product-detail/en/recom-power/R-78AA5.0-1.0SMD-R/945-1044-1-ND/2256550  
+
+9 V:
+
+20191219/https://www.digikey.com/product-detail/en/xp-power/ITQ2409SA/1470-2859-5-ND/5225652  
+20191219/https://www.digikey.com/product-detail/en/recom-power/R-789.0-0.5/945-1040-ND/2256220  
+20191219/https://www.digikey.com/product-detail/en/recom-power/REC5-1209SRW-H4-A/945-1874-5-ND/2318781  
+20191219/https://www.digikey.com/product-detail/en/xp-power/JCD0512D09/1470-1886-5-ND/4488266
+
+Note that a _switching controller_ is another step forward in
+customizability than a switching regulator: the switching FET is
+external to the chip.  Therefore, they can handle higher currents, but
+they require more complex external circuit design to do so.
+
+20191220/DuckDuckGo dc-dc converter versus pmic  
+20191220/https://electronics.stackexchange.com/questions/174892/difference-between-dc-dc-switching-controllers-and-regulators-and-converter
+
+Point of Load converter?  That is a DC-DC converter that is designed
+to be used directly at a load, rather than transferred over a
+distance.  I'm not sure what exactly makes these special compared to a
+regular DC-DC converter, will they still work okay if you use a PoL
+converter for powering a larger circuit?
+
+20191221/DuckDuckGo point of load converter  
+20191221/https://electronics.stackexchange.com/questions/231325/what-is-a-point-of-load-converter
