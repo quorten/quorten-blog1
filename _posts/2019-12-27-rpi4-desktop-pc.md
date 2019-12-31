@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My setup and first test run using Raspberry Pi 4 as a desktop PC
-date: 2019-12-27 20:20 -0600
+date: 2019-12-27 19:50 -0600
 author: quorten
 categories: [raspberry-pi]
 tags: [raspberry-pi]
