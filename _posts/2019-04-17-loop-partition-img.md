@@ -15,10 +15,9 @@ partition of a disk image, here's how.  (For sure this works with MBR
 partitioning, additional methods might be needed for GPT
 partitioning.)
 
-
 ```
 fdisk -lu sda.img
-sudo losetup -o `echo $SIZE \* 512` /dev/loop0 sda.img
+sudo losetup -ro `echo $SIZE \* 512 | bc` /dev/loop0 sda.img
 sudo mount -o ro /dev/loop0 /mnt/view/
 ```
 

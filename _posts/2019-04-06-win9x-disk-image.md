@@ -890,6 +890,19 @@ sudo passwd damnsmall
 ssh -T damnsmall@localhost sudo getty /dev/ttyS0 9600 vt100
 ```
 
+Alternatively, you can use `setsid`.
+
+```
+sudo passwd damnsmall
+# Set a known password so you can login.
+sudo setsid getty /dev/ttyS0 9600 vt100
+```
+
+Note that `setsid` runs a detached command that will not block the
+current shell, unlike `ssh` that will wait for `getty` to exit, so if
+you want a loop that continuously shows `getty` on the serial
+terminal.
+
 Congratulations!  Now you can login to UNIX over a serial terminal.
 Enjoy the retro pleasure of being able to dial into UNIX just as you
 would have in the 1980s, but without the large telephone bills from
