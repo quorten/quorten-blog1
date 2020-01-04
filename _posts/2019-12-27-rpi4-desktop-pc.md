@@ -36,7 +36,13 @@ configuration.
   20191228/DuckDuckGo raspberry pi connect to samba share  
   20191228/https://www.raspberrypi.org/documentation/remote-access/samba.md
 
+  Please note that [Samba in the GUI is limited compared to that of
+  the command line]({{ site.baseurl }}/blog/2020/01/02/smbfs-vs-cifs).
+
 * Enable SSH for the admin account only.
+
+  20191231/DuckDuckGo disable ssh login to particular account  
+  20191231/https://www.ostechnix.com/allow-deny-ssh-access-particular-user-group-linux/
 
 * Install Emoji fonts!  They appear not to be installed by default?
 
@@ -71,6 +77,12 @@ Raspberry Pi as a desktop PC:
   suspend to RAM]({{ site.baseurl
   }}/blog/2019/12/28/more-rpi-pw-button)
 
+* [Raspberry Pi 4 video tearing explained]({{ site.baseurl
+  }}/blog/2020/01/01/rpi4-vid-tear-expl)
+
+* [Difference between smbfs and cifs and Windows 7 vs. 10]({{
+  site.baseurl }}/blog/2020/01/02/smbfs-vs-cifs)
+
 Then we are in business!
 
 ----------
@@ -84,8 +96,9 @@ this, they can't do that, they don't have enough resources to do this
 correctly, blah blah blah.
 
 The lack of proper vsync in video playback in Chromium and on the X11
-desktop in general is a considerable nuisance, but 3D performance in
-Blender for basic untextured polygon geometry is excellent.  There is,
+desktop in general is a considerable nuisance.  3D performance in
+Blender for basic untextured polygon geometry is good, but more
+geometry and textures quickly becomes slower than expected.  There is,
 of course, much more work that needs to be done on the 3D drivers to
 take the Pi 4 to its full potential.  Video playback, likewise, is a
 bit slower and more jerky than expected, and Stellarium performance is

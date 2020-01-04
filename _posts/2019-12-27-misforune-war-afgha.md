@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unfortunate record of lies about hte Afghanistan War
+title: Unfortunate record of lies about the Afghanistan War
 date: 2019-12-27 23:49 -0600
 author: quorten
 categories: [random, twitter]
