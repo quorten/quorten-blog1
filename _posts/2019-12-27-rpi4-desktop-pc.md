@@ -95,6 +95,10 @@ Raspberry Pi Foundation is always making up excuses why they can't do
 this, they can't do that, they don't have enough resources to do this
 correctly, blah blah blah.
 
+ACPI power states and power button?  No.  Sleeping unused cores?  No.
+DPMS in X11?  No.  PXE network boot?  No.  Wake on LAN?  No.  64-bit?
+No.  Virtualization?  No.  Vsync?  No.
+
 The lack of proper vsync in video playback in Chromium and on the X11
 desktop in general is a considerable nuisance.  3D performance in
 Blender for basic untextured polygon geometry is good, but more
