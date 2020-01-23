@@ -101,6 +101,21 @@ tags: [home-network]
       Oh!  Really good idea.  This solves my problem for finer-grained
       control of stand-by power consumption around my computers!
 
+* UPDATE 2020-01-23: Backup power wiring.  There should be separate
+  power circuits for equipment that should be connected to backup
+  power even during mains power failures.  Everything else is left
+  unpowered when mains power fails.  The idea is that you want to
+  minimize the load on the backup power system, whether it be
+  batteries, a generator, and so on.  Also, there should be a
+  dedicated plug outside the house where a generator can be connected
+  to supply power.
+
+* UPDATE 2020-01-23: 240 volt electricity to the garage is a must, for
+  electric vehicles.  Also, especially in the case of an
+  insulated/heated garage in cold environments, there should be a
+  water drainage system so that water from melting snow and ice off
+  the car does not puddle up on the garage floor.
+
 * Also must-have, but on the consumer side rather than the home
   builder side.  Power strips?  You need a slick outlet cover for that
   to prevent dust from settling inside unused outlets.  That's one of
