@@ -25,3 +25,8 @@ echo '{"color":"red","message":"Hello, Hipchat world."}' |
   -H 'Authorization: bearer <token>'
    --upload-file - <hipchat_server>/v2/api/<room>/notification
 ```
+
+To get information on a room, such as getting a room ID from a room by
+name, use this REST API:
+
+20200116/https://www.hipchat.com/docs/apiv2/method/get_room
