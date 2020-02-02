@@ -156,17 +156,17 @@ fine laser line for really high precision 3D scanning.
   that resolution without the help of a DSLR camera with specialized
   macro lenses.
 
-** Okay, I guess you're right.  Given all these definitions in full
-   detail here, I guess it's not really necessary after all to use the
-   phase shift method.  I just need to make sure I have adequate
-   manual control over the camera that I am using for the
-   photographing, and the related lighting conditions.  Specifically,
-   I want as little ambient light as possible for the laser scan, but
-   in the photographing step, I want full omnidirectional ambient
-   lighting of the model.  Yes, that means bounce lighting in a white
-   environment and multiple directional direct lighting.  Yes, both at
-   the same time actually.  Flashes would make for the easiest
-   lighting setup.
+    * Okay, I guess you're right.  Given all these definitions in full
+      detail here, I guess it's not really necessary after all to use
+      the phase shift method.  I just need to make sure I have
+      adequate manual control over the camera that I am using for the
+      photographing, and the related lighting conditions.
+      Specifically, I want as little ambient light as possible for the
+      laser scan, but in the photographing step, I want full
+      omnidirectional ambient lighting of the model.  Yes, that means
+      bounce lighting in a white environment and multiple directional
+      direct lighting.  Yes, both at the same time actually.  Flashes
+      would make for the easiest lighting setup.
 
 Okay, this is important.  How do you combine scans from different
 angles and mesh at the same time.  Here's the key rule to remember.
