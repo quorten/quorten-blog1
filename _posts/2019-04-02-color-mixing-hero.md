@@ -218,7 +218,7 @@ blending is here with us to stay.  If you want gamma-correct color
 blends on the web, you need to build your own multi-stop gradients for
 a piecewise approximation of a non-linear function.
 
-<img src="http://www.ericbrasseur.org/gamma-1.0-or-2.2.png"
+<img src="{{ site.baseurl }}/blog/images/2019-04-02-gamma-1.0-or-2.2.png"
      alt="Image scaling test image"
      width="512" height="256" />
 
