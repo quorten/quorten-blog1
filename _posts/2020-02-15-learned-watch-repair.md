@@ -53,6 +53,14 @@ down.  But... upon further inspection, the problem is more gruesome
 than I originally thought.  The solder joints were **intact**, the leg
 actually became detached from the **inside** of the capacitor.
 
+<object type="image/svg+xml"
+        data="{{ site.baseurl }}/blog/images/2020-02-15-capacitor.svg"
+        width="250" height="150">
+  <img src="{{ site.baseurl }}/blog/images/2020-02-15-capacitor.png"
+       alt="Dangling capacitor diagram"
+       width="250" height="150" />
+</object>
+
 Okay, so now I'm going to need to be careful about this.  Better not
 slap a soldering iron straight on the capacitor, else things can go
 awry really quickly.  How do you repair a capacitor where one leg got
