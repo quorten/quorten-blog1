@@ -3,8 +3,8 @@ layout: post
 title: More info on crimping Molex connectors
 date: 2020-02-14 22:03 -0600
 author: quorten
-categories: [raspberry-pi]
-tags: [raspberry-pi]
+categories: [raspberry-pi, important]
+tags: [raspberry-pi, important]
 ---
 
 Sure, I've previously noted information on how to crimp Molex
@@ -27,3 +27,8 @@ bend and flex better without breaking.
 20200214/DuckDuckGo how to crimp molex connector  
 20200214/http://www.pinrepair.com/connect/  
 20200214/https://hackaday.com/2015/04/07/how-to-properly-crimp-electronics-connectors/
+
+Important!  What is the difference between crimping and insulation
+displacement?  Crimping requires that you strip the wires first.
+Insulation displacement does not, since the connector with cut through
+the insulation to make contact with the wires.
