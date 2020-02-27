@@ -99,3 +99,27 @@ which includes both monetary assets, also called "capital," and
 non-monetary assets, such as land, tools, materials, etc.
 
 20200225/https://en.wikipedia.org/wiki/Accounting_equation
+
+Okay, okay, but what about what that one Mr. Money Mustache article
+said about how stocks work?  How can we ever have a market
+supply-demand relationship here where when more people rush to buy a
+stock, the price goes up?  And, conversely, when a whole bunch of
+people sell their stock, the price plummets?
+
+20200226/https://www.mrmoneymustache.com/2019/09/12/michael-burry-index-funds/
+
+Well, as it turns out, real world stocks aren't defined so simply.
+Rather than being merely a share of equity in a company, they are a
+measure of a company's profit.  Thus, nonprofit companies cannot be
+listed on stock exchanges.  The profit is principally paid out from
+dividends.  When dividends are not paid out, that is principally a
+decision to re-invest the profits rather than pay them out to
+shareholders.  Apparently by the examples given by Mr. Money Mustache,
+with dividend payments, the share price is relatively stable on its
+own, but as a company's profits grow, so does the dividend payout grow
+proportionally.  Yeah, that all makes sense.
+
+But how exactly is the share price set?  That has something to do with
+the "net present value" of all future earnings, so I was told.
+
+20200226/https://en.wikipedia.org/wiki/Net_present_value
