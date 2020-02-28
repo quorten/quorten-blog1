@@ -123,3 +123,12 @@ But how exactly is the share price set?  That has something to do with
 the "net present value" of all future earnings, so I was told.
 
 20200226/https://en.wikipedia.org/wiki/Net_present_value
+
+Okay, let's continue the fleshing out the full definition using simple
+terms.  Assume that all of the money exchanged when buying and selling
+shares counts toward a company's profitability.  This means that
+buying shares increases a company's profits, which means that more
+money can be paid out in dividends, and therefore the share prices can
+be higher.  Likewise, selling shares decreases a company's profits,
+decreases money that can be paid out in dividends, and therefore
+decreases the share prices.

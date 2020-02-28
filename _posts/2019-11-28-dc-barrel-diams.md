@@ -4,8 +4,8 @@ title: "Information on DC barrel connectors and and tricks on how to
         measure DC barrel connectors"
 date: 2019-11-28 23:30 -0600
 author: quorten
-categories: [raspberry-pi]
-tags: [raspberry-pi]
+categories: [raspberry-pi, important]
+tags: [raspberry-pi, important]
 ---
 
 How do you know what size of DC barrel connector to use for a
@@ -38,3 +38,13 @@ performing the measurement.
 20181128/https://en.wikipedia.org/wiki/Coaxial_power_connector  
 20181128/https://en.wikipedia.org/wiki/DC_connector  
 20181128/https://forum.digikey.com/t/measuring-power-supply-barrel-plug-id-2-1mm-vs-2-5mm/401
+
+Important!  What's the difference between a coaxial power connector
+and a barrel connector?  A coaxial power connector is, of course, like
+a coaxial cable.  There's a round outer ground shield, and an inner
+pin to connect the positive DC voltage.  A barrel connector, by
+contrast, does **not** have an inner pin.  Rather, the outer shield is
+coated with two separate conductors on each side, an outer conductor
+and an inner conductor.  The middle, therefore, is either completely
+hollow (on the plug/pin side) or filled completely solid (on the
+socket side).

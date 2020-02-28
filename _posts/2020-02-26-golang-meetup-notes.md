@@ -94,6 +94,7 @@ func main() {
 20191016/https://golang.org/pkg/fmt/  
 20191016/https://play.golang.org/  
 20191016/DuckDuckGo compiler explorer  
+20191016/https://godbolt.org/  
 20191016/https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go
 
 Go Concurrency Explored.  You can do a switch on a channel?  Yes, that
