@@ -19,7 +19,7 @@ make a nice comfy desktop PC replacement?
 * Stellarium
 * Emacs
 * Blender
-* unattended-updates
+* unattended-upgrades
 
 That does it for the basics.  Now for additional important system
 configuration.
@@ -50,6 +50,9 @@ configuration.
   20191231/https://raspberrypi.stackexchange.com/questions/104181/colored-emojis-in-chromium  
   20191231/https://www.omgubuntu.co.uk/2016/08/enable-color-emoji-linux-google-chrome-noto  
   20191231/https://eosrei.github.io/emojione-color-font/full-demo.html
+
+  Nowadays, there is a debian package for this: `sudo apt-get install
+  fonts-noto-color-emoji`.
 
 The PDF viewer included in Raspbian, `qpdfview`, doesn't have support
 for selecting text?  Install the better PDF viewer Atril from MATE,
