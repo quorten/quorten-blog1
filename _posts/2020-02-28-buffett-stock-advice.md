@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Warren Buffett's advice for a stock market crash"
-date: 2020-02-28 21:39 -0600
+date: 2020-02-28 12:39 -0600
 author: quorten
 categories: [personal-finance]
 tags: [personal-finance]
