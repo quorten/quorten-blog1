@@ -136,10 +136,17 @@ which pins to reserve for those purposes.
   need to connect to GND bus.  CTS and RTS are supported.  Where are
   these pins wired?  User-configurable?
 
+  UPDATE 2020-03-05: These are located at this fixed location: CTS0
+  (GPIO16 -> pin 36); RTS0 (GPIO17 -> pin 11).  This occupies the same
+  pins as SPI1.
+
 * Mini UART?  Total 2 pins: Uses pins ? (TxD), ? (RxD).  Also need to
   connect to the GND bus.  Note that the Mini UART is, in fact,
   declared that it is the one that is _intended to be used as a
   console_ in the Broadcom manual.
+
+  UPDATE 2020-03-05: Unfortunately, the Mini UART is only accessible
+  on the Raspberry Pi Compute Module.
 
 * Composite video output: Total 2 pins
 
