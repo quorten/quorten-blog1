@@ -284,3 +284,25 @@ converter for powering a larger circuit?
 
 20191221/DuckDuckGo point of load converter  
 20191221/https://electronics.stackexchange.com/questions/231325/what-is-a-point-of-load-converter
+
+----------
+
+UPDATE 2020-03-05: Okay, okay, searching yet again for the ideal DC-DC
+converter modules.  And I've found the ideal 5 V module, except that
+it is a BLGA surface mount package.  If only I can get the right
+adapter, it would be great.  But 25 BLGA pins, why so many?
+
+20200305/https://www.digikey.com/product-detail/en/recom-power/RPM5-0-1-0/945-3250-1-ND/9644702
+
+Second up, narrower voltage range and lesser current supply.  But
+unlike the previous one, this one boosts from below 5 V, not just
+bucks from above 5 V.
+
+20200305/https://www.digikey.com/product-detail/en/recom-power/REC3-0505SR-H1/945-1458-5-ND/2304706
+
+Here are some 3.3 V converters that go from 4.5 V to 9 V, in case you
+need more 3.3 V current than the 800 mA that the Raspberry Pi gives
+you.
+
+20200305/https://www.digikey.com/product-detail/en/tdk-lambda-americas-inc/CC1R5-0503SF-E/445-2444-ND/920404  
+20200305/https://www.digikey.com/product-detail/en/tdk-lambda-americas-inc/CC6-0503SF-E/445-2478-ND/920438

@@ -40,12 +40,23 @@ ground and the output will essentially be an AND gate rather than an
 OR gate, though resistors could be used to mitigate this.  Likewise,
 the diode-OR doesn't really work with CMOS either because it doesn't
 allow for bidirectional currents, except for a little semblance of
-"reverse bias."  Similar can be said in relation to AND gates via BJT
+"reverse bias."  Therefore, CMOS inputs may be left "floating" when
+there the gate asserts logic level zero rather than properly asserted
+to ground.  Similar can be said in relation to AND gates via BJT
 transistors... remember this is CMOS not TTL!  But... if you use
 pull-down resistors, then actually you can use diode-OR gates and BJT
 AND gates just fine.  All that being said, using the logic OR chips
 will likely save you power over any of the cheaper component
 approaches.
+
+Another caution with diodes is that they exhibit a voltage drop, and
+if you are not careful, this can result in the output being
+incompatible with the desired logic family.  These Wikipedia articles
+have a lot of great information on the subject.
+
+20200305/https://en.wikipedia.org/wiki/Diode_logic  
+20200305/https://en.wikipedia.org/wiki/OR_gate  
+20200305/https://en.wikipedia.org/wiki/Wired_logic_connection
 
 Okay, that's all nice and well, but what about interfacing multiple
 inputs/outputs to a single GPIO pin?  There are two main techniques
@@ -113,12 +124,30 @@ supported, so don't use directly for any high-current peripherals.
 
 20200303/https://www.digikey.com/product-detail/en/texas-instruments/CD74HC238E/296-25983-5-ND/1506865
 
-Worst comes to worst, you can build your own active high 2-to-4 line
-decoder/demultiplexer as follows.  You just need a few NOT gates, AND
-gates, or alternatively NOT gates and OR gates.
+Alternatively, worst comes to worst, you can build your own active
+high 2-to-4 line decoder/demultiplexer as follows.  You just need a
+few NOT gates, AND gates, or alternatively NOT gates and OR gates.
 
 20200303/DuckDuckGo active high 4 line decoder deumultiplexer  
 20200303/http://www.play-hookey.com/digital/combinational/decoder_demux_four.html
+
+Why would most of the demultiplexer chips be active low?  From the
+standpoint of a novice, it's hard to tell, but I'd guess it has
+something to do with active low being more common for chip selects on
+most integrated circuits.  For one thing, the Wikipedia article on SPI
+claims that slave select is typically active low.  Also, if you're
+directly controlling the common cathode of a multiplexed LED display,
+you'd also want your demultiplexer to be active low.  Likewise,
+tri-state buffers are also use active low output enable, and shift
+registers with builtin output enable are also typically active low
+output enable.
+
+So, here are some active low demultiplexers... originally I thought I
+didn't want these, but it turns out I need them precisely for the same
+purpose I've just described.  2-to-4 and 3-to-8:
+
+20200306/https://www.digikey.com/product-detail/en/texas-instruments/SN74HC139N/296-8230-5-ND/376908  
+20200306/https://www.digikey.com/product-detail/en/texas-instruments/SN74HC138N/296-1575-5-ND/277221
 
 Here is a simple 4-bit counter chip that would work well for
 sequentially scanning a multiplexer circuit.
@@ -145,7 +174,9 @@ the need to worry about input/output as is often the case with digital
 logic circuits... and it also creates the problem of phantom current
 loops if not properly managed.  But the point is, if you're going to
 use a diode, you might as well just use a buffer IC instead because
-that accomplishes the same task.
+that accomplishes the same task.  Such as this nice part...
+
+20200306/https://www.digikey.com/product-detail/en/texas-instruments/SN74HC125N/296-1572-5-ND/277218
 
 A bilateral switch is also, therefore in a sense, like a buffer that
 supports high-impedence for adding tri-state logic.  "Bus switch" is

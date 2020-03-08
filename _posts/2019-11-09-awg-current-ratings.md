@@ -23,3 +23,14 @@ connectors, i.e. Molex PicoBlade.
 
 20191109/DuckDuckGo 26 awg wire current  
 20191109/https://www.engineeringtoolbox.com/wire-gauges-d_419.html
+
+UPDATE 2020-03-07: That's only the current rating for single core or
+"solid" wire.  Stranded wire will have a lesser current rating.
+Typical AWG wires that you work with in electronics will be stranded
+wires with at least 5 strands... so 26 AWG wire may only be rated for
+1 A of current, which limits you to putting 500 mA through the wire.
+
+20200307/https://electronics.stackexchange.com/questions/361321/awg-for-connecting-a-usb
+
+Please see [my next article on the subject]({{ site.baseurl
+}}/blog/2020/03/07/usb-awg-info) for important further discussion.

@@ -104,6 +104,9 @@ reads are delayed by one 8-bit byte.  Unless, of course, you add the
 assertion line "RTS" to your serial communications to indicate that
 the master wants to read, and you configure your SPI master to also
 wait the time of at least one start bit before pumping the data clock.
+Ideally for simplicity, all 8 bits would be transferred during the
+set-up period, then the SPI clock just shifts outs the bits that were
+completely transferred into the local shift register.
 
 It would be nice if I could buy a chip that performs precisely the
 purpose of the outlined designs, but it looks like I have to design my
