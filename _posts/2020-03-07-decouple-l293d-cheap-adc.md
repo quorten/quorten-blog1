@@ -45,3 +45,8 @@ time to discharge it.  You get a comparator and a voltage sink for
 free.  Where does the voltage sink come from?  It comes from the
 built-in pull-down resistor, that's why you can get it to work with so
 little glue logic.
+
+A prime use in portable applications is, of course, a battery voltage
+indicator circuit.  When the battery voltage runs low, you know you
+don't have much time left until your next recharge or battery
+replacement.
