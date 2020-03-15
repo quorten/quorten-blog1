@@ -24,8 +24,7 @@ and telephone wire?  22 AWG to 26 AWG is typical.
 
 Also, here's another good point.  According to these answers, 24 AWG
 wire can handle up to 2 A.  That doesn't quite cope with one of my
-previous statements... alas, I was writing the numbers for solid wire,
-not stranded wire, that's why.
+previous statements...
 
 20200307/https://www.engineeringtoolbox.com/wire-gauges-d_419.html
 
