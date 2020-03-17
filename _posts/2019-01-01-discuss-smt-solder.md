@@ -218,6 +218,10 @@ nominally 60% tin 40% lead solder, and possibly Rosin-core.  Maybe
 that since it came with a starter kit, it was formulated to make this
 be less of a problem.
 
+UPDATE 2020-03-15: Indeed, this is the case.  There is a such thing as
+"no clean flux" that is used in some kinds of solder, and it could be
+that is the kind of flux they used in that particular solder.
+
 ----------
 
 Alas, I must concede that the leaded versus lead-free solder paste
