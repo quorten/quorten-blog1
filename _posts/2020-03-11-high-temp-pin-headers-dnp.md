@@ -39,6 +39,34 @@ Please also see my [hot temperatures article]({{ site.baseurl
 20200311/https://en.wikipedia.org/wiki/Liquid-crystal_polymer  
 20200311/https://en.wikipedia.org/wiki/Polycyclohexylenedimethylene_terephthalate
 
+UPDATE 2020-03-16: Although Nylon can withstand higher temperatures,
+it is not suitable for reflow soldering due to its high moisture
+absorption rate.  This means its dimensional accuracy is highly
+dependent on the environmental moisture and temperature level.
+
+20200316/DuckDuckGo nylon reflow soldering  
+20200316/https://sullinscorp.com/wp-content/uploads/2015/04/Nylon-6t-and-Reflow-Soldering.pdf  
+20200316/DuckDuckGo nylon moisture absorption rate  
+20200316/https://www.toray.jp/plastics/en/amilan/technical/tec_003.html
+
+Likewise, according to this source, glass-filled polyester is also not
+suitable for reflow soldering.  The stated plastics that work well
+with reflow soldering are "Liquid Crystal Polymers (LCP),
+Polyphenylene Sulfides (PPS) and Polycyclohexylene Terephthalates
+(PCT)."
+
+20200316/DuckDuckGo glass filled polyester reflow soldering  
+20200316/http://suddendocs.samtec.com/processing/smthb/plastics.html
+
+Noteworthy is that Nylon does not have as high a heat deflection
+temperature as polyethylene terephthalate.
+
+20200316/https://en.wikipedia.org/wiki/Heat_deflection_temperature  
+20200316/DuckDuckGo nylon heat deflection temperature  
+20200316/https://www.creativemechanisms.com/blog/3d-printing-injection-molding-cnc-nylon-plastic-pa
+
+----------
+
 What does DNP mean in a schematic?  DNP = Do Not Place.  It is used to
 indicate an empty footprint on a board where components can be placed
 ad-hoc by the end user after the standard assembly process.

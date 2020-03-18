@@ -29,6 +29,6 @@ Here are some almost ideal parts on Digi-Key... slotted instead of
 Philips screws, but one millimeter short for Digi-Key standoffs.  Use
 a paper/cardboard spacer I say.
 
-20200311/
-20200311/
-20200311/
+20200311/https://www.digikey.com/product-detail/en/keystone-electronics/4707/36-4707-ND/4499300  
+20200311/https://www.digikey.com/product-detail/en/w-rth-elektronik/971100154/732-12917-ND/9488621  
+20200311/https://www.digikey.com/product-detail/en/keystone-electronics/29301/36-29301-ND/1532984
