@@ -7,6 +7,8 @@ categories: [raspberry-pi]
 tags: [raspberry-pi]
 ---
 
+TODO FIXME: Work in progress blog article.
+
 Okay, okay, so these ideas were coming from a larger documentation
 project I was working, but for the sake of timeliness and succinct
 containment, I thought I'd write a separate blog article on the
@@ -31,6 +33,8 @@ current.  Then, when the voltage source is disconnected, the capacitor
 will act like its own voltage source and supply current until it is
 fully discharged.  Just like a battery, the voltage a capacitor
 supplies will gradually decay until it has no more charge left.
+
+<!-- more -->
 
 That being said, an inductor acts in the opposite fashion of a
 capacitor.  An inductor, when fully discharged, will _resist_ the flow
