@@ -42,3 +42,19 @@ Vpp = volts peak to peak
 20191116/https://en.wikipedia.org/wiki/MIDI  
 20191117/https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair  
 20191117/https://en.wikipedia.org/wiki/Gigabit_Ethernet
+
+Please note: Many of these figures are nominally expressed in dbV, and
+this measurement can be confusing.  For this sake, this quick
+reference sheet can be greatly helpful.
+
+```
+0 dbV = 1 V_RMS = 1 V / sqrt(2)
+V = sqrt(2 * 10^(dbV/10)) = sqrt(2) * 10^(dbV/20)
+Vpp = 2 * V
+```
+
+The reason why we do `10^(dbV/20)` is because decibels measures power,
+not amplitude, so we must square the ratio difference in voltages, or
+alternatively take the square root of dbV to convert to volts.
+Multiplying by `sqrt(2)` is simply used to convert from
+root-mean-square volts to volts.

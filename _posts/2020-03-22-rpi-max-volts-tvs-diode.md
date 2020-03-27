@@ -23,12 +23,24 @@ hinting at in my summary of protective circuits.  Yes, indeed this is
 the missing link... if you want a semiconductor diode voltage
 regulator to provide a barrier against higher voltages in your
 circuit, but you want something that can specifically tolerate higher
-voltage transient spikes, a TVS diode will do that.  Also, note that a
-TVS diode can double as a typical Schottky diode to protect against
-polarity inversion.
+voltage transient spikes, a TVS diode will do that.  A TVS diode is
+placed in reverse polarity in a circuit so it is normally
+non-conducting.
 
 20200322/https://en.wikipedia.org/wiki/Transient-voltage-suppression_diode
 
 Also related is a "crowbar device."  Unlike a TVS diode that
-dissipates all access energy as heat from itself, a crowbar device
-creates a short circuit path for the excess current to flow through.
+dissipates much more excess energy as heat from itself, a crowbar
+device creates a short circuit path for the excess current to flow
+through.
+
+<!-- more -->
+
+Please note: If you are using a TVS diode in an application where
+reverse polarity is assumed to "never happen," then you can use a
+unidirectional TVS diode.  Otherwise, if you are using a Schottky
+diode for polarity protection, you should use a bidirectional TVS
+diode which is placed in front of your Schottky diode but behind your
+polyfuse.  This way, the Schottky diode is protected from transient
+voltages, and the polyfuse is also in the proper location to trip the
+circuit if the TVS diode must act.
