@@ -146,7 +146,7 @@ their leads are in the center of the pads.
 Here, this author used crude temperature control, square-wave style
 temperature setpoints and durations, but got quite good results.  This
 author also noted that others have noted that you you can also simply
-head the board up to the reflow temperature for four minutes and that
+heat the board up to the reflow temperature for four minutes and that
 will also give you just as good results.  Additionally, the author
 notes that once you are done prototyping a design, you can prepare a
 solder paste stencil mask to make applying the solder paste much
