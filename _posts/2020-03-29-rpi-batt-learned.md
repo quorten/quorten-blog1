@@ -101,6 +101,10 @@ But, how much is too much for NiMH batteries?  Looks like the "too
 much" is well outside the range you may work with for Raspberry Pi.
 NiMH batteries can definitely do well supplying 1.5 A of current, and
 apparently NiMH batteries can also do well supplying 10+ A of current.
+However, please note that before we start talking about such high
+current draws, you've got to make sure that the wires and connectors
+(if any) from your battery to your switched-mode power supply are
+rated to handle that much current.
 
 20200329/https://en.wikipedia.org/wiki/Nickel%E2%80%93metal_hydride_battery  
 20200329/DuckDuckGo maximum current draw nimh battery  
@@ -109,17 +113,22 @@ apparently NiMH batteries can also do well supplying 10+ A of current.
 So, here is the crux of the point.  _Only_ if you are using NiMH
 batteries is it safe to connect them to a boost switched-mode power
 supply that will even boost when the voltage runs down to 2 V.
-Otherwise, to limit the current draw from the batteries, you should
-cut-off at 3 V.  But that's already what the Raspberry Pi Zero does on
-its own due to the tolerance limits of the internal buck switched-mode
-power supply... it has a minimum fixed buck voltage of about 1.1
-volts, and since the core voltage must be 1.8 volts, the supply
-voltage must be at least 2.9 volts.  So, if these limits are _already_
-in place, and you plan on connecting no more than 3 batteries to your
-Raspberry Pi Zero, and you will either use alkaline AA batteries or
-NiMH AA batteries but don't know in advance, then there is absolutely
-no reason to use an additional switched-mode power supply in front of
-the Raspberry Pi.
+However, please note that at this point, chances are your wires and
+connectors (if any) will be the limit on your maximum current draw, so
+plan accordingly!  If unsure, set the minimum battery voltage so that
+battery current is limited to 1 A.
+
+Otherwise, if using alkaline, to limit the current draw from the
+batteries, you should cut-off at 3 V.  But that's already what the
+Raspberry Pi Zero does on its own due to the tolerance limits of the
+internal buck switched-mode power supply... it has a minimum fixed
+buck voltage of about 1.1 volts, and since the core voltage must be
+1.8 volts, the supply voltage must be at least 2.9 volts.  So, if
+these limits are _already_ in place, and you plan on connecting no
+more than 3 batteries to your Raspberry Pi Zero, and you will either
+use alkaline AA batteries or NiMH AA batteries but don't know in
+advance, then there is absolutely no reason to use an additional
+switched-mode power supply in front of the Raspberry Pi.
 
 Otherwise, if you really want to use 4 or more AA batteries in front
 of the Raspberry Pi but don't know their chemistry in advance, then it
