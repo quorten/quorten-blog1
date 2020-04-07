@@ -72,7 +72,7 @@ casings of components may have absorbed some moisture.
 
 20200406/https://en.wikipedia.org/wiki/Moisture_sensitivity_level  
 20200406/https://en.wikipedia.org/wiki/Polyamide  
-https://en.wikipedia.org/wiki/Nylon_6
+20200406/https://en.wikipedia.org/wiki/Nylon_6
 
 Also, that great resource on reflow soldering specified another great
 subject: reflow soldering wtih through-hole components.  You **can**

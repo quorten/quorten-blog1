@@ -8,7 +8,8 @@ tags: [raspberry-pi]
 ---
 
 Raspberry Pi board uses M2.5 screws.  Though you could size up to M3
-with some drilling.
+with some drilling.  Note that M3 screws are more common and they were
+used in PC floppy disk drive mounts.
 
 20200311/DuckDuckGo raspberry pi m3 screw  
 20200311/https://raspberrypi.stackexchange.com/questions/23029/what-size-screws-does-the-raspberry-pi-board-use
