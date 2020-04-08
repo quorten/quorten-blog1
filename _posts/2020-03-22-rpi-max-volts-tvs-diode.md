@@ -53,3 +53,22 @@ exceeded, then your polyfuse may be damaged.
 
 20200331/DuckDuckGo exceed max voltage of polyfuse  
 20200331/https://electronics.stackexchange.com/questions/370847/specifications-to-consider-when-selecting-a-polyfuse
+
+UPDATE 2020-04-07: I looked more carefully at the details of the
+polyfuse and TVS diode combination in the Raspberry Pi 3 B+, and it
+turns out that these are _not_ actually matched such that the TVS
+diode tripping will also trip the polyfuse.  The polyfuse simply takes
+too long to trip at the rated current, and the TVS diode is not rated
+to last this long.  Nope, the graphs show a 10 ms spike as the maximum
+duration of a transient voltage spike.  That's nothing compared to the
+5 second time to trip the polyfuse.
+
+So, the end all be-all of this conclusion is this... if you wire up a
+constant voltage source to the Raspberry Pi 3, you will still have the
+same risk of hardware damage as you would on the earlier Raspberry
+Pi's.  The TVS diode there will only protect against _transient_
+overvoltages, not persistent ones.  A persistent overvoltage would
+first damage the TVS diode such that it provides no more protection
+ability, and since this is parallel-wired, the overvoltage would
+simply continue to flow through the main electronics power supply path
+and cause the same damage as if there were no TVS diode.
