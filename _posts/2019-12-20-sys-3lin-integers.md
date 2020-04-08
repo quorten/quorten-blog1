@@ -107,6 +107,19 @@ simply:
    in-plane ray from your primary plane and intersecting that with the
    secondary plane.
 
+   How do we pick or define this in-plane this vector?  Out of the two
+   source vectors, we want to pick the one that is most perpendicular
+   to the target plane.  Or, in other words, the vector that has the
+   largest normalized dot product.  Normalization can be skipped if
+   the two in-plane vectors are assumed to be approximately the same
+   length, which they shoul be assuming the source data is well-formed
+   for numerical stability.
+
+   We can compute a new vector by projecting a point to the target
+   plane to get a perpendicular ray, then projecting the distant point
+   again to our source plane.  Then we solve the intersection using
+   that new ray.
+
 5. Now that you have your intersection line between the two planes,
    simply intersect that with the third plane.  You will get your
    final destination point as the output.
@@ -138,6 +151,10 @@ Cross product: cross_product(A, B) =
                  A_z * B_x - A_x * B_z,
                  A_x * B_y - A_y * B_x ]
 
+Eliminate one vector component from another like "A - B":
+
+vec_elim(A, B) =  A - B * dot_product(A, B) / magnitude(B)
+
 Shortest distance from point to plane:
 
 Let L = location vector of point,
@@ -165,6 +182,14 @@ Let L = location vector of point,
 L_rel_P = L - P;
 dot_product(L_rel_P, A) / magnitude(A);
 
+Project a point to a plane along the perpendicular:
+
+Let L = location vector of point,
+    A = plane surface normal vector,
+    P = plane location vector
+
+L + A * dist_point_to_plane(L, P, A) / magnitude(A)
+
 Intersection of ray/line with plane:
 
 Let D = ray/line direction vector,
@@ -173,28 +198,32 @@ Let D = ray/line direction vector,
     P = plane location vector
 
 comm_dir_len = dot_product(D, A);
-D_sub_A = D - A * comm_dir_len / magnitude(A);
-D_along_A = dist_point_to_plane(L, P, A) * D_sub_A / magnitude(D);
+A_along_D = comm_dir_len / magnitude(A);
+D_sub_A = D - A * A_along_D;
+
+// Fixed-point intermediate, can be substituted directly to avoid
+// fixed-point.  Multiplier of distance to plane in units of A_along_D.
+direct_dist_scalar = dist_point_to_plane(L, P, A) / A_along_D
+
+result = direct_dist_scalar * d_sub_a;
 ```
 
 Now, how does this compare overall to Gaussian elimination?  With
 Gaussian elimination, you can do it with 11 divisions, by skipping
-over the entries known to be zero.  This method requires 18 divisions.
-So, yes, it does require more divisions, but it has a semblance of
-staying close to the source data, and therefore is more numerically
-stable in that sense.  Also, since every single time we do a divide it
-is matched by a corresponding multiply, we have a computational form
-that is similar to the benefits of rational arithmetic, but using only
-integers, provided that we allocate enough integer range to square
-numbers.
+over the entries known to be zero.  Without fixed-point arithmetic,
+this method requires 8 divisions (since we run the subroutine twice to
+solve the whole system), better than Gaussian elimination.
+Alternatively, if fixed-point is used for the `direct_dist_scalar`
+intermediate, this method only requires 4 divisions and a few bit
+shifting operations.  That is much better than Gaussian elimination.
 
-But, there is still room for simplifications.  If you normalize A in
-advance, you can reduce those divisions since you only need to divide
-by `magnitude(A)` once.  This brings you to 12 divisions, competitive
-with Gaussian elimination.  However... this is only under the
-assumption that you represent the normalized vector using the
-fixed-point format.  In this case, you simply need to do some final
-bit-shifting operations in place of a divide.
+So, yes, it does require one more division operation, but it has a
+semblance of staying close to the source data, and therefore is more
+numerically stable in that sense.  Also, since every single time we do
+a divide it is matched by a corresponding multiply, we have a
+computational form that is similar to the benefits of rational
+arithmetic, but using only integers, provided that we allocate enough
+integer range to square numbers.
 
 Also, another note when computing the cross product.  The cross
 product, like the dot product, contains factors of the magnitude of
@@ -222,3 +251,79 @@ factor of 16, or shift for 4 bits after the decimal.
 Let N = surface normal vector
 cross_product(A, B) = magnitude(A) * magnitude(B) * sin(theta) * N
 ```
+
+----------
+
+Actually, in the midst of this discussion, the idea of performing
+"pre-conditioning" checks on the data is a prudent one.  So, when we
+want to do this what do we check for?  Basically, we want to check the
+forms of the equations of the planes and how they relate to each
+other.
+
+1. Check the lengths of the two in-plane vectors and verify they are
+   similar to each other.  If one is way longer than the other, you
+   have poorly formed source data.
+
+2. Check the angle between the two in-plane vectors and verify they
+   are reasonably separate in angle, right angle being the extreme.
+   If the two in-plane vectors are so close in angle as to almost be
+   identical, you have poorly formed data.  Poorly formed angles
+   include near zero degrees and near 180 degrees.
+
+3. Check the angles of the plane surface normals relative to each
+   other.  These should also be well-formed angles, so if anything is
+   close to zero degreese or 180 degrees, you have poorly formed data.
+
+4. Check that plane reference points are reasonably close to each
+   other, within some kind of bounding box.  If a plane reference
+   point is way further away from the others, chances are you will not
+   get well-formed numerical results and you therefore have poorly
+   formed data.
+
+   Beyond that simple heuristic, the main understanding of this
+   numerical stability is in proportion to the surface normal lengths.
+   The main thing to watch out for is how many times the length of a
+   surface normal you must extend to reach another plane.  Remember,
+   with integer arithmetic, we use non-normalized surface normals so
+   that we can stay close to the original data points.  If we have to
+   extend way too many times the length of a surface normal, that
+   means we are multiplying an uncertainty in direction because we
+   didn't measure the angle that precisely in the original data.  But,
+   if you extend only a fraction the length of a surface normal, you
+   have extreme confidence in the accuracy of the resulting position
+   since your original data measured the angle more precisely than is
+   being used in the computation.
+
+   So, if you are solving a system of equations and find out that you
+   have to over-extend a ray to get a plane intersection, this is a
+   good opportunity to try to see if you can solve the system picking
+   a different ordering for the first, second, and third planes.  If
+   you cannot reorder the data and maintain this constraint, you have
+   poorly formed data.
+
+----------
+
+Coming back to solving a quadratic regression, you will start with the
+`Ax = b` equation form, which uses a scalar for the reference point
+rather than a point vector.  So, how do you use the integer method to
+solve such a system of equations?
+
+The ray-plane intersection subroutine can operate with equations of
+planes defined as an origin offset rather than a starting point, so
+nothing needs to change there.  The main question, then, is how do you
+pick the starting point and starting direction?  The key to remember
+here is the form of the primary data: you are principally given planes
+defined in terms of a direction vector and a scalar offset from the
+origin.  When your goal is to pick a point sticking as close to the
+original data as possible, naturally that means you pick your starting
+point from the point closest to the origin.  As for the starting
+direction, the best way to get that is to take the surface normal of
+the second plane and project it into the first plane, which will give
+you an in-plane vector perpendicular to the second plane.  So, after
+doing that, you simply follow the same procedure to solve the system,
+and if numerical stability all checks out, you're done!
+
+Please see my blog article on [linear regression algorithm
+implementation]({{ site.baseurl }}/blog/2018/02/18/linreg-impl)
+information for more insight for an efficient implementation algorithm
+for a 3D scanner for setting up the `Ax = b` matrix.
