@@ -190,6 +190,13 @@ Let L = location vector of point,
 
 L + A * dist_point_to_plane(L, P, A) / magnitude(A)
 
+Because we are dividing by magnitude twice, the division quantity is
+squared so we therefore can avoid computing the square root and
+simplify as follows:
+
+L_rel_P = L - P;
+L + A * dot_product(L_rel_P, A) / dot_product(A, A);
+
 Intersection of ray/line with plane:
 
 Let D = ray/line direction vector,
@@ -199,25 +206,47 @@ Let D = ray/line direction vector,
 
 comm_dir_len = dot_product(D, A);
 A_along_D = comm_dir_len / magnitude(A);
-D_sub_A = D - A * A_along_D;
 
 // Fixed-point intermediate, can be substituted directly to avoid
 // fixed-point.  Multiplier of distance to plane in units of A_along_D.
-direct_dist_scalar = dist_point_to_plane(L, P, A) / A_along_D
+direct_dist_scalar = dist_point_to_plane(L, P, A) / A_along_D;
 
-result = direct_dist_scalar * d_sub_a;
+result = L + direct_dist_scalar * D;
+
+If you look at these equations carefully, you'll see we actually carry
+cancel out magnitude(A) on both the numerator and denominator.  Hence,
+we can completely avoid computing this quantity and avoid the
+associated square root computation.  Let's simplify.
+
+All equations laid out:
+
+comm_dir_len = dot_product(D, A);
+A_along_D = comm_dir_len / magnitude(A);
+L_rel_P = L - P;
+direct_dist_scalar = dot_product(L_rel_P, A) / magnitude(A) / A_along_D;
+result = L + direct_dist_scalar * D;
+
+Substituting A_along_D, we clearly have `magnitude(A)` in both the
+numerator and denominator.  Cancel them.
+
+L_rel_P = L - P;
+direct_dist_scalar = dot_product(L_rel_P, A) / dot_product(D, A);
+result = L + direct_dist_scalar * D;
+
+Now we can perform the final substitution to avoid fixed-point
+arithmetic.
+
+L_rel_P = L - P;
+result = L + D * dot_product(L_rel_P, A) / dot_product(D, A);
 ```
 
 Now, how does this compare overall to Gaussian elimination?  With
-Gaussian elimination, you can do it with 11 divisions, by skipping
-over the entries known to be zero.  Without fixed-point arithmetic,
-this method requires 8 divisions (since we run the subroutine twice to
-solve the whole system), better than Gaussian elimination.
-Alternatively, if fixed-point is used for the `direct_dist_scalar`
-intermediate, this method only requires 4 divisions and a few bit
-shifting operations.  That is much better than Gaussian elimination.
+Gaussian elimination, you can do it with 9 divisions, by skipping over
+the entries known to be zero.  This optimized method requires only two
+divisions (since we run the subroutine twice to solve the whole
+system), much better than Gaussian elimination.
 
-So, yes, it does require one more division operation, but it has a
+Not only is this more computationally efficient, this also has a
 semblance of staying close to the source data, and therefore is more
 numerically stable in that sense.  Also, since every single time we do
 a divide it is matched by a corresponding multiply, we have a
