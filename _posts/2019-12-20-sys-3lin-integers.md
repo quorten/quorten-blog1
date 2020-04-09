@@ -188,16 +188,22 @@ Let L = location vector of point,
     A = plane surface normal vector,
     P = plane location vector
 
-L + A * dist_point_to_plane(L, P, A) / magnitude(A)
+L - A * dist_point_to_plane(L, P, A) / magnitude(A)
+
+Pay attention to the sign here: The distance from the point to the
+plane is positive when we are in front (normal and point vector facing
+the same direction), negative when we are behind. Since we want to
+travel opposite this distance to reach the plane, we must subtract,
+not add.	       
 
 Because we are dividing by magnitude twice, the division quantity is
 squared so we therefore can avoid computing the square root and
 simplify as follows:
 
 L_rel_P = L - P;
-L + A * dot_product(L_rel_P, A) / dot_product(A, A);
+L - A * dot_product(L_rel_P, A) / dot_product(A, A);
 
-Intersection of ray/line with plane:
+Bi-directional intersection of ray/line with plane:
 
 Let D = ray/line direction vector,
     L = ray/line location vector,
@@ -209,7 +215,7 @@ A_along_D = comm_dir_len / magnitude(A);
 
 // Fixed-point intermediate, can be substituted directly to avoid
 // fixed-point.  Multiplier of distance to plane in units of A_along_D.
-direct_dist_scalar = dist_point_to_plane(L, P, A) / A_along_D;
+direct_dist_scalar = -dist_point_to_plane(L, P, A) / A_along_D;
 
 result = L + direct_dist_scalar * D;
 
@@ -223,21 +229,32 @@ All equations laid out:
 comm_dir_len = dot_product(D, A);
 A_along_D = comm_dir_len / magnitude(A);
 L_rel_P = L - P;
-direct_dist_scalar = dot_product(L_rel_P, A) / magnitude(A) / A_along_D;
+direct_dist_scalar = -dot_product(L_rel_P, A) / magnitude(A) / A_along_D;
 result = L + direct_dist_scalar * D;
 
 Substituting A_along_D, we clearly have `magnitude(A)` in both the
 numerator and denominator.  Cancel them.
 
 L_rel_P = L - P;
-direct_dist_scalar = dot_product(L_rel_P, A) / dot_product(D, A);
+direct_dist_scalar = -dot_product(L_rel_P, A) / dot_product(D, A);
 result = L + direct_dist_scalar * D;
 
 Now we can perform the final substitution to avoid fixed-point
 arithmetic.
 
 L_rel_P = L - P;
-result = L + D * dot_product(L_rel_P, A) / dot_product(D, A);
+result = L - D * dot_product(L_rel_P, A) / dot_product(D, A);
+
+If you want a directed intersection computation, i.e. you do not want
+to extend rays backwards to complete an intersection, then check the
+ratio of dot products.  If `-dot_product(L_rel_P, A) / dot_product(D,
+A)` is negative (alternatively, if the ratio of dot products without
+the negative sign is positive), that means you're traveling the
+opposite direction of the ray vector, so there is no solution.
+
+Also, note that if we would be about to get a divide-by-zero in the
+intersection equations, that means the ray is parallel to the plane,
+so there is no solution.
 ```
 
 Now, how does this compare overall to Gaussian elimination?  With
