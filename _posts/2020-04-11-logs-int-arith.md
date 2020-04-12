@@ -69,12 +69,12 @@ Let's start with the discussion of significant figures.  You might be
 tempted to start by stepping through fractional exponents like
 `x^(1/65536), x^(2/65536), x^(3/65536), ...`.  But that approach will
 not work well because `x^(1/65536)` may just as well be so small that
-it is equal to zero.  In that case, with zero significant figures,
-multiplying it will achieve nothing.
+it is equal to one.  In that case, multiplying it will achieve
+nothing.
 
 So, first off, with the size of the base, you should find the largest
 power it can be raised to without overflowing, and the smallest root
-that can be taken without falling to zero.  The low end defines how
+that can be taken without falling to one.  The low end defines how
 fine-grained your fractional exponents can be computed.  The high end
 defines how large an integer exponent you can compute before you have
 to divide it (take a root of it) before you can keep going.
@@ -150,5 +150,121 @@ directly to one of your constructive base exponents, you want to
 subtract away the largest such fractions possible so you get a sum of
 such fractions with ideally no multiplication of each term.
 
-And that's how you do it!  That's how you build up your own table of
-logarithms, all the way down.
+But, hold on.  We're steping backwards on one of the numerical
+stability ideals we brought forth earlier.  But, no worries, it's
+easier to reason out how to do it with this starting point.  If you've
+counted to 4/16, then first you reduce to 1/4.  Now you want to search
+for a base number of 1/2 or greater.  When you find that, you take the
+square root of it to get your desired result.  If there is no such
+base number available, you extend your table by multiplying.
+
+Another subject about numerical stability is when you are computing
+exponents with both a whole and a fractional part.  How do you
+approach this?  Remember this key.  Multiplying by a large integer is
+generally shifting left, multiplying by a fixed point number less than
+one is generally shifting right.  If you are shifting right, you
+simply need to make sure your fractions are computed with a sufficient
+number of extra bits of precision, and with integers, this is simple
+to determine: you just need twice as many bits in the worst case.
+Then you can just use the decomposition `x^(a + b) = x^a * x^b`.
+
+Okay, another question.  What if you are computing a precise fraction
+just below 1.0?  Like `x^(65535/65536)`?  How do you approach this?
+There's another trick here you can use.  Rather than multiplying, you
+can divide.  Is this numerically stable?  For computing fractional
+exponents, yes.  Remember, when `0 < n < 1`, `1 < y < x`.  This means
+you're dividing by a number greater than one, so the quotient will be
+smaller than the dividend.  Therefore, you will not be multiplying an
+uncertainty.  But there is still uncertainty in the divisor, which
+results in uncertainty in how much smaller your number gets.  So
+anyways, compute it as follows:
+
+```
+x^(65535/65536) = x^(1 - 1/65536) = x / x^(1/65536)
+```
+
+Okay, that being said, let's take a look at the full sequence in the
+case of 1/16.
+
+```
+1/1, 1/2, 1/4, 1/8, 1/16
+
+1/16, 2/16, 3/16, 4/16, 5/16, 6/16, 7/16, 8/16, 9/16, 10/16, 11/16,
+  12/16, 13/16, 14/16, 15/16, 16/16
+
+Add only:
+
+1/16, 1/8, 1/8 + 1/16, 1/4, 1/4 + 1/16, 1/4 + 1/8, 1/4 + 1/8 + 1/16,
+  1/2, 1/2 + 1/16, 1/2 + 1/8, 1/2 + 1/8 + 1/16, 1/2 + 1/4,
+  1/2 + 1/4 + 1/16, 1/2 + 1/4 + 1/8, 1/2 + 1/4 + 1/8 + 1/16, 1/1
+
+Subtract only:
+
+1/16, 1/8, 1/4 - 1/16, 1/4, 1/2 - 1/8 - 1/16, 1/2 - 1/8, 1/2 - 1/16,
+  1/2, 1/1 - 1/4 - 1/8 - 1/16, 1/1 - 1/4 - 1/8, 1/1 - 1/4 - 1/16,
+  1/1 - 1/4, 1/1 - 1/8 - 1/16, 1/1 - 1/8, 1/1 - 1/16, 1/1
+```
+
+Okay, so even with subtracting (dividing), there are some areas where
+we need to put three four together rather than only two.  So, a method
+that uses both add and subtract is more numerically stable than
+add-only or subtract-only, simply because we are combining less
+components.  However, we will still have to typically combine more
+than two components.
+
+```
+Add and subtract:
+
+1/16, 1/8, 1/8 + 1/16, 1/4, 1/4 + 1/16, 1/4 + 1/8, 1/2 - 1/16,
+  1/2, 1/2 + 1/16, 1/2 + 1/8, 1/2 + 1/8 + 1/16, 1/2 + 1/4,
+  1/2 + 1/4 + 1/16, 1/2 + 1/4 + 1/8, 1/1 - 1/16, 1/1
+```
+
+But still, the question remains.  How do you efficiently and stably
+compute `x^(65535/65536)`?  There are always limits with these kinds
+of tough computations, but here's the way to reduce the limits and
+sources of error.
+
+Rather than computing directly with the fractions in the target scale,
+you compute with fractions in a multiplied scale.  For example, rather
+than `1/2 + 1/4`, you compute `1 + 1/2` and divide the result by two.
+Immediately, you've eliminated a source of error.  When you compute
+with larger fractions, some large fractions will become integers, and
+those integer exponents can, of course, be computed without error.
+This is especially important if you need to add multiple fractions,
+because each addition of a fraction contributes to overall error.
+This method allows you to minimize that error, until the end where you
+need to take the nth root to get the fractions into the desired scale.
+
+Of course, the problem is, the maximum power you can raise the base to
+is limited.  Most bases used with typical tables of logarithms are
+less than 16.  When you raise an integer to the nth power, you are
+multiplying the number of bits required by n.  So, for 16-bit
+integers, typically the maximum power you can raise a base to is 4.
+Nevertheless, this does help us reduce our sources of error as we will
+show with our example at hand.
+
+```
+x^(65535/65536) = x^(1 - 1/65536) = x^1 / x^(1/65536)
+(x^1 / x^(1/65536))^4 = x^4 / x^(4/65536)
+= x^4 / x^(1/16384)
+= x^4 / x^(1/2^14)
+
+x^(65535/65536) = sqrt(sqrt(x^4 / x^(1/16384)))
+```
+
+Of course if we use 64 bits of precision, the numbers are even more
+favorable.
+
+```
+x^16 / x^(1/4096)
+= x^16 / x^(1/2^12)
+x^(65535/65536) = sqrt(sqrt(sqrt(x^8 / x^(1/4096))))
+```
+
+Also, another note when building a table of logarithms, ideally you
+want to use division and square root operators that gives you the
+closest rounded solution rather than one that strictly underestimates.
+Because, it seems like with our computation method in general, keeping
+error far away in the deep bits of precision and just truncating at
+the end will not be feasible.
