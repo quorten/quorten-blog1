@@ -318,7 +318,7 @@ other.
 
 3. Check the angles of the plane surface normals relative to each
    other.  These should also be well-formed angles, so if anything is
-   close to zero degreese or 180 degrees, you have poorly formed data.
+   close to zero degrees or 180 degrees, you have poorly formed data.
 
 4. Check that plane reference points are reasonably close to each
    other, within some kind of bounding box.  If a plane reference
