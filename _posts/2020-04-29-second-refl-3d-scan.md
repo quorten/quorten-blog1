@@ -35,3 +35,14 @@ the same camera speed.  With lasers in particular, high power lasers
 are often commercially restricted due to their inherent danger to
 human eyesight, which means that simply increasing the brightness may
 be impractical.
+
+<!-- more -->
+
+Another obvious implication, of course, is the total amount of light
+you shine on your object.  The more light you shine, the more
+secondary reflection there will be.  But particularly, this means that
+slower forms of structured light, like scanning a single laser line
+across an object, or even slower, scanning a single laser point across
+an object, will suffer less from secondary reflection than faster
+forms, such as using a video projector to scan a repeating pattern of
+zebra stripes across the entire object's surface.
