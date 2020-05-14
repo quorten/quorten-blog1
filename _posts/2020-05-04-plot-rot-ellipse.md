@@ -180,3 +180,9 @@ it take me so long to have that simple realization?  Well, now I know
 how to issue the drawing commands for an orthographic Earth geography
 graticule without issuing skew transformations, only rotated ellipse
 drawing commands.
+
+And, relating to rotated ellipses, alas, I digress.  It's a lot easier
+to approximate an ellipse using a Bezier spline and rotate that to get
+a rotated ellipse.  So, now you know, that's why virtually all
+mainstream graphics software uses that approach to get a rotated
+ellipse.
