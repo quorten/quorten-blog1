@@ -79,6 +79,18 @@ So where is the video interview?  I'd like to see those select photos.
 It must be around somewhere, just not linked directly from the
 transcript landing page.
 
+This is the backstory behind getting the source code publicly
+released.  Importantly, the technical work on getting the source code
+to modern computers was all quickly finished in the year 2004, the
+same year that there was the 20th anniversary celebration where Donald
+Knuth was in attendance and requested the MacPaint/Quickdraw source
+code, but in order to get through legal at Apple, they had to
+dilly-dally around for 6 years until finally Andy Hertzfeld met
+personally with Apple CEO Steve Jobs, and the request then went
+through almost immediately.
+
+20200517/https://www.macworld.com/article/1152817/macpaint.html
+
 20171202/https://en.wikipedia.org/wiki/X_Window_System  
 20171202/https://www.folklore.org/  
 20171202/https://www.folklore.org/StoryView.py?project=Macintosh&story=I%27ll_Be_Your_Best_Friend.txt&sortOrder=Sort+by+Date  
