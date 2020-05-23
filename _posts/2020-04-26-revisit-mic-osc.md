@@ -121,3 +121,12 @@ trick.  Need a cheap oscillator source?  Of course, use PC audio
 output.  A USB audio device that provides both an audio output and a
 microphone input is really handy and really cheap for this specific
 purpose.
+
+However, if you do modulate a low frequency waveform, please note that
+you will not be able to determine if the input is positive or negative
+by analyzing the output.  If you want to know the polarity, you can
+setup two polarized modulator circuits and determine which one results
+in a signal.  So, you have to determine the polarity via a manual
+configuration switch flip which of the two signals is forwarded, two
+microphone inputs, or just try flipping around the test terminals
+manually.
