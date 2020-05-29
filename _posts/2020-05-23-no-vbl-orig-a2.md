@@ -25,7 +25,7 @@ software all used CPU cycle counting for timing.
 
 But surely, there's still a better way, isn't there?  The vertical
 retrace happens at a deterministic interval on graphics output, about
-1/30 of a second in NTSC.  I can just hook up a vertical blanking
+1/60 of a second in NTSC.  I can just hook up a vertical blanking
 interval interrupt handler and count the number of vertical retraces
 to measure wall clock time.  Well, yeah... in my particular case with
 my Apple IIc Plus, I can do that.  However, the only reason why I can
@@ -49,3 +49,18 @@ was flying across the television.
 
 20200523/DuckDuckGo apple ii vertical blanking interrupt  
 20200523/https://www.folklore.org/StoryView.py?story=Apple_II_Mouse_Card.txt
+
+Also, have you been wondering about those GUI word processor
+screenshots used in the Apple IIc User's Manual?  What software was
+that?  Well, the answer is easy now.  It was the software developed by
+Bill Budge, he was the one who mastered GUI development on the Apple
+II.  Also, Andy Hertzfeld was _good friends_ with Bill Budge, so the
+idea quickly made its way into Apple and that's how they got familiar
+with the possibility.
+
+In any case, wow, this all makes sense now.  That Folklore article was
+really helpful on informing how the core internals of MousePaint work.
+Now I'm quite a bit closer to building my own close with my
+much-desired feature of flood fill and other enhancements that are
+missing from Bill Budge's version.  Oh, and most importantly, a clear
+way to print pictures to modern computers.
