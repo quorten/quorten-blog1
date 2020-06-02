@@ -87,6 +87,11 @@ the error status is being held ready for a READ SENSE command.
 20190921/DuckDuckGo auto contingent allegiance  
 20190921/https://en.wikipedia.org/wiki/SCSI_contingent_allegiance_condition
 
+This article is really helpful for understanding SCSI contingent
+allegiance condition and error handling.
+
+20200602/https://www.pdl.cmu.edu/mailinglists/ips/mail/msg03427.html
+
 Some possibly useful information on auto contingency allegiance (ACA).
 
 20190921/http://www.t10.org/ftp/t10/document.97/97-225r0.pdf
