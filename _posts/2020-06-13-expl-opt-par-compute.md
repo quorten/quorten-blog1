@@ -405,7 +405,8 @@ void ABSTRACT_REDUCE(Scalar *v) {
   /* sub_len computation is reformulation of the following:
      while (stride * i + sd_half < VEC_LEN) { ... }  */
      -> reorganize with correct rounding ->
-     while ((sub_len = ((VEC_LEN - sd_half) + (stride - 1)) / stride) > 0)
+     while ((sub_len = ((VEC_LEN - sd_half) + (stride - 1)) /
+             stride) > 0)
        { ... }
      ->
      while ((sub_len = (VEC_LEN + sd_half - 1) / stride) > 0) { ... }
@@ -917,7 +918,8 @@ void ABSTRACT_REDUCE_BLOCK_THSUBR(THCtx *ctx, Scalar *work,
   /* sub_len computation is reformulation of the following:
      while (stride * i + sd_half < my_blk_len) { ... }  */
      -> reorganize with correct rounding ->
-     while ((sub_len = ((my_blk_len - sd_half) + (stride - 1)) / stride) > 0)
+     while ((sub_len = ((my_blk_len - sd_half) + (stride - 1)) /
+             stride) > 0)
        { ... }
      ->
      while ((sub_len = (my_blk_len + sd_half - 1) / stride) > 0) { ... }
@@ -1531,7 +1533,7 @@ THSUBR_EXECUTOR(proj_a_on_b, proj_a_on_b_maybe_thsubr);
 */
 void proj_pt_plane_maybe_thsubr(Scalar *out, Scalar *b,
                                 Scalar *c, Scalar offset,
-				MAYBE_VEC n, MAYBE_VEC d, MAYBE_VEC t)
+                                MAYBE_VEC n, MAYBE_VEC d, MAYBE_VEC t)
 {
   Bool out_nosol;
   magn2q_maybe_thsubr(d, c);
@@ -1614,6 +1616,36 @@ considerations might come down to benchmarking to determine which
 structure of code generation is better tuned to a particular GPU.  It
 is my goal to make my library flexible enough to support optimal code
 generation via parametric tuning.
+
+A simplifying assumption was made in most of my parallel compute model
+code related to OpenCL work-groups.  Typically, an OpenCL work-group
+corresponds to one "processor core" on a GPU.  My code simply assumes
+that the entire data is broken up into `BLOCK_LEN` sized blocks (i.e.,
+the width of the hardware SIMD/SIMT vector units) and as many of those
+blocks are executed in parallel as possible (i.e. by running across
+multiple GPU processor cores).  When there are more work-groups than
+processor cores, the OpenCL runtime will handle dividing up the work
+so that the work-groups sequentially execute on the available GPU
+processor cores.  Of course, if you're writing the low-level code with
+this knowledge, you can better optimize it by only requesting as many
+work-groups as there are GPU processor cores, then using loops inside
+each work-group to process all the blocks of data.  This is more
+efficient because setup and tear-down computations that are common
+across work-groups can then be coalesced so that they only run once
+per GPU processor core.
+
+Finally, some other minor points related to OpenCL implementation
+efficiency.  The code I presented is not completely annotated with
+memory address space disciplines, but generally it should be obvious
+that any input/outputs should go to global memory and intermediate
+computations should go to local memory, with additional copy stages to
+move back and forth if necessary.  Another important memory constraint
+is GPU memory limits.  If the data you are processing exceeds the size
+of available GPU memory, then you will need to break the data up into
+"tiles" and process each tile one at a time, sending and receiving to
+CPU main memory exchange results and the data for the next tile.
+
+----------
 
 ### Parallel power series computation example
 
@@ -2016,7 +2048,8 @@ how it works as a whole.
 
 #define FACTRAL_MAP(work, i) work = MAX(1, i)
 #define FACTRAL_COMBINE(b, c) (b * c)
-CONCRETE_MAP_REDUCE_END(factral_gen_parts, FACTRAL_MAP, 1, FACTRAL_COMBINE);
+CONCRETE_MAP_REDUCE_END(factral_gen_parts, FACTRAL_MAP, 1, \
+                        FACTRAL_COMBINE);
 CONCRETE_COMBINE_PARTIALS(factral_combine_parts, 1, FACTRAL_COMBINE);
 #undef FACTRAL_MAP
 #undef FACTRAL_COMBINE
@@ -2024,7 +2057,7 @@ CONCRETE_COMBINE_PARTIALS(factral_combine_parts, 1, FACTRAL_COMBINE);
 void factral_gen_parts_maybe_thsubr(Scalar *out, unsigned REAL_LEN);
 void factral_gen_parts(Scalar *out, unsigned REAL_LEN);
 void factral_combine_parts_maybe_thsubr(Scalar *out, Scalar *partials,
-                                        unsigned REAL_LEN, unsigned bits_len);
+                                unsigned REAL_LEN, unsigned bits_len);
 void factral_combine_parts(Scalar *out, Scalar *partials,
                            unsigned REAL_LEN,  unsigned bits_len);
 
