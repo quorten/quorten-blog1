@@ -14,7 +14,7 @@ Nah!  A soldering iron is generally too hot for those uses: Unless you
 have a wide range of temperature control, a 370 degree Celsius
 soldering iron runs the risk of burning plastic and heat-shrink
 tubing.  Instead, you can use a low-temperature hot glue gun, this
-will run at 120 degrees Celsius and therefore will be withih the
+will run at 120 degrees Celsius and therefore will be within the
 temperature range of heat-shrink tubing.  A standard temperature hot
 glue gun is within the range of 200 degrees C, and therefore can be
 used to weld plastic together.
