@@ -115,3 +115,19 @@ The lack of proper power management configuration by default is a
 major blunder.  Likewise, the lack of virtualization support by
 default is also a major blunder.  Both of these hurdles can be either
 mitigated or overcome with a little bit of extra effort, however.
+
+----------
+
+UPDATE 2020-06-27: After some system upgrades, sound was not working?
+Why?  Web searches were failing to inform me on the underlying
+problem, so I had to dive down to the source code.  I found out that
+purportedly, the preferred sound configuration mechanism was changed
+after system upgrades.  Now, when you set output to headphones in
+`raspi-config`, it is not set system-wide, but only for the current
+user, by generating an `~/.asoundrc` file that sets the ALSA card to
+the preference.  There are two ALSA cards in Raspberry Pi 4, one for
+HDMI output and one for headphones output.  So, after you set this for
+the `pi` admin user, you must copy that config to all regular user
+accounts or else they will not be able to hear sound.  I know, I know,
+very annoying unless you run your Raspberry Pi as the admin user all
+the time.
