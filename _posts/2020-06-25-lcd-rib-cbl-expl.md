@@ -94,3 +94,32 @@ thermoplastic properties causing the material to get soft in high
 temperatures, to the point you no longer have a good electrical
 connection.  But, the good news here is that you can fix it somewhat
 easily.
+
+A very important note in the elform page!  "HSCs [Heat Seal
+Connectors] can be tacked into place before final bonding by touching
+them with a soldering iron set at 160°C."  Yep, you've seen it said
+right there.  Alternative connection mechanisms do have their merits.
+Well, if a soldering iron is okay for tacking into place, so is a hot
+glue gun, I'm convinced.  If you want alternative heat up and
+press-down methdos, you can try a hot glue gun or soldering iron with
+aluminum foil, this will give you both heat and a semblance of padding
+push-down.
+
+----------
+
+Still wondering about the hot glue temperature equation?  Oh, sure I
+am.  Okay, so this was something really interesting to find.  You can
+soften some kinds of low-temperature hot glues below 100 degrees
+Celsius.  Wow, the glass transition temperature can be even lower than
+it is generally touted to be.
+
+20200625/DuckDuckGo does low temperature hot glue soften below 120 celsius  
+20200625/https://charlesarcheryblog.wordpress.com/tag/what-temperature-hot-melt-glue-soften/
+
+Also, on the other side of affairs, what temperature does a hot glue
+gun actually operate at?  120 degrees Celsius is the rated melting
+point of the _low-temperature hot glue_, not the temperature of the
+hot glue gun itself.  Conceivably, for good performance and easy
+workability, the low-temperature hot glue gun itself is a little bit
+higher temperature than this.  All the better for using to reheat the
+bonding material.
