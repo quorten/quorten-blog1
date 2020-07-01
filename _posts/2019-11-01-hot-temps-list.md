@@ -17,7 +17,7 @@ Temperatures given are approximate for simplicity.
 * 0200 C : Baking with browning effects, spontaneous combustion of
   paper and wood, melting point and glass transition temperature of
   most plastics (LDPE, HDPE, PP, PMMA, PLA, ABS, PC), melting point of
-  standard temperature hot glue, melting point of leaded solder
+  high temperature hot glue, melting point of leaded solder
 * 0260 C : Lead-free reflow soldering oven, melting point of PS, PET,
   PVC plastic
 * 0400 C : Lead-free soldering iron, melting point of lead
