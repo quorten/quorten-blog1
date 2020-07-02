@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Discussion on implementing hardware parallel arithmetic
-date: 2019-07-09 18:00:00-0500
+date: 2019-07-09 18:00:00 -0500
 author: quorten
 categories: [unlipic]
 tags: [unlipic]
