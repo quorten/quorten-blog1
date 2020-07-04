@@ -53,9 +53,9 @@ sudo modprobe -r nbd
 20200702/DuckDuckGo qemu mount vmdk host  
 20200702/https://unix.stackexchange.com/questions/550569/how-can-i-access-the-files-in-a-vmdk-file
 
-Another thing, using `chntpw`, sure you can do an `sudo apt-get
-install chntpw`, but you may want to ensure you have the latest
-version by going to the official website.
+Another thing, using `chntpw`, sure you can do `sudo apt-get install
+chntpw`, but you may want to ensure you have the latest version by
+going to the official website.
 
 20200702/DuckDuckGo chntpw  
 20200702/https://en.wikipedia.org/wiki/Chntpw  
@@ -112,12 +112,13 @@ cd $MNTROOT/WINDOWS/system32/drivers
 Now, for the interactive shell commands that form the equivalent of
 the registry changes.  I have found that I only needed to apply the
 changes for the pnp, azt, and PCI devices, all of the other `atapi`
-devices were already present, and so were the big driver definitions.
-Nevertheless, I list all of the commands in the event that none of the
-entries are available.  Please, before running these commands, check
-carefully to see if there are any devices already present, and do not
-run the commands if that is the case... else there might be crashes or
-worse, who knows with the unreliability of `chntpw`.
+devices were already present, `gendisk` was present, and so were the
+big driver definitions.  Nevertheless, I list all of the commands in
+the event that none of the entries are available.  Please, before
+running these commands, check carefully to see if there are any
+devices already present, and do not run the commands if that is the
+case... else there might be crashes or worse, who knows with the
+unreliability of `chntpw`.
 
 Alas, I do **not** show how to add the big driver definitions.
 
@@ -446,7 +447,7 @@ then I'd need to also do that setup.
 
 Finally, fortunately copying from my particular physical machine
 configuration and running in QEMU, I also did not have any trouble
-with the VGA driver causing crashes, so I'm all set to boot at this
+with the AGP driver causing crashes, so I'm all set to boot at this
 point!
 
 ----------
@@ -455,7 +456,7 @@ So, now that I finally have a Windows XP virtual machine in a
 boot-ready configuration, the next obvious problem comes up: Windows
 Product Activation, or WPA for short.  Because the machine has
 undergone radical hardware changes, Windows will promptly require
-re=activation upon boot.  However, if you boot normally, when Windows
+re=activation upon login.  However, if you boot normally, when Windows
 prompts for re-activation, it will conclude the product is already
 activated and log you right out, without allowing you to do anything.
 So, here's the way around that issue.
@@ -502,8 +503,11 @@ In Windows... now that you're booted into Safe Mode, you can open
 
 * Click "Yes" to the warning message
 
-Now you can reboot normally, and that should take care of all your
-license activation issues for a while.
+Now you can reboot normally, and that should completely eliminate your
+Windows product activation issues.  You should now be able to go on
+just like normal with your existing Windows license key being
+functionally accepted as valid, exactly like the original physical
+machine presented it.
 
 Searching for more info on what people do to setup vintage Windows XP
 virtual machines, there is no clear strategy around the activation
@@ -560,8 +564,11 @@ noticed when I was merely configuring Windows server instances to run
 as network hosting servers in an enterprise environment.  AC'97 audio
 is built straight into Windows XP, but if you want High Definition
 Audio (i.e. Intel HDA, ICH6, etc.), then you need to install a driver.
-Microsoft previously provided a universal driver, but they
-discontinued their direct download link, so you'll have to look
+Also note that one of my particular target systems, a bit older of a
+Windows XP computer, has its integrated sound card more similar to
+AC'97 than HDA (PCI VEN=8086, DEV=24C5, SoundMAX Integrated Digital
+Audio).  Microsoft previously provided a universal HDA driver, but
+they discontinued their direct download link, so you'll have to look
 elsewhere to download this.
 
 20200702/DuckDuckGo pci vendor 8086 dev 2668  
@@ -590,7 +597,57 @@ get some Windows XP 3D acceleration back.
 20200702/https://www.youtube.com/watch?v=Ck0GBCzK5mc  
 20200702/https://www.reddit.com/r/virtualbox/comments/eiyjla/cant_install_direct3d_on_windows_xp_guest/
 
+Another big bummer is that the QXL display drivers do not expose a
+256-color mode, so you will not be able to play some old 256-color
+games on QEMU, even when they normally work just fine on vintage
+physical hardware running Windows XP.  However, interestingly
+low-color depth MS-DOS software works just fine under NTVDM.
+Purportedly another alternative would be to eliminate.  Also, you can
+get 256-color mode back... but only in older versions of QEMU.  Set
+the video card type to Cirrus and you'll be able to put the display
+into 256-color mode!  Also, this provides a partial workaround that
+allows some old Direct3D 5 software to work, but still lots of other
+Direct3D software refuses to cooperate.
+
+One problem consistent with both Windows XP's default VGA driver the
+QXL driver, and by extension, the Cirrus driver (based off of VGA
+driver), is that switching to MS-DOS full-screen text console mode is
+buggy.  You'll get weird double-character print and missing character
+issues.  But, there is a workaround.  I have been able to start a VGA
+mode MS-DOS program like one of the DJGPP GRX demo programs, then
+exit.  You'll come back to a full-screen text console, and it won't be
+buggy!  Also, regardless of this workaround, MS-DOS `edit` is not
+buggy in display modes.  Why does all of this happen like that?  I do
+not know.
+
+Another big bummer with video, consistent with my Windows 98 video
+woes in QEMU, is that MS-DOS Doom game engine video rendering is
+despicably slow, and vertical retrace synchronization is not correctly
+implemented, functionally it happens at a time interval of zero.  So
+this means that all software that relies of timer ticks clocked by
+`vsync` will not work correctly.  For PC games relying on `vsync`
+timer ticks, the vertical refresh rate should be around 60 Hz for
+reasonable gameplay.
+
 Here's a nice cumulative Windows XP updates pack put together by
 hobbyists, switch on and off what you do and don't want.
 
 20200702/https://retrosystemsrevival.blogspot.com/2019/12/unofficial-cumulative-windows-xp-update.html
+
+Finally, another "gotcha" from my testing, though this doesn't
+strictly apply to Windows XP, but rather old software developed with
+oversight of new large-capacity disks.  One particular software game I
+use, Orly's Draw-a-Story, will refuse to start on Windows XP for two
+reasons.  First of all, it uses load-time DLL bindings to
+`winspool.dll`, this can bee easily fixed by putting a dummy stub in
+the directory and the software will use the alternative API path for
+connecting to Windows print services.
+
+The second issue is that sometimes, depenending on your specific disk
+capacity and free space, it will complain that you need at least 5 MB
+of free disk space to be able to run the software.  But you have
+_gigabytes_ of free space, what gives?  Surely, this has to do with
+peculiarities of using the 32-bit API function `GetDiskFreeSpace()`.
+Try decreasing your disk free space by adding one or two gigabytes of
+random filler data, and this shoild solve the problem, allowing you to
+start up the software!
