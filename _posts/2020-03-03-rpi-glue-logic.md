@@ -37,12 +37,14 @@ or wire-OR?  When working with CMOS logic, in general, yes.  The
 wire-OR trick definitely does not work with bidirectional currents
 that will be experienced during CMOS, positive will just short to
 ground and the output will essentially be an AND gate rather than an
-OR gate, though resistors could be used to mitigate this.  Likewise,
-the diode-OR doesn't really work with CMOS either because it doesn't
-allow for bidirectional currents, except for a little semblance of
-"reverse bias."  Therefore, CMOS inputs may be left "floating" when
-there the gate asserts logic level zero rather than properly asserted
-to ground.  Similar can be said in relation to AND gates via BJT
+OR gate.  Using resistors alone like a diode-OR cannot be used to
+mitigate this because doing so would just create a voltage divider and
+50% logic-level voltage is an undefined logic value.  Likewise, the
+diode-OR doesn't really work with CMOS either because it doesn't allow
+for bidirectional currents, except for a little semblance of "reverse
+bias."  Therefore, CMOS inputs may be left "floating" when there the
+gate asserts logic level zero rather than properly asserted to ground.
+Similar can be said in relation to AND gates via BJT
 transistors... remember this is CMOS not TTL!  But... if you use
 pull-down resistors, then actually you can use diode-OR gates and BJT
 AND gates just fine.  All that being said, using the logic OR chips
