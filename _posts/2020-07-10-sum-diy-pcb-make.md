@@ -85,7 +85,7 @@ own "catchment" or "mini-ceiling" where the solder fumes will be known
 to strike first.  This will at least immobilize most of them before
 the remainder touches the walls or ceiling of your room.
 
-UPDATE 2020-07-12: Digi-Key now offers a really nice service where you
-can upload a design and compare prices from multiple different board
-houses.  Many of these are based in California, USA.  And, the best
-part about it, you can order in quantity of one!
+UPDATE 2020-07-12: Digi-Key now offers a really nice "PCB Builder"
+service where you can upload a design and compare prices from multiple
+different board houses.  Many of these are based in California, USA.
+And, the best part about it, you can order in quantity of one!
