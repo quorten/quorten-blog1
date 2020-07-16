@@ -4,8 +4,8 @@ title: "Learning about the watchdog timer on my TPE-R1100 wireless
         access points"
 date: 2020-05-26 15:59 -0500
 author: quorten
-categories: [raspberry-pi]
-tags: [raspberry-pi]
+categories: [home-network, raspberry-pi]
+tags: [home-network, raspberry-pi]
 ---
 
 I'm having trouble with my Think Penguin TPE-R1100 wireless access

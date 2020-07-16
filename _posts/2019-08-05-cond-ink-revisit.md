@@ -3,8 +3,8 @@ layout: post
 title: Conductive inks revisited
 date: 2019-08-05 20:38 -0500
 author: quorten
-categories: [raspberry-pi]
-tags: [raspberry-pi]
+categories: [raspberry-pi, mat-sci]
+tags: [raspberry-pi, mat-sci]
 ---
 
 Previously, I've written a [blog article about conductive rubber]({{
