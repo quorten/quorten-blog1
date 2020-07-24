@@ -89,3 +89,16 @@ UPDATE 2020-07-12: Digi-Key now offers a really nice "PCB Builder"
 service where you can upload a design and compare prices from multiple
 different board houses.  Many of these are based in California, USA.
 And, the best part about it, you can order in quantity of one!
+However...  although ordering in quantity of one is available, it does
+come at a considerable expense, more expensive than the total price of
+ordering in quantity of 3.  But, if you really only need a single
+circuit board, you better order in quantity of one, recycling the
+other two unused boards later will cost more.
+
+UPDATE 2020-07-20: Here is a nice sped-up video illustrating CNC
+milling to make your own printed circuit boards.  Beware, this method
+is really slow, and it requires a bit of periodic manual intervention,
+mainly to vacuum the dust off the board generated during the process.
+So, CNC milling is not all magic.
+
+20200720/https://www.youtube.com/watch?v=yho0H7x6BEQ
