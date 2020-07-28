@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Does solder flux ever expire?  Not really."
+title: "Does solder flux ever expire?  Not really.  And, another
+        turnkey PCB assembler."
 date: 2020-07-24 02:38 -0500
 author: quorten
 categories: [raspberry-pi]
@@ -50,3 +51,17 @@ is in reference to NASA's electronics workmanship guide.
 
 20200723/DuckDuckGo oxide layer on board solder  
 20200723/https://www.seeedstudio.com/blog/2019/08/07/13-common-pcb-soldering-problems-to-avoid/
+
+Also, another important note, Seeed Fusion is another turnkey PCB
+assembler, they do the complete process of not just printing your
+printed circuit board, but they can also pick-and-place the discrete
+components onto it.  Another Chinese one, that is.  So, now that
+brings our total number of PCB Assembler choices to three.
+
+* JLC PCB (Hong Kong)
+* NextPCB (China)
+* Seeed Fusion (China)
+
+One thing I didn't really figure out, how many of these allow you to
+order assembled PCBs in quantity of one?  Seeed Fusion does PCB
+printing in quantity of one, not sure about PCB assembly.
