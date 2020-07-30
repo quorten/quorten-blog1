@@ -20,7 +20,8 @@ Temperatures given are approximate for simplicity.
   high temperature hot glue, melting point of leaded solder
 * 0260 C : Lead-free reflow soldering oven, melting point of PS, PET,
   PVC plastic
-* 0400 C : Lead-free soldering iron, melting point of lead
+* 0400 C : Lead-free soldering iron, melting point of lead,
+  autoignition temperature of ethyl alcohol and isopropyl alcohol
 * 0600 C : Minimum match and candle temperature
 * 0660 C : Melting point of aluminum
 * 0800 C : Maximum match temperature
