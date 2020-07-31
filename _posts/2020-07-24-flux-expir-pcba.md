@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Does solder flux ever expire?  Not really.  And, another
-        turnkey PCB assembler."
+        turnkey PCB assembler.  And, how to tell leaded solder boards
+        apart from lead-free solder boards."
 date: 2020-07-24 02:38 -0500
 author: quorten
-categories: [raspberry-pi]
-tags: [raspberry-pi]
+categories: [raspberry-pi, important]
+tags: [raspberry-pi, important]
 ---
 
 Solder flux, if you purchase it on its own, typically has aN
@@ -65,3 +66,32 @@ brings our total number of PCB Assembler choices to three.
 One thing I didn't really figure out, how many of these allow you to
 order assembled PCBs in quantity of one?  Seeed Fusion does PCB
 printing in quantity of one, not sure about PCB assembly.
+
+----------
+
+Important!  The Seeed Fusion article mentioned how to tell leaded
+solder joints apart from lead-free solder joints, and now thinking it
+through carefully, I can attest that I did see the difference and am
+personally able to tell them apart visually.  Leaded solder joins,
+when done ideally, will look _very smooth and shiny_, whereas
+lead-free solder joints, even when done ideally, will have a _duller
+and more matte_ look to them.
+
+Yes, now I think back.  Have you bought a Raspberry Pi with the pin
+header already soldered on?  Take a good look at the solder around the
+pin header, since there is ample amount over there.  You will notice
+that the solder looks rather dull and matte.  Why is that?  Shouldn't
+it look clean, smooth, and shiny?  No, it should not.  That is
+precisely because Raspberry Pi boards are RoHS and therefore
+manufactured with _lead-free_ solder.  On the other hand, if you look
+at any vintage-style electronics with through-hole components, the
+underside of the board with the solder joints will look very clean,
+smooth, and shiny.
+
+That being said, it is much harder to tell what kind of solder has
+been used on a board by looking at surface-mount components than it is
+by looking at through-hole components, simply because less solder is
+used and most of it is visibly occluded by its nature of being between
+the pads and the leads, or maybe even totally hidden underneath a
+no-leads component such as Quad-Flat No Leads (QFNL) or Ball Grid
+Array (BGA).

@@ -16,7 +16,7 @@ Screaming Circuits apperas to be located in Milwaukee, Wisconsin, USA.
 
 20200724/DuckDuckGo tab routing  
 20200724/https://www.7pcb.com/blog/tab-routing.php  
-20200724/https://www.7pcb.com/about-bittele.php
+20200724/https://www.7pcb.com/about-bittele.php  
 20200724/https://blog.screamingcircuits.com/2014/06/tab-routing-panelization.html  
 20200724/https://www.screamingcircuits.com/  
 20200724/https://www.screamingcircuits.com/about  

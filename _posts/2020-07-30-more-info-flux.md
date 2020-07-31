@@ -24,6 +24,12 @@ quickly clean away oxides that have built up on the board.
 
 20200728/https://www.pcbtoolexpert.com/the-top-5-best-flux-pens/
 
+Another good point mentioned in the article.  Do you need flux to
+solder?  If you want to do soldering right, yes.  Otherwise, you will
+vaporize metal oxides, and trust me, you don't want to be breathing
+those in.  Yes, that's interesting that flux helps prevent metal
+oxides from going airborne.
+
 Wait, what?  I heard mention of making your own solder flux?  Okay,
 okay, let's see how that works.
 
@@ -84,3 +90,13 @@ To add insult to injury, because the solder wick is also flux coated,
 the de-tinned soldering iron gets exposed to flux, too, decreasing
 longevity at the soldering iron's tip due to the deliberate mildly
 corrosive properties of solder flux.
+
+Also, actually there's another issue, maybe more suspect than the
+solder flux.  The fact that I was using a paper towel as my solder
+sponge meant that sometimes bits of the paper towel would get stuck to
+the soldering iron and burn... and therefore leave behind contaminants
+that could speed up corrosion on the surface of the soldering iron.
+
+Okay, okay, I think I get the idea.  All of these ill effects together
+are what contributed to my problem of growing corrosion on the tip of
+my soldering iron.
