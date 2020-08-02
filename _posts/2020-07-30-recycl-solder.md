@@ -3,8 +3,8 @@ layout: post
 title: Recycling solder waste revisited
 date: 2020-07-30 17:45 -0500
 author: quorten
-categories: [raspberry-pi]
-tags: [raspberry-pi]
+categories: [raspberry-pi, mat-sci]
+tags: [raspberry-pi, mat-sci]
 ---
 
 After you're done with soldering, you're left with a solder sponge
