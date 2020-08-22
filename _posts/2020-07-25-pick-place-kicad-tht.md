@@ -32,3 +32,29 @@ also fully possible with through-hole components, by stuffing the
 holes with solder paste before stuffing the components onto the board.
 For temperature-sensitive components, wave soldering will need to be
 used instead.
+
+<!-- more -->
+
+----------
+
+So, that being said, how does through-hole reflow handle in practice
+when I do it?  It actually handles pretty well!  The main notes I have
+to take into consideration from my experience.  In the digrams, the
+thickness of solder paste above and below the through hole is about
+the same as in the case of surface-mount components.  I've found out
+from some first-hand working experience, this is not enough.  You want
+to make sure the amount of solder paste above/below the the hole is a
+little bit rounded off, thicker than only of that of surface-mount
+solder paste pads.  Otherwise, there won't be enough solder to form a
+nice fillet join after reflow, instead the solder will be only between
+the pin and the ring on the inside of the hole.
+
+Finally, of course, sometimes it is difficult to fully fill up a hole
+with solder paste.  It may be that you cannot see through the hole
+because there is solder paste covering the top and the bottom of the
+hole, but how full is the hole itself?  Try really hard to make sure
+that the hole is absolutely full, otherwise you're not going to get
+good results, of course.  In particular, although the pin and the ring
+may be electrically connected by solder, there may be some holes where
+you can see light shine through, the through-hole not being completely
+covered on the inner surface.
