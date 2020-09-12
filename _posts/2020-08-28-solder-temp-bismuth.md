@@ -111,3 +111,44 @@ when tinning wire tips.  This is not good for safety.
 
 20200828/https://www.thespruce.com/tinning-stranded-electrical-wires-1152893  
 20200828/https://www.instructables.com/id/Strip-and-Tin-Wires-Like-a-Pro/
+
+Okay, so I have to verify.  Is steel wool a suitable substitute for
+using a soft steel brush to clean off bad oxidation?  Yes, it is
+acceptable, again so long as you use the softest/finest possible steel
+wool, just as you need to use a soft and fine steel brush.  It should
+work pretty well to get the bad oxidation off the metal surface and
+get a nice shine.
+
+**Do not** take the alternative approach "if you don't have steel
+wool" of using wet and dry sandpaper of the finest grit.  Of course
+you want to be as fine as possible to avoid scarring and ruining the
+soldering iron's plating, but just don't even do this as there isn't
+any justifiable reason unless you have a very worn out tip.
+
+20200901/DuckDuckGo steel wool polish corrosion off soldering iron  
+20200901/https://electronics.stackexchange.com/questions/398336/can-i-use-steelwool-for-soldering-iron-cleaning  
+20200901/https://www.doityourself.com/stry/5-tips-for-cleaning-a-soldering-iron
+
+This is also a good discussion here.  Worthy of note, lead-free
+soldering requires much more frequent use of tip tinner/activator than
+leaded soldering.  Yes, because with the higher temperatures required
+for lead-free soldering, it's that much more important to get optimal
+heat transfer, not to mention that oxidation happens faster at the
+higher temperature.
+
+20200901/https://electronics.stackexchange.com/questions/371836/wet-sponge-or-brass-sponge-for-solder-tip-cleaning
+
+----------
+
+Oh yeah, another point for soldering.  There was one retrofit wire in
+particular where I had a really hard time soldering to it after
+reworking it a few times.  Was it just a copper-plated aluminum wire?
+That would most definitely be it if that was the reason why it became
+almost impossible to solder to.  According to the Digi-Key tech forum
+post, "if [copper is] exposed to solder, it will quickly dissolve into
+the solder."  So, lesson learned, be especially careful with these
+wires?  Apply the solder correctly the first time or else dispose of
+the wire and replace with a new one.  Once you start working, the
+solder will start dissolving the copper off the surface, and if you
+end up removing this solder and trying to reapply it, you will not
+have any copper surface left to solder to.

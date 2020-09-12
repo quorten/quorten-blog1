@@ -16,6 +16,8 @@ after finding this discussion on 68kMLA.
 
 First of all, Kai Robinson is on Twitter.
 
+20200831/https://twitter.com/therealkr239
+
 Second, Kai Robinson created a GitHub repository for his work on the
 project so far.  I should really follow up on this, I would reckon it
 is better to have all the information in one repository if possible.
