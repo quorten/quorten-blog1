@@ -40,5 +40,35 @@ So, how is it done in RPI.GPIO?  Oh, I come back to revisit this one.
 Linux `epoll` is the name of the game for registering Raspberry Pi
 GPIO interrupts into your user-space code.
 
-DuckDuckGo linux epoll  
-https://en.wikipedia.org/wiki/Epoll
+20200912/DuckDuckGo linux epoll  
+20200912/https://en.wikipedia.org/wiki/Epoll
+
+Well... looking further into the programming interface, it isn't ideal
+for what I was thinking.  `epoll` needs to be used in a waiting loop,
+so if you want an interrupt service routine style interface, then you
+need to spawn a thread to handle the waiting loop.  Also, `epoll`
+registers with the Linux `sysfs` files created for individual GPIO
+pins.  That's more trouble than it's worth.  Searching around on the
+Internet, there isn't a whole lot more knowledge about how to do this
+well in the Raspberry Pi community, unfortunately.  They just don't
+know things.
+
+However, I did find this important piece of information.  Originally,
+the Raspberry Pi Linux kernel had absolutely no support whatsoever for
+handling GPIO interrupts, even the hardware was capable.  This only
+got added to the software later.
+
+20200902/DuckDuckGo raspberry pi gpio interrupt  
+20200902/http://wiringpi.com/reference/priority-interrupts-and-threads/
+
+I guess, after all, `gpio-keys` is the most elegant way to get GPIO
+interrupts into user-space.  On the other hand... yes, for
+`gpio-keys`, you must also open the file `/dev/input/event0`.  Well,
+if it's a bummer either way, I'm guessing Linux`epoll` may be easier
+if you only have one GPIO pin to monitor, otherwise `gpio-keys` is
+better.
+
+Linux has been slow to adopt user-space driver functionality, but UIO
+is one of the newer features that is a step in the right direction.
+
+20200902/https://stackoverflow.com/questions/7986260/linux-interrupt-handling-in-user-space
