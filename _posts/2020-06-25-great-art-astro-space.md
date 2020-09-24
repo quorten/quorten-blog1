@@ -18,3 +18,7 @@ astronauts from different countries, over the course of which the
 Station flies over each one of their own countries so fast.
 
 20200625/https://getpocket.com/explore/item/six-nasa-astronauts-describe-the-moment-in-space-when-everything-changed
+
+UPDATE: Non-pocket URL:
+
+20200923/https://www.inverse.com/article/42902-nasa-astronauts-describe-overview-effect-everything-changed
