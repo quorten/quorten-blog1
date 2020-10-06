@@ -26,3 +26,12 @@ convenient as the case for corrugated, but yeah, it's still doable.
 20200927/DuckDuckGo custom acid-free cardboard boxes  
 20200927/https://www.universityproducts.com/conservation-materials/paper-film-and-board/acid-free-boxboard  
 20200927/https://www.universityproducts.com/perma-dur-black-white-barrier-board.html
+
+UPDATE: Wow, I found this box-making company from a Digi-Key box
+certificate that looks like it's one-size-fits-all... in terms of
+manufacturing capabilities.  WestRock.
+
+20200929/DuckDuckGo westrock corrugated fridley  
+20200929/https://www.westrock.com/  
+20200929/https://www.westrock.com/products/folding-cartons  
+20200929/https://www.westrock.com/products/paperboard/guardian-angle-corner-posts
