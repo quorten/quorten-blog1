@@ -34,6 +34,10 @@ function as power-on RESET signals, so there you have it.
 
 <!-- more -->
 
+UPDATE 2020-10-25: Please see my [newer article]({{ site.baseurl
+}}/blog/2020/10/26/rpi-gpio-boot-errata) for corrections about the
+RESET GPIO pin behavior.
+
 Also, in the process of searching for this, I found that Raspberry Pi
 also has a built-in watchdog timer.  Wow, now that's very nice.
 

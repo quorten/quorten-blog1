@@ -18,3 +18,8 @@ inexpensive?
 
 Sure, the newer designs are essential if you expect to manufacture
 with all new hardware.
+
+UPDATE 2020-10-26: Want to do flux disk imaging with a STM32 instead?
+Check out the GreaseWeazle project.
+
+20201026/https://github.com/keirf/Greaseweazle/wiki
