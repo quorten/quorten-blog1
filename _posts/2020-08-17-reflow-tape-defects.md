@@ -4,8 +4,8 @@ title: "Good info on reflow soldering adhesive mounting tape and
         defects"
 date: 2020-08-17 15:59 -0500
 author: quorten
-categories: [raspberry-pi]
-tags: [raspberry-pi]
+categories: [mat-sci, raspberry-pi]
+tags: [mat-sci, raspberry-pi]
 ---
 
 I was looking for info on setting up standoffs for reflow solder, but

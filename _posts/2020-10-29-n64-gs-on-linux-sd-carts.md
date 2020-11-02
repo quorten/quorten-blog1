@@ -39,6 +39,11 @@ modifications on that front.  Also note that it is specialized for the
 purpose of uploading games through the parallel port interface to the
 4 MB expansion ROM in a Nintendo 64.
 
+Please note: There is also yet another implementation of `gsuploader`
+that uses an Arduino instead.
+
+20201029/https://gist.github.com/hcs64/c612fbccac417531ead4
+
 ----------
 
 Well, I have to break it with you, the "vintage gaming world" has an
