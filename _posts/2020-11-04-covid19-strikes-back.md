@@ -16,7 +16,7 @@ In the United States, things are getting worse, but it's not totally
 unanticipated.  In my local area of Minnesota, for example, we never
 called "victory," but we did encourage a gradual reopening at what
 looked like nearing the saturation of COVID-19 infections.  So, what
-exactly is happening in Minesota?  I'd say the big thing is that we
+exactly is happening in Minnesota?  I'd say the big thing is that we
 knew we didn't have good testing early on, so we were relying on
 assumptions around the under-estimates from official reported cases
 encompassing a much larger representation of the population.  Well,
@@ -37,6 +37,21 @@ have to admit that our hospital systems are totally unequipped to deal
 with issues this large, and that is fundamental because you can't
 financially sustain some types of such large disaster preparation
 resources like staffing of registered nurses on every ordinary year.
+
+What was the tiny circumstantial change that lead up to this surge?  I
+think, in hindsight, yes, it's the weather.  Cooler climates, COVID-19
+lasts a bit longer in the air.  Correspondingly, increased use of
+climate control systems that minimize air exchanges with the outdoors
+to minimize the amount of energy that must be spent to heat the air.
+And, simply the fact that the outdoors are less pleasurable, yes
+people are spending more time, especially for social gatherings,
+indoors.  That means COVID-19 air with sufficient viral load to infect
+is more of a problem.  Just that, remember, yes, the effect of weather
+on infections is always delayed by 1-2 weeks, that's how long it takes
+to become symptomatic.  This is also why I was confused in the spring
+trying to understand if the weather really did have that big of an
+effect or if it was just that COVID-19 was running out of other places
+to spread to in Minnesota.
 
 So, yeah, here we are, but in many European and American areas, we
 have the particular additional problem of "lockdown fatigue."  Many
