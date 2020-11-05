@@ -12,7 +12,7 @@ like the ATMega328P?  In general, there is no defined value.  These
 are not implemented as true resistors because that would take up a
 significant amount of chip space, they're likely implemented as just
 transistors that provide an approximate resistive function when used
-in a clever way.  Therefore, there is a range of uncertainty frok 20K
+in a clever way.  Therefore, there is a range of uncertainty from 20K
 to 50K.  But, hey, that's all I needed to know for my intended
 purpose.  Mainly, I was interested in exactly how viable it would be
 to connect a small keypad with wires formed entirely out of conductive
