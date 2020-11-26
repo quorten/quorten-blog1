@@ -4,8 +4,8 @@ title: "The disparate effect of joblessness due to COVID-19, new TSMC
         fabrication facility in Arizona"
 date: 2020-05-20 06:10 -0500
 author: quorten
-categories: [covid19]
-tags: [covid19]
+categories: [covid19, raspberry-pi]
+tags: [covid19, raspberry-pi]
 ---
 
 Wow, this New York Times article is really interesting.  Coronavirus
