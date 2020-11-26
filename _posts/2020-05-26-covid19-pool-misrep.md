@@ -4,8 +4,8 @@ title: "Coronavirus precautions for pools, misreporting of active
         versus past COVID-19 infection"
 date: 2020-05-26 13:16 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 Pools in the summer?  How does the risk of Coronavirus change that?

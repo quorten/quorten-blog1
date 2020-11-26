@@ -3,8 +3,8 @@ layout: post
 title: "More COVID-19 updates: conspiracy theories, reopenings"
 date: 2020-05-08 20:59 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 Two things with COVID-19: conspiracy theories are still a problem,

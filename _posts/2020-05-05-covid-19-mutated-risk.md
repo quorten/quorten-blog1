@@ -3,8 +3,8 @@ layout: post
 title: Coronavirus mutation more contagious
 date: 2020-05-05 23:27 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 Coronavirus mutated and new form is more contagious.  Wow, be on the

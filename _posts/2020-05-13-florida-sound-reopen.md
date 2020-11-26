@@ -3,8 +3,8 @@ layout: post
 title: Florida's Coronavirus reopenings were indeed sound
 date: 2020-05-13 19:15 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 Interesting.  Despite the criticism of Florida's early reopenings of

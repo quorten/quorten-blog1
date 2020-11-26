@@ -3,8 +3,8 @@ layout: post
 title: More Coronavirus updates, things look pretty tough
 date: 2020-05-10 16:35 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 Yes, this is the reason for increased spread of Coronavirus cases in

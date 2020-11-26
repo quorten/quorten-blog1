@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Coronavirus underreporting factors my grow in the United
+title: "Coronavirus underreporting factors may grow in the United
         States, and economic slowdown continues"
 date: 2020-07-01 20:22 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 Coronavirus underreporting factor of 20:1 or 50:1?  Be forewarned,

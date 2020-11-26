@@ -3,8 +3,8 @@ layout: post
 title: Brazil in deep COVID-19 trouble
 date: 2020-05-28 17:13 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 Wow, Brazil is in really deep trouble for its lackluster response to

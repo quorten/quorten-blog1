@@ -3,8 +3,8 @@ layout: post
 title: "Good COVID-19 chart, and Go dependency injection"
 date: 2020-09-23 21:00 -0500
 author: quorten
-categories: [misc, golang]
-tags: [misc, golang]
+categories: [covid19, golang]
+tags: [covid19, golang]
 ---
 
 First of all, during early discussion at the GoMN Meetup, someone

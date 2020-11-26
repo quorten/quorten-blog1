@@ -3,8 +3,8 @@ layout: post
 title: Great article about main avenues of COVID-19 spread
 date: 2020-05-15 22:54 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 Concerned about getting COVID-19 from the grocery store or an adjacent

@@ -3,8 +3,8 @@ layout: post
 title: "COVID-19 strikes back hard worldwide this autumn"
 date: 2020-11-04 23:15 -0600
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 You thought there were many areas of the world that overcome COVID-19?

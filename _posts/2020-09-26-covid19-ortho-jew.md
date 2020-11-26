@@ -3,8 +3,8 @@ layout: post
 title: COVID-19 among Orthodox Jewish communities
 date: 2020-09-26 18:51 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 Very interesting news here about heightened COVID-19 spread in

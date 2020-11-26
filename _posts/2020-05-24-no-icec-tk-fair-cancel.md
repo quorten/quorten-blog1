@@ -4,8 +4,8 @@ title: "Ice cream truck that plays metal music but no ice cream, and
         Minnesota State Fair canceled this year"
 date: 2020-05-24 02:47 -0500
 author: quorten
-categories: [random]
-tags: [random]
+categories: [covid19]
+tags: [covid19]
 ---
 
 Wow, this is interesting.  An ice cream truck that does not dispense

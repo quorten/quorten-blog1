@@ -3,8 +3,8 @@ layout: post
 title: The effect of the Coronavirus outbreak on the stock market
 date: 2020-02-28 20:56 -0600
 author: quorten
-categories: [personal-finance]
-tags: [personal-finance]
+categories: [personal-finance, covid19]
+tags: [personal-finance, covid19]
 ---
 
 Over the past few weeks, stock prices have dropped 12% across the

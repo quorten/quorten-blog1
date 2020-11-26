@@ -4,8 +4,8 @@ title: "How are seniors handling 2020?  Very interesting information
         on how seniors participate online"
 date: 2020-09-01 21:03 -0500
 author: quorten
-categories: [misc, personal-finance]
-tags: [misc, personal-finance]
+categories: [covid19, personal-finance]
+tags: [covid19, personal-finance]
 ---
 
 As a curiosity, I was wondering, how are seniors handling 2020?  Like,

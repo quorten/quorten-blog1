@@ -4,8 +4,8 @@ title: "Finding ebooks in my public library, and interesting article
         comparing physical books to ebooks"
 date: 2020-09-22 09:48 -0500
 author: quorten
-categories: [inven-sys]
-tags: [inven-sys]
+categories: [inven-sys, covid19]
+tags: [inven-sys, covid19]
 ---
 
 Okay, so maybe now after COVID-19 hit, my local library has better

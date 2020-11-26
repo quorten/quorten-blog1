@@ -3,8 +3,8 @@ layout: post
 title: Coronavirus misinformation issues
 date: 2020-05-07 00:56 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 This is an interesting article about the issues with misinformation

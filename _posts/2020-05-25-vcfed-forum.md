@@ -3,8 +3,8 @@ layout: post
 title: "vcfed, like 68kMLA but bigger"
 date: 2020-05-25 10:30 -0500
 author: quorten
-categories: [vintage-computing]
-tags: [vintage-computing]
+categories: [vintage-computing, covid19]
+tags: [vintage-computing, covid19]
 ---
 
 Interesting, by mention in 68kMLA, I saw a name-drop to activity

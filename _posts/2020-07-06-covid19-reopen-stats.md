@@ -4,8 +4,8 @@ title: "Uptick of COVID-19 in America after reopenings, more COVID-19
         statistics"
 date: 2020-07-06 23:06 -0500
 author: quorten
-categories: [misc, twitter]
-tags: [misc, twitter]
+categories: [covid19, twitter]
+tags: [covid19, twitter]
 ---
 
 There has been an uptick of Coronavirus in America, after reopening

@@ -3,8 +3,8 @@ layout: post
 title: COVID-19 several months into the pandemic
 date: 2020-09-18 01:29 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 Here is an interesting article on what we know about COVID-19 after

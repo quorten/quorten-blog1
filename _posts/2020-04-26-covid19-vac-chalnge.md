@@ -3,8 +3,8 @@ layout: post
 title: "Coronavirus vaccine?  Outlook not so good."
 date: 2020-04-26 15:33 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 What is the current status on the COVID-19 vaccine?  Well, well,

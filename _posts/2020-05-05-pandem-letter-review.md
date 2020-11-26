@@ -4,8 +4,8 @@ title: "Interesting review of a letter written during the 1918
         pandemic flu during 2020 Coronavirus"
 date: 2020-05-05 15:39 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 

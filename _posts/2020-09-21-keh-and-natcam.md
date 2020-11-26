@@ -3,8 +3,8 @@ layout: post
 title: "KEH Camera, and the fate of National Camera Exchange"
 date: 2020-09-21 13:06 -0500
 author: quorten
-categories: [pentax-k-1-camera]
-tags: [pentax-k-1-camera]
+categories: [pentax-k-1-camera, covid19]
+tags: [pentax-k-1-camera, covid19]
 ---
 
 KEH Camera, that's a new name to me, but it's where I bought my

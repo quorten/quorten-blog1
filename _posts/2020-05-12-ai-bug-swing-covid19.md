@@ -3,8 +3,8 @@ layout: post
 title: AI algorithms unable to adapt to rapid swings in Coronavirus
 date: 2020-05-12 21:34 -0500
 author: quorten
-categories: [random-software]
-tags: [random-software]
+categories: [random-software, covid19]
+tags: [random-software, covid19]
 ---
 
 Wow, this is interesting.  Some companies are having trouble with AI

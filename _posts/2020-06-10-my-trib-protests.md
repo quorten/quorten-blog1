@@ -3,8 +3,8 @@ layout: post
 title: My tribute to the protests
 date: 2020-06-10 17:00 -0500
 author: quorten
-categories: [random]
-tags: [random]
+categories: [random, covid19]
+tags: [random, covid19]
 ---
 
 When the local Minneapolis protest started, it use to be just that: a

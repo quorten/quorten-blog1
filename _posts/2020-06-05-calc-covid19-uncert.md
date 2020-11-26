@@ -3,8 +3,8 @@ layout: post
 title: More information for calculating COVID-19 uncertainties
 date: 2020-06-05 15:38 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 I've found some more good information on calculating with uncertainty
