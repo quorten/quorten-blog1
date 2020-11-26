@@ -4,8 +4,8 @@ title: "Stocks and Coronavirus part II: Working out specific number of
         shares to invest"
 date: 2020-03-02 16:56 -0600
 author: quorten
-categories: [personal-finance]
-tags: [personal-finance]
+categories: [personal-finance, covid19]
+tags: [personal-finance, covid19]
 ---
 
 In my previous article about the effect of the Coronavirus outbreak on

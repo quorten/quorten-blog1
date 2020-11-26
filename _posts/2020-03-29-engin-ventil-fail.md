@@ -4,8 +4,8 @@ title: "Insightful article about corporate failure to innovate in
         cheap ventilators"
 date: 2020-03-29 14:23 -0500
 author: quorten
-categories: [random]
-tags: [random]
+categories: [covid19]
+tags: [covid19]
 ---
 
 This is a very insightful article on the how the for-profit medical

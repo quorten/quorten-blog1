@@ -4,8 +4,8 @@ title: "Interesting article on Coronavirus transmission path from
         Europe to the United States"
 date: 2020-04-09 19:50 -0500
 author: quorten
-categories: [random]
-tags: [random]
+categories: [covid19]
+tags: [covid19]
 ---
 
 This is a very interesting article about how mutations in the

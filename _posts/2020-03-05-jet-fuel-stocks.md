@@ -4,8 +4,8 @@ title: "The economic suppliers to airlines that **are** being impacted
         by Coronavirus"
 date: 2020-03-05 12:58 -0600
 author: quorten
-categories: [personal-finance]
-tags: [personal-finance]
+categories: [personal-finance, covid19]
+tags: [personal-finance, covid19]
 ---
 
 In my previous search for economic complements to airlines that are

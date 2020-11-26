@@ -4,8 +4,8 @@ title: "The real reason why there is a toilet paper shortage during
         the Coronavirus"
 date: 2020-04-03 21:12 -0500
 author: quorten
-categories: [random]
-tags: [random]
+categories: [covid19]
+tags: [covid19]
 ---
 
 Stores and news outlets have blamed toilet paper hoarders for the

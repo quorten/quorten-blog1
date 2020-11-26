@@ -3,8 +3,8 @@ layout: post
 title: More articles about the Coronavirus
 date: 2020-03-17 12:02 -0500
 author: quorten
-categories: [misc]
-tags: [misc]
+categories: [covid19]
+tags: [covid19]
 ---
 
 I've found this interesting article about the person who predicted the
