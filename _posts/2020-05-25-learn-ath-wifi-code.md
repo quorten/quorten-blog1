@@ -81,7 +81,7 @@ is an aftermarket upgrade or custom manufacture just for ThinkPenguin?
 I'm guessing so, it must have been something like that.  But in the
 whole of things, the hardware is overall a design that is 9 years old.
 
-https://openwrt.org/toh/tp-link/tl-wr841nd
+20200525/https://openwrt.org/toh/tp-link/tl-wr841nd
 
 20200525/DuckDuckGo tpe-r1100 librecmc  
 20200525/https://gogs.librecmc.org/libreCMC/libreCMC/src/LTS/docs/TPE_R1100.md  
@@ -115,3 +115,9 @@ determine what the cause of the crashing is.
 
 INDEX NOTE FCC ID does not have a direct link, they use web magic to
 prevent bots from downloading the PDFs.
+
+UPDATE 2020-11-30: I picked out the wrong device for TPE-R1100, but I
+was correct about the SoC nonetheless.  The true underlying hardware
+of TPE-R1100 is GL.iNet GL-AR150.
+
+20201130/https://openwrt.org/toh/gl.inet/gl-ar150
