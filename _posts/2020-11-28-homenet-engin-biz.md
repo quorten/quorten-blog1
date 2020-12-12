@@ -9,8 +9,8 @@ categories: [home-network, personal-finance]
 tags: [home-network, personal-finance]
 ---
 
-Operating a complex home network network... one of the ultimate ways
-of geekery.  I personally have been operating a home network for some
+Operating a complex home network... one of the ultimate ways of
+geekery.  I personally have been operating a home network for some
 time, and I have to say... if the home network is built just for you
 and yourself, well that's easy.  But the moment you consider using a
 build-out geek home network that is operating and providing a service
@@ -116,8 +116,8 @@ on responsibility for operating a home network is a deprivation,
 rather than a great gift as us geeks see it.  But, this goes even
 further than that.  Having a geek operate a home network is not a fair
 trade in this system of economics because the geek appears, from a
-non-engineer's standpoint, to be constantly deprived of someone ought
-to have of their time outside work.
+non-engineer's standpoint, to be constantly deprived of something
+someone ought to have of their time outside work.
 
 There is only one way to remedy this: have the home network operated
 by professionals.  Naturally, this is going to increase the monetary
@@ -240,7 +240,7 @@ business?  If a business fails to innovate, then the world around them
 will change but the business will not, and the world will buy new
 products in preference to old ones.  So then there will be less and
 less customers until pretty soon, the company goes out of business.
-But still, that's a meager way to explaian the true intent behind
+But still, that's a meager way to explain the true intent behind
 engineering to business managers.
 
 Fundamentally, we can explain the crux of the matter this way.
