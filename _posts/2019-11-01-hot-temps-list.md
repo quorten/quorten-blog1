@@ -15,18 +15,24 @@ Temperatures given are approximate for simplicity.
 * 0100 C : Boiling water, limit of non-pressurized cooking
 * 0120 C : Melting point of low-temperature hot glue
 * 0200 C : Baking with browning effects, spontaneous combustion of
-  paper and wood, melting point and glass transition temperature of
-  most plastics (LDPE, HDPE, PP, PMMA, PLA, ABS, PC), melting point of
-  high temperature hot glue, melting point of leaded solder
-* 0260 C : Lead-free reflow soldering oven, melting point of PS, PET,
-  PVC plastic
+  paper, wood, and cotton, melting point and glass transition
+  temperature of most plastics (LDPE, HDPE, PP, PMMA, PLA, ABS, PC),
+  melting point of high temperature hot glue, melting point of leaded
+  solder
+* 0260 C : Lead-free reflow soldering oven, melting point of tin,
+  melting point of PS, PET, PVC, PBT, Nylon 6/66 (polyamide), PPS
+  plastic
+* 0285 C : Melting point of PCT plastic
 * 0400 C : Lead-free soldering iron, melting point of lead,
-  autoignition temperature of ethyl alcohol and isopropyl alcohol
+  autoignition temperature of ethyl alcohol and isopropyl alcohol,
+  melting point of LCP plastic
 * 0600 C : Minimum match and candle temperature
 * 0660 C : Melting point of aluminum
 * 0800 C : Maximum match temperature
 * 1000 C : Melting point of silver, gold, and copper
-* 1400 C : Maximum candle temperature, minimum melting point of glass
+* 1400 C : Maximum candle temperature, minimum melting point of glass,
+  1700 K black body radiation corresponding to orange color
+  temperature
 * 1550 C : Bunsen burner temperature, maximum melting point of glass,
   melting point of iron, decomposition of carbon-fiber reinforced
   epoxy
