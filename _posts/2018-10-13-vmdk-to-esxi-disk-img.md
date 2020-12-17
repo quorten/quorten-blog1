@@ -3,8 +3,8 @@ layout: post
 title: Convert a VMDK disk image to an ESXi disk image
 author: quorten
 date: 2018-10-13 12:00 PM -0500
-categories: [random-software]
-tags: [random-software]
+categories: [unix, centos, vmware]
+tags: [unix, centos, vmware]
 ---
 
 Suppose you have a VMDK disk image, and you want to import that
@@ -109,3 +109,35 @@ So, here's how to do that.
 
 7. Import that OVA file into vCenter/ESX.  Now you have your new VM
    built from an existing VMDK disk image.
+
+----------
+
+UPDATE 2020-12-15: What if you really do want to be able to run the
+Linux executable on 64-bit CentOS?  And modern CentOS 8 to boot?
+Well, although the documentation appears tricky and hard to find,
+here's what I've found to be able to work.  The trickiest part is the
+fact that the binaries depend on an old version of OpenSSL, assumed to
+have been distributed with VMware workstation when you bought the
+license.  But I didn't buy the license, all I have is ESXi!  Well, no
+worries, there's a workaround to get that working too.  But the trick
+is that even though it was only ever designed for CentOS 6 and CentOS
+7, you can still get it working in CentOS 8 if you do a manual install
+of the package binaries.  Interestingly, it appears that the old
+package wasn't just a recompile of the old version of OpenSSL, but is
+actually designed as a transparent compatibility wrapper to use the
+newer version included in the distro, which is why it works with newer
+CentOS.
+
+```
+# sudo yum groupinstall "Compatibility Libraries"
+sudo dnf -y install glibc.i686 zlib.i686
+# sudo dnf -y install openssl098e
+# 20201205/https://centos.pkgs.org/7/centos-x86_64/openssl098e-0.9.8e-29.el7.centos.3.i686.rpm.html
+curl -L -O https://mirror.centos.org/7/os/x86_64/Packages/openssl098e-0.9.8e-29.el7.centos.3.i686.rpm
+sudo dnf -y install openssl098e-0.9.8e-29.el7.centos.3.i686.rpm
+
+mkdir -p ~/libdir/lib/libcrypto.so.0.9.8
+ln -s /usr/lib/libcrypto.so.0.9.8e ~/libdir/lib/libcrypto.so.0.9.8/libcrypto.so.0.9.8
+mkdir -p ~/libdir/lib/libssl.so.0.9.8
+ln -s /usr/lib/libssl.so.0.9.8e ~/libdir/lib/libssl.so.0.9.8/libssl.so.0.9.8
+```
