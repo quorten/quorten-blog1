@@ -65,11 +65,13 @@ mount /boot/efi
 dracut --regenerate-all --force
 
 # Install required packages and update the bootloader.
-yum -y install grub2-efi-x64-modules efibootmgr
+yum -y install grub2-pc-modules grub2-efi-x64-modules efibootmgr
 # Note that we must specify `--target` explicitly because it defaults
-# to `i386-pc`.
+# to `i386-pc`.  Also, we must explicitly specify both targets since
+# the `x86_64-efi` target does not install the legacy BIOS boot code.
+grub2-install --target=i386-pc /dev/sda
 grub2-install --target=x86_64-efi /dev/sda
-grub2-mkconfig >/boot/grub2/grub.cfg
+grub2-mkconfig -o /boot/grub2/grub.cfg
 
 # PLEASE NOTE: You will get warnings and not be able to update EFI
 # vars at this point because we did not boot with EFI yet.

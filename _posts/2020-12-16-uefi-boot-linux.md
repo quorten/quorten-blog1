@@ -180,6 +180,10 @@ the boot firmware.  (In later Macintosh computers, this would only be
 the default boot selection, and you could use hotkeys at boot to
 override this.)
 
+However, some UEFI firmware versions do in fact wipe the EFI vars as
+soon as NVRAM entries are no longer found to correspond to disk
+entries.
+
 ----------
 
 Now, after all that introductory discussion is out of the way, let's

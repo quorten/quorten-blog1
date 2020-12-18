@@ -70,10 +70,7 @@ Keep in mind, however, that due to GRUB limitations, you must create
 this partition reasonably close to the beginning of the disk or else
 it will not work.  For this reason, it is easiest to use `parted` to
 create the partition before you install CentOS, and simply instruct
-the CentOS installer to leave that partition be.  When the GRUB
-bootloader is installed, `grub2-install` will automatically identify
-and initialize that partition with boot code to support legacy BIOS
-boot.  Here's an example command line:
+the CentOS installer to leave that partition be.
 
 ```
 parted /dev/sda mkpart bios-boot fat32 1MB 2MB
@@ -82,3 +79,28 @@ parted /dev/sda mkpart bios-boot fat32 1MB 2MB
 GRUB only needs ESP to be 1 MB, since it is just a stub that loads the
 rest.  BIOS boot partition only needs 32 KiB, but make it 1 MB for
 good measure.
+
+Note that `grub2-install` will **not** automatically identify and
+initialize that partition with boot code, unlike what one of my online
+sources said.  Only `grub2-install --target=i386-pc` will initialize
+the BIOS boot code, and it will (essentially) fail if the BIOS boot
+partition is not present on a GPT disk.  So if you want to support
+both UEFI boot and BIOS boot, you must run two `grub2-install`
+commands as follows.
+
+```
+grub2-install --target=i386-pc $TARGETDISK
+grub2-install --target=x86_64-efi $TARGETDISK
+grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+
+One peculiarity that I have to look further into is that the CentOS 8
+installer's UEFI boot is really weird and customized, it's not like
+what you get from `grub2-install --target=x86_64-efi`.  Looking
+further into sources for this, looks like the additional files come
+from a package named `shim` or the like, which is primarily designed
+to support Secure Boot but also packs in some fixes for several UEFI
+annoyances.
+
+20201217/DuckDuckGo fallback.efi centos  
+20201217/https://www.rodsbooks.com/efi-bootloaders/fallback.html
