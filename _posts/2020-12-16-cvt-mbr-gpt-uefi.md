@@ -27,6 +27,7 @@ Run all these commands as root.
 
 ```
 # First, we assume the existing disk layout looks something like this:
+# Part# Size Mount FS
 # 1 1074MB /boot  ext4
 # 2 8.5GB  /      ext4
 # 3 8GB    /home  ext4
@@ -70,22 +71,34 @@ yum -y install grub2-pc-modules grub2-efi-x64-modules efibootmgr
 # to `i386-pc`.  Also, we must explicitly specify both targets since
 # the `x86_64-efi` target does not install the legacy BIOS boot code.
 grub2-install --target=i386-pc /dev/sda
-grub2-install --target=x86_64-efi /dev/sda
-grub2-mkconfig -o /boot/grub2/grub.cfg
+# grub2-install --target=x86_64-efi /dev/sda # Does not support Secure Boot.
+# grub2-mkconfig -o /boot/grub2/grub.cfg # Will do later.
 
 # PLEASE NOTE: You will get warnings and not be able to update EFI
 # vars at this point because we did not boot with EFI yet.
 
 # Copy to default EFI boot filename so that we can boot with EFI for
 # the first time.
-mkdir -p /boot/efi/EFI/BOOT
-cp -p /boot/efi/EFI/centos/grubx64.efi /boot/efi/EFI/BOOT/BOOTX64.EFI
+# mkdir -p /boot/efi/EFI/BOOT
+# cp -p /boot/efi/EFI/centos/grubx64.efi /boot/efi/EFI/BOOT/BOOTX64.EFI
+
+# In lieu of my old recommendation, simply use the Secure Boot shim
+# installation of GRUB, this makes UEFI boot much easier, plus it also
+# works with Secure Boot.
+yum -y install grub2-efi-x64 shim-x64
+rm /boot/grub2/grubenv # Ensure we don't symlink into the ESP.
+grub2-mkconfig -o /boot/grub2/grub.cfg
+cp -p /boot/grub2/{grub.cfg,grubenv} /boot/efi/EFI/centos/
+
+# Note that if we want to do anything fancy, you still need the
+# `grub2-efi-x64-modules` package, but you also have to copy these
+# modules to the EFI System Partition (ESP).
 
 echo Double check your configuration and reboot.
-echo Within EFI, you must run the bootloader install command again
-echo so that EFI vars can be set to update the EFI boot menu.
-echo
-echo grub2-install --target=x86_64-efi /dev/sda
+# echo Within EFI, you must run the bootloader install command again
+# echo so that EFI vars can be set to update the EFI boot menu.
+# echo
+# echo grub2-install --target=x86_64-efi /dev/sda
 ```
 
 Regarding LVM.  If you almost brick...

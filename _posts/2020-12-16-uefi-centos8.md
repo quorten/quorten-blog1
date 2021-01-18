@@ -94,6 +94,10 @@ grub2-install --target=x86_64-efi $TARGETDISK
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
+Also, if you want to install to a USB removable disk or the like for a
+portable boot drive, you **must** use `--removable --force` for
+**both** the legacy BIOS and the UEFI bootloaders.
+
 One peculiarity that I have to look further into is that the CentOS 8
 installer's UEFI boot is really weird and customized, it's not like
 what you get from `grub2-install --target=x86_64-efi`.  Looking
@@ -104,3 +108,41 @@ annoyances.
 
 20201217/DuckDuckGo fallback.efi centos  
 20201217/https://www.rodsbooks.com/efi-bootloaders/fallback.html
+
+And actually, I have to comment further.  The only way to support
+Secure Boot is to use `shim`.  If you use `grub2-install
+--target=x86_64-efi`, especially in conjunction with `--removable`,
+Secure Boot will not work.  This is because the Secure Boot shim will
+be overwritten but the regular GRUB EFI bootloader that does not
+support Secure Boot.  So, point in hand, do not use the previous
+commands to install GRUB if yoiu want to support Secure Boot.  CentOS
+has a special package that installs GRUB directly into the EFI System
+Partition (ESP), it is named `grub2-efi-x64`.
+
+64-bit:
+
+```
+sudo yum -y install grub2-efi-x64 shim-x64
+```
+
+32-bit (is it really any use?):
+
+```
+sudo yum -y install grub2-efi shim
+```
+
+Then, of course, finish up by updating your GRUB config, including
+copying the config files to the ESP.
+
+```
+rm /boot/grub2/grubenv # Ensure we don't symlink into the ESP.
+grub2-mkconfig -o /boot/grub2/grub.cfg
+cp -p /boot/grub2/{grub.cfg,grubenv} /boot/efi/EFI/centos/
+```
+
+Another thing of note from the referenced URL, tweaking
+`/boot/efi/EFI/centos/BOOTX64.CSV` allows you to tweak the name of the
+boot menu entry that is automatically added when you boot through
+Shim.  This is nice because when working with removable disks, you
+cannot otherwise set the boot menu entry label text, except through
+the fallback mechanism that automatically adds the boot menu entry.

@@ -194,3 +194,23 @@ understanding in Verilog high frequency timing.
 20201128/DuckDuckGo verilog what is the delay of non-blocking
   assignment  
 20201128/https://www.sutherland-hdl.com/papers/1996-CUG-presentation_nonblocking_assigns.pdf
+
+UPDATE 2020-12-30: Okay, I was confused about exactly how a registered
+PAL works, and in finding the answer to that, I think I've also found
+the answer to this Verilog question.  I found out that principally, a
+D flip flop samples the input on the rising edge of the clock and
+then, after a short and generally unspecified delay, propagates that
+to the register's output value.  This is also the way that registered
+PALs are specified to work.  So, yes, if you find the whole concept
+really confusing, it is true that you can typically model this
+identically to a register that samples the input on the falling edge
+of the clock, and commits it to output on the rising edge of the
+clock.  But, the D flip-flop behavior is the primary premise behind
+Verilog's behavior of the non-blocking assign, and you should
+understand that therefore, most sequential logic is designed to use
+this type of flip-flop directly.
+
+So, point in hand, you were talking about edge-trigger pulse
+generators to get this fast behavior?  It i
+s generally understood that
+this fast behavior is available by default.
