@@ -552,6 +552,25 @@ virtualization, unlike Windows XP.
 
 ----------
 
+UPDATE 2021-03-06: Unfortunately this isn't well documented.  The
+rundll32 command only resets the 30-day grace period, and this can
+only be done 3 times.  After that, you have to snap-revert your
+Windows XP VM image if you want to keep using it.  But after hard
+scour searching, I've found this great bit of information.  Worth
+pursuing.
+
+Here's the variation: You leave the `WPAEvents directory writable, but
+you edit `OOBETimer` so that it is a zero-length binary value.  Then
+you go through the activation dialog, request telephone activation,
+but then change the product key, and you can thus bypass activation
+entirely.
+
+20210306/how to install windows xp activation  
+20210306/https://superuser.com/questions/1502796/how-do-i-activate-windowsxp-now-that-support-has-ended  
+20210306/https://www.wikihow.com/Make-Windows-XP-Genuine-Forever
+
+----------
+
 Now, once you have all that Windows Product Activation stuff out of
 the way, you can focus on installing drivers for all your hardware.
 For the most part, this is almost exactly the same instructions I've
