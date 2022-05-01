@@ -150,9 +150,9 @@ non-flammability, so naturally it also works well for creating
 non-flammable electronics cases.
 
 Note that borax is a good fire retardant additive for paper and
-cardboard.  Potassium silicate can also be used as a fire retardant,
-but maybe it is less preferable to work with as it is strongly
-alkaline.
+cardboard.  But be careful!  It is a reproductive hazard too.
+Potassium silicate can also be used as a fire retardant, but maybe it
+is less preferable to work with as it is strongly alkaline.
 
 20190301/https://en.wikipedia.org/wiki/Borax  
 20190301/https://en.wikipedia.org/wiki/Potassium_silicate
