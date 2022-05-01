@@ -890,6 +890,9 @@ sudo passwd damnsmall
 ssh -T damnsmall@localhost sudo getty /dev/ttyS0 9600 vt100
 ```
 
+N.B.: For newer versions of `getty`, you might need to use only
+`ttyS0` instead of `/dev/ttyS0`.
+
 Alternatively, you can use `setsid`.
 
 ```
@@ -901,7 +904,11 @@ sudo setsid getty /dev/ttyS0 9600 vt100
 Note that `setsid` runs a detached command that will not block the
 current shell, unlike `ssh` that will wait for `getty` to exit, so if
 you want a loop that continuously shows `getty` on the serial
-terminal.
+terminal, `ssh` is better.
+
+UPDATE 2021-03-07: By far the best way to run `getty` is with `sudo su
+-c 'getty ...'`.  This ensures you don't have weird problems like
+`/dev/tty` never being created like can happen with `ssh -T ...`.
 
 Congratulations!  Now you can login to UNIX over a serial terminal.
 Enjoy the retro pleasure of being able to dial into UNIX just as you
