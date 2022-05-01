@@ -29,10 +29,11 @@ Temperatures given are approximate for simplicity.
 * 0600 C : Minimum match and candle temperature
 * 0660 C : Melting point of aluminum
 * 0800 C : Maximum match temperature
-* 1000 C : Melting point of silver, gold, and copper
+* 1000 C : Melting point of silver, gold, and copper, firing
+  temperature of stoneware clay
 * 1400 C : Maximum candle temperature, minimum melting point of glass,
   1700 K black body radiation corresponding to orange color
-  temperature
+  temperature, firing temperature of porcelain
 * 1550 C : Bunsen burner temperature, maximum melting point of glass,
   melting point of iron, decomposition of carbon-fiber reinforced
   epoxy
@@ -45,4 +46,6 @@ Temperatures given are approximate for simplicity.
 20191102/https://en.wikipedia.org/wiki/Metals_of_antiquity  
 20191118/DuckDuckGo low temperature hot glue  
 20191118/https://www.gluegun.com/blogs/tips-tutorials/8349592-low-temperature-glue-guns-glue-sticks-guide  
-20191118/https://answersdrive.com/what-temperature-does-hot-melt-glue-melt-at-676969
+20191118/https://answersdrive.com/what-temperature-does-hot-melt-glue-melt-at-676969  
+20220302/https://en.wikipedia.org/wiki/Porcelain  
+20220302/https://en.wikipedia.org/wiki/Stoneware
