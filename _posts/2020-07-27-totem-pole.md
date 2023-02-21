@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Totem-pole" means buffered
+title: "\"Totem-pole\" means buffered"
 date: 2020-07-27 23:19 -0500
 author: quorten
 categories: [raspberry-pi]
