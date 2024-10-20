@@ -24,6 +24,17 @@ characteristic impedance.
 20201022/DuckDuckGo ieee 1284 termination impedance  
 20201022/https://www.vishay.com/docs/60089/vssx1284.pdf
 
+UPDATE 2024-10-20: According to this datasheet, IEEE 1284 termination
+is specified to be mostly ESD protection circuits, except on the
+STROBE control line and the eight DATA lines.  Those have a series
+termination resistor at 33 ohms.  This is comparable to the series
+termination resistors found inside the original Macintosh computer's
+motherboard DRAM lines.
+
+20241020/DuckDuckGo parallel port termination  
+20241020/https://www.onsemi.com/pdf/datasheet/pacsz1284-d.pdf  
+https://media.digikey.com/pdf/Data%20Sheets/ST%20Microelectronics%20PDFS/ST1284-xxA8.pdf
+
 Otherwise, there's always just the random guess, a resistor around 100
 ohms.  120 ohms, 90 ohms, 70 ohms, oh something like that.
 
